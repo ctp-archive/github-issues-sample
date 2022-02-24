@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>[NM] Backfill Total Test PCR timeseries from state data &amp; screenshots</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 1118</p>
+        <p><strong>muamichali</strong> opened this issue on March 1, 2021 at 6:13 pm</p>
+        
+          <p><strong>Labels </strong>
+            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          </p>
+          
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1118" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p><strong>State or US</strong>:  New Mexico</p>
+<p><strong>Describe the problem</strong>
+CTP started capturing total tests data in NM on 5/12. The state provides a data download file that adds tests from 4/10 - 5/11 so we are going to backfill them.</p>
+<p><strong>Link to data source</strong>
+<a href="https://e7p503ngy5.execute-api.us-west-2.amazonaws.com/prod/GetCvDataByDay">https://e7p503ngy5.execute-api.us-west-2.amazonaws.com/prod/GetCvDataByDay</a>
+<a href="../assets/files/github/6072737/Changes.2.txt">Changes (2).txt</a></p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-789321898">
+          <div class="frontmatter">
+            <div><strong>muamichali</strong> commented on March 2, 2021 at 6:23 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1118#issuecomment-789321898" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Data as of</th>
+<th>Screenshot URL</th>
+<th>Screenshot Total Tests</th>
+<th>Screenshot Positive</th>
+<th>Screenshot Negatives</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4/14/2020</td>
+<td>4/13/20</td>
+<td><a href="https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200413-181306.png">https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200413-181306.png</a></td>
+<td>31970</td>
+<td>1345</td>
+<td>30625</td>
+</tr>
+<tr>
+<td>4/13/2020</td>
+<td>4/12/20</td>
+<td><a href="https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200412-181400.png">https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200412-181400.png</a></td>
+<td>30515</td>
+<td>1245</td>
+<td>29270</td>
+</tr>
+<tr>
+<td>4/12/2020</td>
+<td>4/11/20</td>
+<td><a href="https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200411-181253.png">https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200411-181253.png</a></td>
+<td>28692</td>
+<td>1174</td>
+<td>27518</td>
+</tr>
+<tr>
+<td>4/10/2020</td>
+<td>4/10/20</td>
+<td><a href="https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200410-181526.png">https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200410-181526.png</a></td>
+<td>27098</td>
+<td>1091</td>
+<td>26007</td>
+</tr>
+<tr>
+<td>4/9/2020</td>
+<td>4/9/20</td>
+<td><a href="https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200410-001223.png">https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200410-001223.png</a></td>
+<td>23931</td>
+<td>989</td>
+<td>22942</td>
+</tr>
+<tr>
+<td>4/8/2020</td>
+<td>4/8/20</td>
+<td><a href="https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200409-094712.png">https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200409-094712.png</a></td>
+<td>23807</td>
+<td>865</td>
+<td>22942</td>
+</tr>
+<tr>
+<td>4/7/2020</td>
+<td>4/7/20</td>
+<td><a href="https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200407-181304.png">https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200407-181304.png</a></td>
+<td>21933</td>
+<td>794</td>
+<td>21139</td>
+</tr>
+<tr>
+<td>4/6/2020</td>
+<td>4/6/20</td>
+<td><a href="https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200407-001234.png">https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200407-001234.png</a></td>
+<td>21825</td>
+<td>686</td>
+<td>21139</td>
+</tr>
+<tr>
+<td>4/5/2020</td>
+<td>4/5/20</td>
+<td><a href="https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200406-121242.png">https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200406-121242.png</a></td>
+<td>19136</td>
+<td>624</td>
+<td>18512</td>
+</tr>
+<tr>
+<td>4/4/2020</td>
+<td>4/4/20</td>
+<td><a href="https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200405-001135.png">https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200405-001135.png</a></td>
+<td>16828</td>
+<td>543</td>
+<td>16285</td>
+</tr>
+<tr>
+<td>4/3/2020</td>
+<td>4/3/20</td>
+<td><a href="https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200403-181143.png">https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200403-181143.png</a></td>
+<td>15632</td>
+<td>495</td>
+<td>15137</td>
+</tr>
+<tr>
+<td>4/2/2020</td>
+<td>4/2/20</td>
+<td><a href="https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200402-181337.png">https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200402-181337.png</a></td>
+<td>14778</td>
+<td>403</td>
+<td>14375</td>
+</tr>
+<tr>
+<td>4/1/2020</td>
+<td>4/1/20</td>
+<td><a href="https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200401-181037.png">https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200401-181037.png</a></td>
+<td>14011</td>
+<td>363</td>
+<td>13648</td>
+</tr>
+<tr>
+<td>3/31/2020</td>
+<td>3/31/20</td>
+<td><a href="https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200401-001511.png">https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200401-001511.png</a></td>
+<td>13240</td>
+<td>315</td>
+<td>12925</td>
+</tr>
+<tr>
+<td>3/30/2020</td>
+<td>3/30/20</td>
+<td><a href="https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200331-181130.png">https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200331-181130.png</a></td>
+<td>12527</td>
+<td>281</td>
+<td>12246</td>
+</tr>
+<tr>
+<td>3/29/2020</td>
+<td>3/29/20</td>
+<td><a href="https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200329-191045.png">https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200329-191045.png</a></td>
+<td>11006</td>
+<td>237</td>
+<td>10769</td>
+</tr>
+<tr>
+<td>3/28/2020</td>
+<td>3/28/20</td>
+<td><a href="https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200328-191304.png">https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200328-191304.png</a></td>
+<td>10977</td>
+<td>208</td>
+<td>10769</td>
+</tr>
+<tr>
+<td>3/27/2020</td>
+<td>3/27/20</td>
+<td><a href="https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200327-191115.png">https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200327-191115.png</a></td>
+<td>9387</td>
+<td>191</td>
+<td>9196</td>
+</tr>
+<tr>
+<td>3/26/2020</td>
+<td>3/26/20</td>
+<td><a href="https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200327-161104.png">https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200327-161104.png</a></td>
+<td>8513</td>
+<td>136</td>
+<td>8377</td>
+</tr>
+<tr>
+<td>3/25/2020</td>
+<td>3/25/20</td>
+<td><a href="https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200325-190844.png">https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200325-190844.png</a></td>
+<td>7793</td>
+<td>112</td>
+<td>7681</td>
+</tr>
+<tr>
+<td>3/24/2020</td>
+<td>3/24/20</td>
+<td><a href="https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200324-190734.png">https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200324-190734.png</a></td>
+<td>6842</td>
+<td>100</td>
+<td>6742</td>
+</tr>
+<tr>
+<td>3/23/2020</td>
+<td>3/23/20</td>
+<td><a href="https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200323-190951.png">https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200323-190951.png</a></td>
+<td>5973</td>
+<td>83</td>
+<td>5890</td>
+</tr>
+<tr>
+<td>3/22/2020</td>
+<td>3/22/20</td>
+<td><a href="https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200322-190834.png">https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200322-190834.png</a></td>
+<td>5386</td>
+<td>65</td>
+<td>5321</td>
+</tr>
+<tr>
+<td>3/21/2020</td>
+<td>3/21/20</td>
+<td><a href="https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200321-190705.png">https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200321-190705.png</a></td>
+<td>4779</td>
+<td>57</td>
+<td>4722</td>
+</tr>
+<tr>
+<td>3/20/2020</td>
+<td>3/20/20</td>
+<td><a href="https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200320-191625.png">https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200320-191625.png</a></td>
+<td>3814</td>
+<td>43</td>
+<td>3771</td>
+</tr>
+<tr>
+<td>3/19/2020</td>
+<td>3/19/20</td>
+<td><a href="https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200319-190559.png">https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200319-190559.png</a></td>
+<td>2797</td>
+<td>35</td>
+<td>2762</td>
+</tr>
+<tr>
+<td>3/18/2020</td>
+<td>3/18/20</td>
+<td><a href="https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200318-190602.png">https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200318-190602.png</a></td>
+<td>2354</td>
+<td>28</td>
+<td>2326</td>
+</tr>
+<tr>
+<td>3/17/2020</td>
+<td>3/17/20</td>
+<td><a href="https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200317-180524.png">https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200317-180524.png</a></td>
+<td>1720</td>
+<td>23</td>
+<td>1697</td>
+</tr>
+<tr>
+<td>3/16/2020</td>
+<td>3/16/20</td>
+<td><a href="https://covidtracking.com/screenshots/NM/NM-20200316-231047.png">https://covidtracking.com/screenshots/NM/NM-20200316-231047.png</a></td>
+<td>1270</td>
+<td>21</td>
+<td>1249</td>
+</tr>
+<tr>
+<td>3/15/2020</td>
+<td>3/15/20</td>
+<td><a href="https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200316-105958.png">https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200316-105958.png</a></td>
+<td>583</td>
+<td>17</td>
+<td>566</td>
+</tr>
+<tr>
+<td>3/14/2020</td>
+<td>3/14/20</td>
+<td><a href="https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200315-163858.png">https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200315-163858.png</a></td>
+<td>495</td>
+<td>13</td>
+<td>482</td>
+</tr>
+<tr>
+<td>3/13/2020</td>
+<td>3/13/20</td>
+<td><a href="https://web.archive.org/web/20200314111954/https://cv.nmhealth.org/">https://web.archive.org/web/20200314111954/https://cv.nmhealth.org/</a></td>
+<td>247</td>
+<td>10</td>
+<td>237</td>
+</tr>
+<tr>
+<td>3/12/2020</td>
+<td>3/12/2020</td>
+<td><a href="https://web.archive.org/web/20200313104328/http://cv.nmhealth.org/">https://web.archive.org/web/20200313104328/http://cv.nmhealth.org/</a></td>
+<td>173</td>
+<td>6</td>
+<td>167</td>
+</tr>
+<tr>
+<td>3/11/2020</td>
+<td>3/11/20</td>
+<td><a href="https://web.archive.org/web/20200312024231/http://cv.nmhealth.org/">https://web.archive.org/web/20200312024231/http://cv.nmhealth.org/</a></td>
+<td>129</td>
+<td>4</td>
+<td>125</td>
+</tr>
+<tr>
+<td>3/10/2020</td>
+<td>3/10/2020</td>
+<td><a href="https://web.archive.org/web/20200311020914/https://cv.nmhealth.org/">https://web.archive.org/web/20200311020914/https://cv.nmhealth.org/</a></td>
+<td>87</td>
+<td>0</td>
+<td>87</td>
+</tr>
+<tr>
+<td>3/9/2020</td>
+<td></td>
+<td></td>
+<td>57</td>
+<td>0</td>
+<td>57</td>
+</tr>
+<tr>
+<td>3/8/2020</td>
+<td>3/8/2020</td>
+<td><a href="https://web.archive.org/web/20200309171611/https://cv.nmhealth.org/">https://web.archive.org/web/20200309171611/https://cv.nmhealth.org/</a></td>
+<td>57</td>
+<td>0</td>
+<td>57</td>
+</tr>
+<tr>
+<td>3/7/2020</td>
+<td>3/6/2020</td>
+<td><a href="https://web.archive.org/web/20200308165056/https://cv.nmhealth.org/">https://web.archive.org/web/20200308165056/https://cv.nmhealth.org/</a></td>
+<td>46</td>
+<td>0</td>
+<td>46</td>
+</tr>
+<tr>
+<td>3/6/2020</td>
+<td></td>
+<td></td>
+<td>10</td>
+<td>0</td>
+<td>10</td>
+</tr>
+<tr>
+<td>3/5/2020</td>
+<td>3/4/2020</td>
+<td><a href="https://web.archive.org/web/20200306155750/https://cv.nmhealth.org/">https://web.archive.org/web/20200306155750/https://cv.nmhealth.org/</a></td>
+<td>10</td>
+<td>0</td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-789322281">
+          <div class="frontmatter">
+            <div><strong>muamichali</strong> commented on March 2, 2021 at 6:24 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1118#issuecomment-789322281" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>We are also going to backfill <code>Total Tests (PCR)</code>, <code>Positive </code>and <code>Negative </code>from 3/5 to 4/10 using data from screenshots on <a href="http://web.archive.org">web.archive.org</a> and <a href="http://screenshots.covidtracking.com">screenshots.covidtracking.com</a></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-791836642">
+          <div class="frontmatter">
+            <div><strong>muamichali</strong> commented on March 5, 2021 at 7:54 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1118#issuecomment-791836642" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p><a href="../assets/files/github/6094515/batch939.txt">batch939.txt</a>
+<a href="../assets/files/github/6094516/batch919.txt">batch919.txt</a></p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

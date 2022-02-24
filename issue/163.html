@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>Publish to History at 4PM make it look like Current/History are out of sync when they are not.</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 163</p>
+        <p><strong>lcucos</strong> opened this issue on April 7, 2020 at 11:28 am</p>
+        
+          <p><strong>Labels </strong>
+            <span class="label"><a href="../label/2036763229.html">stale</a></span>
+          </p>
+          
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/163" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p>It seems that some data aggregates are wrong or there is a time misalignment when computing totals per day:
+Looking in the same time (Tue Apr  7 10:48:22 EDT 2020) at:</p>
+<p><a href="https://covidtracking.com/api/states">https://covidtracking.com/api/states</a>   : Sum all deaths           = 10,847
+<a href="https://covidtracking.com/api/us/daily">https://covidtracking.com/api/us/daily</a> : Deaths count as of 04/06 = 10,680</p>
+<p>At the time I did this analysis all states but: AR, NV, WY, MP in /api/states had a “dateModified”:“2020-04-06” or before.
+The four states (AR, NV, WY, MP) had “dateModified”:“2020-04-07”, but none had the death count modified since (or before) 2020-04-05.
+Conclusion: /api/us/daily shows a lower count of deaths than the sum of all deaths in /api/states</p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-610696530">
+          <div class="frontmatter">
+            <div><strong>joshuaellinger</strong> commented on April 7, 2020 at 8:10 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/163#issuecomment-610696530" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>I should be checking this in QC.  Added that as a check.  Not sure who should handle the actual error.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-611009640">
+          <div class="frontmatter">
+            <div><strong>joshuaellinger</strong> commented on April 8, 2020 at 9:59 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/163#issuecomment-611009640" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>This is probably not a bug as much as unclear UI or an API that returns incomplete information.</p>
+<p>We “publish” the history once per day at 5PM ET.  We “push” the current numbers three times per day (12AM/5PM/12PM, I think).</p>
+<p>Thus, the only time they should be in sync is from 5PM to 12PM.</p>
+<p>I’ve added Elliot to this because he understands the process, Kai because he maintains the API, and Julia because she’s got sharp eyes.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-611083180">
+          <div class="frontmatter">
+            <div><strong>careeningspace</strong> commented on April 8, 2020 at 12:16 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/163#issuecomment-611083180" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Hello,</p>
+<p>The delta you are seeing is the result of our “current” being updated three times per day (two of which we call “push” shifts, while the daily report is populated once per day on our 4-5 pm “publish” shift.</p>
+<ul>
+<li>
+<p>[ ] <strong>From the website:</strong>
+<img src="../assets/images/github/43073915/78813430-fa54b000-799a-11ea-9a01-0b6634984d0a.png" alt="Screen Shot 2020-04-08 at 1 14 20 PM">
+<img src="../assets/images/github/43073915/78813442-ffb1fa80-799a-11ea-9097-caac09f9b0e8.png" alt="Screen Shot 2020-04-08 at 1 14 32 PM"></p>
+</li>
+<li>
+<p>[ ] <strong>Here is a table of the difference:</strong>
+<img src="../assets/images/github/43073915/78813119-8d411a80-799a-11ea-8519-849555a0135a.png" alt="Screen Shot 2020-04-08 at 1 09 55 PM"></p>
+</li>
+</ul>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-611557285">
+          <div class="frontmatter">
+            <div><strong>lcucos</strong> commented on April 9, 2020 at 9:26 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/163#issuecomment-611557285" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Thank you for the quick response. This issue is for a misalignment between api/states and /api/us/daily (not api/states/daily).
+I understand the different update schedules but if you have mutable aggregates (like sums for the current day) I was expecting to see them be updated in sync when there is a change. If that is not possible, I would make the daily aggregates be immutable and compute them only once at the end of the day (whatever day boundary you choose).</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-611564646">
+          <div class="frontmatter">
+            <div><strong>joshuaellinger</strong> commented on April 9, 2020 at 9:39 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/163#issuecomment-611564646" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Yeah,  I agree it is confusing.  We’re discussing moving the ‘publish’ to history step to 8PM ET but it doesn’t resolve this issue.</p>
+<p>I favor putting making all updates do a publish with a timestamp on the record to indicate when the data is from but it would be a big change and there is a resistance to changing history multiple times.</p>
+<p>Alexis (<strong>@realfuture</strong>) thinks we need to update history at 12PM (your proposal) but  that is operationally difficult.  We don’t want to ask a bunch of people to stay up until midnight every day.</p>
+<p><strong>@lcucos</strong> Can you tell us how you are using the data?  Are you hitting the API to build other stuff?  Are you looking at the HTML site?</p>
+<p><strong>@careeningspace</strong> I’m going to reopen this but edit the name.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-611571865">
+          <div class="frontmatter">
+            <div><strong>careeningspace</strong> commented on April 9, 2020 at 9:53 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/163#issuecomment-611571865" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>We can add date stamps pretty easily from the data side. Incorporating it into the website will need to be part of the table discussion</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-611587964">
+          <div class="frontmatter">
+            <div><strong>lcucos</strong> commented on April 9, 2020 at 10:22 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/163#issuecomment-611587964" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>I am using the two apis (mentioned earlier) in different parts of my web app. I was thinking to make some changes on my end - to use only api/states/daily - but if you could update these aggregates I will happily wait</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-623790107">
+          <div class="frontmatter">
+            <div><strong>stale[bot]</strong> commented on May 4, 2020 at 8:20 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/163#issuecomment-623790107" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-628990097">
+          <div class="frontmatter">
+            <div><strong>stale[bot]</strong> commented on May 14, 2020 at 9:31 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/163#issuecomment-628990097" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>This issue has been closed because it was stale for 15 days, and there was no further activity on it for 10 days. You can feel free to re-open it if the issue is important, and label it as “not stale.”</p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

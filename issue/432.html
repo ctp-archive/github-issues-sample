@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>CA 3/18 - 3/31 - Data doesn&#39;t match CA official press releases </h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 432</p>
+        <p><strong>scarson</strong> opened this issue on May 18, 2020 at 1:00 am</p>
+        
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/432" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p>Quite a few issues here. Some typos in data entry and a running off-by-a-day issue.</p>
+<p>Because the screenshots are inconsistent, I reference the current official <a href="https://www.cdph.ca.gov/Programs/OPA/Pages/New-Release-2020.aspx">CA press release archive</a> instead.</p>
+<p>California started reporting total and pending test numbers on March 18th, so I’m including those here too. The CTP March CA numbers have “N/A” values for Pending through 3/23. It’s unclear where some of the earlier Total test numbers come from.</p>
+<p><a href="https://www.cdph.ca.gov/Programs/OPA/Pages/NR20-027.aspx">March 18 state data</a> “As of March 18, 2020, 6 p.m. PDT”
+<strong>3/18 should have 675 Positives instead of 611.</strong>
+<strong>3/18 should have 16 Deaths instead of 13.</strong>
+<strong>3/18 should have 6,300 Total [Tests] instead of 8,592.</strong>
+<strong>3/18 should have 10,000 Pending [Tests] instead of N/A.</strong>
+“At least 6,300 results have been received and another 10,000+ are pending.”</p>
+<p><a href="https://www.cdph.ca.gov/Programs/OPA/Pages/NR20-028.aspx">March 19 state data</a> “As of March 19, 2020, 6 p.m. PDT”
+<strong>3/19 should have 1,006 Positives instead of 924.</strong>
+<strong>3/19 should have 19 Deaths instead of `18.</strong>
+<strong>3/19 should have 11,487 Total [Tests] instead of 9,711.</strong> This is currently an off-by-one for the 20th.
+<strong>3/19 should have 11,700 Pending [Tests] instead of N/A.</strong></p>
+<p><a href="https://www.cdph.ca.gov/Programs/OPA/Pages/NR20-029.aspx">March 20 state data</a> “As of March 20, 2020, 6 p.m. PDT”
+<strong>3/20 should have 1,224 Positives instead of 1,063.</strong>
+<strong>3/20 should have 23 Deaths instead of 20.</strong>
+<strong>3/20 should have 12,528 Total [Tests] instead of 9,711.</strong> This is currently an off-by-one for the 21st.
+<strong>3/20 should have 12,700 Pending [Tests] instead of N/A.</strong></p>
+<p>**Note: CA daily reporting cutoff moves up four hours from 6 p.m. to 2 p.m. PDT between 3/20 and 3/21.</p>
+<p><a href="https://www.cdph.ca.gov/Programs/OPA/Pages/NR20-030.aspx">March 21 state data</a> “As of March 21, 2020, 2 p.m. PDT”
+<strong>3/21 should have 1,468 Positives instead of 1,279.</strong>
+<strong>3/21 should have 27 Deaths instead of 24.</strong>
+<strong>3/21 should have 13,467 Total [Tests] instead of 12,528.</strong> This is currently an off-by-one for the 22nd.
+<strong>3/21 should have 12,700 Pending [Tests] instead of N/A.</strong></p>
+<p><a href="https://www.cdph.ca.gov/Programs/OPA/Pages/NR20-031.aspx">March 22 state data</a> “As of March 22, 2020, 2 p.m. PDT”
+<strong>3/22 should have 1,733 Positives instead of 1,536.</strong>
+<strong>3/22 correctly lists deaths at 27.</strong>
+<strong>3/22 should have 14,317 Total [Tests] instead of 12,840.</strong> This is currently an off-by-one for the 23rd.
+<strong>3/22 should have 12,100 Pending [Tests] instead of N/A.</strong></p>
+<p><a href="https://www.cdph.ca.gov/Programs/OPA/Pages/NR20-032.aspx">March 23 state data</a> “As of March 23, 2020, 2 p.m. PDT” This is currently an off-by-one for the 24th.
+<strong>3/23 should have 2,102 Positives instead of 1,733.</strong>
+<strong>3/23 should have 40 Deaths instead of 27.</strong>
+<strong>3/23 should have 15,554 Total [Tests] instead of 14,300.</strong>
+<strong>3/23 correctly lists 12,100 Pending [Tests].</strong></p>
+<p><a href="https://www.cdph.ca.gov/Programs/OPA/Pages/NR20-033.aspx">March 24 state data</a> “As of March 24, 2020, 2 p.m. PDT” This is currently an off-by-one for the 25th.
+<strong>3/24 should have 2,535 Positives instead of 2,102.</strong>
+<strong>3/24 should have 53 Deaths instead of 40.</strong>
+<strong>3/24 should have 18,276 Total [Tests] instead of 15,554.</strong>
+<strong>3/24 should have 48,600 Pending [Tests] instead of 12,100.</strong></p>
+<p><a href="https://www.cdph.ca.gov/Programs/OPA/Pages/NR20-034.aspx">March 25 state data</a> “As of March 25 2020, 2 p.m. PDT” This is currently an off-by-one for the 26th.
+<strong>3/25 should have 3,006 Positives instead of 2,355.</strong> This is both off-by-one and a typo of “2,535”.
+<strong>3/25 should have 65 Deaths instead of 53.</strong>
+<strong>3/25 should have 20,386 Total [Tests] instead of 18,276.</strong>
+<strong>3/25 should have 57,400 Pending [Tests] instead of 48,600.</strong></p>
+<p><a href="https://www.cdph.ca.gov/Programs/OPA/Pages/NR20-035.aspx">March 26 state data</a> “As of March 26 2020, 2 p.m. PDT” This is currently an off-by-one for the 27th.
+<strong>3/26 should have 3,801 Positives instead of 3,006.</strong>
+<strong>3/26 should have 78 Deaths instead of 65.</strong>
+<strong>3/26 should have 23,480 Total [Tests] instead of 20,386.</strong> Current number is wrong, not just off-by-one.
+<strong>3/26 should have 65,000 Pending [Tests] instead of 57,400.</strong></p>
+<p><a href="https://www.cdph.ca.gov/Programs/OPA/Pages/NR20-036.aspx">March 27 state data</a> “As of March 27 2020, 2 p.m. PDT”
+<strong>3/27 should have 4,643 Positives instead of 3,879.</strong> Current number is wrong, not just off-by-one.
+<strong>3/27 should have 101 Deaths instead of 78.</strong>
+<strong>3/27 should have 25,192 Total [Tests] instead of 21,259.</strong>
+<strong>3/27 should have 64,400 Pending [Tests] instead of 57,400.</strong></p>
+<p>March 28 state data is missing for positives and deaths. The next CA state data report is for the 29th. Unclear where CTP data comes from. Treat as non-reporting day for positives and deaths.
+CA notes “***This week’s cumulative testing numbers are lower than last week due to an inadvertent over-reporting error discovered by one of the private labs.”
+<a href="https://www.cdph.ca.gov/Programs/OPA/Pages/NR20-037.aspx">March 28 state data</a> “As of March 28 2020, 2 p.m. PDT”
+<strong>3/28 should have 27,251 Total [Tests] instead of 21,259.</strong>
+<strong>3/28 should have 56,550 Pending [Tests] instead of 57,400.</strong></p>
+<p><a href="https://www.cdph.ca.gov/Programs/OPA/Pages/NR20-037.aspx">March 29 state data</a> “As of March 29 2020, 2 p.m. PDT”. This report includes March 28th’s total and pending test numbers. There are no reported total and pending numbers for March 29. Treat as non-reporting day.
+<strong>3/29 should have 5,763 Positives instead of 5,708.</strong> Current number is wrong, not just off-by-one.
+<strong>3/29 should have 135 Deaths instead of 123.</strong></p>
+<p><a href="https://www.cdph.ca.gov/Programs/OPA/Pages/NR20-038.aspx">March 30 state data</a>. CA stopped reporting a time cutoff starting with the March 31 press release w/ March 30 data.
+<strong>3/30  should have 6,932 Positives instead of 6,447.</strong>
+<strong>3/30  should have 150 Deaths instead of 133.</strong>
+<strong>3/30  should have 28,704 Total [Tests] instead of 26,996.</strong>
+<strong>3/30  should have 57,400 Pending [Tests] instead of 64,400.</strong></p>
+<p><a href="https://www.cdph.ca.gov/Programs/OPA/Pages/NR20-039.aspx">March 31 state data</a>.
+<strong>3/30  should have 8,155 Positives instead of 7,482.</strong>
+<strong>3/30  should have 171 Deaths instead of 153.</strong>
+<strong>3/30  should have 31,038 Total [Tests] instead of 29,254.</strong>
+<strong>3/30  should have 59,100 Pending [Tests] instead of 57,400.</strong></p>
+<p>Off-by-a-day errors aside, it makes sense to use official state reported confirmed case and death numbers for a date when those are higher than current CTP reported values. It is unlikely the state is making up higher positive case and death counts.</p>
+<p><strong>@thaynedye</strong>
+<strong>@dcmoyer</strong></p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-637299267">
+          <div class="frontmatter">
+            <div><strong>stale[bot]</strong> commented on June 2, 2020 at 1:06 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/432#issuecomment-637299267" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-638206125">
+          <div class="frontmatter">
+            <div><strong>karaschechtman</strong> commented on June 3, 2020 at 8:43 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/432#issuecomment-638206125" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Hi <strong>@scarson</strong>,
+Thanks again for bringing these discrepancies to our attention. For an explanation of why these numbers may differ from ours, see #431. You are 100% right that some of these discrepancies for 3/18-31 are big (we generally do not worry about off-by-one lags, so the pendings + days where the counts are different are the ones we’d like to correct). We have a team working to determine how and whether to update data from historical sources in event of discrepancies like this. I will flag this as a potential source of data to them.</p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

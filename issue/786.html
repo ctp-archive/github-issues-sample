@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>CSV files haven&#39;t been updated for days and contain &quot;Redirect&quot; lines</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 786</p>
+        <p><strong>johnrolfeellis</strong> opened this issue on August 21, 2020 at 5:36 pm</p>
+        
+          <p><strong>Labels </strong>
+            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          </p>
+          
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/786" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p>Many of the US CSV files haven’t been updated for 3-4 days:</p>
+<p>counties.csv Updating public spreadsheet CSV backups 4 days ago
+states_current.csv Updating public spreadsheet CSV backups 3 days ago
+states_daily_4pm_et.csv Updating public spreadsheet CSV backups 4 days ago
+states_info.csv Updating public spreadsheet CSV backups 4 days ago
+us_current.csv Updating public spreadsheet CSV backups 4 days ago
+us_daily.csv Updating public spreadsheet CSV backups 3 days ago</p>
+<p>They contain a single line, e.g.</p>
+<blockquote>
+<p>Redirecting to <a href="https://api.covidtracking.com/v1/states/daily.csv">https://api.covidtracking.com/v1/states/daily.csv</a></p>
+</blockquote>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-678548490">
+          <div class="frontmatter">
+            <div><strong>kevee</strong> commented on August 21, 2020 at 5:55 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/786#issuecomment-678548490" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Hi, John, the API has moved to <a href="https://api.covidtracking.com/">https://api.covidtracking.com/</a>, per our <a href="https://apichanges.covidtracking.com/new-api-domain-name-162768">API changelog</a>. The website is trying to have you redirect to the new URL, but it appears whatever tool you are using does not respect 301 URL redirects.</p>
+<p>Please refer to our <a href="https://covidtracking.com/data/api">API page</a> and use the URLs in the documentation.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-678591239">
+          <div class="frontmatter">
+            <div><strong>johnrolfeellis</strong> commented on August 21, 2020 at 11:14 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/786#issuecomment-678591239" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p><code>The website is trying to have you redirect to the new URL, but it appears whatever tool you are using does not respect 301 URL redirects.</code></p>
+<p>Thanks, but that’s not the explanation. If you go to <a href="https://github.com/COVID19Tracking/covid-tracking-data/blob/master/data/us_daily.csv">https://github.com/COVID19Tracking/covid-tracking-data/blob/master/data/us_daily.csv</a> and click Raw, the download URL is:</p>
+<p><a href="https://raw.githubusercontent.com/COVID19Tracking/covid-tracking-data/master/data/us_daily.csv">https://raw.githubusercontent.com/COVID19Tracking/covid-tracking-data/master/data/us_daily.csv</a></p>
+<p>and downloading it in Chrome or with wget yields a 200 response with the single line:</p>
+<p><code>Redirecting to https://api.covidtracking.com/v1/us/daily.csv</code></p>
+<p>There is no 301 redirect. Alternatively, if you download the entire repository via <a href="https://github.com/COVID19Tracking/covid-tracking-data/archive/master.zip">https://github.com/COVID19Tracking/covid-tracking-data/archive/master.zip</a>, each of those .csv files contains that single line.</p>
+<p>This bug occurred once before when API URLs were changed:
+<a href="https://github.com/COVID19Tracking/covid-tracking-data/issues/58">https://github.com/COVID19Tracking/covid-tracking-data/issues/58</a></p>
+<p>But since <a href="https://github.com/COVID19Tracking/covid-tracking-data">https://github.com/COVID19Tracking/covid-tracking-data</a> is no longer to be used according to the Readme, why not simply delete or hide the COVID19Tracking/covid-tracking-data repository, or make the contents of the depecrated CSVs much more perspicuous, e.g.</p>
+<p><code>Do not use the COVID19Tracking/covid-tracking-data repository to download or display data -- it is no longer supported.  Use  https://api.covidtracking.com/ instead.</code></p>
+<p>Several others have also gotten confused by this bug and deprecation, so a better error message would likely help others:
+<a href="https://github.com/COVID19Tracking/covid-tracking-data/issues/99">https://github.com/COVID19Tracking/covid-tracking-data/issues/99</a>
+<a href="https://github.com/COVID19Tracking/covid-tracking-data/issues/101">https://github.com/COVID19Tracking/covid-tracking-data/issues/101</a></p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

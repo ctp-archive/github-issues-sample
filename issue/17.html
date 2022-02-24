@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>Clarification on /states/daily counts</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 17</p>
+        <p><strong>plmrry</strong> opened this issue on March 13, 2020 at 3:56 pm</p>
+        
+          <p><strong>Labels </strong>
+            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          </p>
+          
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/17" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p>Are the values in <code>/api/states/daily</code> <em>cumulative</em> or <em>new tests per day</em>?</p>
+<p>I assumed they were cumulative, but noticed that the total value decreases over time for certain states (e.g. New York).</p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-598956217">
+          <div class="frontmatter">
+            <div><strong>careeningspace</strong> commented on March 13, 2020 at 5:27 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/17#issuecomment-598956217" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>They should be cumulative, but there are some data points that may have been revised do to a change in reporting methods. Do you have examples?</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-598957914">
+          <div class="frontmatter">
+            <div><strong>kissane</strong> commented on March 13, 2020 at 5:33 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/17#issuecomment-598957914" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>So what happened in the example you emailed in, <strong>@plmrry</strong>—which, thanks!—is that NY stopped reporting two classes of numbers (negatives and pendings), and we didn’t carry over the old numbers. Normally we DO carry over even old negatives and pendings, and we can look into that one.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-598994477">
+          <div class="frontmatter">
+            <div><strong>hammer</strong> commented on March 13, 2020 at 8:41 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/17#issuecomment-598994477" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>I can fix up the NY data to carry forward the negatives. I did the same for MD where the negatives weren’t carried forward for a few days. Pending I just let go blank when they stop reporting.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-599153126">
+          <div class="frontmatter">
+            <div><strong>rypan</strong> commented on March 14, 2020 at 7:49 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/17#issuecomment-599153126" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>I’ve gotten the same question about our spreadsheet…if data on <code>US Daily 4p ET</code> is “daily” or “cumulative”. We should clarify by updating the column title? (Or will that break things…for people who are scraping us?)</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-599166674">
+          <div class="frontmatter">
+            <div><strong>kissane</strong> commented on March 14, 2020 at 11:31 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/17#issuecomment-599166674" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>I would be very much in favor of clarifying somewhere in the sheet and will leave it to <strong>@hammer</strong> to decide how to do it without breaking things</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-599709096">
+          <div class="frontmatter">
+            <div><strong>webmasterkai</strong> commented on March 16, 2020 at 2:02 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/17#issuecomment-599709096" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Has this been fixed? I just got an email from WSJ asking about it.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-599710747">
+          <div class="frontmatter">
+            <div><strong>hammer</strong> commented on March 16, 2020 at 2:05 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/17#issuecomment-599710747" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>I think documenting in the spreadsheet is hard so it’s best to document on the website. We’ve successfully buried the spreadsheet link at this point so if you end up there without seeing any of our documentation and you miss the README tab that links to the website I’m sorry.</p>
+<p><strong>@rypan</strong> for your particular question it’s cumulative.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-599712046">
+          <div class="frontmatter">
+            <div><strong>hammer</strong> commented on March 16, 2020 at 2:08 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/17#issuecomment-599712046" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Another question I get regularly: what do update time and check time mean on the current tab, and how are the daily tabs computed?</p>
+<p>I suggest we put this information on the <code>/data</code> for now.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-599713232">
+          <div class="frontmatter">
+            <div><strong>kissane</strong> commented on March 16, 2020 at 2:11 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/17#issuecomment-599713232" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>I’m bringing in someone from Politico with data questions</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-599714225">
+          <div class="frontmatter">
+            <div><strong>bzjin</strong> commented on March 16, 2020 at 2:14 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/17#issuecomment-599714225" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Sometimes the negative cases are null, which brings the total down day by day.</p>
+<p>For example, in Louisiana, <code>negative</code> cases are <code>37</code> on March 11 and March 13, but <code>null</code> on March 12. This makes the <code>total </code>cases 51, 14, then 51, which I believe is in correct.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-599715466">
+          <div class="frontmatter">
+            <div><strong>webmasterkai</strong> commented on March 16, 2020 at 2:17 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/17#issuecomment-599715466" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Another example of negatives in NY the 11th and 12th.
+<img width="709" alt="Screen Shot 2020-03-16 at 3 05 11 PM" src="../assets/images/github/969456/76792185-df768d80-6798-11ea-9c75-7f8907f2f5e8.png"></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-599724026">
+          <div class="frontmatter">
+            <div><strong>kissane</strong> commented on March 16, 2020 at 2:37 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/17#issuecomment-599724026" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>We are in the midst of our most comprehensive daily update, data folks will be available to answer questions soon.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-599814737">
+          <div class="frontmatter">
+            <div><strong>careeningspace</strong> commented on March 16, 2020 at 7:14 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/17#issuecomment-599814737" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Hello - there are a couple of things that are causing the <strong>Total</strong> number discrepancy.</p>
+<ol>
+<li>
+<p>States would start reporting three data points - Positive, Negative, and Pending and then add them up. A number of states have transitioned to reporting only <strong>Positive</strong> values, which would render our initial totals obsolete.  The above NY example is a perfect illustration of this challenging and evolving data-scape.</p>
+</li>
+<li>
+<p>As for LA <strong>@bzjin</strong>, that is an example where I did not enter a negative value for the day. The data on the 12th is missing a <strong>Negative</strong> value and needs to be corrected. Thank you for helping us catch and correct such errors.
+<img src="../assets/images/github/43073915/76809780-4bb9b700-67c2-11ea-93d1-8fd329aa8646.png" alt="Screen Shot 2020-03-16 at 8 10 12 PM"></p>
+</li>
+</ol>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-599815560">
+          <div class="frontmatter">
+            <div><strong>hammer</strong> commented on March 16, 2020 at 7:17 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/17#issuecomment-599815560" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>The missing LA number is likely because LA stopped reporting negatives for a while and someone failed to carry over the previous negative count.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-600254935">
+          <div class="frontmatter">
+            <div><strong>watplatt</strong> commented on March 17, 2020 at 2:25 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/17#issuecomment-600254935" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Apart from mortality, there isn’t a statistic for “recovered” in the time series for states.  We need that to construct SIR/SEIR models in order to get the right “Infected - I” counts.  Is there a possibility you could add these?</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-607321196">
+          <div class="frontmatter">
+            <div><strong>careeningspace</strong> commented on April 1, 2020 at 10:33 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/17#issuecomment-607321196" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>LA has been rectified:
+<img src="../assets/images/github/43073915/78156300-9b2bf400-740c-11ea-9ea5-0ad83fd6e5a9.png" alt="Screen Shot 2020-04-01 at 11 33 14 AM"></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-607322651">
+          <div class="frontmatter">
+            <div><strong>careeningspace</strong> commented on April 1, 2020 at 10:36 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/17#issuecomment-607322651" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>NY is rectified:
+<img src="../assets/images/github/43073915/78156569-f827aa00-740c-11ea-8e43-6bafd0369665.png" alt="Screen Shot 2020-04-01 at 11 35 48 AM"></p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

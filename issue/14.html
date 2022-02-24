@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>Inconsistencies in &quot;States daily 4 pm ET&quot;</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 14</p>
+        <p><strong>klumbard</strong> opened this issue on March 19, 2020 at 9:37 am</p>
+        
+          <p><strong>Labels </strong>
+            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          </p>
+          
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/14" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p>These are instances in which the cumulative count of pos/neg on a given day are less than the previous day:</p>
+<p>Negative:
+NM on 03-08
+CO on 03-10
+MS on 03-13
+UT on 03-13
+CO on 03-15
+ID on 03-15
+NJ on 03-16
+NY on 03-16
+AZ on 03-17</p>
+<p>Positive:
+NV on 03-10
+DC on 03-11</p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-601366980">
+          <div class="frontmatter">
+            <div><strong>hammer</strong> commented on March 19, 2020 at 2:15 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/14#issuecomment-601366980" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p><img src="../assets/images/github/15233/77105779-78551500-69f4-11ea-87e2-a5d420a01872.png" alt="image"></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-601369327">
+          <div class="frontmatter">
+            <div><strong>hammer</strong> commented on March 19, 2020 at 2:20 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/14#issuecomment-601369327" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>The NY error is likely because someone tried to keep the “total tests” number constant while using the positives number from the website. They should have carried forward the negative count from the previous day.</p>
+<blockquote>
+<p>20200316	NY	950	4,322		7	5,272
+20200315	NY	729	4,543		3	5,272</p>
+</blockquote>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-601374286">
+          <div class="frontmatter">
+            <div><strong>hammer</strong> commented on March 19, 2020 at 2:25 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/14#issuecomment-601374286" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>The CO 3/10 error is likely because they switched from reporting samples to people.</p>
+<blockquote>
+<p>20200309	CO	9	266			275
+20200310	CO	12	142	1		155</p>
+</blockquote>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-601376963">
+          <div class="frontmatter">
+            <div><strong>hammer</strong> commented on March 19, 2020 at 2:32 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/14#issuecomment-601376963" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>The NJ error is an odd one. It looks like we tried to carry forward the 120 from the previous day and just missed the leading 1.</p>
+<p>Here are the checkers/double checkers: PR, AM (3/17); SD, AM (3/16); PR, SJ (3/15).</p>
+<blockquote>
+<p>20200317 | NJ | 267 | 163 | 55 | 3 | 485
+20200316 | NJ | 178 | 20 | 20 | 2 | 218
+20200315 | NJ | 98 | 120 | 34 | 2 | 252</p>
+</blockquote>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-601377490">
+          <div class="frontmatter">
+            <div><strong>hammer</strong> commented on March 19, 2020 at 2:33 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/14#issuecomment-601377490" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>I can’t explain the CO 3/15 error…</p>
+<blockquote>
+<p>20200315 | CO | 131 | 627 |   | 1 | 758
+20200314 | CO | 101 | 712 |   | 1 | 814</p>
+</blockquote>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-601725395">
+          <div class="frontmatter">
+            <div><strong>careeningspace</strong> commented on March 20, 2020 at 9:21 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/14#issuecomment-601725395" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>NJ Is now cleaned up. I assumed that the negatives hold steady on the 14th as the data seems to be following a similar pattern before and after.
+<img src="../assets/images/github/43073915/77167976-6d01f800-6a8d-11ea-8ffa-080d979fb9c4.png" alt="image"></p>
+<p>NJ Updated:
+<img src="../assets/images/github/43073915/77168342-0c26ef80-6a8e-11ea-8ef1-65c62ab3ab4e.png" alt="image"></p>
+<p>NY Checks:
+<img src="../assets/images/github/43073915/77168672-940cf980-6a8e-11ea-9966-56a3894f14d5.png" alt="image"></p>
+<p>NY Updated:
+<img src="../assets/images/github/43073915/77168719-af780480-6a8e-11ea-8357-631d3a62c916.png" alt="image"></p>
+<p>CO error on 2/14 appears to be the total being entered into the negative column and it adds the deaths (maybe a formula?):
+<img src="../assets/images/github/43073915/77168910-01208f00-6a8f-11ea-82bd-8cf6345a5232.png" alt="image"></p>
+<p>CO incorrect total and migrated 3/5 through 3/9 negatives from “tests” to cases by dividing by 2 and rounding up:
+<img src="../assets/images/github/43073915/77170101-f0711880-6a90-11ea-877c-dd3e40ece33a.png" alt="image"></p>
+<p>AZ looks like a data entry error on negatives:
+<img src="../assets/images/github/43073915/77170421-670e1600-6a91-11ea-9288-4e5d557ab6da.png" alt="image">
+AZ corrected:
+<img src="../assets/images/github/43073915/77170647-b81e0a00-6a91-11ea-9362-75eaf5986b8b.png" alt="image"></p>
+<p>MS is not clear what happened - maybe someone tried to keep the total fixed, and adjusted the negatives on accident:
+<img src="../assets/images/github/43073915/77171060-47c3b880-6a92-11ea-9ba1-493816130cf5.png" alt="image"></p>
+<p>MS Fixed, carrying negatives forward:
+<img src="../assets/images/github/43073915/77170915-1e0a9180-6a92-11ea-8ac5-5f65f688a268.png" alt="image"></p>
+<p>NM Does not have any checks data until after the publish time. Reverting the negatives to match day prior:
+<img src="../assets/images/github/43073915/77172136-e0a70380-6a93-11ea-99bd-e12b586784c5.png" alt="image"></p>
+<p>UT looks like either something changed on the website, or it was just a bad entry as the negatives stay fixed for quite a while:
+<img src="../assets/images/github/43073915/77172447-54491080-6a94-11ea-93ab-69e9972736ed.png" alt="image"></p>
+<p>Reverting UT negatives on to 131 to smooth it out:
+<img src="../assets/images/github/43073915/77172510-76db2980-6a94-11ea-8f27-6df8097b8640.png" alt="image"></p>
+<p>ID is a little strange, not quite sure what to do here:
+<img src="../assets/images/github/43073915/77171763-4f379180-6a93-11ea-8010-c8b6b0230688.png" alt="image"></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-601775513">
+          <div class="frontmatter">
+            <div><strong>realfuture</strong> commented on March 20, 2020 at 10:59 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/14#issuecomment-601775513" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <blockquote>
+<p>The NJ error is an odd one. It looks like we tried to carry forward the 120 from the previous day and just missed the leading 1.</p>
+<p>Here are the checkers/double checkers: PR, AM (3/17); SD, AM (3/16); PR, SJ (3/15).</p>
+<blockquote>
+<p>20200317 | NJ | 267 | 163 | 55 | 3 | 485
+20200316 | NJ | 178 | 20 | 20 | 2 | 218
+20200315 | NJ | 98 | 120 | 34 | 2 | 252</p>
+</blockquote>
+</blockquote>
+<p>What actually happened here is that New Jersey changed the way they were reporting negatives. And so their negative total dropped. It sucked. That’s also when they said they were only reporting negatives from the state lab!</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-601776882">
+          <div class="frontmatter">
+            <div><strong>realfuture</strong> commented on March 20, 2020 at 11:01 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/14#issuecomment-601776882" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>The only one that flummoxes me is ID. I think we’d almost certainly have to go back to the AWS logs. Their data looked clean coming in, but maybe they were fiddling with the margins.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-605120873">
+          <div class="frontmatter">
+            <div><strong>careeningspace</strong> commented on March 27, 2020 at 12:12 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/14#issuecomment-605120873" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Based on our <a href="https://covid-data-archive.s3.us-east-2.amazonaws.com/state_screenshots/ID/ID-20200315-021631.png">screenshot</a> and anecdotal evidence, I am going to make a judgment call that ID reported some numbers out of sync and our math caused the fluctuation. *Once a negative, always a negative.</p>
+<p>Before:
+<img src="../assets/images/github/43073915/77781788-8f1aed80-702c-11ea-8179-05618fd68001.png" alt="Screen Shot 2020-03-27 at 1 10 46 PM"></p>
+<p>After:
+<img src="../assets/images/github/43073915/77781820-993cec00-702c-11ea-8ea6-eaaece6c57cc.png" alt="Screen Shot 2020-03-27 at 1 11 08 PM"></p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>Cases where states failed to report negative tests</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 151</p>
+        <p><strong>philgoetz</strong> opened this issue on April 3, 2020 at 4:51 pm</p>
+        
+          <p><strong>Labels </strong>
+            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          
+            <span class="label"><a href="../label/2036763229.html">stale</a></span>
+          </p>
+          
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/151" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p>I’ve been graphing the fraction of new test results that are positive by state.  Some states have a very low fraction of tests come back positive, except for days where no negatives were reported.
+I’m reporting all the cases I saw which seem statistically unbelievable.</p>
+<p>AL had 100% + 3/28-29
+AZ had 137 of 137 + 3/28.
+CA has many days of reporting 100% of 100-1000 tests positive.
+DC reported no positives on 4/1.
+DE reported 100% + on 3/16-3/29, under 2% + after that.
+GA reported 100% + on 3/30.
+HI reported 100% + 3/26-28.
+KS usually has around 10% positive, but from 3/19-3/23 reported 66 positives and no negatives.
+MD reported mostly 10-20% positive, but from 3/12-3/27 reported 762 positives and no negatives.
+ME reported 100% positive on 3/21, 3/22, 3/27-3/30, 4/1-4/2 (225 positives), but under 2% positive all other days.
+MI reported 100% positive (or more) on 3/21-3/25, 3/30-4/02 (7851 positives, 0 negatives) and some other days.
+MN had 100% positive on 3/23 (over 60 positives), and under 1% positive all other days.
+MO had 100% positive 3/21-3/27 (622 positives), under 2% all other days.
+MS has days of suspicious 100% positive on 3/28-29.
+NC had 100% positive on 3/24 (&gt;100 positives) and under 2% all other days.
+NM had 100% positive 3/21, under 20% all other days.
+OH had 100% positive 3/17-3/24, 3/28, 3/29, 4/1; under 1% all other recent days.
+SC has suspicious high positives 3/23, 3/26.
+TN has 100% + 3/19, 3/22-23
+TX had 100% + of 500 cases on 3/29, under 3% + all other days.
+UT had 100% positive through 3/18, and under 1% positive all later days.
+VI failed to report negatives through 3/24.
+VT had 100% of 33 + on 3/23; usually 1% positive.
+WA had 100% + 3/24-25, 4/01, under 1% all other recent days.</p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-609202101">
+          <div class="frontmatter">
+            <div><strong>philgoetz</strong> commented on April 4, 2020 at 10:08 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/151#issuecomment-609202101" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Could this happen because states delay reporting the negative cases, as they’re not time-critical?
+E.g., NY on 3/6 reported cumulative totals of 92-, 236 pending.
+Then NY reported no new negatives until 3/13, reporting 2687 - on that day.
+2779 appears to be the true cumulative total negatives at that time, based on the usual +/- ratio, so that 2687 new negatives means all the negatives for tests done 3/7-3/13 were reported on 3/13.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-609460065">
+          <div class="frontmatter">
+            <div><strong>julia326</strong> commented on April 5, 2020 at 1:22 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/151#issuecomment-609460065" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p><strong>@philgoetz</strong> thanks for your attention here! Forwarding to our data folks</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-609467731">
+          <div class="frontmatter">
+            <div><strong>Jmuccigr</strong> commented on April 5, 2020 at 2:17 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/151#issuecomment-609467731" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Note that the data page already says not to report positive rate for states with a data grade less than A. The grades aren’t given diachronically, so it’s difficult to tell whether a state got better and used to be poor, but many of the states you cite have B ratings, so you can’t get a reliable positive rate.</p>
+<p>CA for sure is a mess and so is MI, sadly in both cases because one is a large state with an early hotspot (Bay Area) and the other is another hotspot.</p>
+<p>PS Not affiliated with the project, just a happy user. Note that no tracking project can get around problems with the states, but at least this one (looking at you JHU) tries to do test counts.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-609495174">
+          <div class="frontmatter">
+            <div><strong>una-smith</strong> commented on April 5, 2020 at 5:28 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/151#issuecomment-609495174" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>For over a week now I have been graphing cumulative positives vs negatives, watching as some states get on top of reporting their negatives and others don’t.</p>
+<p>The states are now being told to report all test results but in some states commercial labs are struggling to keep up with the reporting.  Oklahoma says on their dashboard that they are under-reporting negative test results due to delays in the commercial labs.  It looks like Michigan, New Jersey, and New York may also be under-reporting negatives.  Possibly other states “above the line”.</p>
+<p>Another reason for a large pos:neg ratio is that the state’s epidemic is growing faster than the state’s capacity to test, so the state is testing only persons who are symptomatic and their close contacts, and may not be able to do much surveillance testing.  This appears to be what is happening in Guam and Puerto Rico, and it may also be happening in Michigan.  Read the vertical distance from the green line and keep in mind that the graph is logarithmic.  Michigan has by far the highest ratio of positive to negative results.</p>
+<p><a href="../assets/files/github/4435017/posneg.04.05.pdf">posneg.04.05.pdf</a></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-609496552">
+          <div class="frontmatter">
+            <div><strong>Jmuccigr</strong> commented on April 5, 2020 at 5:39 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/151#issuecomment-609496552" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Oh, it’s been clear for a while that few, if any, states are testing asymptomatic people. Most European countries aren’t either, though Germany seems an exception (and some small-scale tests in Italy), but the European countries are mostly testing a lot more people a day per capita than most states.</p>
+<p>Genuine question: how are states (like CA yesterday) underreporting only negative cases? What does it matter whether the case is pos or neg when they get them back from commercial labs? They can report the numbers easily. I find this very odd.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-609501442">
+          <div class="frontmatter">
+            <div><strong>una-smith</strong> commented on April 5, 2020 at 6:16 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/151#issuecomment-609501442" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>How states are under reporting only negative cases:  The commercial labs are reporting positive tests promptly but report negative tests weekly and in surge situations the weekly reports are getting delayed.  The reports are not just counts;  they are individual test results with sample codes that need to be reconciled against other records for various purposes, including to track all the tests by county and sample date.  That involves a lot of manpower.</p>
+<p>New Mexico has been testing asymptomatic persons returning from travel to certain hotspots, and has been doing COVID-19 surveillance testing via its influenza surveillance system.  Possibly some other states with low pos:neg ratios and relatively large numbers of tests are also testing many asymptomatic persons.  See Alaska, North Dakota, Hawaii, Minnesota.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-609590433">
+          <div class="frontmatter">
+            <div><strong>Jmuccigr</strong> commented on April 6, 2020 at 1:27 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/151#issuecomment-609590433" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p><strong>@una-smith</strong> Thanks. That was helpful.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-615339376">
+          <div class="frontmatter">
+            <div><strong>djsandel638</strong> commented on April 17, 2020 at 11:23 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/151#issuecomment-615339376" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>WA reports, “4/14: We are now able to report both positive and negative testing results, and data have been updated back through April 4.​” However, the dataset does not currently reflect these corrections.
+<a href="https://www.doh.wa.gov/Emergencies/Coronavirus">https://www.doh.wa.gov/Emergencies/Coronavirus</a></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-615343723">
+          <div class="frontmatter">
+            <div><strong>una-smith</strong> commented on April 17, 2020 at 11:31 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/151#issuecomment-615343723" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <blockquote>
+<p>the dataset</p>
+</blockquote>
+<p>Which dataset?</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-615346459">
+          <div class="frontmatter">
+            <div><strong>djsandel638</strong> commented on April 17, 2020 at 11:37 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/151#issuecomment-615346459" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>“Historical data for Washington”
+<a href="https://covidtracking.com/data/state/washington#historical">https://covidtracking.com/data/state/washington#historical</a>
+I noticed the lack of negatives when viewing <a href="https://data.world/liz-friedman/covid-tracking-project-data/workspace/file?filename=States+-+historical">https://data.world/liz-friedman/covid-tracking-project-data/workspace/file?filename=States+-+historical</a></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-616912059">
+          <div class="frontmatter">
+            <div><strong>femto113</strong> commented on April 20, 2020 at 9:24 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/151#issuecomment-616912059" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Recent data from Tennessee just looks weird to me.  There’s a note stating
+“Tennessee now provides positive and negative test results from all laboratories” but the positivity rate jumps around like crazy.  Here’s a chart comparing the daily positivity rate (<code>positiveIncrease / totalTestResultsIncrease</code>) vs <code>positiveIncrease</code>.  There are days when the rate jumps but cases don’t, days when the cases jump when the rates don’t, and days when they jump together, and an oscillation pattern in new cases.  My immediate instinct is that different labs are reporting differently and not on the same cadence.</p>
+<img width="789" alt="Screen Shot 2020-04-20 at 7 08 06 PM" src="../assets/images/github/184827/79817999-925b7d80-833b-11ea-8097-b85221f815f3.png">
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-624411562">
+          <div class="frontmatter">
+            <div><strong>stale[bot]</strong> commented on May 5, 2020 at 9:33 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/151#issuecomment-624411562" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-629581258">
+          <div class="frontmatter">
+            <div><strong>stale[bot]</strong> commented on May 15, 2020 at 10:26 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/151#issuecomment-629581258" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>This issue has been closed because it was stale for 15 days, and there was no further activity on it for 10 days. You can feel free to re-open it if the issue is important, and label it as “not stale.”</p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

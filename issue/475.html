@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>MN changed test numbers to per-test from per-person </h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 475</p>
+        <p><strong>Minibadger</strong> opened this issue on June 5, 2020 at 5:36 pm</p>
+        
+          <p><strong>Labels </strong>
+            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          </p>
+          
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/475" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p><strong>State or US</strong>: Minnesota</p>
+<p><strong>Describe the problem</strong>
+As of June 5, Minnesota changed its reporting of Tests from per-person to per-test. This appears to be retroactive to an extent. Today’s COVID Tracking Project derived New Tests falsely by seeing the difference in Total over yesterday, when arriving at over 46k new tests, when in reality some of the historical data was updated with substantially higher counts.</p>
+<p>See the Testing Data Table
+<a href="https://www.health.state.mn.us/diseases/coronavirus/situation.html#test2">https://www.health.state.mn.us/diseases/coronavirus/situation.html#test2</a></p>
+<p>And compare to the COVID Tracking Project numbers. They’ll need to be updated.</p>
+<p><strong>Link to data source</strong>
+<a href="https://www.health.state.mn.us/diseases/coronavirus/situation.html#test2">https://www.health.state.mn.us/diseases/coronavirus/situation.html#test2</a></p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-641431424">
+          <div class="frontmatter">
+            <div><strong>Minibadger</strong> commented on June 9, 2020 at 11:46 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/475#issuecomment-641431424" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>This issue still exists. The resolution would be to edit the historical data to match the “testing data table” on the MN Department of Health website.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-643827432">
+          <div class="frontmatter">
+            <div><strong>MattHilliard</strong> commented on June 14, 2020 at 4:55 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/475#issuecomment-643827432" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Hi <strong>@</strong>Minibadger, thanks for bringing this to our attention! Today we updated our Minnesota historical numbers for positives, negatives, and PCR tests to bring them in line with the updated state data.</p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

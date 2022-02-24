@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>[Unknown States] Some Deaths(confirmed) values before 5/11 got deleted</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 731</p>
+        <p><strong>muamichali</strong> opened this issue on August 4, 2020 at 11:19 am</p>
+        
+          <p><strong>Labels </strong>
+            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          </p>
+          
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/731" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p><strong>State or US</strong>:  Unknown States</p>
+<p><strong>Describe the problem</strong>
+Some cells in the Deaths (confirmed) column were relying on a formula from the Checks tab. When the Checks tab was purged, it caused some of the values in Deaths Confirmed column to be impacted.</p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-669520546">
+          <div class="frontmatter">
+            <div><strong>space-buzzer</strong> commented on August 5, 2020 at 4:26 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/731#issuecomment-669520546" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>I’ll take over this issue to handle all bad refs and formula investigations in States Daily.
+#734 is another instance</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-669593246">
+          <div class="frontmatter">
+            <div><strong>space-buzzer</strong> commented on August 5, 2020 at 6:18 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/731#issuecomment-669593246" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>In the most recent version of States Daily.
+We have <code>REF</code>s only in KY <code>Total Tests (PCR) </code></p>
+<p>All the <code>REF</code>s are part of formulas (or bad formulas).</p>
+<p>We have formulas in other places too, some are numeric (e.g., <code>=3684+101</code>) which should be fine and stable, others might not be as stable <code>=sum(C3258:D3258)</code></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-670206378">
+          <div class="frontmatter">
+            <div><strong>space-buzzer</strong> commented on August 6, 2020 at 4:42 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/731#issuecomment-670206378" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>This is a file of all formulas currently in the public table. They’re fine, but can cause problems during fixes and backfills.
+<a href="../assets/files/github/5038158/formulas.csv.txt">formulas.csv.txt</a></p>
+<p>Attached zip file for before/after formula fix – all the values are the same, but there are no cell refs
+<a href="../assets/files/github/5038600/states_daily.zip">states_daily.zip</a></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-670252376">
+          <div class="frontmatter">
+            <div><strong>space-buzzer</strong> commented on August 6, 2020 at 7:14 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/731#issuecomment-670252376" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>This issue was originally opened for <strong>KS</strong> <code>Deaths (confirmed)</code> was a formula leading nowhere.
+Now we have a few values in this column, instead of the formula. Did we ever have a confirmation that death count was confirmed deaths and then it got revised?
+It happened with cases on May 7th – Case count started including both confirmed and probable cases</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-670355701">
+          <div class="frontmatter">
+            <div><strong>space-buzzer</strong> commented on August 7, 2020 at 1:42 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/731#issuecomment-670355701" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>The 9 values for <strong>KS</strong> <code>Deaths (confirmed)</code> column (dates 3-11/May) are there by mistake. They were not deleted when confirmed vs probable death metrics were cleaned up prior to publishing these metrics in the API because it was a formula, and the cells looked empty. Earlier this week, the cells were re-filled with a value, but it should actually remain empty.
+<img src="../assets/images/github/62236447/89617082-6ad2e700-d83e-11ea-954f-78f0fbf96d7e.png" alt="Screenshot from 2020-08-06 23-39-13">
+<img src="../assets/images/github/62236447/89617085-6b6b7d80-d83e-11ea-83fa-86774a24e02a.png" alt="Screenshot from 2020-08-06 23-41-30"></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-670403057">
+          <div class="frontmatter">
+            <div><strong>space-buzzer</strong> commented on August 7, 2020 at 3:37 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/731#issuecomment-670403057" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>We have many states with this empty-formula turned to numbers between May 3rd to 11th.
+All of them now got values in these cells, values that I think weren’t supposed to be there, because they looked empty, so were skipped during the cleanup</p>
+<p>Numbers should be there</p>
+<ul>
+<li>[x] Empty formula was replaced with numbers matching <code>Deaths (confirmed)</code>: AK, MA, ME, MN, MP, NC, NM,  C, TN (got filled with part of that period), VI, VT, WA, WI</li>
+<li>[x] AL – the number for May-3rd differs from <code>death</code> field. I’ll <a href="https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/AL/AL-20200503-180319.png">follow screenshots for May 3rd</a> and update from 292 to 290</li>
+<li>[x] FL <a href="https://github.com/COVID19Tracking/issues/issues/542">https://github.com/COVID19Tracking/issues/issues/542</a> The number for 3-May looks like a mistake. The replacement of the empty-cell formula with the value actually did a small backfill here, because <a href="https://github.com/COVID19Tracking/covid-public-api/blob/6c22a80d9dfafdfa1c9932eacc1c7f6e4867133a/v1/states/fl/daily.csv">when we first published <code>Deaths (confirmed)</code> field</a> it wasn’t there, we only started collecting it on May 12th. I’m updating the value for May 3rd to be the same as <code>Deaths</code></li>
+</ul>
+<p>Numbers should be there but need to be checked:</p>
+<ul>
+<li>[x] IN</li>
+<li>[ ] KY – the numbers there are before we started populating this field, and the number for May 3rd is higher than <code>Deaths (confirmed and probable)</code>. The <a href="https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/KY/KY-20200503-121121.png">screenshot for KYs page</a> shows the same number as in <code>Deaths (confirmed and probables)</code>.
+KY is most likely correct, no way to 100% verify</li>
+<li>[x] NJ</li>
+<li>[x] PR numbers should be there. There are no screenshot for this tab (it’s a small internal tab in a dashboard widget) I compared to easy-dc logs</li>
+</ul>
+<p>Numbers should not be there</p>
+<ul>
+<li>[x] Formula was replaced with empty and it’s the expected state: AR, AS, AZ, CA, HI, IL, MS, NE, PA</li>
+<li>[x] CO <a href="https://github.com/COVID19Tracking/issues/issues/565">https://github.com/COVID19Tracking/issues/issues/565</a></li>
+<li>[x] DC <a href="https://github.com/COVID19Tracking/issues/issues/539">https://github.com/COVID19Tracking/issues/issues/539</a></li>
+<li>[x] GA <a href="https://github.com/COVID19Tracking/issues/issues/533">https://github.com/COVID19Tracking/issues/issues/533</a></li>
+<li>[x] GU <a href="https://github.com/COVID19Tracking/issues/issues/543">https://github.com/COVID19Tracking/issues/issues/543</a></li>
+<li>[x] IA <a href="https://github.com/COVID19Tracking/issues/issues/545">https://github.com/COVID19Tracking/issues/issues/545</a></li>
+<li>[x] ID <a href="https://github.com/COVID19Tracking/issues/issues/576">https://github.com/COVID19Tracking/issues/issues/576</a></li>
+<li>[x] MO <a href="https://github.com/COVID19Tracking/issues/issues/531">https://github.com/COVID19Tracking/issues/issues/531</a> the issue also states that we started reporting <code>Deaths (probable and confirmed)</code> and <code>Deaths (confirmed)</code> on the 12-May, so values before that are unlikely there anyways</li>
+<li>[x] MT <a href="https://github.com/COVID19Tracking/issues/issues/546">https://github.com/COVID19Tracking/issues/issues/546</a></li>
+<li>[x] NH <a href="https://github.com/COVID19Tracking/issues/issues/527">https://github.com/COVID19Tracking/issues/issues/527</a></li>
+<li>[x] NM <a href="https://github.com/COVID19Tracking/issues/issues/528">https://github.com/COVID19Tracking/issues/issues/528</a></li>
+<li>[x] NV <a href="https://github.com/COVID19Tracking/issues/issues/532">https://github.com/COVID19Tracking/issues/issues/532</a> field was cleared and should stay clear</li>
+<li>[x] NY <a href="https://github.com/COVID19Tracking/issues/issues/552">https://github.com/COVID19Tracking/issues/issues/552</a> Death (confirmed) should not be populated</li>
+<li>[x] OK <a href="https://github.com/COVID19Tracking/issues/issues/534">https://github.com/COVID19Tracking/issues/issues/534</a></li>
+<li>[x] OR There’s no issue, but I conclude that the values should not be there because they weren’t there: not in <a href="https://github.com/COVID19Tracking/covid-public-api/blob/15670e47dda189717de53378deba50d545f4e225/v1/states/or/daily.csv">1-Aug version of OR’s daily</a>, and not on the <a href="https://github.com/COVID19Tracking/covid-public-api/blob/6c22a80d9dfafdfa1c9932eacc1c7f6e4867133a/v1/states/or/daily.csv">1st day it was published, 8-July</a></li>
+<li>[x] RI <a href="https://github.com/COVID19Tracking/issues/issues/523">https://github.com/COVID19Tracking/issues/issues/523</a></li>
+<li>[x] SD <a href="https://github.com/COVID19Tracking/issues/issues/548">https://github.com/COVID19Tracking/issues/issues/548</a></li>
+<li>[x] UT <a href="https://github.com/COVID19Tracking/issues/issues/526">https://github.com/COVID19Tracking/issues/issues/526</a></li>
+<li>[x] WY Based on <a href="https://github.com/COVID19Tracking/issues/issues/530#issuecomment-649842532">https://github.com/COVID19Tracking/issues/issues/530#issuecomment-649842532</a> WY should not have values for Death (confirmed) in these dates</li>
+</ul>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

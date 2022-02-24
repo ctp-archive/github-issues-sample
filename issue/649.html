@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>[PR] Confirmed + probable cases is a bad metric for Puerto Rico</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 649</p>
+        <p><strong>sacundim</strong> opened this issue on July 19, 2020 at 5:57 pm</p>
+        
+          <p><strong>Labels </strong>
+            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          
+            <span class="label"><a href="../label/2036763229.html">stale</a></span>
+          </p>
+          
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/649" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p><strong>State or US</strong>: Puerto Rico</p>
+<p>I figure this isn’t an easy issue to tackle, but I’m growing more and more concerned that the Project’s choice to foreground the confirmed + probable cases figures for Puerto Rico, it’s not giving the best quality of information available. Perhaps this can be summed up with this chart that I make with <a href="https://github.com/sacundim/covid-19-puerto-rico">my Puerto Rico COVID-19 data collection and visualization project</a>:</p>
+<img width="858" alt="Screen Shot 2020-07-19 at 3 20 54 PM" src="../assets/images/github/4076056/87886612-7e272b00-c9d3-11ea-896a-ec1a668f5860.png">
+<p>This shows, <em>by date sample taken</em> (which I’m aware is different from reported date as the Project uses):</p>
+<ul>
+<li>Blue: New confirmed cases</li>
+<li>Orange: New probable cases</li>
+</ul>
+<p>Lines are 7-day averages, dots are the raw values straight from charts in Puerto Rico’s Department of Health’s official daily PDF reports, samples of which I attach at the bottom of this issue.</p>
+<p>The very striking pattern I wish to highlight in my chart is the following:</p>
+<ul>
+<li>New probable cases (orange line) have been found at a more or less flat rate (70-100) since early May.</li>
+<li>New confirmed cases, on the other hand, fell from 51.4/day on April 1st to 4.9/day on May 27, and have been on an exponential rise since then (162.1/day on July 13).</li>
+</ul>
+<p>And the key observation I’d like to make is that if one tracks of Puerto Rico’s epidemic by the sum of confirmed and probable cases, one doesn’t spot the exponential climb until very recently, because the probable cases figures—which have in many ways behaved as background noise—mask it out.</p>
+<p>Some additional facts that are worth remarking:</p>
+<ul>
+<li>Puerto Rico’s Department of Health, in its daily case count bulletins (<a href="https://github.com/sacundim/covid-19-puerto-rico/blob/master/assets/source_material/pdf/2020-07/Informe%20Casos%20Positivos%20COVID-19%20(19%20julio%202020).pdf">here’s the most recent</a>), defines a “confirmed case” as one that has a positive RT-PCR test (footnote 1) and a “probable case” as one that has a positive serological test (footnote 3).</li>
+<li>There were numerous news reports during May from officials in Puerto Rico that large volumes of persons being indiscriminately given serological tests was producing a large number of “false positives” that were later testing negative on PCR. (I put “false positives” in scare quotes because the people making the complaints didn’t seem to clearly distinguish between people with antibodies who no longer had the virus and false positive proper.) See for example this May 24 news story: <a href="https://www.noticel.com/gobierno/ahora/20200524/52-empleados-de-comedores-positivos-a-covid19-ahora-dan-negativo-en-prueba-molecular/">“52 school cafeteria employees who were positive to COVID-19 in serological tests give negative to molecular tests”</a>, and note that these 52 were <em>all</em> of the positive cases—not a single one from this incident tested positive on molecular!</li>
+</ul>
+<h3>Data sources</h3>
+<ul>
+<li><a href="http://www.salud.gov.pr/Estadisticas-Registros-y-Publicaciones/Pages/COVID-19.aspx">Puerto Rico Department of Health daily COVID-19 reports</a>, which have daily charts of COVID-19 cases by test sample date, with separate charts for probable and for confirmed cases.</li>
+<li><a href="https://github.com/sacundim/covid-19-puerto-rico">My Puerto Rico COVID-19 tracking project</a>, which has <a href="https://github.com/sacundim/covid-19-puerto-rico/blob/master/assets/data/cases/PuertoRico-bitemporal.csv">data files where I’ve transcribed all of the PRDoH cases charts I’ve seen since April 22nd</a></li>
+</ul>
+<p><img src="../assets/images/github/4076056/87886795-8e8bd580-c9d4-11ea-81d9-0e73075f68c5.jpg" alt="2020-07-18_confirmed_part1"></p>
+<p><img src="../assets/images/github/4076056/87886789-87fd5e00-c9d4-11ea-9f02-2574d187a873.jpg" alt="2020-07-18_confirmed"></p>
+<p><img src="../assets/images/github/4076056/87886797-964b7a00-c9d4-11ea-9335-7c8bdaa660df.jpg" alt="2020-07-18_probable"></p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-660749660">
+          <div class="frontmatter">
+            <div><strong>muamichali</strong> commented on July 19, 2020 at 8:30 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/649#issuecomment-660749660" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Hi <strong>@sacundim</strong></p>
+<p>I haven’t looked at your post in detail yet, but this is something we are working towards, not just with PR but in general. <a href="https://github.com/COVID19Tracking/issues/issues/578">https://github.com/COVID19Tracking/issues/issues/578</a></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-660790320">
+          <div class="frontmatter">
+            <div><strong>sacundim</strong> commented on July 19, 2020 at 11:10 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/649#issuecomment-660790320" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Ah, <strong>@muamichali</strong>,</p>
+<p>Didn’t see that, good to hear.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-664033477">
+          <div class="frontmatter">
+            <div><strong>muamichali</strong> commented on July 26, 2020 at 3:02 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/649#issuecomment-664033477" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p><strong>@sacundim</strong> Would you mind sending me your email to <a href="mailto:michal.mart<strong>@covidtracking.com</strong>">michal.mart<strong>@covidtracking.com</strong></a> or post it here? I would like to have another way to communicate outside github as well. Thanks again for everything you do to help us!</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-671565864">
+          <div class="frontmatter">
+            <div><strong>stale[bot]</strong> commented on August 10, 2020 at 3:14 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/649#issuecomment-671565864" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-678425826">
+          <div class="frontmatter">
+            <div><strong>stale[bot]</strong> commented on August 21, 2020 at 1:21 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/649#issuecomment-678425826" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>This issue has been closed because it was stale for 15 days, and there was no further activity on it for 10 days. You can feel free to re-open it if the issue is important, and label it as “not stale.”</p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

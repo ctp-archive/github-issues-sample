@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>MS: Governor reporting much higher test numbers</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 130</p>
+        <p><strong>Jmuccigr</strong> opened this issue on April 3, 2020 at 4:29 am</p>
+        
+          <p><strong>Labels </strong>
+            <span class="label"><a href="../label/2036763229.html">stale</a></span>
+          </p>
+          
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/130" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p>The governor of Mississippi was on Twitter today bragging on their testing stats. He says:</p>
+<blockquote>
+<p>Mississippi has done 16,662 total tests. We have 1,177 cases. Our population is a little less than three million.</p>
+</blockquote>
+<p>That positive count agrees with the database, but his test count is three times higher.</p>
+<p>Looking at it, I’m also not sure where the project’s test numbers are coming from. The webpage for the MS health dept reports only <em>their</em> tests and has a positive rate of 10% or so. (I don’t see any info on private tests on their pages.) It also says they’ve done 5,257 tests. Together therefore they account for about half of cases, but nearly 90% of tests in the project. That seems off.</p>
+<p>If their pos rate persists in private testing, it would suggest roughly 5,000 private tests have been done, for a total test count of around 10k. That’s a lot lower than the governor’s claim of 16k, but maybe private companies are testing a different population. His claim seems closer than the project’s 5,900 count.</p>
+<p>In any case, something’s inconsistent here.</p>
+<p>Source: <a href="https://twitter.com/tatereeves/status/1245843019745673217">https://twitter.com/tatereeves/status/1245843019745673217</a></p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-609052325">
+          <div class="frontmatter">
+            <div><strong>muamichali</strong> commented on April 4, 2020 at 11:19 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/130#issuecomment-609052325" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p><strong>@</strong>Jmuccigr Thank you for this information.</p>
+<p>The governor is indeed reporting 16,662 tests, however tests do not equal <strong>number of individuals tested.</strong> which is what we are tracking.</p>
+<p>For testing data (positives and negatives) in MS, our project is using the numbers provided by the state on <a href="https://msdh.ms.gov/msdhsite/_static/14,0,420.html">https://msdh.ms.gov/msdhsite/_static/14,0,420.html</a>. You are absolutely correct that they are only reporting tests from MPHL.</p>
+<p>Please urge MS to provide the number of individuals tested, and positive from private sources so we can expand our reporting data.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-609055816">
+          <div class="frontmatter">
+            <div><strong>Jmuccigr</strong> commented on April 4, 2020 at 11:42 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/130#issuecomment-609055816" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Thanks for the reply. Yes, I get the distinction, but you’ll see that further on in the thread the governor compares that number to the “residents tested” in South Korea, so he is implying that that figure is people tested, not simply tests. Unless he’s just trying to be deceptive.</p>
+<p>Would a 3:1 ratio of tests to persons tested not be a bit high?</p>
+<p>To the second point, since the website gives only the public tests, where is the rest of the count coming from? Again, the public positive rate would suggest a lot more private tests than are listed.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-623790132">
+          <div class="frontmatter">
+            <div><strong>stale[bot]</strong> commented on May 4, 2020 at 8:20 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/130#issuecomment-623790132" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-628990058">
+          <div class="frontmatter">
+            <div><strong>stale[bot]</strong> commented on May 14, 2020 at 9:30 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/130#issuecomment-628990058" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>This issue has been closed because it was stale for 15 days, and there was no further activity on it for 10 days. You can feel free to re-open it if the issue is important, and label it as “not stale.”</p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

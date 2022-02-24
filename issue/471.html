@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>Missing data for Texas for 5/30 (included in 5/31 update)</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 471</p>
+        <p><strong>johndhancock</strong> opened this issue on June 1, 2020 at 12:49 am</p>
+        
+          <p><strong>Labels </strong>
+            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          </p>
+          
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/471" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p><strong>State or US</strong>: Texas</p>
+<p><strong>Describe the problem</strong>
+Looks like Texas DSHS missed CTP’s update window on 5/30, causing 5/30’s numbers to fold into 5/31. Think 5/30 should have 62,338 positives, 35,242 new tests, 866,179 negatives. Screenshot from DSHS from 5/30 included.</p>
+<p><strong>Link to data source</strong>
+<a href="https://covidtracking.com/screenshots/TX/TX-20200530-184446.png">https://covidtracking.com/screenshots/TX/TX-20200530-184446.png</a></p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-636911736">
+          <div class="frontmatter">
+            <div><strong>muamichali</strong> commented on June 1, 2020 at 10:06 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/471#issuecomment-636911736" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Hi John,</p>
+<p>I made the updates to the numbers. Thank you for providing the screenshots.</p>
+<ul>
+<li>Note: I could not update the positive antibody for that day, because it is not provided anywhere else than in the XLS. I asked <strong>@kevinp2</strong> on another ticket if he still saves the CSVs</li>
+</ul>
+<p><strong>BEFORE</strong>
+<img src="../assets/images/github/1749380/83422660-ddb38200-a3f7-11ea-99f5-6cebc101c724.png" alt="image"></p>
+<p><strong>AFTER</strong>
+<img src="../assets/images/github/1749380/83423788-7ac2ea80-a3f9-11ea-823a-a6412d2ee68c.png" alt="image"></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-638200844">
+          <div class="frontmatter">
+            <div><strong>muamichali</strong> commented on June 3, 2020 at 8:35 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/471#issuecomment-638200844" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p><strong>@kevinp2</strong> graciously provided the XLS in <a href="https://github.com/COVID19Tracking/issues/issues/442#issuecomment-637772812">https://github.com/COVID19Tracking/issues/issues/442#issuecomment-637772812</a></p>
+<p>Here is a screenshot of the state XLS
+<img src="../assets/images/github/1749380/83642703-2e081c80-a57d-11ea-9a76-4c197deb80df.png" alt="image"></p>
+<p>I am just updating that data point of positive antibody tests on 5/30
+<strong>BEFORE</strong>
+<img src="../assets/images/github/1749380/83642852-58f27080-a57d-11ea-8536-82d634afb176.png" alt="image"></p>
+<p><strong>AFTER</strong>
+<img src="../assets/images/github/1749380/83642943-745d7b80-a57d-11ea-9f42-70bce844fe7b.png" alt="image"></p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

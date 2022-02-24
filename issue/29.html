@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>negative counts not necessarily negative when pending data missing</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 29</p>
+        <p><strong>timeFractal</strong> opened this issue on March 20, 2020 at 4:55 pm</p>
+        
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/29" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p>on <a href="http://covidtracking.com/data">covidtracking.com/data</a>, for the state of MI, I want to point out that since the (-) case counts are inferred, they’re not necessarily confirmed negatives. the reason why (-) cases went down 3/20 could’ve been bc the difference btw total - (+) is a blend of pending and (-) cases. if this inference logic is applied as well for other states, the (-) counts may be overestimated, resulting in false negatives.</p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-601981383">
+          <div class="frontmatter">
+            <div><strong>careeningspace</strong> commented on March 20, 2020 at 9:33 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/29#issuecomment-601981383" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Good catch. It is our policy that once a negative, always a negative but sometimes the state changes how things are reported and we have to adjust accordingly. We are pressuring the States to improve their reporting process so hopefully, these types of issues will go away.</p>
+<p>In the case of Michigan, we do not have pending tests to affect things, only the data reported by the state. We have found that sometimes the state will update its data in strange ways. Your point raises an interesting question - if there is a data lag, how should we accommodate it? In this case, it could be a lag in total cases, with a more recent update on positives.</p>
+<p><img src="../assets/images/github/43073915/77217679-a290fa80-6afa-11ea-99af-5ec6d680630a.png" alt="image"></p>
+<p><img src="../assets/images/github/43073915/77217503-788b0880-6af9-11ea-8d02-862ef4f1870e.png" alt="image"></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-601983265">
+          <div class="frontmatter">
+            <div><strong>timeFractal</strong> commented on March 20, 2020 at 9:53 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/29#issuecomment-601983265" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>I’m not sure what is meant by your interpretation of data lag, as I saw this footnote earlier,
+“The top-level page seems out-of-date compared to the dashboard.”</p>
+<p>My understanding is all of the data, whether top-level page / dashboard, or positives vs total, are in sync. what they mean by the comment is that the data is accurate up to … previously was midnight of the day before. just today they’ve updated it to reflect data up to 10a this morning. but the manual entry of posting the update to the state website isn’t until (at least targeted for) 2p. yesterday the website didn’t get updated till after 3p.</p>
+<p>so effectively all the data sets are in sync with one another, but what they’re saying is what you’re seeing on the state web could actually be up to 14 hrs outdated.</p>
+<p>I’ve found the counties provide more frequent updates throughout the day if there are news headlines.</p>
+<p>hope that helps to clear up the confusion!</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-601991632">
+          <div class="frontmatter">
+            <div><strong>realfuture</strong> commented on March 20, 2020 at 11:13 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/29#issuecomment-601991632" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Man, thanks for swatting all these</p>
+<blockquote>
+<p>On Mar 20, 2020, at 7:34 PM, Elliott Klug <a href="mailto:notifications<strong>@github.com</strong>">notifications<strong>@github.com</strong></a> wrote:</p>
+<p>Good catch. It is our policy that once a negative, always a negative but sometimes the state changes how things are reported and we have to adjust accordingly. We are pressuring the States to improve their reporting process so hopefully, these types of issues will go away.</p>
+<p>In the case of Michigan, we do not have pending tests to affect things, only the data reported by the state. We have found that sometimes the state will update its data in strange ways. Your point raises an interesting question - if there is a data lag, how should we accommodate it? In this case, it could be a lag in total cases, with a more recent update on positives.</p>
+<p>—
+You are receiving this because you are subscribed to this thread.
+Reply to this email directly, view it on GitHub, or unsubscribe.</p>
+</blockquote>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-602039701">
+          <div class="frontmatter">
+            <div><strong>hammer</strong> commented on March 21, 2020 at 7:50 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/29#issuecomment-602039701" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <blockquote>
+<p>My understanding is all of the data, whether top-level page / dashboard, or positives vs total, are in sync.</p>
+</blockquote>
+<p>To clarify what <strong>@careeningspace</strong> means: the table on the <a href="https://www.michigan.gov/coronavirus">top-level page</a> currently shows 225 cases. When you click the “see cumulative data” button on that table, you are taken to a <a href="https://www.michigan.gov/coronavirus/0,9753,7-406-98163-520743--,00.html">page</a> that shows 549 cases.</p>
+<p>We interpret “cumulative tests” on the page with the higher case count to mean tests that have returned a result, either positive or negative. One reason to believe these numbers do not include pending tests is that the state issued a <a href="https://www.michigan.gov/mdhhs/0,5885,7-339-73970_71692-521887--,00.html">press release</a> indicating they would no longer report pending tests. Hence we calculate negatives to be the number of tests reported on this page minus the number of cases reported on this page.</p>
+<p>This count may be incorrect. Perhaps the state is reporting number of specimens tested and not number of people tested. Perhaps the test count includes inconclusive and pending tests and not just tests that have returned a positive or negative result.</p>
+<p>We try our best to interpret the data that states provide but unfortunately states are not always clear on the precise meaning of their data.</p>
+<p>If you have concerns about our data from Michigan I suggest you reach out to the department of health and request clarification on their reporting. Thanks!</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-602128488">
+          <div class="frontmatter">
+            <div><strong>timeFractal</strong> commented on March 21, 2020 at 7:47 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/29#issuecomment-602128488" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>I’m still not understanding where the out of sync.ness is? the page w/ the smaller number represents daily count of additional cases from midnight to midnight, or from 10a to 10a as is now the case for the past two days. the page w/ the larger number represents total cases since infection onset.</p>
+<p>my personal interpretation of the press release is that it simply means the loss of granularity as the state site was previously providing the breakdown count of pending, referred, etc, hence the word pending was used. I have contacted them for clarification and will follow-up if I hear anything in response.</p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

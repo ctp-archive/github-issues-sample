@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>US is less than NY hospitalizedIncrease on 4/02</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 153</p>
+        <p><strong>diranl</strong> opened this issue on April 3, 2020 at 10:35 am</p>
+        
+          <p><strong>Labels </strong>
+            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          </p>
+          
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/153" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p>Cross referencing the data between the US daily and States daily endpoints:</p>
+<ul>
+<li><a href="https://covidtracking.com/api/us/daily">https://covidtracking.com/api/us/daily</a></li>
+<li><a href="https://covidtracking.com/api/v1/states/daily.json">https://covidtracking.com/api/v1/states/daily.json</a></li>
+</ul>
+<p>Repro:</p>
+<ul>
+<li>Retrieve 4/02 data on <a href="https://covidtracking.com/api/us/daily">https://covidtracking.com/api/us/daily</a></li>
+<li>Retrieve 4/02 data for NY on <a href="https://covidtracking.com/api/v1/states/daily.json">https://covidtracking.com/api/v1/states/daily.json</a></li>
+<li>US data: <code>&quot;hospitalizedIncrease&quot;: 1507,</code></li>
+<li>NY data: <code>&quot;hospitalizedIncrease&quot;: 2449,</code></li>
+</ul>
+<p>Expected: US to be greater than NY in hospitalizedIncrease as US encompasses NY
+Actual: US &lt; NY in hospitalizedIncrease</p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-612167426">
+          <div class="frontmatter">
+            <div><strong>careeningspace</strong> commented on April 10, 2020 at 1:50 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/153#issuecomment-612167426" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Hello,
+We did go back and clean up some of our historical hospitalization data due to a modification of our process. Check out #132 for reference.</p>
+<p>Here is what I see now:</p>
+<ul>
+<li>4/2 US Daily: “hospitalizedIncrease”:4141
+-4/2 NY Dail: “hospitalizedIncrease”:2449</li>
+</ul>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

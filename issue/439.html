@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>API docs should mention the by-state nuance in &quot;positive&quot; </h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 439</p>
+        <p><strong>waded</strong> opened this issue on May 21, 2020 at 10:07 am</p>
+        
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/439" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p>I noticed at <a href="https://covidtracking.com/api">https://covidtracking.com/api</a> that the “positive” field e.g. for StateData is described as “Total cumulative positive test results.”</p>
+<p>Based on resolution of issue #308 it sounds like there is some flex in that “positive test results” restriction.</p>
+<p>So I request the description be enhanced to include various other conditions which are allowed to be counted in this field so that it’s known to people doing modeling based on it. (e.g. predicting onset date.)</p>
+<p>e.g. if resolution of #308 is correct, then include at least two caveats in “positive.” These are based on Idaho DHW’s definition of their “probable” count which is currently a component of COVID Tracking Project’s “positive” for that state:</p>
+<ul>
+<li>includes symptomatic people with epidemiologic risk factors (but were not tested)</li>
+<li>positives may be reclassified as negative (subtracted from positive) if laboratory testing is performed later indicating negative</li>
+</ul>
+<p>I also suggest the test type be qualified, e.g. molecular amplification (vs. otherwise.)</p>
+<p>I don’t have visibility beyond Idaho so I don’t know what other qualifications might exist, but I think the above are probably relevant for most states.</p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-632899305">
+          <div class="frontmatter">
+            <div><strong>muamichali</strong> commented on May 22, 2020 at 3:35 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/439#issuecomment-632899305" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Thank you <strong>@waded.</strong> We agree 💯 .</p>
+<p>There have been a lot of changes by states recently with regards to what they are reporting for cases, deaths, and tests.  We are working to make all the information we have about what the state is reporting transparent to data users. We are using the notes field in each state to communicate this information for now, but we are working on more detailed communication and will take your suggestion into consideration.</p>
+<p><a href="https://covidtracking.com/data/state/idaho#historical">https://covidtracking.com/data/state/idaho#historical</a>
+<img src="../assets/images/github/1749380/82707321-d5b25000-9c49-11ea-9767-66c1ec78b443.png" alt="image"></p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

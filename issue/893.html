@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>[OR] Backfill 10/8 Data</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 893</p>
+        <p><strong>hmhoffman</strong> opened this issue on October 9, 2020 at 3:07 pm</p>
+        
+          <p><strong>Labels </strong>
+            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          
+            <span class="label"><a href="../label/2162087998.html">Backfill</a></span>
+          </p>
+          
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/893" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p><strong>State:</strong> OR</p>
+<p><strong>Dates Affected:</strong> 10/8</p>
+<p><strong>Describe the issue:</strong> On 10/8, OR did not update in time for our publish. We should patch data from screencaps.</p>
+<p><strong>Links:</strong> <a href="https://covid-tracking.slack.com/archives/CUQ4MMTPD/p1602196821017200">https://covid-tracking.slack.com/archives/CUQ4MMTPD/p1602196821017200</a></p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-706747941">
+          <div class="frontmatter">
+            <div><strong>MattHilliard</strong> commented on October 11, 2020 at 1:33 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/893#issuecomment-706747941" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Updated most columns from screenshots. Not available in screenshots: <code>Hospitalized - currently</code>, <code>In ICU - currently</code>, and <code>On Ventilator - currently</code>. Maybe for the same reason they updated late, there’s no “data report” for 10/8 either, so as far as I know there’s no way to recover the current hospitalization metrics.</p>
+<p>Note OR isn’t providing <code>Recovered</code> so that doesn’t change even with normal data entry. <code>Probable cases</code> is calculated by subtracting <code>Positive Cases (PCR)</code> from <code>Positives</code>.</p>
+<p>Relevant screenshots:</p>
+<ul>
+<li><a href="https://covidtracking.com/screenshots/OR/OR-20201009-002909.png">https://covidtracking.com/screenshots/OR/OR-20201009-002909.png</a></li>
+<li><a href="https://covidtracking.com/screenshots/OR/OR-secondary-20201009-002920.png">https://covidtracking.com/screenshots/OR/OR-secondary-20201009-002920.png</a></li>
+<li><a href="https://covidtracking.com/screenshots/OR/OR-tertiary-20201009-002933.png">https://covidtracking.com/screenshots/OR/OR-tertiary-20201009-002933.png</a></li>
+</ul>
+<p>Before:
+<img src="../assets/images/github/404503/95686580-b7cf9280-0bcc-11eb-8f8f-dc9c20fd449a.png" alt="image"></p>
+<p>After:
+<img src="../assets/images/github/404503/95686810-59a3af00-0bce-11eb-80d6-aa05251185fa.png" alt="image"></p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

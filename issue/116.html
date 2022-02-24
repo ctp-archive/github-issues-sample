@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>No of hospitalization</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 116</p>
+        <p><strong>sramesh81</strong> opened this issue on April 1, 2020 at 4:32 pm</p>
+        
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/116" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p>What does no of hopsitalization mean?
+Does this tell how many people have been hospitalized so far? Any data that tells how many of them discharged so it gives and idea on how much hospital capacity is used up?
+Also if possible can that data be available for no of ICU beds used up?
+Thanks</p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-607539442">
+          <div class="frontmatter">
+            <div><strong>careeningspace</strong> commented on April 1, 2020 at 6:30 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/116#issuecomment-607539442" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Number of Hospitalized is a cumulative number. We will be adding ICU data soon.</p>
+<p>Regarding capacity, that is currently beyond our scope</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-607553903">
+          <div class="frontmatter">
+            <div><strong>DataHunter500</strong> commented on April 1, 2020 at 7:24 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/116#issuecomment-607553903" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>I can’t speak for the other states, but the number shown for the state of Connecticut hospitalizations is the current number of people hospitalized not cumulative. That can be confirmed at the Connecticut Public health website which has the exact numbers that are at Covid <a href="http://tracking.com">tracking.com</a></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-607659157">
+          <div class="frontmatter">
+            <div><strong>roblav96</strong> commented on April 2, 2020 at 1:58 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/116#issuecomment-607659157" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p><strong>@sramesh81</strong> <strong>@careeningspace</strong> <strong>@</strong>DataHunter500</p>
+<h2>Hospital datasets</h2>
+<blockquote>
+<p>COVID-19 relevant data on hospital location / capacity, nursing home location / capacity, county demographics
+<a href="https://github.com/jsfenfen/covid_hospitals_demographics">https://github.com/jsfenfen/covid_hospitals_demographics</a></p>
+</blockquote>
+<blockquote>
+<p><code>populationData.tsv</code> - Models of COVID-19 outbreak trajectories and hospital demand
+<a href="https://github.com/neherlab/covid19_scenarios/blob/master/data/populationData.tsv">https://github.com/neherlab/covid19_scenarios/blob/master/data/populationData.tsv</a></p>
+</blockquote>
+<blockquote>
+<p>Hospitals State Health Facts - Kaiser Health Foundation
+<a href="https://www.kff.org/state-category/providers-service-use/hospitals/">https://www.kff.org/state-category/providers-service-use/hospitals/</a></p>
+</blockquote>
+<blockquote>
+<p>Health Care Resources - Organization for Economic Cooperation and Development (OECD)
+<a href="https://stats.oecd.org/index.aspx?DataSetCode=HEALTH_REAC#">https://stats.oecd.org/index.aspx?DataSetCode=HEALTH_REAC#</a></p>
+</blockquote>
+<blockquote>
+<p>United States Resource Availability for COVID-19 - Society of Critical Care Medicine (SCCM)
+<a href="https://www.sccm.org/Blog/March-2020/United-States-Resource-Availability-for-COVID-19">https://www.sccm.org/Blog/March-2020/United-States-Resource-Availability-for-COVID-19</a></p>
+</blockquote>
+<blockquote>
+<p>COVID19 Parameters
+<a href="https://docs.google.com/spreadsheets/d/1zZKKnZ47lqfmUGYDQuWNnzKnh-IDMy15LBaRmrBcjqE/edit#gid=1585003222">https://docs.google.com/spreadsheets/d/1zZKKnZ47lqfmUGYDQuWNnzKnh-IDMy15LBaRmrBcjqE/edit#gid=1585003222</a></p>
+</blockquote>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-608178838">
+          <div class="frontmatter">
+            <div><strong>jdmaresco</strong> commented on April 2, 2020 at 8:27 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/116#issuecomment-608178838" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>As of today, we have started splitting out current vs. cumulative hospitalized in our dataset. If you see old numbers that are listed as “cumulative” that should be listed as “current”, it would be helpful if you could file a separate issue for each state, with screenshots and the relevant dates, and we will address. Thank you for the report!</p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

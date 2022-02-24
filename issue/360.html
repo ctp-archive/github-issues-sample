@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>US Historical New Deaths Incorrect</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 360</p>
+        <p><strong>rizanc</strong> opened this issue on May 4, 2020 at 4:04 pm</p>
+        
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/360" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p>For 2020/05/04 , historical US API incorrectly reports 18,938 new deaths.</p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-623705371">
+          <div class="frontmatter">
+            <div><strong>realfuture</strong> commented on May 4, 2020 at 4:05 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/360#issuecomment-623705371" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Yes, we had an extra digit in a cell. Should be fixed in a second.</p>
+<p>Thank you,</p>
+<p>Alexis</p>
+<p>On Mon, May 4, 2020 at 2:04 PM rizanc <a href="mailto:notifications<strong>@github.com</strong>">notifications<strong>@github.com</strong></a> wrote:</p>
+<blockquote>
+<p>For 2020/05/04 , historical US API incorrectly reports 18,938 new deaths.</p>
+<p>—
+You are receiving this because you are subscribed to this thread.
+Reply to this email directly, view it on GitHub
+<a href="https://github.com/COVID19Tracking/issues/issues/360">https://github.com/COVID19Tracking/issues/issues/360</a>, or unsubscribe
+<a href="https://github.com/notifications/unsubscribe-auth/ACS7NYKVO5XFQE3VRQBRSTDRP4UVNANCNFSM4MZCUMSQ">https://github.com/notifications/unsubscribe-auth/ACS7NYKVO5XFQE3VRQBRSTDRP4UVNANCNFSM4MZCUMSQ</a>
+.</p>
+</blockquote>
+<p>–
+Alexis Madrigal
+Staff Writer | The Atlantic
+Co-Founder | The Atlantic’s COVID Tracking Project, <a href="http://covidtracking.com">covidtracking.com</a>
+m. 415 602 4953</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-623712729">
+          <div class="frontmatter">
+            <div><strong>tntnomad</strong> commented on May 4, 2020 at 4:21 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/360#issuecomment-623712729" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>The issue is with Louisiana.  You added an extra zero.  Should be 2,064 deaths, no 20,064 deaths.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-623726309">
+          <div class="frontmatter">
+            <div><strong>realfuture</strong> commented on May 4, 2020 at 4:49 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/360#issuecomment-623726309" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Yup. Indeed. You should see this as fixed. Thanks for the ping. We got the
+fix in right away, but it took a while to rebuild.</p>
+<p>A</p>
+<p>On Mon, May 4, 2020 at 2:21 PM tntnomad <a href="mailto:notifications<strong>@github.com</strong>">notifications<strong>@github.com</strong></a> wrote:</p>
+<blockquote>
+<p>The issue is with Louisiana. You added an extra zero. Should be 2,064
+deaths, no 20,064 deaths.</p>
+<p>—
+You are receiving this because you commented.
+Reply to this email directly, view it on GitHub
+<a href="https://github.com/COVID19Tracking/issues/issues/360#issuecomment-623712729">https://github.com/COVID19Tracking/issues/issues/360#issuecomment-623712729</a>,
+or unsubscribe
+<a href="https://github.com/notifications/unsubscribe-auth/ACS7NYI7WD53XWWMSDVF6KLRP4WVVANCNFSM4MZCUMSQ">https://github.com/notifications/unsubscribe-auth/ACS7NYI7WD53XWWMSDVF6KLRP4WVVANCNFSM4MZCUMSQ</a>
+.</p>
+</blockquote>
+<p>–
+Alexis Madrigal
+Staff Writer | The Atlantic
+Co-Founder | The Atlantic’s COVID Tracking Project, <a href="http://covidtracking.com">covidtracking.com</a>
+m. 415 602 4953</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-623735882">
+          <div class="frontmatter">
+            <div><strong>rizanc</strong> commented on May 4, 2020 at 5:13 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/360#issuecomment-623735882" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Thank you sir!
+<img src="../assets/images/github/3632884/81018641-efbef680-8e32-11ea-8d77-0a6ec46b9736.png" alt="image"></p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

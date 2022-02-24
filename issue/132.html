@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>Revisit previous logic about migrating current numbers to cumulative</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 132</p>
+        <p><strong>jdmaresco</strong> opened this issue on April 3, 2020 at 9:07 am</p>
+        
+          <p><strong>Labels </strong>
+            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          
+            <span class="label"><a href="../label/2036763229.html">stale</a></span>
+          </p>
+          
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/132" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p>When we first added outcomes data, we decided to copy over current values to cumulative in the absence of a cumulative number from the state. We’re moving away from this for new data and should probably reverse the backfill previously done here:</p>
+<p><a href="https://github.com/COVID19Tracking/issues/issues/70">https://github.com/COVID19Tracking/issues/issues/70</a></p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-609423402">
+          <div class="frontmatter">
+            <div><strong>jdmaresco</strong> commented on April 5, 2020 at 9:17 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/132#issuecomment-609423402" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Based on <strong>@careeningspace</strong> comment on #70, marking this as closed</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-609423578">
+          <div class="frontmatter">
+            <div><strong>jdmaresco</strong> commented on April 5, 2020 at 9:18 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/132#issuecomment-609423578" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Just noticed the timing on that comment. Reopening until confirmed this has been addressed</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-610996086">
+          <div class="frontmatter">
+            <div><strong>careeningspace</strong> commented on April 8, 2020 at 9:35 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/132#issuecomment-610996086" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <ul>
+<li>[ ] <strong>Arizona</strong>  The data collected on hospitalization was from one-two counties only. If you want this data, it can be found at the county sites: <a href="https://www.maricopa.gov/5460/Coronavirus-Disease-2019">from Maricopa County</a> and <a href="https://webcms.pima.gov/cms/One.aspx?portalId=169&amp;pageId=527452">Pima County</a>:</li>
+</ul>
+<p><strong>Before:</strong>
+<img src="../assets/images/github/43073915/78782535-2eff4200-7970-11ea-9a88-9a0fce477bca.png" alt="Screen Shot 2020-04-08 at 8 08 04 AM"></p>
+<p><strong>After:</strong>
+<img src="../assets/images/github/43073915/78782990-eb590800-7970-11ea-8a16-0bd7474cfe18.png" alt="Screen Shot 2020-04-08 at 8 12 30 AM"></p>
+<ul>
+<li>[ ] <strong>Arkansas</strong> Additional cumulative hospitalization and ventilator data were obtained from the daily press conferences.
+<a href="https://youtu.be/rGLeGLkW5jY?t=433">Apr-5 Press Conference</a>
+<a href="https://youtu.be/B5MeQsDO7Io?t=584">Apr-2 Press Conference</a>
+<a href="https://youtu.be/Y0P0HXEp98A?t=654">Apr-7 Press Conference</a></li>
+</ul>
+<p><strong>Before</strong>
+<img src="../assets/images/github/43073915/78796357-2dd81000-7984-11ea-81c0-09b3939ce4a8.png" alt="Screen Shot 2020-04-08 at 8 23 37 AM"></p>
+<p><strong>After</strong>
+<img src="../assets/images/github/43073915/78796371-36304b00-7984-11ea-97e3-1ee7bed3a91a.png" alt="image"></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-611022351">
+          <div class="frontmatter">
+            <div><strong>careeningspace</strong> commented on April 8, 2020 at 10:22 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/132#issuecomment-611022351" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <ul>
+<li>[ ] <strong>Louisiana</strong> Moving hospitalization/ventilator data from the cumulative column to the current column. Also a slight update to 4/6 data from <a href="http://ldh.la.gov/index.cfm/newsroom/detail/5531">4/7 press release</a></li>
+</ul>
+<p><strong>Before</strong>
+<img src="../assets/images/github/43073915/78801854-2b2ce900-798b-11ea-8064-e6c3d555ae97.png" alt="Screen Shot 2020-04-08 at 10 50 20 AM"></p>
+<p><strong>After</strong>
+<img src="../assets/images/github/43073915/78801884-33852400-798b-11ea-8d32-78bd01f2a8f6.png" alt="Screen Shot 2020-04-08 at 11 19 08 AM"></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-611031607">
+          <div class="frontmatter">
+            <div><strong>careeningspace</strong> commented on April 8, 2020 at 10:38 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/132#issuecomment-611031607" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <ul>
+<li>[ ] <strong>California</strong> Removing cumulative data to match reporting</li>
+</ul>
+<p><strong>Before</strong>
+<img src="../assets/images/github/43073915/78803719-54e70f80-798d-11ea-8dbc-ee4c2b8a4a98.png" alt="Screen Shot 2020-04-08 at 11 35 33 AM"></p>
+<p><strong>After</strong>
+<img src="../assets/images/github/43073915/78803792-6d572a00-798d-11ea-962f-a1f977a31fac.png" alt="Screen Shot 2020-04-08 at 11 38 01 AM"></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-611033306">
+          <div class="frontmatter">
+            <div><strong>careeningspace</strong> commented on April 8, 2020 at 10:41 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/132#issuecomment-611033306" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <ul>
+<li>[ ] <strong>Conneticut</strong> Migrating cumulative data to current data to reflect reporting</li>
+</ul>
+<p><strong>Before</strong>
+<img src="../assets/images/github/43073915/78804124-c45cff00-798d-11ea-85ea-30f828eacbee.png" alt="Screen Shot 2020-04-08 at 11 39 48 AM"></p>
+<p><strong>After</strong>
+<img src="../assets/images/github/43073915/78804218-dfc80a00-798d-11ea-91cf-99389ceb5f8d.png" alt="Screen Shot 2020-04-08 at 11 41 12 AM"></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-611053377">
+          <div class="frontmatter">
+            <div><strong>careeningspace</strong> commented on April 8, 2020 at 11:18 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/132#issuecomment-611053377" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <ul>
+<li>[ ] <strong>District of Columbia</strong> Removing errant ventilator data (<a href="https://coronavirus.dc.gov/page/hospital-status-data">capacity data</a> that is not directly attributed to COVID-19 cases)</li>
+</ul>
+<p><strong>Before</strong>
+<img src="../assets/images/github/43073915/78807589-4c450800-7992-11ea-9f9b-ed2bee647378.png" alt="Screen Shot 2020-04-08 at 12 10 24 PM"></p>
+<p><strong>After</strong>
+<img src="../assets/images/github/43073915/78807670-641c8c00-7992-11ea-9ee6-650988ac00da.png" alt="Screen Shot 2020-04-08 at 12 10 35 PM"></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-611059037">
+          <div class="frontmatter">
+            <div><strong>careeningspace</strong> commented on April 8, 2020 at 11:28 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/132#issuecomment-611059037" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <ul>
+<li>[ ] <strong>Delaware</strong> Migrating cumulative hospitalization data to reflect reporting.</li>
+</ul>
+<p><strong>Before</strong>
+<img src="../assets/images/github/43073915/78809128-713a7a80-7994-11ea-9a75-a89ce45335dd.png" alt="Screen Shot 2020-04-08 at 12 23 44 PM"></p>
+<p><strong>After</strong>
+<img src="../assets/images/github/43073915/78809161-7a2b4c00-7994-11ea-97f6-267e5d400c53.png" alt="Screen Shot 2020-04-08 at 12 26 52 PM"></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-611088596">
+          <div class="frontmatter">
+            <div><strong>careeningspace</strong> commented on April 8, 2020 at 12:27 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/132#issuecomment-611088596" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p><strong>Florida</strong> Errant data entered for current data for hospitalization.</p>
+<p><strong>Before</strong>
+<img src="../assets/images/github/43073915/78814382-8a472980-799c-11ea-904c-858febf7cb5d.png" alt="Screen Shot 2020-04-08 at 1 25 08 PM"></p>
+<p><strong>After</strong>
+<img src="../assets/images/github/43073915/78814430-9d59f980-799c-11ea-8c70-6d854879ce4e.png" alt="Screen Shot 2020-04-08 at 1 26 38 PM"></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-611092056">
+          <div class="frontmatter">
+            <div><strong>careeningspace</strong> commented on April 8, 2020 at 12:34 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/132#issuecomment-611092056" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <ul>
+<li>[ ] <strong>Hawaii</strong> Removing the death that was falsely attributed to COVID-19 from 3/24</li>
+</ul>
+<p><strong>Before</strong>
+<img src="../assets/images/github/43073915/78815038-a4cdd280-799d-11ea-8f9c-24492b946df2.png" alt="Screen Shot 2020-04-08 at 1 32 21 PM"></p>
+<p><strong>After</strong>
+<img src="../assets/images/github/43073915/78815063-adbea400-799d-11ea-91e2-ca64b6c0aed8.png" alt="Screen Shot 2020-04-08 at 1 34 04 PM"></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-611321570">
+          <div class="frontmatter">
+            <div><strong>careeningspace</strong> commented on April 8, 2020 at 11:29 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/132#issuecomment-611321570" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <ul>
+<li>[ ] <strong>Guam</strong> Migrating cumulative data to current data per reporting.</li>
+</ul>
+<p><strong>Before</strong>
+<img src="../assets/images/github/43073915/78815415-3f2e1600-799e-11ea-8cda-ecb65a3716e5.png" alt="Screen Shot 2020-04-08 at 1 37 30 PM"></p>
+<p><strong>After</strong>
+<img src="../assets/images/github/43073915/78858021-299a0a00-79f9-11ea-94ec-c56f505cf222.png" alt="Screen Shot 2020-04-09 at 12 28 58 AM"></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-611332358">
+          <div class="frontmatter">
+            <div><strong>careeningspace</strong> commented on April 9, 2020 at 12:13 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/132#issuecomment-611332358" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <ul>
+<li>[ ] <strong>North Carolina</strong> Eliminating cumulative data to match what the state reports.</li>
+</ul>
+<p><strong>Before</strong>
+<img src="../assets/images/github/43073915/78860097-4f2a1200-79ff-11ea-8b71-143476c5b8de.png" alt="Screen Shot 2020-04-09 at 1 10 12 AM"></p>
+<p><strong>After</strong>
+<img src="../assets/images/github/43073915/78860112-57824d00-79ff-11ea-88c8-096dcfde9d33.png" alt="Screen Shot 2020-04-09 at 1 10 20 AM"></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-611335415">
+          <div class="frontmatter">
+            <div><strong>careeningspace</strong> commented on April 9, 2020 at 12:25 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/132#issuecomment-611335415" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <ul>
+<li>[ ] <strong>North Dakota</strong> Began reporting current hospitalized on 4/5</li>
+</ul>
+<p><strong>Before</strong>
+<img src="../assets/images/github/43073915/78860752-f52a4c00-7a00-11ea-8201-bfcb64f84cb2.png" alt="Screen Shot 2020-04-09 at 1 22 09 AM"></p>
+<p><strong>After</strong>
+<img src="../assets/images/github/43073915/78860768-fd828700-7a00-11ea-93f4-57b7088fa3f4.png" alt="Screen Shot 2020-04-09 at 1 24 06 AM"></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-611336703">
+          <div class="frontmatter">
+            <div><strong>careeningspace</strong> commented on April 9, 2020 at 12:30 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/132#issuecomment-611336703" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <ul>
+<li>[ ] <strong>New Hampshire</strong> Removing current hospitalization data to match state’s reporting</li>
+</ul>
+<p><strong>Before</strong>
+<img src="../assets/images/github/43073915/78861020-b47f0280-7a01-11ea-82b2-1b21b5c29098.png" alt="Screen Shot 2020-04-09 at 1 29 13 AM"></p>
+<p><strong>After</strong>
+<img src="../assets/images/github/43073915/78861028-bcd73d80-7a01-11ea-9aed-3b6b21d27e86.png" alt="Screen Shot 2020-04-09 at 1 29 33 AM"></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-611338017">
+          <div class="frontmatter">
+            <div><strong>careeningspace</strong> commented on April 9, 2020 at 12:35 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/132#issuecomment-611338017" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <ul>
+<li>[ ] <strong>New Mexico</strong> Removing cumulative data to match the state’s reporting.</li>
+</ul>
+<p><strong>Before</strong>
+<img src="../assets/images/github/43073915/78861261-63bbd980-7a02-11ea-8a28-d6c952513517.png" alt="Screen Shot 2020-04-09 at 1 32 50 AM"></p>
+<p><strong>After</strong>
+<img src="../assets/images/github/43073915/78861272-71715f00-7a02-11ea-9928-35361ad12476.png" alt="Screen Shot 2020-04-09 at 1 33 01 AM"></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-611339414">
+          <div class="frontmatter">
+            <div><strong>careeningspace</strong> commented on April 9, 2020 at 12:41 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/132#issuecomment-611339414" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <ul>
+<li>[ ] <strong>New York</strong> removing cumulative ICU data to match the State’s reporting</li>
+</ul>
+<p><strong>Before</strong>
+<img src="../assets/images/github/43073915/78861593-24da5380-7a03-11ea-930e-98a0b4dec1dd.png" alt="Screen Shot 2020-04-09 at 1 38 57 AM"></p>
+<p><strong>After</strong>
+<img src="../assets/images/github/43073915/78861613-315eac00-7a03-11ea-92c4-51f99d83c1f8.png" alt="Screen Shot 2020-04-09 at 1 39 06 AM"></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-611490374">
+          <div class="frontmatter">
+            <div><strong>careeningspace</strong> commented on April 9, 2020 at 7:01 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/132#issuecomment-611490374" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <ul>
+<li>[ ] <strong>Ohio</strong> removing current hospitalization data to match the state’s reporting</li>
+</ul>
+<p><strong>Before</strong>
+<img src="../assets/images/github/43073915/78892930-41dd4980-7a38-11ea-96aa-5200f09ab76c.png" alt="Screen Shot 2020-04-09 at 7 57 02 AM"></p>
+<p><strong>After</strong>
+<img src="../assets/images/github/43073915/78892938-486bc100-7a38-11ea-89a2-e28cc16be8c4.png" alt="Screen Shot 2020-04-09 at 7 57 10 AM"></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-611530576">
+          <div class="frontmatter">
+            <div><strong>careeningspace</strong> commented on April 9, 2020 at 8:33 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/132#issuecomment-611530576" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <ul>
+<li>[ ] <strong>Oklahoma</strong> cleaned up and added current hospitalization data from the reports provided by the <a href="https://coronavirus.health.ok.gov/executive-order-reports">Executive Order reporting</a></li>
+</ul>
+<p><strong>Before</strong>
+<img src="../assets/images/github/43073915/78900652-29276080-7a45-11ea-8637-256d9b495b6f.png" alt="Screen Shot 2020-04-09 at 8 18 01 AM"></p>
+<p><strong>After</strong>
+<img src="../assets/images/github/43073915/78900680-30e70500-7a45-11ea-86e1-421e2098155d.png" alt="Screen Shot 2020-04-09 at 9 30 43 AM"></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-611579833">
+          <div class="frontmatter">
+            <div><strong>careeningspace</strong> commented on April 9, 2020 at 10:07 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/132#issuecomment-611579833" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>-[ ] <strong>Oregon</strong> Updated data for current and cumulative using the <a href="https://www.oregon.gov/oha/erd/pages/covid-19-news.aspx">Daily Updates</a></p>
+<p><strong>Before</strong>
+<img src="../assets/images/github/43073915/78909908-28e19200-7a52-11ea-9f42-743a32ecbf7b.png" alt="Screen Shot 2020-04-09 at 10 18 59 AM"></p>
+<p><strong>After</strong>
+<img src="../assets/images/github/43073915/78909933-339c2700-7a52-11ea-8343-3465a22b6a29.png" alt="Screen Shot 2020-04-09 at 11 05 38 AM"></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-611604608">
+          <div class="frontmatter">
+            <div><strong>careeningspace</strong> commented on April 9, 2020 at 10:53 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/132#issuecomment-611604608" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <ul>
+<li>[ ] <strong>Rhode Island</strong> Updating data to match the State’s reporting and incorporate historical data provided in <a href="https://docs.google.com/spreadsheets/d/1n-zMS9Al94CPj_Tc3K7Adin-tN9x1RSjjx2UzJ4SV7Q/edit#gid=1290804212">State’s Data Set</a></li>
+</ul>
+<p><strong>Before</strong>
+<img src="../assets/images/github/43073915/78914655-b88a3f00-7a58-11ea-9377-d9327ee229fc.png" alt="Screen Shot 2020-04-09 at 11 35 12 AM"></p>
+<p><strong>After</strong>
+<img src="../assets/images/github/43073915/78914678-c049e380-7a58-11ea-8250-99ef5fc3fec5.png" alt="Screen Shot 2020-04-09 at 11 51 57 AM"></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-611621150">
+          <div class="frontmatter">
+            <div><strong>careeningspace</strong> commented on April 9, 2020 at 11:26 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/132#issuecomment-611621150" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <ul>
+<li>[ ] <strong>Texas</strong> migrating cumulative hospitalization data to current to match the State’s reporting.</li>
+</ul>
+<p><strong>Before</strong>
+<img src="../assets/images/github/43073915/78917683-3d775780-7a5d-11ea-85fc-cc3147408124.png" alt="Screen Shot 2020-04-09 at 12 20 21 PM"></p>
+<p><strong>After</strong>
+<img src="../assets/images/github/43073915/78917717-4536fc00-7a5d-11ea-9643-973adfb4a7ba.png" alt="Screen Shot 2020-04-09 at 12 20 59 PM"></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-611626318">
+          <div class="frontmatter">
+            <div><strong>careeningspace</strong> commented on April 9, 2020 at 11:36 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/132#issuecomment-611626318" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <ul>
+<li>
+<p>[ ] WV has some cumulative hospitalization data in the middle of the data set that will need investigation. Bookmarking it as the rest of the states are up-to-date</p>
+</li>
+<li>
+<p>[ ]<strong>WA</strong> was updated. Please see issue #118 for details</p>
+</li>
+</ul>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-623775016">
+          <div class="frontmatter">
+            <div><strong>stale[bot]</strong> commented on May 4, 2020 at 7:20 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/132#issuecomment-623775016" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-628958114">
+          <div class="frontmatter">
+            <div><strong>stale[bot]</strong> commented on May 14, 2020 at 7:36 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/132#issuecomment-628958114" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>This issue has been closed because it was stale for 15 days, and there was no further activity on it for 10 days. You can feel free to re-open it if the issue is important, and label it as “not stale.”</p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

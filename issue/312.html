@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>Massachusetts Historical Deaths seem to have changed</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 312</p>
+        <p><strong>nshpritz</strong> opened this issue on April 27, 2020 at 3:05 pm</p>
+        
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/312" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p>The number of deaths due to coronavirus disease seemed low to me over the weekend and so I went back to some historical data and it seems as if there has been a complete restatement of deaths by date in MA.  I doubt this was intentional.</p>
+<p>For example, the MA history shows that MA suffered its 1000th death on April 12 yet this report from the local NPR affiliate, and a number of other sources, cites April 15. <a href="https://www.wbur.org/commonhealth/2020/04/15/coronavirus-1000-deaths-massachusetts">https://www.wbur.org/commonhealth/2020/04/15/coronavirus-1000-deaths-massachusetts</a></p>
+<p>On that date, the COVID Tracking States Daily report shows MA went over 1500 deaths.  This constrasts with the unbelievably (unfortunately) small 22 deaths over the entire weekend.</p>
+<p>The historical Daily tracking reports used to match much more closely to figures reported in the press.  Finally, here are a few days as they were posted on Friday on GitHub.  The Wednesday number of total deaths from last Friday’s data shows 2,182 (see below).  That number currently on GitHub is now 2,597.</p>
+<p>From Friday, April 24.</p>
+<table>
+<thead>
+<tr>
+<th>date</th>
+<th>state</th>
+<th>positive</th>
+<th>positiveIncrease</th>
+<th>totalTestResultsIncrease</th>
+<th>death</th>
+<th>deathIncrease</th>
+<th>positiveRate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>20200424</td>
+<td>MA</td>
+<td>46,023</td>
+<td>-</td>
+<td>-</td>
+<td>2,360</td>
+<td>-</td>
+<td></td>
+</tr>
+<tr>
+<td>20200423</td>
+<td>MA</td>
+<td>46,023</td>
+<td>3,079</td>
+<td>14,614</td>
+<td>2,360</td>
+<td>178</td>
+<td>21.1%</td>
+</tr>
+<tr>
+<td>20200422</td>
+<td>MA</td>
+<td>42,944</td>
+<td>1,745</td>
+<td>5,090</td>
+<td>2,182</td>
+<td>221</td>
+<td>34.3%</td>
+</tr>
+<tr>
+<td>20200421</td>
+<td>MA</td>
+<td>41,199</td>
+<td>3,122</td>
+<td>13,131</td>
+<td>1,961</td>
+<td>255</td>
+<td>23.8%</td>
+</tr>
+<tr>
+<td>20200420</td>
+<td>MA</td>
+<td>38,077</td>
+<td>-</td>
+<td>-</td>
+<td>1,706</td>
+<td>-</td>
+<td></td>
+</tr>
+<tr>
+<td>20200419</td>
+<td>MA</td>
+<td>38,077</td>
+<td>1,705</td>
+<td>5,435</td>
+<td>1,706</td>
+<td>146</td>
+<td>31.4%</td>
+</tr>
+<tr>
+<td>20200418</td>
+<td>MA</td>
+<td>36,372</td>
+<td>1,970</td>
+<td>8,062</td>
+<td>1,560</td>
+<td>156</td>
+<td>24.4%</td>
+</tr>
+<tr>
+<td>20200417</td>
+<td>MA</td>
+<td>34,402</td>
+<td>2,221</td>
+<td>7,971</td>
+<td>1,404</td>
+<td>159</td>
+<td>27.9%</td>
+</tr>
+<tr>
+<td>20200416</td>
+<td>MA</td>
+<td>32,181</td>
+<td>2,263</td>
+<td>8,750</td>
+<td>1,245</td>
+<td>137</td>
+<td>25.9%</td>
+</tr>
+<tr>
+<td>20200415</td>
+<td>MA</td>
+<td>29,918</td>
+<td>1,755</td>
+<td>5,472</td>
+<td>1,108</td>
+<td>151</td>
+<td>32.1%</td>
+</tr>
+<tr>
+<td>20200414</td>
+<td>MA</td>
+<td>28,163</td>
+<td>1,296</td>
+<td>4,502</td>
+<td>957</td>
+<td>113</td>
+<td>28.8%</td>
+</tr>
+<tr>
+<td>20200413</td>
+<td>MA</td>
+<td>26,867</td>
+<td>1,392</td>
+<td>5,319</td>
+<td>844</td>
+<td>88</td>
+<td>26.2%</td>
+</tr>
+<tr>
+<td>20200412</td>
+<td>MA</td>
+<td>25,475</td>
+<td>2,615</td>
+<td>7,954</td>
+<td>756</td>
+<td>70</td>
+<td>32.9%</td>
+</tr>
+</tbody>
+</table>
+<p>Current Deaths on April 27</p>
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Screenshot</th>
+<th>New Tests</th>
+<th>Positive</th>
+<th>Negative</th>
+<th>Pending</th>
+<th>Hospitalized</th>
+<th>Deaths</th>
+<th>Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sun Apr 26 2020</td>
+<td>5:12 am11:11 am5:11 pm8:07 pm11:12 pm</td>
+<td>10,845</td>
+<td>54,938</td>
+<td>236,100</td>
+<td>N/A</td>
+<td>5,104</td>
+<td>2,899</td>
+<td>291,038</td>
+</tr>
+<tr>
+<td>Sat Apr 25 2020</td>
+<td>5:10 am11:11 am5:11 pm11:11 pm</td>
+<td>14,011</td>
+<td>53,348</td>
+<td>226,845</td>
+<td>N/A</td>
+<td>4,965</td>
+<td>2,877</td>
+<td>280,193</td>
+</tr>
+<tr>
+<td>Fri Apr 24 2020</td>
+<td>5:11 am11:12 am5:10 pm11:11 pm</td>
+<td>13,874</td>
+<td>50,969</td>
+<td>215,213</td>
+<td>N/A</td>
+<td>4,752</td>
+<td>2,877</td>
+<td>266,182</td>
+</tr>
+<tr>
+<td>Thu Apr 23 2020</td>
+<td>5:11 am11:11 am5:12 pm11:11 pm</td>
+<td>17,693</td>
+<td>47,992</td>
+<td>204,316</td>
+<td>N/A</td>
+<td>4,493</td>
+<td>2,769</td>
+<td>252,308</td>
+</tr>
+<tr>
+<td>Wed Apr 22 2020</td>
+<td>5:10 am11:11 am5:10 pm11:10 pm</td>
+<td>6,835</td>
+<td>44,913</td>
+<td>189,702</td>
+<td>N/A</td>
+<td>4,256</td>
+<td>2,597</td>
+<td>234,615</td>
+</tr>
+</tbody>
+</table>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-620278023">
+          <div class="frontmatter">
+            <div><strong>bodysurfinyon</strong> commented on April 27, 2020 at 5:56 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/312#issuecomment-620278023" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>It seems as tho the total tested got swapped for the total negative - based on my extensive examination of 1 datapoint. The sheet in question is:
+<a href="https://docs.google.com/spreadsheets/u/2/d/e/2PACX-1vRwAqp96T9sYYq2-i7Tj0pvTf6XVHjDSMIKBdZHXiCGGdNC0ypEU9NbngS8mxea55JuCFuua1MUeOj5/pubhtml#">https://docs.google.com/spreadsheets/u/2/d/e/2PACX-1vRwAqp96T9sYYq2-i7Tj0pvTf6XVHjDSMIKBdZHXiCGGdNC0ypEU9NbngS8mxea55JuCFuua1MUeOj5/pubhtml#</a></p>
+<p>On 4/25 originally reported 173,497 negatives - I know this because I’ve been copying it daily.</p>
+<p>Now, the same sheet shows negatives for 4/25  as 226,845.</p>
+<p>Coincidently, the MA dashboard for 4/25 shows total test as 226,845
+<a href="https://www.mass.gov/doc/covid-19-dashboard-april-25-2020/download">https://www.mass.gov/doc/covid-19-dashboard-april-25-2020/download</a></p>
+<p>Today 20200427 is correct at 188,425, but yesterday is stated as 236,100.</p>
+<p>Thank you for this project!!!</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-620655683">
+          <div class="frontmatter">
+            <div><strong>nshpritz</strong> commented on April 28, 2020 at 9:50 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/312#issuecomment-620655683" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Thank you for this Project and for fixing the MA testing data.  However, there is still a problem in the daily history for both positive tests and deaths.  Here is what is currently currently on the MA Daily page:</p>
+<p><img src="../assets/images/github/61600690/80500475-df3ee580-8933-11ea-8908-d1c58fdad16c.png" alt="image"></p>
+<p>And this is what was pulled down on Friday:</p>
+<table>
+<thead>
+<tr>
+<th>date</th>
+<th>state</th>
+<th>positive</th>
+<th>positiveIncrease</th>
+<th>totalTestResultsIncrease</th>
+<th>death</th>
+<th>deathIncrease</th>
+<th>positiveRate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>20200424</td>
+<td>MA</td>
+<td>46,023</td>
+<td>-</td>
+<td>-</td>
+<td>2,360</td>
+<td>-</td>
+<td></td>
+</tr>
+<tr>
+<td>20200423</td>
+<td>MA</td>
+<td>46,023</td>
+<td>3,079</td>
+<td>14,614</td>
+<td>2,360</td>
+<td>178</td>
+<td>21.1%</td>
+</tr>
+<tr>
+<td>20200422</td>
+<td>MA</td>
+<td>42,944</td>
+<td>1,745</td>
+<td>5,090</td>
+<td>2,182</td>
+<td>221</td>
+<td>34.3%</td>
+</tr>
+<tr>
+<td>20200421</td>
+<td>MA</td>
+<td>41,199</td>
+<td>3,122</td>
+<td>13,131</td>
+<td>1,961</td>
+<td>255</td>
+<td>23.8%</td>
+</tr>
+<tr>
+<td>20200420</td>
+<td>MA</td>
+<td>38,077</td>
+<td>-</td>
+<td>-</td>
+<td>1,706</td>
+<td>-</td>
+<td></td>
+</tr>
+<tr>
+<td>20200419</td>
+<td>MA</td>
+<td>38,077</td>
+<td>1,705</td>
+<td>5,435</td>
+<td>1,706</td>
+<td>146</td>
+<td>31.4%</td>
+</tr>
+<tr>
+<td>20200418</td>
+<td>MA</td>
+<td>36,372</td>
+<td>1,970</td>
+<td>8,062</td>
+<td>1,560</td>
+<td>156</td>
+<td>24.4%</td>
+</tr>
+<tr>
+<td>20200417</td>
+<td>MA</td>
+<td>34,402</td>
+<td>2,221</td>
+<td>7,971</td>
+<td>1,404</td>
+<td>159</td>
+<td>27.9%</td>
+</tr>
+<tr>
+<td>20200416</td>
+<td>MA</td>
+<td>32,181</td>
+<td>2,263</td>
+<td>8,750</td>
+<td>1,245</td>
+<td>137</td>
+<td>25.9%</td>
+</tr>
+<tr>
+<td>20200415</td>
+<td>MA</td>
+<td>29,918</td>
+<td>1,755</td>
+<td>5,472</td>
+<td>1,108</td>
+<td>151</td>
+<td>32.1%</td>
+</tr>
+<tr>
+<td>20200414</td>
+<td>MA</td>
+<td>28,163</td>
+<td>1,296</td>
+<td>4,502</td>
+<td>957</td>
+<td>113</td>
+<td>28.8%</td>
+</tr>
+<tr>
+<td>20200413</td>
+<td>MA</td>
+<td>26,867</td>
+<td>1,392</td>
+<td>5,319</td>
+<td>844</td>
+<td>88</td>
+<td>26.2%</td>
+</tr>
+<tr>
+<td>20200412</td>
+<td>MA</td>
+<td>25,475</td>
+<td>2,615</td>
+<td>7,954</td>
+<td>756</td>
+<td>70</td>
+<td>32.9%</td>
+</tr>
+<tr>
+<td>20200411</td>
+<td>MA</td>
+<td>22,860</td>
+<td>1,886</td>
+<td>6,404</td>
+<td>686</td>
+<td>87</td>
+<td>29.5%</td>
+</tr>
+<tr>
+<td>20200410</td>
+<td>MA</td>
+<td>20,974</td>
+<td>2,033</td>
+<td>7,414</td>
+<td>599</td>
+<td>96</td>
+<td>27.4%</td>
+</tr>
+<tr>
+<td>20200409</td>
+<td>MA</td>
+<td>18,941</td>
+<td>2,151</td>
+<td>7,447</td>
+<td>503</td>
+<td>70</td>
+<td>28.9%</td>
+</tr>
+<tr>
+<td>20200408</td>
+<td>MA</td>
+<td>16,790</td>
+<td>1,588</td>
+<td>6,167</td>
+<td>433</td>
+<td>77</td>
+<td>25.7%</td>
+</tr>
+<tr>
+<td>20200407</td>
+<td>MA</td>
+<td>15,202</td>
+<td>1,365</td>
+<td>4,915</td>
+<td>356</td>
+<td>96</td>
+<td>27.8%</td>
+</tr>
+<tr>
+<td>20200406</td>
+<td>MA</td>
+<td>13,837</td>
+<td>1,337</td>
+<td>4,492</td>
+<td>260</td>
+<td>29</td>
+<td>29.8%</td>
+</tr>
+<tr>
+<td>20200405</td>
+<td>MA</td>
+<td>12,500</td>
+<td>764</td>
+<td>3,137</td>
+<td>231</td>
+<td>15</td>
+<td>24.4%</td>
+</tr>
+<tr>
+<td>20200404</td>
+<td>MA</td>
+<td>11,736</td>
+<td>1,334</td>
+<td>5,838</td>
+<td>216</td>
+<td>24</td>
+<td>22.9%</td>
+</tr>
+</tbody>
+</table>
+<p>The positive tests may be a timing difference within a day, maybe - a couple look a little large for that.  But the historical deaths really do look off quite a bit.  Just looking at 4/18 in the two exhibits, we currently see 1,983 deaths where on Friday the dataset showed 1,560.  As I indicated in my comment above, I was able to pull out contemporaneous reporting that showed that MA surpassed 1,000 COVID-19 deaths on Wednesday, April 15.  The current data shows that this threshold was passed on Sunday, April 12.</p>
+<p>Thank you again for all  the work you are doing.  Cleaning datasets from multiple sources is very hard work and is why we usually pay good money to do this - there is a great deal of value that we, as a society, get from your work.  Thank you.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-628094255">
+          <div class="frontmatter">
+            <div><strong>stale[bot]</strong> commented on May 13, 2020 at 11:13 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/312#issuecomment-628094255" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-632108976">
+          <div class="frontmatter">
+            <div><strong>erfgottlieb</strong> commented on May 21, 2020 at 9:12 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/312#issuecomment-632108976" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Thanks <strong>@nshpritz</strong> ! The data that you pulled on Friday 4/24 were the states’ reported numbers at that point. On 4/27 we caught an error in the state data. The numbers that MA had previously been reporting for the daily and cumulative deaths did not match up with a bar chart that they published on 4/26. So we went back and revised our daily death and cumulative death numbers to match their chart.
+<img src="../assets/images/github/64613495/82567189-0a8bad80-9b4b-11ea-9ec6-cce9194e06d4.png" alt="Screen Shot 2020-05-21 at 10 08 19 AM"></p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

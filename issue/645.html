@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>[PR] Puerto Rico Department of Health testing data API</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 645</p>
+        <p><strong>sacundim</strong> opened this issue on July 17, 2020 at 8:40 pm</p>
+        
+          <p><strong>Labels </strong>
+            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          
+            <span class="label"><a href="../label/2036763438.html">not stale</a></span>
+          </p>
+          
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/645" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p><strong>State or US</strong>: Puerto Rico</p>
+<p>Just saw an informal announcement from a biostatistician collaborating with Puerto Rico’s Department of Health that they now have an API for downloading test data:</p>
+<ul>
+<li>Tweet with the info: <a href="https://twitter.com/rafalab/status/1284292056697929730">https://twitter.com/rafalab/status/1284292056697929730</a></li>
+<li>API: <a href="https://bioportal.salud.gov.pr/api/administration/reports/minimal-info-unique-tests">https://bioportal.salud.gov.pr/api/administration/reports/minimal-info-unique-tests</a></li>
+</ul>
+<p>Note that when I hit the latter URL with a regular browser I get an authorization failure message, but when I <code>wget</code> from it I get a 48.78M JSON data file:</p>
+<pre><code>$ wget https://bioportal.salud.gov.pr/api/administration/reports/minimal-info-unique-tests
+--2020-07-17 18:20:34--  https://bioportal.salud.gov.pr/api/administration/reports/minimal-info-unique-tests
+Resolving bioportal.salud.gov.pr (bioportal.salud.gov.pr)... 54.210.0.6
+Connecting to bioportal.salud.gov.pr (bioportal.salud.gov.pr)|54.210.0.6|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/json]
+Saving to: ‘minimal-info-unique-tests’
+
+minimal-info-unique-t     [                    &lt;=&gt; ]  48.78M  4.06MB/s    in 13s     
+
+2020-07-17 18:21:46 (3.79 MB/s) - ‘minimal-info-unique-tests’ saved [51154578]
+
+$ cat minimal-info-unique-tests |jq |head -n 30
+[
+  {
+    &quot;collectedDate&quot;: &quot;7/2/2020&quot;,
+    &quot;reportedDate&quot;: &quot;7/3/2020&quot;,
+    &quot;ageRange&quot;: &quot;60 to 69&quot;,
+    &quot;testType&quot;: &quot;Molecular&quot;,
+    &quot;result&quot;: &quot;Negative&quot;,
+    &quot;patientCity&quot;: &quot;Ceiba&quot;,
+    &quot;createdAt&quot;: &quot;07/07/2020 13:34&quot;
+  },
+  {
+    &quot;collectedDate&quot;: &quot;6/24/2020&quot;,
+    &quot;reportedDate&quot;: &quot;6/25/2020&quot;,
+    &quot;ageRange&quot;: &quot;60 to 69&quot;,
+    &quot;testType&quot;: &quot;Molecular&quot;,
+    &quot;result&quot;: &quot;Negative&quot;,
+    &quot;patientCity&quot;: &quot;Bayamón&quot;,
+    &quot;createdAt&quot;: &quot;06/26/2020 11:26&quot;
+  },
+  {
+    &quot;collectedDate&quot;: &quot;6/10/2020&quot;,
+    &quot;reportedDate&quot;: &quot;6/16/2020&quot;,
+    &quot;ageRange&quot;: &quot;50 to 59&quot;,
+    &quot;testType&quot;: &quot;Molecular&quot;,
+    &quot;result&quot;: &quot;Negative&quot;,
+    &quot;patientCity&quot;: &quot;San Sebastián&quot;,
+    &quot;createdAt&quot;: &quot;06/16/2020 17:07&quot;
+  },
+  {
+    &quot;collectedDate&quot;: &quot;5/26/2020&quot;,
+</code></pre>
+<p>The file is a single big JSON list with individual records for each test. I saw an earlier version of this data the other day (it was shared as an Excel file) and there’s some data quality issues. Summary of the ones I’m aware of:</p>
+<ul>
+<li><code>result</code> field not normalized. I just treat the ones that match <code>Positive</code> anywhere inside as positive, rest as negative.</li>
+<li>A couple thousand records (out of 275K+) don’t have some of the date fields.</li>
+<li>Some records have individually nonsensical date values, like from 1937</li>
+<li>A couple thousand records have collectedDate &gt; reportedDate</li>
+</ul>
+<p>Here are the cleanups I ended up doing on it if it’s of any help:</p>
+<ul>
+<li><a href="https://github.com/sacundim/covid-19-puerto-rico/blob/master/postgres/020-load-data.sql#L34">https://github.com/sacundim/covid-19-puerto-rico/blob/master/postgres/020-load-data.sql#L34</a></li>
+</ul>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-660404621">
+          <div class="frontmatter">
+            <div><strong>muamichali</strong> commented on July 17, 2020 at 8:46 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/645#issuecomment-660404621" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Wow, <strong>@sacundim</strong>! Thank you so much for this and all the helpful info you provide us about PR. We are going to follow this closely.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-660411440">
+          <div class="frontmatter">
+            <div><strong>Nosferican</strong> commented on July 17, 2020 at 9:41 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/645#issuecomment-660411440" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Agreed. I watched the governor’s press conference yesterday which included some of the work by <strong>@rafalab</strong> et at. Thanks for sharing the API announcement <strong>@sacundim</strong>!</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-660414706">
+          <div class="frontmatter">
+            <div><strong>Nosferican</strong> commented on July 17, 2020 at 10:08 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/645#issuecomment-660414706" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>I seems the license of the data falls under the EULA</p>
+<blockquote>
+<p>No se pueden descargar, republicar, revender, duplicar o hacer “web scraping”, en su totalidad o
+en parte, de los datos de propiedad de los sitios web y / o servicios del DSPR para ningún fin que
+no sea el uso personal permitido en estos Términos de Uso.</p>
+</blockquote>
+<p>Which basically says it can only be used for personal use. Hopefully we can get the all clear from the copyright holders to incorporate the API in the project (ref: <a href="https://twitter.com/Nosferican/status/1284323770694619136">https://twitter.com/Nosferican/status/1284323770694619136</a>).</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-660416976">
+          <div class="frontmatter">
+            <div><strong>space-buzzer</strong> commented on July 17, 2020 at 10:31 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/645#issuecomment-660416976" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>All the tests are tagged as <em>Molecular</em>, so I can’t understand the <em>result</em> field:</p>
+<ul>
+<li>Negative</li>
+<li>Positive 2019-nCoV</li>
+<li>COVID-19 Negative</li>
+<li>COVID-19 Positive</li>
+<li>Positive</li>
+<li>Inconclusive</li>
+<li>Invalid</li>
+<li>Other</li>
+<li>Not Valid</li>
+<li>Not Tested</li>
+<li>Presumptive Positive : Does it mean that the test is inconclusive? “presumptive positive” by CDC’s definition?</li>
+<li>Positive IgM Only</li>
+<li>Positive IgM and IgG</li>
+</ul>
+<p>So &quot;Molecular* test type does not mean PCR?</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-660418229">
+          <div class="frontmatter">
+            <div><strong>sacundim</strong> commented on July 17, 2020 at 10:44 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/645#issuecomment-660418229" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>I’m afraid I haven’t seen any real documentation, <strong>@space-buzzer.</strong> The number of records in the spreadsheet I saw earlier this week was about 275K, which is consistent with all tests being PCR based on other information.</p>
+<p>The approach I took, personally, is that the strange values like “Positive IgM Only” and “Positive IgM and IgG” are very infrequent so they don’t make a big dent on the counts, which are only going to be an approximation anyway due to issues with date data. I personally assumed that they’re positive PCR results.</p>
+<p>Some context (that I don’t fully understand): the data are extracted a the PRDoH’s website (“Bio Portal”) that has a web form for labs to report test results. So I think these are probably a mix of data entry errors by users and bugs in that web UI that allowed weird values to be entered.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-660418396">
+          <div class="frontmatter">
+            <div><strong>sacundim</strong> commented on July 17, 2020 at 10:45 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/645#issuecomment-660418396" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Oops, I hit “Close issue” by accident.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-660418491">
+          <div class="frontmatter">
+            <div><strong>sacundim</strong> commented on July 17, 2020 at 10:46 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/645#issuecomment-660418491" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p><strong>@</strong>Nosferican Do you have a link to that EULA?</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-660418808">
+          <div class="frontmatter">
+            <div><strong>Nosferican</strong> commented on July 17, 2020 at 10:49 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/645#issuecomment-660418808" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <blockquote>
+<p><strong>@</strong>Nosferican Do you have a link to that EULA?</p>
+</blockquote>
+<p>It’s under the <a href="https://bioportal.salud.gov.pr/assets/terms/terms-and-conditions.pdf">terms and services agreement</a> when signing up for an account at the bioportal.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-660422441">
+          <div class="frontmatter">
+            <div><strong>sacundim</strong> commented on July 17, 2020 at 11:22 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/645#issuecomment-660422441" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>I am not a lawyer nor a professional translator, but I’ll take a stab at this specific section:</p>
+<blockquote>
+<h3>Intellectual property</h3>
+<p>Most of the content of our web sites is public domain and doesn’t include copyright or other intellectual property statements.</p>
+<p>The government’s information is normally public domain. Public domain information can be used and copied freely. However, you’re authorized to use our contractor’s computer software and the related database only for informational ends and not for direct or indirect commercial purposes. Also, other materials in the web sites and/or services that is not government material cannot [sic] be copyright protected and cannot be used for any direct or indirect commercial purpose. Any use not authorized in this document is forbidden. Any copy made of materials must conserve all copyrights and other warnings. Except as explicitly provided in these Terms of Use, you may not reproduce, modify, publish, transmit, show, produce, distribute, disseminate, disseminate [sic] or disseminate any materials to third parties, nor participate in the transfer or sale, create derived works or in any manner exploit the contents of the web sites and/or services of the PRDoH or in any part of these without prior written consent by PRDoH.</p>
+</blockquote>
+<p>I’ve put “[sic]” on some bits that rendered literally but understand are flat out wrong. In particular, the part that says that “other materials in the web sites and/or services that is not government material <strong>cannot</strong> [sic] be copyright protected and cannot be used for any direct or indirect commercial purpose” is just contradictory and I think it is intended to read “may.”</p>
+<p>I think one important piece of context is that this Bioportal web site is normally used as a web UI for:</p>
+<ol>
+<li>Doctors to order tests from the PRDoH labs and view their results.</li>
+<li>Private labs to submit their test results to PRDoH.</li>
+</ol>
+<p>And they’ve apparently added a public API endpoint to publish the testing data that the system contains.</p>
+<hr>
+<p>Original Spanish:</p>
+<blockquote>
+<h3>Propiedad intelectual</h3>
+<p>La mayor parte del contenido de nuestros sitios web es de dominio público y no incluye avisos
+de derechos de autor u otros avisos de propiedad intelectual.</p>
+<p>La información del gobierno normalmente es de dominio público. La información de dominio
+público se puede distribuir y copiar libremente. Sin embargo, está autorizado a utilizar el software
+de la computadora de nuestro contratista y la base de datos relacionada solo con fines
+informativos y no con fines comerciales directos o indirectos. Además, otro material en los sitios
+web y / o servicios que no sea material del gobierno no puede estar protegido por derechos de
+autor por entidades privadas y no puede usarse para ningún propósito comercial directo o
+indirecto. Cualquier uso no autorizado en este documento está prohibido. Cualquier copia que
+haga de los materiales debe conservar todos los derechos de autor y otros avisos. Salvo lo
+dispuesto expresamente en estos Términos de Uso, no puede reproducir, modificar, publicar,
+transmitir, mostrar, realizar, distribuir, difundir, difundir o transmitir ningún material a terceros,
+ni participar en la transferencia o venta de, crear trabajos derivados o de cualquier manera
+explotar el contenido de los sitios web y / o servicios del DSPR o cualquier parte de estos sin el
+previo consentimiento por escrito del DSPR.</p>
+</blockquote>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-660423722">
+          <div class="frontmatter">
+            <div><strong>Nosferican</strong> commented on July 17, 2020 at 11:36 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/645#issuecomment-660423722" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>In this case, a simple written notice from the copyright holder / publisher saying the generic catch-all EULA doesn’t apply to the dataset and that it can be used freely should suffice.</p>
+<p>The generic boilerplate seems to suggest the API may not be that well maintained. However, if we can get a contact person / data steward for basic questions such as the ones <strong>@space-buzzer</strong> mentioned, that would be great. The data curation can occur upstream but that still requires some basic data lineage / governance information. <strong>@rafalab</strong> might be able to help with making that initial contact with the dept.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-660456368">
+          <div class="frontmatter">
+            <div><strong>sacundim</strong> commented on July 18, 2020 at 4:31 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/645#issuecomment-660456368" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Observations from playing a little bit with the API:</p>
+<ol>
+<li>The <code>createdAt</code> field might be more reliable than <code>reportedDate</code>. With two downloads that I’ve done about 8 hours apart on 2020-07-17 and 2020-07-18, I’m noting some differences in aggregates for <code>createdDate</code> and <code>reportedDate</code> between 2020-07-09 to 2020-07-16 (inclusive). Looks like there is some lag such that data with <code>reportedDate</code> in this range was still being added to the data set on the night of the 17th to 18th.</li>
+<li>The timezone of the <code>createdAt</code> field seems to be UTC.</li>
+</ol>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-660512993">
+          <div class="frontmatter">
+            <div><strong>edusoccer1121</strong> commented on July 18, 2020 at 12:13 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/645#issuecomment-660512993" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Hi <strong>@</strong>Nosferican,</p>
+<p><strong>@gabynevada</strong> can help clarifying some of the provided data he is the lead maintainer of the public API.</p>
+<p>Good day.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-660712731">
+          <div class="frontmatter">
+            <div><strong>space-buzzer</strong> commented on July 19, 2020 at 4:29 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/645#issuecomment-660712731" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>I set a <code>cron</code> job to download it daily, but noting will happen until we figure out:</p>
+<ul>
+<li>Licensing issues</li>
+<li>What kind of tests are we talking about?</li>
+<li>Consistent data sanitizing strategies we can take</li>
+</ul>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-660884769">
+          <div class="frontmatter">
+            <div><strong>gabynevada</strong> commented on July 20, 2020 at 3:30 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/645#issuecomment-660884769" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Hey all, I’m the project manager for the BioPortal system.</p>
+<p>I’ll start inquiring on what we need on the legal side for this to proceed.</p>
+<p>On the data side, we’re on the process of cleaning it up as much as possible.</p>
+<ul>
+<li>The data is directly reported from the island’s testing facilities.</li>
+<li>If it comes via interface it comes in mostly as is, later we run missing or incorrect value identification and send notifications to the testing facilities to fix their reported data.</li>
+<li>We have teams cleaning up the data, but are focusing on the tests for the positive Covid-19 cases as those are of the most importance to us.</li>
+<li>Data may change as it’s cleaned/verified by our personnel or the testing facilities.</li>
+</ul>
+<p>Some answers to the questions here:</p>
+<ul>
+<li>Molecular in this case are PCR tests.</li>
+<li>The test results vary depending on the kit being used.</li>
+<li>Presumptive Positive in most cases means that it requires additional confirmation, it depends on the kit that was used</li>
+<li>The createdAt field is just a timestamp of when it was reported or uploaded into the system, it has no other correlation to the data.</li>
+<li>The missing collectedDate and reportedDate fields are caused by testing facilities not reporting all required data. The system was implemented after the pandemic had begun and the prior process was mostly manual. We’re still on the process of improving the data collection methods for the tests.</li>
+</ul>
+<p>I’m available for any questions and i’ll see what I can do to help in this process.</p>
+<p>Regards</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-662205006">
+          <div class="frontmatter">
+            <div><strong>muamichali</strong> commented on July 21, 2020 at 9:28 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/645#issuecomment-662205006" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Hey <strong>@gabynevada</strong>! Thank you so much for interacting with us here. I will send you an email so we can have a better way to find out what is the status on the legal side.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-669657040">
+          <div class="frontmatter">
+            <div><strong>stale[bot]</strong> commented on August 5, 2020 at 10:10 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/645#issuecomment-669657040" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-671150858">
+          <div class="frontmatter">
+            <div><strong>Nosferican</strong> commented on August 9, 2020 at 10:49 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/645#issuecomment-671150858" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Any updates on this? <strong>@gabynevada</strong>, any updates on the data quality issues?</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-674416952">
+          <div class="frontmatter">
+            <div><strong>gabynevada</strong> commented on August 15, 2020 at 11:03 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/645#issuecomment-674416952" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p><strong>@</strong>Nosferican The test results that did not matched with the test types were verified and cleaned. We’re still working on additional interfaces with Laboratory Information Systems to get as much electronic information as possible.</p>
+<p>We’re working with the legal side on the Terms and Conditions on the API. It’s taking longer than expected.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-683442482">
+          <div class="frontmatter">
+            <div><strong>stale[bot]</strong> commented on August 30, 2020 at 11:42 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/645#issuecomment-683442482" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-824442359">
+          <div class="frontmatter">
+            <div><strong>muamichali</strong> commented on April 21, 2021 at 7:05 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/645#issuecomment-824442359" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>I believe that <strong>@space-buzzer</strong> has found a way to upload the PR API info into our auxiliary dataset after some cleanup steps. I am closing this issue. <strong>@space-buzzer</strong> if there is public documentation of this work, can you please link it here?</p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

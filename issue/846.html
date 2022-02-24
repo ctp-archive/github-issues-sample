@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>[MS] Probables Backfill and Confirmed Cases Corrections</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 846</p>
+        <p><strong>jesseandersonumd</strong> opened this issue on September 18, 2020 at 9:06 am</p>
+        
+          <p><strong>Labels </strong>
+            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          
+            <span class="label"><a href="../label/1937937334.html">Historical Data</a></span>
+          
+            <span class="label"><a href="../label/2036763229.html">stale</a></span>
+          
+            <span class="label"><a href="../label/2162087998.html">Backfill</a></span>
+          </p>
+          
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/846" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p><strong>State or US</strong>: MS</p>
+<p><strong>Describe the problem</strong>
+As explained by this previous github issue [<a href="https://github.com/COVID19Tracking/issues/issues/712">https://github.com/COVID19Tracking/issues/issues/712</a>] we reported positive (PCR) cases from 4/30-6/01, though it wasn’t clear whether the reported cases value represented confirmed cases exclusively. We will delete values in the positive PCR confirmed column prior to 6/1, after which both CTP and MS started separating confirmed and probable cases on their main state page according to screenshots. [<a href="https://covidtracking.com/screenshots/MS/MS-20200602-123808.png">https://covidtracking.com/screenshots/MS/MS-20200602-123808.png</a>] We will also backfill probables using the formula positives - positive PCR confirmed from 6/02 - 7/28 (which is when CTP first started reporting probables) and cross-referencing with screenshots.</p>
+<p>We will also correct the value on 6/19 for positive cases PCR, which was 20641 when it should’ve been 20500 because we needed to carry over this value from 6/17 - MS stopped separating confirmed and probables between 6/17-6/21. We will also correct the value on 6/3 for positive cases PCR, which was 16211 according to screenshots [<a href="https://covidtracking.com/screenshots/MS/MS-20200603-124214.png">https://covidtracking.com/screenshots/MS/MS-20200603-124214.png</a>] but reported as 15910. We will also correct the value on 6/14 for positive cases PCR, which was reported as 19216 when it should’ve been 19383 [<a href="https://covidtracking.com/screenshots/MS/MS-20200614-124313.png">https://covidtracking.com/screenshots/MS/MS-20200614-124313.png</a>].</p>
+<p><strong>Link to data source</strong></p>
+<ul>
+<li><a href="https://covidtracking.com/screenshots/MS/MS-20200602-123808.png">https://covidtracking.com/screenshots/MS/MS-20200602-123808.png</a></li>
+<li><a href="https://msdh.ms.gov/msdhsite/_static/14,0,420.html">https://msdh.ms.gov/msdhsite/_static/14,0,420.html</a></li>
+</ul>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-694892292">
+          <div class="frontmatter">
+            <div><strong>jesseandersonumd</strong> commented on September 18, 2020 at 9:11 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/846#issuecomment-694892292" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>CORRECTING VALUE ON 6/19 - BEFORE:</p>
+<p><img src="../assets/images/github/57415941/93607457-57677f80-f997-11ea-8ef3-e890acb1a795.png" alt="Screen Shot 2020-09-18 at 10 11 28 AM"></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-694892629">
+          <div class="frontmatter">
+            <div><strong>jesseandersonumd</strong> commented on September 18, 2020 at 9:12 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/846#issuecomment-694892629" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>CORRECTING VALUE ON 6/19 - AFTER:
+<img src="../assets/images/github/57415941/93607527-6fd79a00-f997-11ea-92e2-38bf547892c8.png" alt="Screen Shot 2020-09-18 at 10 12 09 AM"></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-694893911">
+          <div class="frontmatter">
+            <div><strong>jesseandersonumd</strong> commented on September 18, 2020 at 9:14 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/846#issuecomment-694893911" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>CORRECTING CONFIRMED VALUES 4/30-6/1 - BEFORE:</p>
+<p><img src="../assets/images/github/57415941/93607758-be853400-f997-11ea-9ba6-a88e17d52727.png" alt="Screen Shot 2020-09-18 at 10 14 05 AM"></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-694894303">
+          <div class="frontmatter">
+            <div><strong>jesseandersonumd</strong> commented on September 18, 2020 at 9:15 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/846#issuecomment-694894303" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>CORRECTING CONFIRMED VALUES 4/30-6/1 - AFTER:
+<img src="../assets/images/github/57415941/93607827-d78de500-f997-11ea-8c87-1a59eca613d9.png" alt="Screen Shot 2020-09-18 at 10 14 57 AM"></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-694897884">
+          <div class="frontmatter">
+            <div><strong>jesseandersonumd</strong> commented on September 18, 2020 at 9:21 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/846#issuecomment-694897884" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>MISTAKE CORRECTION 6/3 POSITIVE CASES PCR - BEFORE:</p>
+<p><img src="../assets/images/github/57415941/93608557-bf6a9580-f998-11ea-8de8-0abdf825f61f.png" alt="Screen Shot 2020-09-18 at 10 20 39 AM"></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-694898026">
+          <div class="frontmatter">
+            <div><strong>jesseandersonumd</strong> commented on September 18, 2020 at 9:21 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/846#issuecomment-694898026" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>MISTAKE CORRECTION 6/3 POSITIVE CASES PCR - AFTER:</p>
+<p><img src="../assets/images/github/57415941/93608588-c85b6700-f998-11ea-8945-27c025cfeead.png" alt="Screen Shot 2020-09-18 at 10 20 53 AM"></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-694905877">
+          <div class="frontmatter">
+            <div><strong>jesseandersonumd</strong> commented on September 18, 2020 at 9:34 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/846#issuecomment-694905877" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>PROBABES (BEFORE):
+<img src="../assets/images/github/57415941/93610073-98ad5e80-f99a-11ea-937d-bdde79312baf.png" alt="Screen Shot 2020-09-18 at 10 34 01 AM"></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-694906046">
+          <div class="frontmatter">
+            <div><strong>jesseandersonumd</strong> commented on September 18, 2020 at 9:35 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/846#issuecomment-694906046" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>PROBABLES (AFTER):
+<img src="../assets/images/github/57415941/93610090-a367f380-f99a-11ea-853c-51b5f1b96cfe.png" alt="Screen Shot 2020-09-18 at 10 34 18 AM"></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-698702078">
+          <div class="frontmatter">
+            <div><strong>esquared</strong> commented on September 24, 2020 at 10:39 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/846#issuecomment-698702078" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>MISTAKE CORRECTION 6/14 POSITIVE CASES PCR  AND PROBABLES- BEFORE:<img width="1101" alt="Screen Shot 2020-09-24 at 10 34 31 PM Before" src="../assets/images/github/71461067/94223852-8cebfb80-feb6-11ea-8407-39a9233c8636.png"></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-698702400">
+          <div class="frontmatter">
+            <div><strong>esquared</strong> commented on September 24, 2020 at 10:40 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/846#issuecomment-698702400" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>MISTAKE CORRECTION 6/14 POSITIVE CASES PCR AND PROBABLES- AFTER:
+<img width="1109" alt="Screen Shot 2020-09-24 at 10 35 04 PM After" src="../assets/images/github/71461067/94223982-ece2a200-feb6-11ea-97c2-795680b802ba.png"></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-702273076">
+          <div class="frontmatter">
+            <div><strong>esquared</strong> commented on October 1, 2020 at 12:06 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/846#issuecomment-702273076" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Before and after values</p>
+<p><a href="../assets/files/github/5313686/Probable.Timeseries.Backfill.MS.xlsx">Probable Timeseries Backfill MS.xlsx</a></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-710312492">
+          <div class="frontmatter">
+            <div><strong>stale[bot]</strong> commented on October 16, 2020 at 12:53 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/846#issuecomment-710312492" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-716755895">
+          <div class="frontmatter">
+            <div><strong>stale[bot]</strong> commented on October 26, 2020 at 1:55 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/846#issuecomment-716755895" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>This issue has been closed because it was stale for 15 days, and there was no further activity on it for 10 days. You can feel free to re-open it if the issue is important, and label it as “not stale.”</p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

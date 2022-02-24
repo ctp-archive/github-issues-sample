@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>Odd Data Number</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 515</p>
+        <p><strong>shivenspatel</strong> opened this issue on June 23, 2020 at 10:55 pm</p>
+        
+          <p><strong>Labels </strong>
+            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          
+            <span class="label"><a href="../label/2036763229.html">stale</a></span>
+          </p>
+          
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/515" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p><strong>State or US</strong>: [State name, or “US” if this is an issue with country-wide data]
+US</p>
+<p><strong>Describe the problem</strong>
+A clear and concise description of what the data problem is.</p>
+<p>In the JSON data, on 2020-03-01, the data shows an increase in 83 total test results, but 88 positive test results, effectively representing a 106% positive rate, which should technically be impossible.</p>
+<p><img src="../assets/images/github/24969290/85497715-07e60300-b5a4-11ea-87d2-f561386c8061.png" alt="image"></p>
+<p><strong>Link to data source</strong>
+Provide links to original data sources that we can refer to, like a state COVID website.</p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-655890754">
+          <div class="frontmatter">
+            <div><strong>stale[bot]</strong> commented on July 8, 2020 at 11:26 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/515#issuecomment-655890754" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-656475593">
+          <div class="frontmatter">
+            <div><strong>camille-le</strong> commented on July 9, 2020 at 11:28 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/515#issuecomment-656475593" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Hi <strong>@shivenspatel</strong>, I took a look at the <a href="https://covidtracking.com/api/v1/us/daily.json">daily.json</a> for 2020-03-01 and the previous day 2020-02-09.</p>
+<ul>
+<li>The “positiveIncrease” value is in the increase in “positive” from 2020-02-29 to 2020-03-01.</li>
+<li>For 2020-03-01, we report “positiveIncrease” as 89 (388-299).</li>
+</ul>
+<pre><code class="language-javascript">{
+   &quot;date&quot;:20200301,
+   &quot;states&quot;:3,
+   &quot;positive&quot;:388,
+   &quot;negative&quot;:14,
+   &quot;pending&quot;:null,
+   &quot;hospitalizedCurrently&quot;:null,
+   &quot;hospitalizedCumulative&quot;:null,
+   &quot;inIcuCurrently&quot;:null,
+   &quot;inIcuCumulative&quot;:null,
+   &quot;onVentilatorCurrently&quot;:null,
+   &quot;onVentilatorCumulative&quot;:null,
+   &quot;recovered&quot;:null,
+   &quot;dateChecked&quot;:&quot;2020-03-01T00:00:00Z&quot;,
+   &quot;death&quot;:8,
+   &quot;hospitalized&quot;:null,
+   &quot;lastModified&quot;:&quot;2020-03-01T00:00:00Z&quot;,
+   &quot;total&quot;:402,
+   &quot;totalTestResults&quot;:402,
+   &quot;posNeg&quot;:402,
+   &quot;deathIncrease&quot;:3,
+   &quot;hospitalizedIncrease&quot;:0,
+   &quot;negativeIncrease&quot;:-3,
+   &quot;positiveIncrease&quot;:89,
+   &quot;totalTestResultsIncrease&quot;:86,
+   &quot;hash&quot;:&quot;3d4d65c707c4ebccea4304d86716fb6e265762e1&quot;
+},
+{
+   &quot;date&quot;:20200229,
+   &quot;states&quot;:1,
+   &quot;positive&quot;:299,
+   &quot;negative&quot;:17,
+   &quot;pending&quot;:null,
+   &quot;hospitalizedCurrently&quot;:null,
+   &quot;hospitalizedCumulative&quot;:null,
+   &quot;inIcuCurrently&quot;:null,
+   &quot;inIcuCumulative&quot;:null,
+   &quot;onVentilatorCurrently&quot;:null,
+   &quot;onVentilatorCumulative&quot;:null,
+   &quot;recovered&quot;:null,
+   &quot;dateChecked&quot;:&quot;2020-02-29T00:00:00Z&quot;,
+   &quot;death&quot;:5,
+   &quot;hospitalized&quot;:null,
+   &quot;lastModified&quot;:&quot;2020-02-29T00:00:00Z&quot;,
+   &quot;total&quot;:316,
+   &quot;totalTestResults&quot;:316,
+   &quot;posNeg&quot;:316,
+   &quot;deathIncrease&quot;:1,
+   &quot;hospitalizedIncrease&quot;:0,
+   &quot;negativeIncrease&quot;:17,
+   &quot;positiveIncrease&quot;:24,
+   &quot;totalTestResultsIncrease&quot;:41,
+   &quot;hash&quot;:&quot;27c8dfcf504c66796dd4842c82d37d8a8b7d0c88&quot;
+},
+</code></pre>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

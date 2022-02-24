@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>Mississippi positive test rate</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 789</p>
+        <p><strong>chriscanipe</strong> opened this issue on August 24, 2020 at 12:39 pm</p>
+        
+          <p><strong>Labels </strong>
+            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          
+            <span class="label"><a href="../label/2036763229.html">stale</a></span>
+          </p>
+          
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/789" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p><strong>Target Date:</strong> The date by which we hope to complete this issue.
+ASAP</p>
+<p><strong>Overview:</strong> Briefly describe what work the issue entails.
+I maintain our tracker for <a href="https://tmsnrt.rs/34uv6Zm">Reuters</a>, and the 1-week positive test rate for Mississippi seems very high this week (40.8% for Monday Aug. 17 to Sun. Aug 23). I’m calculating that on total new cases and total new tests. But I see several days this week where the number of new cases is equal to the number of new tests, which suggests they are only reporting positive tests on some days. Can we confirm that?</p>
+<p><strong>Contribution to milestone:</strong> Explain how the issue contributes to the overall milestone.
+Just making sure these numbers are valid as reported. If not, can we add a note similar to what you show for Washington State and Puerto Rico, which also don’t report negative tests?</p>
+<p><strong>Other benefits:</strong> Explain any side benefits we could get from completing this issue.
+<strong>Potential challenges:</strong> Explain any potential blockers.
+<strong>Editorial:</strong> The specific editorial content we expect to come out of this issue.</p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-679388458">
+          <div class="frontmatter">
+            <div><strong>jaclyde</strong> commented on August 24, 2020 at 5:00 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/789#issuecomment-679388458" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Hi Chris,</p>
+<p>Can you send this issue via email to <a href="mailto:media-inquiries<strong>@covidtracking.com</strong>">media-inquiries<strong>@covidtracking.com</strong></a>?</p>
+<p>Thank you!</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-682321284">
+          <div class="frontmatter">
+            <div><strong>ghost</strong> commented on August 27, 2020 at 11:42 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/789#issuecomment-682321284" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Related to this Arizona issue: #755
+COVID19tracking’s data quality grade for Arizona is wrong. Arizona is graded as A+, but the state does not report all tests and does not report all negatives. The state reports all positives cases, and a subset of negative results. The reported number for total tests is in fact all positive cases + subset of negatives. This causes problems with positivity calculations for Arizona based off of COVID19tracking data. We need to be accurate when describing the data we aggregate, and stop saying Arizona is reporting all tests when they are not.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-691413083">
+          <div class="frontmatter">
+            <div><strong>stale[bot]</strong> commented on September 12, 2020 at 12:14 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/789#issuecomment-691413083" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-696526299">
+          <div class="frontmatter">
+            <div><strong>stale[bot]</strong> commented on September 22, 2020 at 1:07 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/789#issuecomment-696526299" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>This issue has been closed because it was stale for 15 days, and there was no further activity on it for 10 days. You can feel free to re-open it if the issue is important, and label it as “not stale.”</p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

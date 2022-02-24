@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>[UT Historical] Repair data for May 19, 22, 23</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 450</p>
+        <p><strong>jedludlow</strong> opened this issue on May 24, 2020 at 12:42 pm</p>
+        
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/450" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p>The state of Utah had an outage on May 19 which caused that day’s data to be a duplicate of May 18.</p>
+<p>Hospitalization data for May 22 and 23 was incorrect with respect to totals on the state’s site as retrieved around 11:30 am on May 23 and May 24, respectively.</p>
+<p>This pull request documents the required repairs. I realize that directly incorporating the pull request into <code>covid-tracking-data</code> may not be the best repair strategy, but it served as a convenient way to convey the required changes and allowed me to continue plotting without strange aberrations.</p>
+<p><a href="https://github.com/COVID19Tracking/covid-tracking-data/pull/73">https://github.com/COVID19Tracking/covid-tracking-data/pull/73</a></p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-637907429">
+          <div class="frontmatter">
+            <div><strong>jedludlow</strong> commented on June 2, 2020 at 8:58 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/450#issuecomment-637907429" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>For simplicity, here are the minimal required repairs spelled out for the days in question ignoring the deprecated data fields.</p>
+<h3>2020-05-19</h3>
+<p>There was an outage on the state’s data website for this day, causing it to be a duplicate of May 18. The correct data was posted later in the evening and can be obtained from a <a href="https://www.ksl.com/article/46754950/utah-reports-highest-single-day-covid-19-death-total-of-8-with-134-new-cases">KSL News story</a> from that day:</p>
+<ul>
+<li><code>positive</code>: 7518</li>
+<li><code>negative</code>: 16793</li>
+<li><code>hospitalizedCumulative</code>: 619</li>
+<li><code>death</code>: 88</li>
+</ul>
+<h3>2020-05-22</h3>
+<p>Cumulative hospitalization data for May 22 is incorrect. The <a href="https://covidtracking.com/screenshots/UT/UT-20200522-185327.png">historical screenshot</a> shows that this should read 660 instead of 1036.</p>
+<h3>2020-05-23</h3>
+<p>Cumulative hospitalization data for May 23 is incorrect. The <a href="https://covidtracking.com/screenshots/UT/UT-20200523-184524.png">historical screenshot</a> shows that this should read 676 instead of 1053.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-640286723">
+          <div class="frontmatter">
+            <div><strong>camille-le</strong> commented on June 7, 2020 at 5:04 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/450#issuecomment-640286723" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Hi Jed, thank you for your input and for sharing the KSL News Story. We’ve reviewed the historical screenshots from 5/18, 5/19, 5/22 and 5/23 for Utah. The cumulative hospitalization data will be updated in our next publish. We are still reviewing the remaining changes you’ve mentioned for 5/19.</p>
+<p><strong>BEFORE:</strong>
+<img src="../assets/images/github/31285549/83981114-e6acc380-a8cf-11ea-835d-bbd6bb3d845f.png" alt="2020-06-07_UT_BEFORE"></p>
+<p><strong>AFTER:</strong>
+<img src="../assets/images/github/31285549/83981116-eca2a480-a8cf-11ea-91b3-e38d6ab0f687.png" alt="2020-06-07_UT_AFTER"></p>
+<p>Thank you,
+Camille</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-640288800">
+          <div class="frontmatter">
+            <div><strong>camille-le</strong> commented on June 7, 2020 at 5:24 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/450#issuecomment-640288800" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>For the remaining changes for 5/19, data will be updated in our next publish for positive cases, negative cases, hospitalized (currently), hospitalized (cumulative), recovered and deaths.</p>
+<p><strong>BEFORE:</strong>
+<img src="../assets/images/github/31285549/83981446-b0247800-a8d2-11ea-8961-0a08684a5c8a.png" alt="UT_05-19_BEFORE"></p>
+<p><strong>AFTER:</strong>
+<img src="../assets/images/github/31285549/83981447-b4509580-a8d2-11ea-8e00-a75d5aba6ea8.png" alt="UT_05_19_AFTER"></p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

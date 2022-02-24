@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>Tweaks to the public-facing spreadsheet</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 489</p>
+        <p><strong>metasj</strong> opened this issue on June 11, 2020 at 9:06 pm</p>
+        
+          <p><strong>Labels </strong>
+            <span class="label"><a href="../label/1979554454.html">Feature Request</a></span>
+          
+            <span class="label"><a href="../label/2036763229.html">stale</a></span>
+          </p>
+          
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/489" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p>The main <a href="https://docs.google.com/spreadsheets/u/2/d/e/2PACX-1vRwAqp96T9sYYq2-i7Tj0pvTf6XVHjDSMIKBdZHXiCGGdNC0ypEU9NbngS8mxea55JuCFuua1MUeOj5/pubhtml#">data spreadsheet</a> is an excellent single-page source of information, but could be cleaned up a bit.</p>
+<p>I wasn’t sure which repo to add this to, including it here since it’s just spreadsheet update.<br>
+A dash of suggestions:</p>
+<p>== Tab headers
+<strong>States Current</strong> - lowercase Current<br>
+<strong>US current</strong> - fine<br>
+<strong>States daily</strong> 4 pm ET - remove time<br>
+<strong>US daily</strong> 4 pm ET<br>
+<strong>States</strong> - “States notes” would be clearer</p>
+<p>== Header row within each tab
+<strong>States current</strong>
+Close to the ideal – no extra vertical space in the header, double-thick lines indicating frozen first col and row.  Column nitpicks:</p>
+<ul>
+<li>Positive - “Positive cases”</li>
+<li>Negative - “Negative cases”</li>
+<li>Pending - drop this column.</li>
+<li>Last update - “Source last updated”</li>
+<li>Check time  - drop this column; confusing (and not included in States daily).  If it must be included, rename for clarity, to something like “Source last checked for updates”</li>
+</ul>
+<p><strong>US current</strong><br>
+Reduce the whitespace in the header row.  Freeze that row (double-thick line below)</p>
+<ul>
+<li>Add “Date” column as the first column, as with <em>US daily</em></li>
+<li>Add “Last update” column - add a timestamp column w/ the time this was updated from the previous day</li>
+</ul>
+<p><strong>States daily</strong>
+Reduce whitespace in the header. Drop the “4pm” in the title - that’s not always accurate.  Freeze the header row and first two columns.</p>
+<ul>
+<li>State - make narrower to match <em>States current</em></li>
+<li>Pending - remove column</li>
+<li>Deaths - make narrower</li>
+</ul>
+<p><strong>US daily</strong>
+Reduce whitespace in the header. Freeze the first two columns.</p>
+<ul>
+<li>Positive, Negative, Pending - “Positive cases”, “Negative cases”, “Pending cases”  [once tests/cases is normalized]</li>
+<li>Add “Last update” column, as with <em>US current</em>, for the full timestamp.</li>
+</ul>
+<p><strong>States</strong>
+Make header row unbold, and centered.  Freeze first column.</p>
+<ul>
+<li>Make URL columns a bit narrower, and Notes column a bit wider.</li>
+</ul>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-650597552">
+          <div class="frontmatter">
+            <div><strong>stale[bot]</strong> commented on June 27, 2020 at 1:25 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/489#issuecomment-650597552" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-654904375">
+          <div class="frontmatter">
+            <div><strong>muamichali</strong> commented on July 7, 2020 at 9:30 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/489#issuecomment-654904375" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Sorry <strong>@metasj</strong> I didn’t mean to close it. Was trying to make sure it won’t go stale…</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-662520647">
+          <div class="frontmatter">
+            <div><strong>stale[bot]</strong> commented on July 22, 2020 at 10:28 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/489#issuecomment-662520647" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-667552202">
+          <div class="frontmatter">
+            <div><strong>stale[bot]</strong> commented on August 1, 2020 at 10:58 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/489#issuecomment-667552202" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>This issue has been closed because it was stale for 15 days, and there was no further activity on it for 10 days. You can feel free to re-open it if the issue is important, and label it as “not stale.”</p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

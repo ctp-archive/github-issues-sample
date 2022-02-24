@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>[MT] Inputting Total PCR Tests (People) in Total PCR Tests since reporting units are unclear</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 742</p>
+        <p><strong>jaclyde</strong> opened this issue on August 9, 2020 at 5:29 pm</p>
+        
+          <p><strong>Labels </strong>
+            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          
+            <span class="label"><a href="../label/1937937334.html">Historical Data</a></span>
+          
+            <span class="label"><a href="../label/2158480839.html">PCL/SVP Historicals</a></span>
+          </p>
+          
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/742" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p>MT reports testing numbers in unclear units. So we are moving the Total Test data to the specimens or unclear metric from the people metric. In addition we are backfilling the Total Tests from when we started recording them to when they became available in late March.</p>
+<p><strong>Source for the tests data</strong> is: <a href="https://services.arcgis.com/qnjIrwR8z5Izc0ij/ArcGIS/rest/services/COVID_Cases_Production_View/FeatureServer/1/query?where=1%3D1&amp;objectIds=&amp;time=&amp;resultType=none&amp;outFields=&amp;returnIdsOnly=false&amp;returnUniqueIdsOnly=false&amp;returnCountOnly=false&amp;returnDistinctValues=false&amp;cacheHint=false&amp;orderByFields=ScriptRunDate+asc&amp;groupByFieldsForStatistics=&amp;outStatistics=&amp;having=&amp;resultOffset=&amp;resultRecordCount=&amp;sqlFormat=none&amp;f=pjson&amp;token=">ArcGis Query</a> --&gt; <a href="../assets/files/github/5048603/MT-Tests.json.txt">MT-Tests.json.txt</a></p>
+<ul>
+<li>[x] Update time series with data from 5/17-3/28</li>
+<li>[x] Move data from the people metric to the specimens metric</li>
+</ul>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-671109030">
+          <div class="frontmatter">
+            <div><strong>jaclyde</strong> commented on August 9, 2020 at 5:35 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/742#issuecomment-671109030" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>BEFORE
+<img width="590" alt="MT Before" src="../assets/images/github/66583275/90080267-06d97400-dcbf-11ea-92b4-7e73edeff9ce.png"></p>
+<p>BACKFILL Analysis
+<a href="../assets/files/github/5048546/MT.-.Analysis.MT.total.people.PCR.pdf">MT - Analysis [MT] total people PCR.pdf</a></p>
+<p>After move
+<img width="895" alt="MT After move" src="../assets/images/github/66583275/90080292-122c9f80-dcbf-11ea-9aea-ba7f23eb2e65.png"></p>
+<p>After move and backfill
+<img width="592" alt="MT after backfill" src="../assets/images/github/66583275/90080314-22dd1580-dcbf-11ea-87c4-adb7d8bf93a1.png"></p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>[NV] Patch timestamps through 7/16 *Low Priority*</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 678</p>
+        <p><strong>hmhoffman</strong> opened this issue on July 26, 2020 at 3:15 pm</p>
+        
+          <p><strong>Labels </strong>
+            <span class="label"><a href="../label/1937937334.html">Historical Data</a></span>
+          
+            <span class="label"><a href="../label/2162087998.html">Backfill</a></span>
+          </p>
+          
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/678" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p><strong>Describe the Issue:</strong>
+On 7/26, we switched from using the site update timestamp to the “data through” timestamp for Nevada at 23:59 of the previous date. Both timestamps have been available since 7/16, so we should patch the timestamps until present. See <a href="https://covid-tracking.slack.com/archives/CUQ4MMTPD/p1595793116050800">https://covid-tracking.slack.com/archives/CUQ4MMTPD/p1595793116050800</a> for full thread with discussion of process change.</p>
+<p><strong>Data Source:</strong>
+<a href="https://app.powerbigov.us/view?r=eyJrIjoiMjA2ZThiOWUtM2FlNS00MGY5LWFmYjUtNmQwNTQ3Nzg5N2I2IiwidCI6ImU0YTM0MGU2LWI4OWUtNGU2OC04ZWFhLTE1NDRkMjcwMzk4MCJ9">https://app.powerbigov.us/view?r=eyJrIjoiMjA2ZThiOWUtM2FlNS00MGY5LWFmYjUtNmQwNTQ3Nzg5N2I2IiwidCI6ImU0YTM0MGU2LWI4OWUtNGU2OC04ZWFhLTE1NDRkMjcwMzk4MCJ9</a></p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-670509628">
+          <div class="frontmatter">
+            <div><strong>brianskli</strong> commented on August 7, 2020 at 8:13 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/678#issuecomment-670509628" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>The 23:59 timestamp was found to be relevant through <strong>7/15</strong>. States Daily was changed accordingly to account for current timestamp practices.</p>
+<p>Before:
+<img width="493" alt="Screen Shot 2020-08-07 at 9 09 07 AM" src="../assets/images/github/66738237/89649073-2cfdaf00-d88e-11ea-866e-943707c2b101.png"></p>
+<p>After:
+<img width="496" alt="Screen Shot 2020-08-07 at 9 12 49 AM" src="../assets/images/github/66738237/89649082-2f600900-d88e-11ea-9361-7c3270549816.png"></p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

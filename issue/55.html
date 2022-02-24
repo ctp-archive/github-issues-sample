@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>California issue</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 55</p>
+        <p><strong>micahcc</strong> opened this issue on March 25, 2020 at 7:42 pm</p>
+        
+          <p><strong>Labels </strong>
+            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          </p>
+          
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/55" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p>California seems to have an artifact where the data from the previous day shows up in the afternoon (as today), then it gets updated later at night. Probably an artifact of the scraping? So right now there is:</p>
+<pre><code class="language-json">{&quot;date&quot;:20200325,&quot;state&quot;:&quot;CA&quot;,&quot;positive&quot;:2102,&quot;negative&quot;:13452,&quot;pending&quot;:12100,&quot;hospitalized&quot;:null,&quot;death&quot;:40,&quot;total&quot;:27654,&quot;dateChecked&quot;:&quot;2020-03-25T20:00:00Z&quot;,&quot;totalTestResults&quot;:15554,&quot;deathIncrease&quot;:0,&quot;hospitalizedIncrease&quot;:0,&quot;negativeIncrease&quot;:0,&quot;positiveIncrease&quot;:0,&quot;totalTestResultsIncrease&quot;:0},
+{&quot;date&quot;:20200324,&quot;state&quot;:&quot;CA&quot;,&quot;positive&quot;:2102,&quot;negative&quot;:13452,&quot;pending&quot;:12100,&quot;hospitalized&quot;:null,&quot;death&quot;:40,&quot;total&quot;:27654,&quot;dateChecked&quot;:&quot;2020-03-24T20:00:00Z&quot;,&quot;totalTestResults&quot;:15554,&quot;deathIncrease&quot;:13,&quot;hospitalizedIncrease&quot;:0,&quot;negativeIncrease&quot;:885,&quot;positiveIncrease&quot;:369,&quot;totalTestResultsIncrease&quot;:1254},
+</code></pre>
+<p>It seems like this row should be left out because it clearly hasn’t been filled in yet.</p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-604163589">
+          <div class="frontmatter">
+            <div><strong>kevee</strong> commented on March 25, 2020 at 7:43 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/55#issuecomment-604163589" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Hi, <strong>@micahcc</strong>, I’m moving this over to the API folks.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-604170750">
+          <div class="frontmatter">
+            <div><strong>webmasterkai</strong> commented on March 25, 2020 at 8:10 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/55#issuecomment-604170750" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>I’m moving this over to general issues. My understanding is that CA updated numbers late. It happened after the 4PM release. I think there’s an effort to fix this in the raw spreadsheets.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-604191702">
+          <div class="frontmatter">
+            <div><strong>micahcc</strong> commented on March 25, 2020 at 9:27 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/55#issuecomment-604191702" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p><strong>@webmasterkai</strong> sounds good. let me know if you know where in the codebase the scraping / issue might be. I would be happy to patch it.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-604197478">
+          <div class="frontmatter">
+            <div><strong>realfuture</strong> commented on March 25, 2020 at 9:49 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/55#issuecomment-604197478" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Yup, our numbers lock around 4pm ET. California always flies afterwards. But they’ve been extremely irregular with those updates. We hope they’ll get more standard in their reporting.</p>
+<blockquote>
+<p>On Mar 25, 2020, at 6:10 PM, Micah Chambers <a href="mailto:notifications<strong>@github.com</strong>">notifications<strong>@github.com</strong></a> wrote:</p>
+<p>California seems to have an artifact where the data from the previous day shows up in the afternoon (as today), then it gets updated later at night. Probably an artifact of the scraping? So right now there is:</p>
+<p>{“date”:20200325,“state”:“CA”,“positive”:2102,“negative”:13452,“pending”:12100,“hospitalized”:null,“death”:40,“total”:27654,“dateChecked”:“2020-03-25T20:00:00Z”,“totalTestResults”:15554,“deathIncrease”:0,“hospitalizedIncrease”:0,“negativeIncrease”:0,“positiveIncrease”:0,“totalTestResultsIncrease”:0},
+{“date”:20200324,“state”:“CA”,“positive”:2102,“negative”:13452,“pending”:12100,“hospitalized”:null,“death”:40,“total”:27654,“dateChecked”:“2020-03-24T20:00:00Z”,“totalTestResults”:15554,“deathIncrease”:13,“hospitalizedIncrease”:0,“negativeIncrease”:885,“positiveIncrease”:369,“totalTestResultsIncrease”:1254},
+It seems like this row should be left out because it clearly hasn’t been filled in yet.</p>
+<p>—
+You are receiving this because you are subscribed to this thread.
+Reply to this email directly, view it on GitHub, or unsubscribe.</p>
+</blockquote>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-604217954">
+          <div class="frontmatter">
+            <div><strong>micahcc</strong> commented on March 25, 2020 at 11:10 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/55#issuecomment-604217954" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Whats weird as well is that the states API shows the correct value:</p>
+<pre><code class="language-json">{&quot;state&quot;:&quot;CA&quot;,&quot;positive&quot;:2588,&quot;positiveScore&quot;:1,&quot;negativeScore&quot;:1,&quot;negativeRegularScore&quot;:1,&quot;commercialScore&quot;:0,&quot;grade&quot;:&quot;B&quot;,&quot;score&quot;:3,&quot;negative&quot;:15741,&quot;pending&quot;:48600,&quot;hospitalized&quot;:null,&quot;death&quot;:53,&quot;total&quot;:66929,&quot;lastUpdateEt&quot;:&quot;3/24 17:00&quot;,&quot;checkTimeEt&quot;:&quot;3/25 19:36&quot;,&quot;dateModified&quot;:&quot;2020-03-24T21:00:00Z&quot;,&quot;dateChecked&quot;:&quot;2020-03-25T23:36:00Z&quot;,&quot;totalTestResults&quot;:18329},{&quot;state&quot;:&quot;CO&quot;,&quot;positive&quot;:912,&quot;positiveScore&quot;:1,&quot;negativeScore&quot;:1,&quot;negativeRegularScore&quot;:1,&quot;commercialScore&quot;:1,&quot;grade&quot;:&quot;A&quot;,&quot;score&quot;:4,&quot;negative&quot;:6789,&quot;pending&quot;:null,&quot;hospitalized&quot;:84,&quot;death&quot;:11,&quot;total&quot;:7701,&quot;lastUpdateEt&quot;:&quot;3/24 18:00&quot;,&quot;checkTimeEt&quot;:&quot;3/25 14:58&quot;,&quot;dateModified&quot;:&quot;2020-03-24T22:00:00Z&quot;,&quot;dateChecked&quot;:&quot;2020-03-25T18:58:00Z&quot;,&quot;totalTestResults&quot;:7701},
+</code></pre>
+<p>But the states daily is still out of date :(</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-604801472">
+          <div class="frontmatter">
+            <div><strong>careeningspace</strong> commented on March 26, 2020 at 10:53 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/55#issuecomment-604801472" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Yes - California has struggled with publishing current data; for an entire day, they reported nothing.
+<img src="../assets/images/github/43073915/77719871-c3ef5c00-6fbc-11ea-9f85-67755d2f1088.png" alt="Screen Shot 2020-03-26 at 11 51 20 PM"></p>
+<p>As for the API, I am not sure why that would report anything different.</p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

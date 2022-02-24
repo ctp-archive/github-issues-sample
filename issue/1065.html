@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>[HI] Remove values carried over after Hawaii stopped reporting Total Tests (people) and Total test (specimens) on 10/7</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 1065</p>
+        <p><strong>jaclyde</strong> opened this issue on January 14, 2021 at 12:17 am</p>
+        
+          <p><strong>Labels </strong>
+            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          
+            <span class="label"><a href="../label/2036763438.html">not stale</a></span>
+          </p>
+          
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1065" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p>State: Hawaii</p>
+<p>Issue:  On October 7, 2020, Hawaii removed the Total tests (people) and the Total test (specimens) metrics from their dashboards. We carried over the last available value for both Total tests (people) and Negative, as the negative value was calculated from Total tests (people) - Confirmed Cases, but the metrics have not returned, so the values are out of date and potentially confusing. We will be keeping the time series as provided by the state, but removing the carried over values from October 8th, 2020, forward.</p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-759952785">
+          <div class="frontmatter">
+            <div><strong>jaclyde</strong> commented on January 14, 2021 at 12:17 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1065#issuecomment-759952785" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <ul>
+<li>[x]  make GH issue</li>
+<li>[x]  double check the metrics aren’t being reported somewhere by the state</li>
+<li>[x]  check public note - there is already a public note, will need to adjust the last sentence when removed</li>
+<li>[x]  add chart annotation</li>
+<li>[x]  remove carried over values</li>
+<li>[x]  null out source notes</li>
+<li>[x]  null out WS2 values</li>
+<li>[x]  revisit public note</li>
+</ul>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-760587582">
+          <div class="frontmatter">
+            <div><strong>jaclyde</strong> commented on January 14, 2021 at 7:39 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1065#issuecomment-760587582" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Values removed:
+<a href="../assets/files/github/5817730/Changes.txt">Changes.txt</a></p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>Deaths: Confirmed vs. probable, new CDC guideline</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 215</p>
+        <p><strong>datadict</strong> opened this issue on April 18, 2020 at 3:22 am</p>
+        
+          <p><strong>Labels </strong>
+            <span class="label"><a href="../label/2036763229.html">stale</a></span>
+          </p>
+          
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/215" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p>Dear team,</p>
+<p>It seems like CDC has updated their guidelines how to count deaths. They want probable deaths (no laboratory confirmation required) added to the confirmed deaths.</p>
+<p>How will you continue to report your numbers: Incl. probable deaths or excl. probable deaths? And if you plan to include it, how do you go about New York’s 3,778 probable deaths, that are not allocated to specific dates yet?</p>
+<p>Thanks,
+Patrick</p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-615873438">
+          <div class="frontmatter">
+            <div><strong>muamichali</strong> commented on April 18, 2020 at 8:38 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/215#issuecomment-615873438" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Thanks, Patrick!</p>
+<p>We are discussing how to handle the probable deaths as its own metric.</p>
+<p>For now, we are including public notes about each state where the probable deaths are included and we do include the probable deaths within the overall deaths. See for example Puerto Rico’s note here <a href="https://covidtracking.com/data#state-pr">https://covidtracking.com/data#state-pr</a></p>
+<p><img src="../assets/images/github/1749380/79639222-587e5180-8158-11ea-8c6c-79358d44ba6f.PNG" alt="PR"></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-615876160">
+          <div class="frontmatter">
+            <div><strong>datadict</strong> commented on April 18, 2020 at 8:57 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/215#issuecomment-615876160" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Michal,</p>
+<p>Thank you for your quick and helpful reply!</p>
+<p>That makes sense! Would it be fair to say that most states still report “confirmed” only (also when they do not comment on it)?</p>
+<p>FYI: Other than for Puerto Rico, I saw that New York publishes separate figures (<a href="https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-deaths-confirmed-probable-daily-04152020.pdf">https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-deaths-confirmed-probable-daily-04152020.pdf</a>). As far as I am aware, these deaths cannot be fully allocated to specific days, so for my analysis I excluded these to not mess up the growth rates.</p>
+<p>By the way, do you know if the Santa Clara Study uses “confirmed” deaths or “total” deaths? They do not specify it, but cite this website as a source (which does not specify it either, unfortunately): <a href="https://www.sccgov.org/sites/covid19/Pages/dashboard.aspx#cases">https://www.sccgov.org/sites/covid19/Pages/dashboard.aspx#cases</a></p>
+<p>Thank you so much,
+Patrick</p>
+<p>From: Michal M <a href="mailto:notifications<strong>@github.com</strong>">notifications<strong>@github.com</strong></a>
+Sent: 18 April 2020 14:39
+To: COVID19Tracking/issues <a href="mailto:issues<strong>@noreply.github.com</strong>">issues<strong>@noreply.github.com</strong></a>
+Cc: Patrick Mitschka <a href="mailto:patrick.mitschka<strong>@2binv.com</strong>">patrick.mitschka<strong>@2binv.com</strong></a>; Author <a href="mailto:author<strong>@noreply.github.com</strong>">author<strong>@noreply.github.com</strong></a>
+Subject: Re: [COVID19Tracking/issues] Deaths: Confirmed vs. probable, new CDC guideline (#215)</p>
+<p>Thanks, Patrick!</p>
+<p>We are discussing how to handle the probable deaths as its own metric.</p>
+<p>For now, we are including public notes about each state where the probable deaths are included and we do include the probable deaths within the overall deaths. See for example Puerto Rico’s note here <a href="https://covidtracking.com/data#state-pr">https://covidtracking.com/data#state-pr</a></p>
+<p>[PR]&lt;…/assets/images/github/1749380/79639222-587e5180-8158-11ea-8c6c-79358d44ba6f.PNG&gt;</p>
+<p>—
+You are receiving this because you authored the thread.
+Reply to this email directly, view it on GitHub<a href="https://github.com/COVID19Tracking/issues/issues/215#issuecomment-615873438">https://github.com/COVID19Tracking/issues/issues/215#issuecomment-615873438</a>, or unsubscribe<a href="https://github.com/notifications/unsubscribe-auth/AO4H6RNYXHFHLUJQGPWPR33RNGUONANCNFSM4MLIJP7A">https://github.com/notifications/unsubscribe-auth/AO4H6RNYXHFHLUJQGPWPR33RNGUONANCNFSM4MLIJP7A</a>.
+This email and any files transmitted with it are confidential and intended solely for the use of the individual or entity to whom they are addressed. If you are not the intended recipient you are notified that disclosing, copying, distributing or taking any action in reliance on the contents of this information is strictly prohibited.
+This email and any files transmitted with it are confidential and intended solely for the use of the individual or entity to whom they are addressed. If you are not the intended recipient you are notified that disclosing, copying, distributing or taking any action in reliance on the contents of this information is strictly prohibited.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-616968584">
+          <div class="frontmatter">
+            <div><strong>InALunch</strong> commented on April 21, 2020 at 12:55 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/215#issuecomment-616968584" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Is there an update on this? The choice of different metrics to use is leading to a large discrepancy, for example <a href="https://www.worldometers.info/coronavirus/country/us/">Worldometers</a> is reporting 18,929 deaths for New York State(similar numbers on JHU map, but harder to disentangle), while COVID Tracker is reporting 14,347 deaths <a href="https://docs.google.com/spreadsheets/u/2/d/e/2PACX-1vRwAqp96T9sYYq2-i7Tj0pvTf6XVHjDSMIKBdZHXiCGGdNC0ypEU9NbngS8mxea55JuCFuua1MUeOj5/pubhtml#">here</a>.</p>
+<p>In particular, I’m interested in understanding whether the numbers of deaths reported will change by April 26 or May 8, since this is germane to a number of forecasts I’d like to do.</p>
+<p>For reference, this is how worldometers handles it:</p>
+<blockquote>
+<p>In accordance with new CDC guidelines:</p>
+</blockquote>
+<blockquote>
+<p>New York: the numbers shown below include probable deaths (and, consequently, probable cases for the same number) as reported by New York City
+Maryland: includes probable deaths, as reported by the Department of Health (Section: “COVID-19 Statistics in Maryland”)
+Wyoming: includes probable cases, as reported by the Department of Health
+Most state reports and dashboards (such as Texas, Pennsylvania, North Carolina, Missouri, etc.) lag behind or show incomplete data with respect to the data shown by individual counties on their official websites and dashboards, which is what we collecte and aggregate when possible to show the most updated and accurate number in the table below. We will soon publish state-level pages with graphs and the breakdown by county.</p>
+</blockquote>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-624685171">
+          <div class="frontmatter">
+            <div><strong>stale[bot]</strong> commented on May 6, 2020 at 9:33 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/215#issuecomment-624685171" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-629657371">
+          <div class="frontmatter">
+            <div><strong>stale[bot]</strong> commented on May 16, 2020 at 9:47 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/215#issuecomment-629657371" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>This issue has been closed because it was stale for 15 days, and there was no further activity on it for 10 days. You can feel free to re-open it if the issue is important, and label it as “not stale.”</p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

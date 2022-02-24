@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>Twitter 7-day average line is incorrect</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 399</p>
+        <p><strong>Jmuccigr</strong> opened this issue on May 9, 2020 at 5:33 pm</p>
+        
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/399" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p>All the bar charts on Twitter purport to show a “rolling 7-day average” line. I’m not quite sure how you’re taking that average, but it seems wrong.</p>
+<p>For example, look at the deaths data from today (Saturday):
+<img src="https://pbs.twimg.com/media/EXmsSjCU8AYqFRF?format=jpg&amp;name=small" alt="deaths"></p>
+<p>On the left it takes until Mar 31 for the line <strong>not</strong> to be above the bars, so the line must be averaging in data from later dates, but since it hits the bar on Mar 31, it must also be averaging in earlier dates, since the 7 days after that are all higher.</p>
+<p>However, if I plot the average of a 7-day window centering it on the date in question, I don’t get your line. I think I get it if I plot a moving 15-day window, but yours still seems smoothed a bit more. So, I think what  you’re really doing is plotting a rolling 15-day average, not 7. My version:
+<img src="../assets/images/github/615115/81486447-23e05000-9255-11ea-940c-11174d9c3553.png" alt="Rplot"></p>
+<p>PS I’d suggest a 7-day trailing average, so you always have complete data for each point on the line. Right now, you’re having to supply data somehow for each of the last 7 days of the line since there are no later dates to roll in.</p>
+<p>R code for my plot, using your data as <code>covid_usa</code>:</p>
+<pre><code class="language-r">df &lt;- filter(covid_usa, date &gt;= as.Date (&quot;2020-03-01&quot;))
+ggplot(df) +
+    scale_color_manual(values = c(&quot;gold&quot;)) +
+    labs(title = &quot;US Daily Deaths&quot;, x = NULL, y = &quot;Count&quot;) +
+    theme(legend.position = &quot;NONE&quot; ) +
+    scale_x_date(breaks = &quot;3 day&quot;, minor_breaks = &quot;1 day&quot;, limits = c(as.Date(&quot;2020-03-01&quot;), NA)) +
+    scale_y_continuous(labels = comma) +
+    theme(axis.text.x = element_text(angle = 270)) +
+    geom_col(aes(y = deathIncrease, x = date), size = 1, color = &quot;blue&quot;, fill = &quot;blue&quot;, width = .5) +
+    geom_line(aes(color = &quot;Rolling 15-day average&quot;, x = date, y = rollapply(deathIncrease, 15, FUN = &quot;mean&quot;, align = &quot;center&quot;, fill = NA) ), size = 1 )
+
+</code></pre>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-627866242">
+          <div class="frontmatter">
+            <div><strong>Jmuccigr</strong> commented on May 13, 2020 at 4:27 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/399#issuecomment-627866242" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Anything on this? I suspect it’s a quick fix, just changing a number in your code.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-628971351">
+          <div class="frontmatter">
+            <div><strong>qpmnguyen</strong> commented on May 14, 2020 at 8:26 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/399#issuecomment-628971351" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Thank you very much for your input <strong>@</strong>Jmuccigr. I have passed your suggestion and concern to the data presentation team. I’m going to close this for now but feel free to reopen if necessary.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-628983986">
+          <div class="frontmatter">
+            <div><strong>jeremiak</strong> commented on May 14, 2020 at 9:10 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/399#issuecomment-628983986" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p><strong>@</strong>Jmuccigr Thanks for pointing this out, turns out you were mostly correct. We were not always showing a 7 day moving average, and it was more complicated than a simple line. Turns out I was using between 7 and 15 days (code below), depending on which index a given day had in the data set. I made updated the code so that now it <em>only</em> uses a 7 day slice.</p>
+<img width="1120" alt="Screen Shot 2020-05-14 at 7 03 03 PM" src="../assets/images/github/780941/82003766-037a1200-9616-11ea-97e3-1a0a2531658d.png">
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-632367929">
+          <div class="frontmatter">
+            <div><strong>Jmuccigr</strong> commented on May 21, 2020 at 4:59 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/399#issuecomment-632367929" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Please reopen this issue. It’s wrong again. Note in the tests image from May 21 how the running average line <strong>rises</strong> on  May 18, when that day is lower than the previous and the day 6 days earlier is lower than its previous day that should get moved out of the rolling average.
+<a href="https://twitter.com/COVID19Tracking/status/1263583359407620096">https://twitter.com/COVID19Tracking/status/1263583359407620096</a></p>
+<p>I’m not 100%, but looking at the code in the last comment, do you need to put 6 instead of 7? You’re doing an 8-day window if you go from (i -7) to i. That would be, for example, 1 to 8, not 1 to 7.</p>
+<p>Here’s a comparison of 7 vs 8-day rolling windows in R (I copied your formatting a bit). Your method still smooths out the lines a bit more than ggplot does, but you can see how the 8-day matches yours, esp for that dip on May 18:
+<img src="../assets/images/github/615115/82649194-1a71c300-9c19-11ea-9070-840d893d482c.jpg" alt="rolling"></p>
+<p>Relevant bit of code in R (a bit simplified to remove some of the formatting stuff). Change the value of the “days” variable to modify the window. covid-usa is the raw data from the API:</p>
+<pre><code>df &lt;- filter(covid_usa, date &gt;= as.Date(&quot;2020-03-01&quot;))
+days &lt;- 7 # change to adjust size of window
+ggplot(df, aes(y = totalTestResultsIncrease, x = date, group = 1)) +
+    labs(title = paste(&quot;US Daily Tests with trailing &quot;, days, &quot;-Day Average&quot;, sep = &quot;&quot;), x = NULL, y = &quot;Count&quot;, color = &quot;Data sets&quot;) +
+    theme(legend.position = c(.2,.7) ) +
+    scale_color_manual(values = c(&quot;blue&quot;, &quot;gold&quot;)) +
+    geom_col(size = 1, aes(color = &quot;Daily&quot;)) +
+    geom_line(aes(color = paste(&quot;Trailing &quot;, days, &quot;-day average&quot;, sep = &quot;&quot;), y = rollapply(totalTestResultsIncrease, days, FUN = &quot;mean&quot;, align = &quot;left&quot;, fill = NA) ) )
+</code></pre>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-633118164">
+          <div class="frontmatter">
+            <div><strong>Jmuccigr</strong> commented on May 23, 2020 at 2:00 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/399#issuecomment-633118164" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Any thoughts?</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-634193295">
+          <div class="frontmatter">
+            <div><strong>jeremiak</strong> commented on May 26, 2020 at 1:17 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/399#issuecomment-634193295" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p><strong>@</strong>Jmuccigr Thanks for noting this, really appreciate the attention to detail. Here is <a href="https://observablehq.com/d/db40552a78b64630">the Observable notebook</a> we are using to create those charts, you can see where we are calculating <code>calculateRollingAverage</code>.</p>
+<p>When I audit the algorithm, it does look like we’re calculating the average using 7 values because of the way that <code>.slice()</code> works in Javascript (the end value isn’t included).</p>
+<p>I feel like I’m missing your point regarding May 18th, can you try restating it?</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-634237950">
+          <div class="frontmatter">
+            <div><strong>Jmuccigr</strong> commented on May 26, 2020 at 2:43 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/399#issuecomment-634237950" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Hi. I have no clue about .slice(), so feel free to ignore my attempt to diagnose the problem in your code.</p>
+<p>Just compare my two examples from with the image from your tweet that I link to. In the 7-day example, the curve drops on May 18 as the bar is lower than the bar from 7 days previous that it replaces, so the 7-day average drops. In your curve it rises, which is incorrect. Maybe try calculating the average for that day by hand?</p>
+<p>To my eye, the R version of an 8-day average that I posted looks a lot like your curve. Not identical, because I think your plotting software just prints a smoother curve for some reason. Note the absence of sharp changes in your curve.</p>
+<p>Again, I would suggest just calculating one 7-day average by hand to see what you get.</p>
+<p>EDIT</p>
+<p>OK, here’s the math with my R code and its slightly modified output. I just cut the database down to the seven days ending with the 18th, then I print out the date and the test increase, followed by the mean of those numbers.</p>
+<p>Note that the mean 7-day value on the 18th is a bit <strong>less than</strong> the actual value on the 16th. In your chart, the mean (rolling) value on the 18th is <strong>higher</strong> than the actual value on the 16th.</p>
+<pre><code class="language-r">df &lt;- filter(covid_usa, date &gt;= &quot;2020-05-12&quot;, date &lt;= &quot;2020-05-18&quot;);  paste(df$date,df$totalTestResultsIncrease); mean(df$totalTestResultsIncrease)
+</code></pre>
+<pre><code>2020-05-18 345702
+2020-05-17 402808 
+2020-05-16 352936 
+2020-05-15 362941 
+2020-05-14 376751
+2020-05-13 296025 
+2020-05-12 304745
+
+348844
+</code></pre>
+<p>Now let’s do the previous seven days (same R code, just move the window down one day). The May 17 rolling average is <strong>higher</strong> than the 18th, but that’s not what your chart shows:</p>
+<pre><code>2020-05-17 402808
+2020-05-16 352936
+2020-05-15 362941
+2020-05-14 376751
+2020-05-13 296025
+2020-05-12 304745
+2020-05-11 384644
+
+354407.1
+</code></pre>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-642147995">
+          <div class="frontmatter">
+            <div><strong>Jmuccigr</strong> commented on June 10, 2020 at 12:20 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/399#issuecomment-642147995" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>I think this is correct now, though the smoothing on the average curve is pretty heavy compared with what R does.
+<img width="1440" alt="image" src="../assets/images/github/615115/84298406-5da3bf80-ab4f-11ea-9b1d-810e9be9bd4c.png"></p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

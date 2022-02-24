@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>[ME] Explicit Probables Backfill </h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 837</p>
+        <p><strong>jesseandersonumd</strong> opened this issue on September 16, 2020 at 9:00 am</p>
+        
+          <p><strong>Labels </strong>
+            <span class="label"><a href="../label/1937937334.html">Historical Data</a></span>
+          
+            <span class="label"><a href="../label/2162087998.html">Backfill</a></span>
+          </p>
+          
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/837" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p><strong>State or US</strong>: ME</p>
+<p><strong>Describe the problem</strong>
+CTP started reporting probables on 7/28. ME started reporting values for probables on 5/4, and we can reasonably backfill by calculating positive (confirmed + probables) - positive PCR cases back until 5/4.</p>
+<p><strong>Link to data source</strong></p>
+<ul>
+<li>CTP screenshots [<a href="https://covidtracking.com/data/state/maine/screenshots">https://covidtracking.com/data/state/maine/screenshots</a>] 5/4-7/28</li>
+</ul>
+<p>PROPOSED VALUES (from 5/4-9/15)</p>
+<p>503
+502
+487
+485
+475
+473
+476
+469
+471
+472
+470
+468
+472
+467
+467
+466
+465
+457
+455
+453
+447
+449
+446
+445
+445
+438
+441
+435
+432
+430
+421
+418
+418
+410
+408
+406
+408
+417
+417
+415
+415
+424
+427
+429
+423
+421
+413
+411
+409
+405
+410
+406
+403
+400
+403
+402
+423
+424
+421
+394
+397
+391
+392
+398
+399
+396
+389
+389
+394
+395
+390
+389
+387
+385
+388
+377
+372
+360
+356
+353
+345
+344
+339
+337
+339
+331
+328
+328
+327
+323
+327
+320
+315
+307
+305
+301
+287
+287
+284
+283
+275
+271
+272
+265
+266
+259
+256
+258
+257
+255
+238
+223
+215
+216
+210
+209
+199
+199
+187
+180
+180
+176
+171
+166
+160
+143
+139
+134
+124
+121
+110
+99
+80
+76
+69</p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-693426017">
+          <div class="frontmatter">
+            <div><strong>jesseandersonumd</strong> commented on September 16, 2020 at 9:01 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/837#issuecomment-693426017" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>BEFORE:
+<img src="../assets/images/github/57415941/93347892-9795f900-f803-11ea-8ff3-a3082e1613dc.png" alt="Screen Shot 2020-09-16 at 9 50 18 AM"></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-693426724">
+          <div class="frontmatter">
+            <div><strong>jesseandersonumd</strong> commented on September 16, 2020 at 9:02 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/837#issuecomment-693426724" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>AFTER:
+<img src="../assets/images/github/57415941/93347976-ad0b2300-f803-11ea-9274-d4fdd138d3df.png" alt="Screen Shot 2020-09-16 at 10 01 55 AM"></p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>Idaho&#39;s &quot;positive&quot; started including presumed cases 4/17, so possibly off by up to 9.8% as of 5/17</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 308</p>
+        <p><strong>waded</strong> opened this issue on April 26, 2020 at 6:25 pm</p>
+        
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/308" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p>The report for Idaho at <a href="https://covidtracking.com/data">https://covidtracking.com/data</a> as of 4/26 states “as of 4/24, Idaho separately reports both probable and confirmed cases”. That’s not correct; Idaho DHW started reporting probable cases separately from confirmed (positive) cases on 4/9, and the number of cases shown on <a href="https://coronavirus.idaho.gov">https://coronavirus.idaho.gov</a> since 4/17 has been the <strong>sum</strong> of probable and confirmed/positive!</p>
+<p>At the time I opened this issue the API documents stated “positive” is “Total cumulative positive test results”, so I presume the data you’re collecting as “positive” wasn’t intended to include Idaho’s probable counts.</p>
+<p>You can see evidence of this in <a href="https://covidtracking.com/data/state/idaho#historical">screencaps</a>. Note the label, and what the label says going back through 4/17, 4/9, earlier.</p>
+<p><img src="../assets/images/github/1535656/80336420-701e9f80-8814-11ea-9773-567cd25810c1.png" alt="image"></p>
+<p>Idaho DHW’s Tableau dashboard (which <a href="https://coronavirus.idaho.gov">https://coronavirus.idaho.gov</a> started linking to on 4/2) has the detailed data needed to fix this, in tooltips on this cumulative cases chart:</p>
+<p><img src="../assets/images/github/1535656/80322438-73993300-87e2-11ea-9b82-0ff88c9ae68c.png" alt="image"></p>
+<p>If the chart is ever removed, I have a copy of the data as far back as 4/9 I can provide.</p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-619641746">
+          <div class="frontmatter">
+            <div><strong>waded</strong> commented on April 26, 2020 at 6:29 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/308#issuecomment-619641746" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>The link for the Tableau dashboard mentioned is currently: <a href="https://public.tableau.com/profile/idaho.division.of.public.health#!/vizhome/DPHIdahoCOVID-19Dashboard_V2/Story1">https://public.tableau.com/profile/idaho.division.of.public.health#!/vizhome/DPHIdahoCOVID-19Dashboard_V2/Story1</a></p>
+<p>That URL’s changed at least once since Idaho DHW started publishing it. They’ve to-date always linked to it from <a href="https://coronavirus.idaho.gov">https://coronavirus.idaho.gov</a> if the link above stops working.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-627136465">
+          <div class="frontmatter">
+            <div><strong>stale[bot]</strong> commented on May 12, 2020 at 1:24 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/308#issuecomment-627136465" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-629872386">
+          <div class="frontmatter">
+            <div><strong>waded</strong> commented on May 17, 2020 at 5:44 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/308#issuecomment-629872386" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>This is still an issue. For example, Idaho DHW reported 2203 cumulative confirmed/positive, 216 cumulative probable on 5/16, for a sum of 2419 (the sum is published at <a href="http://coronavirus.idaho.gov">coronavirus.idaho.gov</a>, the detail is published on the Tableau dashboard linked to from there, daily just after 5PM Mountain, except recently they’ve stopped updating it on Sunday.)</p>
+<p>It appears the project has captured positive=2419 for date=2020517.</p>
+<p>Idaho DHW’s not explained how these counts handle probables that become positive, but I will say that since there have been days when the probable cumulative count decreased (5/7 for example), so I think what they are doing is subtracting from probable, and adding to confirmed, on the day it is confirmed and reported. That indicates this project may be overcounting Idaho positives by up to 216/2203=9.8% as of 5/16.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-629935690">
+          <div class="frontmatter">
+            <div><strong>waded</strong> commented on May 17, 2020 at 11:14 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/308#issuecomment-629935690" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Let me know how I can help here. I’ve developed a Tableau extract parawr that can get the correct numbers from Idaho DHW’s dashboard, but I don’t quite understand the layout of this project, in particular how the scraping works for Idaho now.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-631537414">
+          <div class="frontmatter">
+            <div><strong>karaschechtman</strong> commented on May 20, 2020 at 10:11 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/308#issuecomment-631537414" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Hi <strong>@waded</strong>,
+Thanks for bringing this to our attention. We are currently reviewing the issue and should have updates for you shortly.
+(Next github issues shift: for comments see <a href="https://covid-tracking.slack.com/archives/C0116LT5CTT/p1589985879306600">https://covid-tracking.slack.com/archives/C0116LT5CTT/p1589985879306600</a>)</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-632103692">
+          <div class="frontmatter">
+            <div><strong>karaschechtman</strong> commented on May 21, 2020 at 9:02 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/308#issuecomment-632103692" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Hi <strong>@waded</strong>,
+Thanks for pointing out this data. It was not a problem for positive count since we bundle confirmed and probable cases for that field. However, it turned out that we had sometimes been inferring our negative test counts with total - (confirmed + probable) negatives, rather than total - confirmed, before we made a note of Idaho’s separation of the fields formally. As a result, many of our negative test values were too low.</p>
+<p>I went through our edit history for negatives, and located days we calculated the negative value using confirmed + probable positives according to the figures from hovering over each day on the Tableau chart “<a href="https://public.tableau.com/profile/idaho.division.of.public.health#!/vizhome/DPHIdahoCOVID-19Dashboard_V2/Story1">Statewide cases</a>”. Then I corrected those days to subtract just the confirmed positives (those that had been verified by tests) from totals rather than confirmed + probables. Note that, depending on the time of day we updated, there was sometimes a 1-day lag I had to account for. There were 12 days between 4/16-4/30 I corrected. I also carried over a negative value on one day to prevent decreases in negatives.</p>
+<p>After:
+<img width="262" alt="Screen Shot 2020-05-21 at 9 50 16 AM" src="../assets/images/github/15933271/82565871-1d04e780-9b49-11ea-864d-0a46d3f546d4.png"></p>
+<p>Before:</p>
+<p>April 30
+￼<img width="239" alt="Pasted Graphic 2" src="../assets/images/github/15933271/82566192-8be24080-9b49-11ea-9ccc-4dc89a0cdc4f.png">
+Should be 1831 (from April 29): 28693-1831 = 26862</p>
+<p>April 27
+￼<img width="236" alt="Pasted Graphic 3" src="../assets/images/github/15933271/82566229-98ff2f80-9b49-11ea-976d-b4468145b201.png">
+Should be 1768 (from April 26): 19895-1768=18127</p>
+<p>April 26
+<img width="237" alt="Pasted Graphic 4" src="../assets/images/github/15933271/82566245-9e5c7a00-9b49-11ea-8e8c-afcbe97f6f6c.png">
+Should be 1760 (from April 25): 19361-1760=17601. But, carried 17611 to not decrease negatives.</p>
+<p>(Note: changed April 25 in our data to 17611 to account for removal of evening shift &amp; not decrease negatives)</p>
+<p>April 24
+<img width="235" alt="Pasted Graphic 5" src="../assets/images/github/15933271/82566272-a9170f00-9b49-11ea-82a2-d8c5ba3de786.png">
+Should be 1750 (from April 24): 19361-1750=17611.</p>
+<p>April 23
+<img width="235" alt="Pasted Graphic 6" src="../assets/images/github/15933271/82566309-b633fe00-9b49-11ea-9a7a-a0a408d8df05.png">
+Should be 1721 (from April 23): 19091-1721=17370</p>
+<p>April 22
+<img width="238" alt="Pasted Graphic 7" src="../assets/images/github/15933271/82566328-baf8b200-9b49-11ea-81db-42ea6e7d8372.png">
+Should be 1688 (from April 22): 18092-1688=16404</p>
+<p>April 21
+￼<img width="233" alt="Pasted Graphic 8" src="../assets/images/github/15933271/82566341-c2b85680-9b49-11ea-8d10-284653532a63.png">
+Should be 1659 (from April 21): 17730-1659=16071</p>
+<p>April 19
+￼<img width="230" alt="Pasted Graphic 10" src="../assets/images/github/15933271/82566354-c9df6480-9b49-11ea-98f1-8b678d6b43c5.png">
+Should be 1581 (from April 19): 17445-1672=15773</p>
+<p>April 18
+￼<img width="234" alt="Pasted Graphic 11" src="../assets/images/github/15933271/82566369-d19f0900-9b49-11ea-9c7d-f529f17ed736.png">
+Should be 1577 (from April 18): 16869-1577=15292</p>
+<p>April 17
+￼<img width="238" alt="Pasted Graphic 12" src="../assets/images/github/15933271/82566385-d6fc5380-9b49-11ea-93f3-6fd30b28650e.png">
+Should be 1566 (from April 17): 16609-1566=15043</p>
+<p>April 16
+<img width="244" alt="Pasted Graphic 13" src="../assets/images/github/15933271/82566403-debbf800-9b49-11ea-924b-3d21dc16e4a7.png">
+Should be 1528 (from April 16): 16183-1528=14655</p>
+<p>We will change our public note to reflect that ID has been reporting confirmed positives since 4/9.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-632125060">
+          <div class="frontmatter">
+            <div><strong>waded</strong> commented on May 21, 2020 at 9:42 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/308#issuecomment-632125060" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>I’ll check back in a few days when this is flushed through and e.g. 5/22’s numbers can be observed.</p>
+<p>The change to negatives makes sense (although I think to infer negatives in this way is quite wrong, because of lag between reporting tests and positives, as well as double counting on patient, I’ve not seen any notable analysis based on the tracking projects negative field.)</p>
+<p>I still don’t agree that Idaho’s “probable” count should be bundled into “positives”, which API docs still describe simply as “Total cumulative positive test results” and Idaho’s “probables” are not that. But if that is intentional and you’re doing it consistently across states, then so be it (although I recommend API docs be more specific; I will open a separate issue.)</p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

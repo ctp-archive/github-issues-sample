@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>Tracking antibody test data in AZ</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 398</p>
+        <p><strong>WilliamsLisa</strong> opened this issue on May 9, 2020 at 10:17 am</p>
+        
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/398" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p>Arizona is now mixing antibody tests with PCR tests. Covid Tracking is showing a large increase in new tests on Thursday May 7. That increase is due to adding in serological tests. Covid Tracking should pull the “Total COVID-19 PCR Tests” rather than “Number of COVID-19 Tests”. The latter number reflects PCR + Serological tests.
+Serological tests cannot be counted as cases without PCR confirmation. So Covid19 Tracking is making it look like there is a very large increase in PCR testing of infection that does not exist.
+<img src="../assets/images/github/65079133/81477609-855cdc00-91cd-11ea-9fe8-24d24f0ad198.png" alt="Screenshot from 2020-05-09 07-54-21"></p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-626235268">
+          <div class="frontmatter">
+            <div><strong>qpmnguyen</strong> commented on May 9, 2020 at 4:05 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/398#issuecomment-626235268" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Thank you for your input <strong>@</strong>WilliamsLisa! We are aware of the testing changes and have tracked these numbers. We’re also working internally to best represent these numbers in our next update. Our biggest concern at this point is whether AZ had been reporting combined antibody and PCR tests even before 5/8. Unfortunately, as states change their data definitions, we have to make difficult choices to keep our data consistent. We are working our best to seek clarification on these issues and work towards a solution. We’ll keep in touch!</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-626239862">
+          <div class="frontmatter">
+            <div><strong>WilliamsLisa</strong> commented on May 9, 2020 at 4:48 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/398#issuecomment-626239862" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>The answer is no. They were not reporting combined serology tests prior to 5/5. Here is the blog post of the first day that they began reporting it on 5/5.
+<a href="https://directorsblog.health.azdhs.gov/covid-19-dashboard-now-includes-data-about-antibody-testing/">https://directorsblog.health.azdhs.gov/covid-19-dashboard-now-includes-data-about-antibody-testing/</a>
+Look at you data difference between 5/6 and 5/7. 14k new tests were added. The change is very obvious. Look at your screenshot differences between those days. This is a very simple and obvious change. I am not sure why you dismissed and closed this so easily.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-626241902">
+          <div class="frontmatter">
+            <div><strong>WilliamsLisa</strong> commented on May 9, 2020 at 5:10 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/398#issuecomment-626241902" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>You can see a relatively constant 3-4k new test per day. Then on 5/7 19k new tests. That is when all of the serology tests came in. The next day there was 8k tests because about half are serology.
+<img src="../assets/images/github/65079133/81486075-392e8d80-9207-11ea-8522-1470f8730fa1.png" alt="Screenshot from 2020-05-09 15-08-10"></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-626959931">
+          <div class="frontmatter">
+            <div><strong>qpmnguyen</strong> commented on May 11, 2020 at 3:58 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/398#issuecomment-626959931" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Hi <strong>@</strong>WilliamsLisa! We’re sorry that we made it seem that this is being dismissed. The issue is very much under discussion and we’re approaching a solution for our reporting. We want to report data as consistently as possible across all states. We’d prefer to keep reporting these numbers and fix our historicals later once we’re sure of a solution. We definitely do not want to mix PCR and antibody tests, so expect a fix soon.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-627452840">
+          <div class="frontmatter">
+            <div><strong>qpmnguyen</strong> commented on May 12, 2020 at 11:29 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/398#issuecomment-627452840" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Here is an update: We have revised historicals accordingly for AZ, and have implemented (since 5/7) new data entry procedures to separate out and capture both data types.
+Before:
+<img src="../assets/images/github/25627274/81720217-1a6d0880-944c-11ea-88be-48336e4a843f.JPG" alt="Before">
+After:
+<img src="../assets/images/github/25627274/81720237-20fb8000-944c-11ea-82f8-5d521b1f3c3f.JPG" alt="after_1">
+It took a while but we want to be sure of our information, while additionally also trying to standardize this reporting across all states. Thank you very much for your input and look for a more meaty update on our website.</p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

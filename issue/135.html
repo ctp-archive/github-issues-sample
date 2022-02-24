@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>Oregon Data is sometimes incorrect because of timing</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 135</p>
+        <p><strong>Greg-Boggs</strong> opened this issue on March 26, 2020 at 2:08 am</p>
+        
+          <p><strong>Labels </strong>
+            <span class="label"><a href="../label/2017157139.html">Publish Time</a></span>
+          
+            <span class="label"><a href="../label/2036763229.html">stale</a></span>
+          </p>
+          
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/135" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p>It’s happened a couple of times where the API fetches Oregon Data just before the Oregon Health department updates the numbers. So, the API shows the same data for two days in a row. Can we adjust the timing on the Oregon data scrape so that it’s a bit later in the day?</p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-604596311">
+          <div class="frontmatter">
+            <div><strong>gwynnebaer</strong> commented on March 26, 2020 at 1:20 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/135#issuecomment-604596311" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Alternative, make a request more than once in 24 hours? Is there harm in making a request 12 hours out of phase? Oregon has not consistently updated their data (at the same time of day). For that, what is the harm in making regular (4-6 hour) requests?</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-604704666">
+          <div class="frontmatter">
+            <div><strong>kevee</strong> commented on March 26, 2020 at 4:49 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/135#issuecomment-604704666" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Reassigning to the API team.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-604828028">
+          <div class="frontmatter">
+            <div><strong>careeningspace</strong> commented on March 27, 2020 at 12:52 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/135#issuecomment-604828028" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>FYI - the API from <a href="https://covidtracking.com/api/">https://covidtracking.com/api/</a> is curated by people who make sure the most accurate data we have is available. We have set our cutoff at four for our daily data to create a fixed daily data point. Unfortunately, some states are not very consistent with their updates. We try to accommodate if possible, but there is a limit to how much we can tweak our data.</p>
+<blockquote>
+<p>The best thing you can do is to push your government to improve their reporting process.</p>
+</blockquote>
+<p>This is our daily report:
+<img src="../assets/images/github/43073915/77725911-1173c500-6fcd-11ea-9cbc-b8e1abffbc0b.png" alt="Screen Shot 2020-03-27 at 1 48 22 AM"></p>
+<p>And this is our log of data throughout the day:
+<img src="../assets/images/github/43073915/77726099-85ae6880-6fcd-11ea-89a5-ed77246325fc.png" alt="Screen Shot 2020-03-27 at 1 51 34 AM"></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-626989961">
+          <div class="frontmatter">
+            <div><strong>stale[bot]</strong> commented on May 11, 2020 at 5:03 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/135#issuecomment-626989961" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

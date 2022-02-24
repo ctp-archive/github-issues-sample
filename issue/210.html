@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>inIcuCurrently and inIcuCumulative mixed up?</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 210</p>
+        <p><strong>sdangt</strong> opened this issue on April 17, 2020 at 12:53 pm</p>
+        
+          <p><strong>Labels </strong>
+            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          
+            <span class="label"><a href="../label/1921155910.html">Data source</a></span>
+          </p>
+          
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/210" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p>I just downloaded the <a href="https://covidtracking.com/api/us/daily.csv">US historical data</a>, and “inIcuCurrently” is both larger than “inIcuCumulative” and goes up continuously, implying that these two column headers might be reversed.</p>
+<p>I got this from the <a href="https://covidtracking.com/api">API page</a>.</p>
+<p>Neither of those figures seem to line up well with data from elsewhere about serious cases, such as <a href="https://www.worldometers.info/coronavirus/">from Worldometer</a>.</p>
+<p>The columns are not referenced on the API page, so maybe they are new or experimental.</p>
+<p>Anyway, I have seen this data referenced elsewhere, and I think it’s a very worthwhile project.</p>
+<p>Dan</p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-615385101">
+          <div class="frontmatter">
+            <div><strong>muamichali</strong> commented on April 17, 2020 at 12:59 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/210#issuecomment-615385101" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Thanks, Dan!</p>
+<p>From <a href="https://covidtracking.com/data:">https://covidtracking.com/data:</a></p>
+<blockquote>
+<p>States are currently reporting two fundamentally unlike statistics: current hospital/ICU admissions and cumulative hospitalizations/ICU admissions. Across the country, this reporting is also sparse. In short: it is impossible to assemble anything resembling the real statistics for hospitalizations, ICU admissions, or ventilator usage across the United States. As a result, we will no longer provide national-level summary hospitalizations, ICU admissions, or ventilator usage statistics on our site.</p>
+<p>We will continue tracking these numbers on a state-by-state basis, but it does not feel responsible to continue to display these US-wide statistics for a general audience. These heavily caveated numbers will remain in the API for advanced data users.</p>
+</blockquote>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-615503889">
+          <div class="frontmatter">
+            <div><strong>sdangt</strong> commented on April 17, 2020 at 6:19 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/210#issuecomment-615503889" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Thanks for that explanation.  I noticed that Johns Hopkins is displaying
+<a href="https://coronavirus.jhu.edu/map.html">https://coronavirus.jhu.edu/map.html</a> US-wide hospitalization data now
+(click the right arrow on the panel in the upper right).  I’m surprised
+they are reporting these.  They do have higher numbers than you do at the
+moment.</p>
+<p>Are the numbers still some guide though because for instance wouldn’t
+numbers in the past also be similarly incomplete, so that we can at least
+compare these incomplete numbers to those for some rough comparison?</p>
+<p>But perhaps there will be an analysis afterwards that yields at least
+slightly more accurate results.  It’s too bad that we aren’t tracking these
+things better.  It seems inconceivable (“you keep using that word”) that we
+aren’t tracking even some these basic metrics better at a time like this,
+when there are so many data tools available.</p>
+<p>Thanks for your reply.</p>
+<p>Dan</p>
+<p>On Fri, Apr 17, 2020 at 1:59 PM Michal M <a href="mailto:notifications<strong>@github.com</strong>">notifications<strong>@github.com</strong></a> wrote:</p>
+<blockquote>
+<p>Thanks, Dan!</p>
+<p>From <a href="https://covidtracking.com/data:">https://covidtracking.com/data:</a></p>
+<p>States are currently reporting two fundamentally unlike statistics:
+current hospital/ICU admissions and cumulative hospitalizations/ICU
+admissions. Across the country, this reporting is also sparse. In short: it
+is impossible to assemble anything resembling the real statistics for
+hospitalizations, ICU admissions, or ventilator usage across the United
+States. As a result, we will no longer provide national-level summary
+hospitalizations, ICU admissions, or ventilator usage statistics on our
+site.</p>
+<p>We will continue tracking these numbers on a state-by-state basis, but it
+does not feel responsible to continue to display these US-wide statistics
+for a general audience. These heavily caveated numbers will remain in the
+API for advanced data users.</p>
+<p>—
+You are receiving this because you authored the thread.
+Reply to this email directly, view it on GitHub
+<a href="https://github.com/COVID19Tracking/issues/issues/210#issuecomment-615385101">https://github.com/COVID19Tracking/issues/issues/210#issuecomment-615385101</a>,
+or unsubscribe
+<a href="https://github.com/notifications/unsubscribe-auth/AG7TDJJDFBFTTZZDJYJD3SDRNCKIHANCNFSM4MK5V36Q">https://github.com/notifications/unsubscribe-auth/AG7TDJJDFBFTTZZDJYJD3SDRNCKIHANCNFSM4MK5V36Q</a>
+.</p>
+</blockquote>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-615536453">
+          <div class="frontmatter">
+            <div><strong>catawbasam</strong> commented on April 17, 2020 at 8:48 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/210#issuecomment-615536453" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>JHU is using COVID1i9Tracking as its source for US hospitalizations:
+<em>“COVID Tracking Project: <a href="https://covidtracking.com/data">https://covidtracking.com/data</a>. (US Testing and Hospitalization Data. We use the maximum reported value from “Currently” and “Cumulative” Hospitalized for our hospitalization number report ed for each state.)”</em>
+– <a href="https://github.com/CSSEGISandData/COVID-19">https://github.com/CSSEGISandData/COVID-19</a></p>
+<p>We still have 3 states not reporting either hospitalization metric: Indiana, Nebraska and Nevada.<br>
+Indiana appears to be working on it.</p>
+<p>If you know people in Nebraska or Nevada, please encourage then to add hospitalization stats to their daily updates.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-616264927">
+          <div class="frontmatter">
+            <div><strong>shgsousa</strong> commented on April 19, 2020 at 8:40 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/210#issuecomment-616264927" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <blockquote>
+<p>I just downloaded the <a href="https://covidtracking.com/api/us/daily.csv">US historical data</a>, and “inIcuCurrently” is both larger than “inIcuCumulative” and goes up continuously, implying that these two column headers might be reversed.</p>
+<p>I got this from the <a href="https://covidtracking.com/api">API page</a>.</p>
+<p>Neither of those figures seem to line up well with data from elsewhere about serious cases, such as <a href="https://www.worldometers.info/coronavirus/">from Worldometer</a>.</p>
+<p>The columns are not referenced on the API page, so maybe they are new or experimental.</p>
+<p>Anyway, I have seen this data referenced elsewhere, and I think it’s a very worthwhile project.</p>
+<p>Dan</p>
+</blockquote>
+<p>I have noticed exactly the same issue. The two columns are most likely swapped.</p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

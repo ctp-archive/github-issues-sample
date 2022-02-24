@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>Fix historicals for American Samoa</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 178</p>
+        <p><strong>amandafrench</strong> opened this issue on April 11, 2020 at 9:12 am</p>
+        
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/178" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p>As reported in #47, we were using the wrong source entirely for American Samoa for about ten days, and the error has persisted in some places ever since. The incorrect URL for Western Samoa was removed on the website from the “Best current source” link ONLY, but the screenshots from that incorrect page remained, and the incorrect URL remained in the spreadsheet as the main AS page in States Matrix. I have fixed it in the States Matrix tab. However, our historicals for American Samoa are all over the place and need to be corrected. The data is very infrequent, and much of it is coming from news sources. I will make the appropriate notes about this in the sheet and add comments here as needed to clarify sources and to correct the historical data.</p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-612440781">
+          <div class="frontmatter">
+            <div><strong>amandafrench</strong> commented on April 11, 2020 at 10:01 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/178#issuecomment-612440781" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>I have confirmed that the ONLY data we have about testing of American Samoa residents is from a news article from New Zealand dated 3/28:
+<a href="https://www.rnz.co.nz/international/pacific-news/412830/american-samoa-covid-19-test-negative">https://www.rnz.co.nz/international/pacific-news/412830/american-samoa-covid-19-test-negative</a></p>
+<p>Therefore all historicals before that date should be 0, and everything after that date should be only Positive = 0, Negative = 1, and Pending = 2. Deaths are 0, but I don’t know if that should be null/No Data or 0. Help, <strong>@careeningspace</strong>?</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-612478379">
+          <div class="frontmatter">
+            <div><strong>amandafrench</strong> commented on April 11, 2020 at 1:00 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/178#issuecomment-612478379" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>One newer source: <a href="https://www.samoanews.com/local-news/out-5-suspected-coronavirus-samples-3-test-negative-so-far">https://www.samoanews.com/local-news/out-5-suspected-coronavirus-samples-3-test-negative-so-far</a></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-612561917">
+          <div class="frontmatter">
+            <div><strong>careeningspace</strong> commented on April 11, 2020 at 11:17 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/178#issuecomment-612561917" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Eagle EYES!</p>
+<p><strong>Before</strong>
+<img src="../assets/images/github/43073915/79060447-079bc400-7c53-11ea-8323-cb62cc89b5c6.png" alt="Screen Shot 2020-04-12 at 12 15 47 AM"></p>
+<p><strong>After</strong>
+<img src="../assets/images/github/43073915/79060451-0ec2d200-7c53-11ea-8199-9e5b96dfd3a9.png" alt="Screen Shot 2020-04-12 at 12 17 18 AM"></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-613014156">
+          <div class="frontmatter">
+            <div><strong>amandafrench</strong> commented on April 13, 2020 at 12:55 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/178#issuecomment-613014156" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Note of course for anyone viewing this and not on our private convos that those numbers come from <a href="https://www.samoanews.com/local-news/out-5-suspected-coronavirus-samples-3-test-negative-so-far">https://www.samoanews.com/local-news/out-5-suspected-coronavirus-samples-3-test-negative-so-far</a></p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

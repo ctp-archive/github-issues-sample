@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>&quot;Total Test&quot; Confusion</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 27</p>
+        <p><strong>jasonkalmeida</strong> opened this issue on March 19, 2020 at 8:39 pm</p>
+        
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/27" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p>Referenced Page: <a href="https://covidtracking.com/us-daily/">https://covidtracking.com/us-daily/</a></p>
+<p>Hey all, LOVE the work being done here (and actually looking to help out if you need any).</p>
+<p>One issue I had was a bit of confusion regarding the “Total Test” numbers on the historical table - is that last column the total for the day or total US from start of tracking?</p>
+<p>For example:</p>
+<p>Did the US run 103,945 tests on 19 Mar 2020</p>
+<p><strong>OR</strong></p>
+<p>Has the US run 103,945 from 04 Mar 2020 to 19 Mar 2020?</p>
+<p>This is probably just misinterpretation on my part… but I would just be concerned that there might be others like me.</p>
+<p>Thanks!</p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-601491557">
+          <div class="frontmatter">
+            <div><strong>jasonkalmeida</strong> commented on March 19, 2020 at 8:41 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/27#issuecomment-601491557" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Just saw that this is addressed in the FAQ - <a href="https://covidtracking.com/newsroom-expert-faq/">https://covidtracking.com/newsroom-expert-faq/</a></p>
+<p>If possible, a little information button in the table or such might be an elegant way to highlight this info?</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-601491584">
+          <div class="frontmatter">
+            <div><strong>webmasterkai</strong> commented on March 19, 2020 at 8:41 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/27#issuecomment-601491584" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Total US from start of tracking. The US states (in aggregate) have reported a total of 103,945 tests from the time the first test was reported to 19 Mar 2020.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-601551654">
+          <div class="frontmatter">
+            <div><strong>olivierlacan</strong> commented on March 20, 2020 at 1:13 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/27#issuecomment-601551654" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>I’d suggest we rename this to <code>All-time Tests</code> or <code>Tests to date</code> which would clear up any confusion.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-601810846">
+          <div class="frontmatter">
+            <div><strong>schwartzadev</strong> commented on March 20, 2020 at 12:05 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/27#issuecomment-601810846" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>The same goes for the <code>Deaths</code> numbers…it’s currently unclear if the value is per day or cumulative.</p>
+<p>Also, the table currently lists that we’re tracking 56 <code>States</code>…this should probably be <code>States and Territories</code></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-601820439">
+          <div class="frontmatter">
+            <div><strong>kissane</strong> commented on March 20, 2020 at 12:24 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/27#issuecomment-601820439" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>These are ultimately data structure and naming questions that need to happen upstream from the website so I am bringing in <strong>@zachlipton</strong> <strong>@careeningspace</strong> and <strong>@hammer</strong> to weigh in. Noting we do say “Cumulative” in bold type in the text intro.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-601861504">
+          <div class="frontmatter">
+            <div><strong>kissane</strong> commented on March 20, 2020 at 1:55 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/27#issuecomment-601861504" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Moving it to a new repo for visibility</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-601982320">
+          <div class="frontmatter">
+            <div><strong>careeningspace</strong> commented on March 20, 2020 at 9:42 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/27#issuecomment-601982320" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>It seems difficult to convey that the numbers we report are cumulative.</p>
+<p>Maybe a better way to say it is that all of our numbers are a running total?</p>
+<p>Except my least favorite “Pending” - pending is… sporadic at best</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-602095993">
+          <div class="frontmatter">
+            <div><strong>eukonidor</strong> commented on March 21, 2020 at 3:00 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/27#issuecomment-602095993" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Following on from careeningspace’s comment about “Pending”: Are the Pending numbers reported as the how many remain pending at the time of reporting? Or is that likewise a cumulative total of the number reported as Pending from each day? Because one would assume that some number of the Pending tests would be returned,so should come off the total.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-602103201">
+          <div class="frontmatter">
+            <div><strong>hammer</strong> commented on March 21, 2020 at 3:52 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/27#issuecomment-602103201" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p><strong>@eukonidor</strong> the pending numbers are a source of confusion and most states are no longer reporting them so we will likely eliminate them soon. The cumulative total does not double count tests as we never sum over the total column.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-602252122">
+          <div class="frontmatter">
+            <div><strong>jasonkalmeida</strong> commented on March 22, 2020 at 1:32 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/27#issuecomment-602252122" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>I think “Tests to Date” is a really solid way to phrase it personally.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-604803244">
+          <div class="frontmatter">
+            <div><strong>careeningspace</strong> commented on March 26, 2020 at 11:02 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/27#issuecomment-604803244" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>We have updated the way we are dealing with “totals”. Please see the following link for the most current information:  <a href="https://covidtracking.com/api/">COVID Tracking API</a></p>
+<ul>
+<li>[ ] totalTestResults - Calculated value (positive + negative) of total test results.</li>
+<li>[ ] total - DEPRECATED Will be removed in the future. (positive + negative + pending). Pending has been an unstable value and should not count in any totals.</li>
+</ul>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

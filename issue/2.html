@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>AZ: Need a tableau proxy</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 2</p>
+        <p><strong>joshuaellinger</strong> opened this issue on March 11, 2020 at 9:02 am</p>
+        
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/2" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p>AZ uses Tableau.  We can fetch the page but we don’t alert when the numbers change.</p>
+<p>This might work with a captive browser model or you might be able to sniff out a data link in the chrome developer tools.</p>
+<p><a href="https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home">https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home</a></p>
+<p>Please create a stand-a-lone endpoint such as <a href="http://mysite.org/proxy-tableau?state=AZ">http://mysite.org/proxy-tableau?state=AZ</a> and return the data as an HTML table</p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-598012543">
+          <div class="frontmatter">
+            <div><strong>joshellington</strong> commented on March 12, 2020 at 12:23 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/2#issuecomment-598012543" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>FYI, there are “Download” links to simpler output structures for these Tableau embeds if you remove the <code>showAppBanner=false</code> and <code>toolbar=no</code> query params. For example, here are a few simple tables (still not directly embedded data):</p>
+<ul>
+<li><em>Cases</em>: <a href="https://tableau.azdhs.gov/vizql/w/COVID-19Table/v/COVID-19table/viewData/sessions/ECAEFF86A8224E18A4020737CB4BE181-1:3/views/8275719771277684273_10329084236957726728?maxrows=200&amp;viz=%7B%22worksheet%22%3A%22Cases%22%2C%22dashboard%22%3A%22COVID-19%20table%22%7D">https://tableau.azdhs.gov/vizql/w/COVID-19Table/v/COVID-19table/viewData/sessions/ECAEFF86A8224E18A4020737CB4BE181-1:3/views/8275719771277684273_10329084236957726728?maxrows=200&amp;viz={&quot;worksheet&quot;%3A&quot;Cases&quot;%2C&quot;dashboard&quot;%3A&quot;COVID-19 table&quot;}</a></li>
+<li><em>Tests</em>: <a href="https://tableau.azdhs.gov/vizql/w/COVID-19Table/v/COVID-19table/viewData/sessions/520DDAEDDAC74525A2DCC58659B97800-1:0/views/8275719771277684273_2738315765867498942?maxrows=200&amp;viz=%7B%22worksheet%22%3A%22Testing%22%2C%22dashboard%22%3A%22COVID-19%20table%22%7D">https://tableau.azdhs.gov/vizql/w/COVID-19Table/v/COVID-19table/viewData/sessions/520DDAEDDAC74525A2DCC58659B97800-1:0/views/8275719771277684273_2738315765867498942?maxrows=200&amp;viz={&quot;worksheet&quot;%3A&quot;Testing&quot;%2C&quot;dashboard&quot;%3A&quot;COVID-19 table&quot;}</a></li>
+</ul>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-598835696">
+          <div class="frontmatter">
+            <div><strong>joshuaellinger</strong> commented on March 13, 2020 at 12:34 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/2#issuecomment-598835696" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>I’m providing a updating screenshot at <a href="http://covid19-api.exemplartech.com/github-data/captive-browser/az_tableau.html">http://covid19-api.exemplartech.com/github-data/captive-browser/az_tableau.html</a>.</p>
+<p>Can you confirm that either my approach or yours above is live in production and close the issue?</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-601933118">
+          <div class="frontmatter">
+            <div><strong>joshuaellinger</strong> commented on March 20, 2020 at 5:15 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/2#issuecomment-601933118" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Resolved</p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

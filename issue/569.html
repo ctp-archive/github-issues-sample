@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>[NY] Fill in some missing Current Hospitalizations &amp; Current ICU from dash that were not supplied in emails</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 569</p>
+        <p><strong>muamichali</strong> opened this issue on July 2, 2020 at 6:00 pm</p>
+        
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/569" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p>Hello,</p>
+<p>I build and update a coronavirus tracker for Crain’s New York Business. The COVID Tracking Project is a great source for us, but I wanted to point out a few apparent errors I believe I’ve spotted in the New York data.</p>
+<p><strong>Metric: Current Hospitalizations</strong>
+In the hospitalizations data, the COVID Tracking Project is reporting some numbers that don’t match up with the figures the state is publishing in its own dashboard. These could be typos or results of the state’s revisions to hospitalization figures in the days that followed. Here are the updated numbers I’m using in my own tracker, which subtracts a day from the Tracking Project dates so it matches state sources:
+Date,Revised hospitalizations
+“2020-04-14”,18335
+“2020-04-16”,17316
+“2020-04-20”,16135
+“2020-04-27”,12646
+“2020-05-04”,9600
+“2020-05-22”,4642</p>
+<p><strong>Metric: Current ICU</strong>
+I should also note that the <a href="https://forward.ny.gov/daily-hospitalization-summary-region">New York dashboard</a> contains daily ICU numbers. Those could be used to fill in the gap in the COVID Tracking Project’s ICU data (spanning from 4/27 through 5/6) and to update existing numbers. For instance, the current figures from the Tracking Project have 5,016 ICU admissions daily between 4/18 and 4/26, whereas the actual numbers reported by the state continuously decreased.</p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-653688709">
+          <div class="frontmatter">
+            <div><strong>MattHilliard</strong> commented on July 3, 2020 at 5:25 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/569#issuecomment-653688709" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>I confirmed the provided numbers matched the NY dashboard and then made six patches for current hospitalization:</p>
+<p>Before:
+<img src="../assets/images/github/404503/86499441-41afca00-bd59-11ea-9918-96691dab81dd.png" alt="image"></p>
+<p>After:
+<img src="../assets/images/github/404503/86499461-58562100-bd59-11ea-9257-eace7a46ed2d.png" alt="image"></p>
+<p>Before:
+<img src="../assets/images/github/404503/86499476-73289580-bd59-11ea-92f0-e8945d1ebcd6.png" alt="image"></p>
+<p>After:
+<img src="../assets/images/github/404503/86499485-7e7bc100-bd59-11ea-80f1-8f0c06d67fc9.png" alt="image"></p>
+<p>Before:
+<img src="../assets/images/github/404503/86499513-a8cd7e80-bd59-11ea-8375-e6c1d2c49b13.png" alt="image"></p>
+<p>After:
+<img src="../assets/images/github/404503/86499651-5d67a000-bd5a-11ea-99e1-f67300b622e1.png" alt="image"></p>
+<p>Before:
+<img src="../assets/images/github/404503/86499554-e7fbcf80-bd59-11ea-8d0c-bdf1288936c6.png" alt="image"></p>
+<p>After:
+<img src="../assets/images/github/404503/86499564-f1853780-bd59-11ea-9099-af4669b07021.png" alt="image"></p>
+<p>Before:
+<img src="../assets/images/github/404503/86499572-02ce4400-bd5a-11ea-831f-7c36816eeb22.png" alt="image"></p>
+<p>After:
+<img src="../assets/images/github/404503/86499597-19749b00-bd5a-11ea-986b-9bc9f66aa5d2.png" alt="image"></p>
+<p>Before:
+<img src="../assets/images/github/404503/86499619-3c9f4a80-bd5a-11ea-81b8-2ea720da54bd.png" alt="image"></p>
+<p>After:
+<img src="../assets/images/github/404503/86499631-4759df80-bd5a-11ea-99b7-2c2e3749679a.png" alt="image"></p>
+<p>Note I didn’t change the fact we are a day behind, just corrected the values at the day-later offset from the official data.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-653691340">
+          <div class="frontmatter">
+            <div><strong>MattHilliard</strong> commented on July 3, 2020 at 5:50 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/569#issuecomment-653691340" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>I pulled the data for the ICU backfill, will finish later tonight</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-653707349">
+          <div class="frontmatter">
+            <div><strong>MattHilliard</strong> commented on July 3, 2020 at 8:53 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/569#issuecomment-653707349" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Here’s what we had for NY ICU until now:
+<img src="../assets/images/github/404503/86502998-7599e800-bd77-11ea-9d32-672b148f71c9.png" alt="image"></p>
+<p>Here’s the official numbers I pulled from the dashboard linked in the issue description:
+<img src="../assets/images/github/404503/86503009-9104f300-bd77-11ea-9b4f-a8fa24e94c6f.png" alt="image"></p>
+<p>There were a few days before and after the gap which got straightened out as part of this process. Spreadsheet with the analysis, the original states daily column, and the new one:
+<a href="https://docs.google.com/spreadsheets/d/1K4YnfdMCCI4QX40DgPnxKPdMw_QGM47vmYHT9RWFlDM/edit#gid=0">https://docs.google.com/spreadsheets/d/1K4YnfdMCCI4QX40DgPnxKPdMw_QGM47vmYHT9RWFlDM/edit#gid=0</a></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-653707900">
+          <div class="frontmatter">
+            <div><strong>MattHilliard</strong> commented on July 3, 2020 at 9:01 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/569#issuecomment-653707900" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Also, for the ICU updates, as with the hospitalization updates, I didn’t “fix” the fact we are a day behind the official numbers (since we’d just immediately fall behind again)</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-653708178">
+          <div class="frontmatter">
+            <div><strong>muamichali</strong> commented on July 3, 2020 at 9:04 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/569#issuecomment-653708178" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Amazing, Matt, Thanks so much! The graphs here are really helpful too.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-653831452">
+          <div class="frontmatter">
+            <div><strong>gschifman</strong> commented on July 4, 2020 at 8:48 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/569#issuecomment-653831452" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Everything matches up. Thanks so much for your work here.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-653897516">
+          <div class="frontmatter">
+            <div><strong>realfuture</strong> commented on July 5, 2020 at 9:44 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/569#issuecomment-653897516" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Just adding my thanks!</p>
+<p>On Sat, Jul 4, 2020 at 6:48 PM Gerald Schifman <a href="mailto:notifications<strong>@github.com</strong>">notifications<strong>@github.com</strong></a>
+wrote:</p>
+<blockquote>
+<p>Everything matches up. Thanks so much for your work here.</p>
+<p>—
+You are receiving this because you are subscribed to this thread.
+Reply to this email directly, view it on GitHub
+<a href="https://github.com/COVID19Tracking/issues/issues/569#issuecomment-653831452">https://github.com/COVID19Tracking/issues/issues/569#issuecomment-653831452</a>,
+or unsubscribe
+<a href="https://github.com/notifications/unsubscribe-auth/ACS7NYNCS32HOUD234YNV73RZ7LWZANCNFSM4OPJXJYA">https://github.com/notifications/unsubscribe-auth/ACS7NYNCS32HOUD234YNV73RZ7LWZANCNFSM4OPJXJYA</a>
+.</p>
+</blockquote>
+<p>–
+Alexis Madrigal
+Staff Writer | The Atlantic
+Co-Founder | The Atlantic’s COVID Tracking Project, <a href="http://covidtracking.com">covidtracking.com</a>
+m. 415 602 4953</p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

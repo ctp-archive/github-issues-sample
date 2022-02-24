@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>[CA Historicals] 7/1 California backfilled test information from the last few days</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 567</p>
+        <p><strong>muamichali</strong> opened this issue on July 2, 2020 at 7:47 am</p>
+        
+          <p><strong>Labels </strong>
+            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          </p>
+          
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/567" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p><strong>State or US</strong>: California</p>
+<p><strong>Describe the problem</strong>
+On 7/1 CA reported ~9k tests;, but  actually some were from yesterday, some from the day before that etc.</p>
+<p><strong>Link to data source</strong>
+<img src="../assets/images/github/1749380/86360510-7da33c00-bc40-11ea-9214-267872b6455e.png" alt="image"></p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-653175249">
+          <div class="frontmatter">
+            <div><strong>space-buzzer</strong> commented on July 2, 2020 at 2:07 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/567#issuecomment-653175249" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>We have 5 values that differ between what’s currently reported by the state of California and CTPs data.</p>
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>CA</th>
+<th>CTP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>20200701</td>
+<td></td>
+<td>232657</td>
+</tr>
+<tr>
+<td>20200630</td>
+<td>232657</td>
+<td>222917</td>
+</tr>
+<tr>
+<td>20200629</td>
+<td><strong>226759</strong></td>
+<td>216550</td>
+</tr>
+<tr>
+<td>20200628</td>
+<td><strong>218539</strong></td>
+<td>211243</td>
+</tr>
+<tr>
+<td>20200627</td>
+<td><strong>211851</strong></td>
+<td>206433</td>
+</tr>
+<tr>
+<td>20200626</td>
+<td><strong>206731</strong></td>
+<td>200461</td>
+</tr>
+<tr>
+<td>20200625</td>
+<td><strong>200545</strong></td>
+<td>195571</td>
+</tr>
+<tr>
+<td>20200624</td>
+<td>195571</td>
+<td>190222</td>
+</tr>
+</tbody>
+</table>
+<p>We’re also shifted by 1 day from CA’s published data</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-653313579">
+          <div class="frontmatter">
+            <div><strong>space-buzzer</strong> commented on July 2, 2020 at 10:04 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/567#issuecomment-653313579" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>The numbers keep changing, we can patch now and repeat later, as needed. I don’t know whether it’s a process change from what they’ve been doing</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-660251940">
+          <div class="frontmatter">
+            <div><strong>space-buzzer</strong> commented on July 17, 2020 at 12:47 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/567#issuecomment-660251940" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>This stabilized now, so we’ll backfill with the numbers displayed on the dashboard now.</p>
+<p>The fields that changed are: <code>Positive Cases (PCR)</code>,<code>Positive</code>, <code>Negative</code></p>
+<p>2020-07-05 | 260155 | 265985 |  
+– | – | – | –
+2020-07-04 | 254745 | 257388 |  
+2020-07-03 | 248235 | 248235 |  
+2020-07-02 | 240195 | 242547 |  
+2020-07-01 | 232657 | 236139 |  
+2020-06-30 | 222917 | 228732 |  
+2020-06-29 | 216550 | 219252 |</p>
+<p><img src="../assets/images/github/62236447/87815670-e979cd00-c81a-11ea-9b6a-6483bb6da6a3.png" alt="Screenshot from 2020-07-17 10-45-53"></p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

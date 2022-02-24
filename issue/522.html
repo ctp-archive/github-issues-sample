@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>[ND] PCL Historicals and WS2</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 522</p>
+        <p><strong>jesseandersonumd</strong> opened this issue on June 25, 2020 at 8:19 am</p>
+        
+          <p><strong>Labels </strong>
+            <span class="label"><a href="../label/2158480839.html">PCL/SVP Historicals</a></span>
+          </p>
+          
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/522" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p>Deaths include several different data points, such as <em>“deaths due to COVID-19”, “deaths where COVID-19 is not the primary cause”, and “pending death records”.</em> We should consider “deaths due to COVID-19” as confirmed, and add the remaining values - <strong>“pending death records”, “deaths where COVID-19 is not the primary cause” and “deaths of individuals presumed positive” to obtain probables.</strong> In WS2, we’re reporting the total - number of individuals who tested positive and died from any cause while infected with COVID-19 - as our confirmed value. We should only be reporting “deaths due to covid-19” as our confirmed.</p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-649560386">
+          <div class="frontmatter">
+            <div><strong>jesseandersonumd</strong> commented on June 25, 2020 at 8:59 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/522#issuecomment-649560386" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>5/12 CTP Started reporting deaths and confirmed cases of deaths as the same value
+5/31 CTP Started separating confirmed and probable deaths</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-651894263">
+          <div class="frontmatter">
+            <div><strong>muamichali</strong> commented on June 30, 2020 at 11:09 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/522#issuecomment-651894263" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>ND started separating confirmed and probable deaths on 5/3. All the values from 5/3 until 5/31 need to be filled in from screenshots.</p>
+<p><img src="../assets/images/github/1749380/86149786-74905e80-baca-11ea-8d38-b936333341d8.png" alt="image"></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-652460622">
+          <div class="frontmatter">
+            <div><strong>karaschechtman</strong> commented on July 1, 2020 at 9:42 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/522#issuecomment-652460622" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p><strong>New decision for how to track COVID-19 deaths in ND</strong>
+Confirmed = due to COVID-19
+Probable = presumed positive
+Lumped = due to COVID-19 + presumed positive</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-652495703">
+          <div class="frontmatter">
+            <div><strong>karaschechtman</strong> commented on July 1, 2020 at 10:42 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/522#issuecomment-652495703" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Edited tooltips and worksheet 2 values so that pattern will be followed during today’s DE shift
+<strong>Probable</strong>
+<img width="229" alt="Screen Shot 2020-07-01 at 11 37 54 AM" src="../assets/images/github/15933271/86263970-e5e61500-bb8f-11ea-8771-4df9c3e46dd8.png">
+<strong>Confirmed</strong>
+<img width="268" alt="Screen Shot 2020-07-01 at 11 37 48 AM" src="../assets/images/github/15933271/86263977-e8486f00-bb8f-11ea-8aa9-b628bb2eb0ec.png">
+<strong>Lumped</strong>
+<img width="258" alt="Screen Shot 2020-07-01 at 11 37 41 AM" src="../assets/images/github/15933271/86264014-f7c7b800-bb8f-11ea-917a-f4a73861f5a4.png"></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-652514001">
+          <div class="frontmatter">
+            <div><strong>karaschechtman</strong> commented on July 1, 2020 at 11:15 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/522#issuecomment-652514001" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>From <a href="https://covidtracking.com/screenshots/ND/ND-20200503-121530.png">5/3 </a>to <a href="https://covidtracking.com/screenshots/ND/ND-20200526-183914.png">5/26</a>, ND provided 3 categories in its table: “Deaths due to COVID-19”, “not the primary cause”, and “pending death records”. It did not provide probables.</p>
+<p>Changing “totals” to equal “Confirmed” to equal “Deaths Due to COVID-19”, and zeroing out probables.</p>
+<p><strong>Before (with <strong>@muamichali</strong>’s prior edits in line with our old ND definitions):</strong>
+<img width="1088" alt="Screen Shot 2020-07-01 at 12 01 36 PM" src="../assets/images/github/15933271/86267075-26e02880-bb94-11ea-83e4-13db45a2c7aa.png">
+<img width="1184" alt="Screen Shot 2020-07-01 at 12 02 04 PM" src="../assets/images/github/15933271/86267080-28a9ec00-bb94-11ea-91ab-5f7c8b2165a0.png"></p>
+<p><strong>After</strong>
+<img width="1181" alt="Screen Shot 2020-07-01 at 12 11 27 PM" src="../assets/images/github/15933271/86267047-1af46680-bb94-11ea-833b-c42a10071e9e.png"></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-652516511">
+          <div class="frontmatter">
+            <div><strong>karaschechtman</strong> commented on July 1, 2020 at 11:19 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/522#issuecomment-652516511" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>As a result of the revision for 5/3-5/27, it will appear as if deaths drop on 5/3 from 24 to 16, as we are excluding the pending + non-primary cause confirmed cases from our “Confirmed” and “Total” column. For 5/2 and prior, we have no way of excluding those numbers, because ND doesn’t provide the breakdown.
+<img width="557" alt="Screen Shot 2020-07-01 at 12 13 46 PM" src="../assets/images/github/15933271/86267268-73c3ff00-bb94-11ea-92ab-8518ba8ce277.png"></p>
+<p>Adding a public note to explain this:
+“On 5/3, ND began providing counts of deaths for lab-confirmed individuals with death records still pending, and lab-confirmed individuals who died but not due to COVID. As of 7/1, we have edited our figures to exclude these numbers from our death counts, resulting in an apparent drop from 24 deaths on 5/2 to 16 on 5/3.”</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-652522307">
+          <div class="frontmatter">
+            <div><strong>karaschechtman</strong> commented on July 1, 2020 at 11:30 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/522#issuecomment-652522307" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>From <a href="https://covidtracking.com/screenshots/ND/ND-20200527-124625.png">5/27</a> onward, changing values from screenshots so that:
+Confirmed = due to COVID-19
+Probable = presumed positive
+Lumped = due to COVID-19 + presumed positive</p>
+<p><strong>Before</strong>
+<img width="988" alt="Screen Shot 2020-07-01 at 12 24 20 PM" src="../assets/images/github/15933271/86268748-a2db7000-bb96-11ea-84d0-bf9455eee1bb.png">
+<strong>After</strong>:
+<img width="695" alt="Screen Shot 2020-07-01 at 1 08 44 PM" src="../assets/images/github/15933271/86272100-0b791b80-bb9c-11ea-855b-c50989738c5a.png"></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-652536127">
+          <div class="frontmatter">
+            <div><strong>karaschechtman</strong> commented on July 1, 2020 at 11:57 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/522#issuecomment-652536127" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>When we release confirmed/probable columns, we will need to make a public note: “On 6/18, ND revised down its confirmed death count from 66 to 64. On 6/24, ND revised its confirmed death count from 67 to 66 to remove an out-of-state case.” (source re out-of-state case: <a href="https://www.health.nd.gov/news/positive-covid-19-test-results-79">https://www.health.nd.gov/news/positive-covid-19-test-results-79</a>)
+<img width="705" alt="Screen Shot 2020-07-01 at 12 57 39 PM" src="../assets/images/github/15933271/86271180-76c1ee00-bb9a-11ea-8d1b-3e846e8da155.png">
+<img width="770" alt="Screen Shot 2020-07-01 at 1 03 13 PM" src="../assets/images/github/15933271/86271637-3ca51c00-bb9b-11ea-8f79-b3a4b018c08f.png"></p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

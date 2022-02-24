@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>California Testing data for 4/22 isn&#39;t matching the data source by a large margin</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 257</p>
+        <p><strong>Grumpicorn</strong> opened this issue on April 22, 2020 at 4:26 pm</p>
+        
+          <p><strong>Labels </strong>
+            <span class="label"><a href="../label/1921155910.html">Data source</a></span>
+          </p>
+          
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/257" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p>I checked the testing total and saw a huge jump in number of tests conducted.  This seems to be from California but the reported figures in historical data (165,229) do not match the state’s dashboard (8600).  Has there been a new data source or is this in error?</p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-618054461">
+          <div class="frontmatter">
+            <div><strong>muamichali</strong> commented on April 22, 2020 at 4:38 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/257#issuecomment-618054461" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Hi <strong>@</strong>Grumpicorn</p>
+<p>The tests were announced by Governor Newsom today and are not reflected on the dashboard yet.</p>
+<p>Here is our tweet about this:</p>
+<p><img src="../assets/images/github/1749380/80036407-a8924680-84bf-11ea-9a71-92de1bd2cc52.png" alt="CA tests"></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-618092746">
+          <div class="frontmatter">
+            <div><strong>howchik</strong> commented on April 22, 2020 at 6:34 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/257#issuecomment-618092746" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Hello,</p>
+<p>I believe Total number of test should be 308K.</p>
+<p><a href="https://covid19.ca.gov/">https://covid19.ca.gov/</a></p>
+<p>All the way on the bottom:</p>
+<p>“Latest numbers
+April 22 Numbers: As of April 21st, there are 35,396 positive cases and 1,354 deaths in California. Approximately 308,700 tests have been conducted. At least 292,906 results have been received and 7,200 are pending.”</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-618981846">
+          <div class="frontmatter">
+            <div><strong>muamichali</strong> commented on April 24, 2020 at 7:33 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/257#issuecomment-618981846" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>California has updated their dashboard and page to report the tests now. Closing this issue.</p>
+<p>From <a href="https://covidtracking.com/data/state/california#historical">https://covidtracking.com/data/state/california#historical</a>
+<img src="../assets/images/github/1749380/80212883-50b22780-8606-11ea-88a7-79a6bab551b0.png" alt="Screenshot_2020-04-24 Most recent data"></p>
+<p>From <a href="https://covid19.ca.gov/">https://covid19.ca.gov/</a>
+<img src="../assets/images/github/1749380/80212884-50b22780-8606-11ea-9543-62ff2c684dbe.png" alt="Screenshot_2020-04-24 California Coronavirus COVID-19 Response"></p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

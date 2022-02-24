@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>Georgia table of total cases - data doesn’t match.</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 402</p>
+        <p><strong>lkhemani</strong> opened this issue on May 10, 2020 at 7:45 am</p>
+        
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/402" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p>After the glitch on April 27/28, your Georgia daily totals under-represent the final screen print from ~6pm each day.</p>
+<p>For examples, check  your last daily screen shot vs. your numbers in the table on this page for every day since April 29:
+<a href="https://covidtracking.com/data/state/georgia">https://covidtracking.com/data/state/georgia</a></p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-626752834">
+          <div class="frontmatter">
+            <div><strong>erfgottlieb</strong> commented on May 11, 2020 at 9:50 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/402#issuecomment-626752834" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Thanks <strong>@lkhemani</strong>
+Sometimes the state screenshots are taken after our reporting schedule. Please see issue #280 for a detailed explanation.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-631382875">
+          <div class="frontmatter">
+            <div><strong>lkhemani</strong> commented on May 20, 2020 at 5:15 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/402#issuecomment-631382875" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p><strong>@erfgottlieb</strong>, I looked at issue #280, but what I am reporting is actually the opposite.  Your table indicates that the final total was taken at 6:08pm, but the number listed is actually <strong>lower</strong> than the number on the screen shot from 5:25 pm.  This means the data was underreported for that day.  I see that was corrected on the 13th by stopping daily totals for GA at ~1:00pm so that the screen shots now match, but it is still a bit misleading to say that the last total was collected at 6pm when it is 5 hours off. Why not just say that it was collected at 1pm for accuracy? Another data integrity issue would be that the data Indicates 100 more cases were reported from the 12th to 13th than actually were reported. I don’t know how much you guys care about daily accuracy, but if that matters to you, you may want to just update the tables.  The screen share was actually more up to date than your table, and it was taken earlier. I appreciate that you are all volunteers and I don’t want to look a gift horse in the mouth, I just am trying to help maintain data integrity by pointing out potential inaccuracies.  Thanks Very Much for your time…this is an invaluable service and I appreciate all that you guys are doing.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-632080771">
+          <div class="frontmatter">
+            <div><strong>erfgottlieb</strong> commented on May 21, 2020 at 8:18 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/402#issuecomment-632080771" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Hi <strong>@lkhemani</strong> thanks so much for your comments. We collect data manually from the states’ data dashboards or department of health websites. We take automated screenshots of those websites several times a day. The screenshot times are listed and linked here: <a href="https://covidtracking.com/data/state/georgia#historical">https://covidtracking.com/data/state/georgia#historical</a>. For many states, the screenshot timing does not occur at the same time as our manual data entry. It seems that the discrepancy that you are seeing on April 27/28 is due to this.
+This might be the same explanation for your question about the number of cases reported from the 12th to 13th. Can you let us know which month this was in?</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-632380471">
+          <div class="frontmatter">
+            <div><strong>lkhemani</strong> commented on May 21, 2020 at 5:34 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/402#issuecomment-632380471" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Oops! It was May 12-13.  Thanks.</p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

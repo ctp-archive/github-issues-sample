@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>Hospitalization/Ventilator/ICU Data incomplete thus misleading</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 129</p>
+        <p><strong>faronium</strong> opened this issue on April 3, 2020 at 1:31 am</p>
+        
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/129" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p>Can you please update your website to note that the non-testing related numbers are mostly unavailable from states and thus national totals can be wildly inaccurate? For example, your US total ventilator number is currently 67 and lists zero people in NY despite yesterday’s death number of more than 300.  That’s simply impossible. Other hot spots like Louisiana, Michigan, New Jersey, and Florida don’t list any ICU or ventilator data and thus your US totals are way low. This is fueling the conspiracy folks who are claiming that this is all a hoax or that the modeled case forecasts are completely wrong and overblown. Please, either don’t report the data or somehow clearly quality the US totals so that people know what is trustworthy.</p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-608336952">
+          <div class="frontmatter">
+            <div><strong>Jmuccigr</strong> commented on April 3, 2020 at 4:36 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/129#issuecomment-608336952" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <blockquote>
+<p>For example, your US total ventilator number is currently 67 and lists zero people in NY despite yesterday’s death number of more than 300.</p>
+</blockquote>
+<p>Actually the database gives NY’s number as <code>NA</code> which is not 0, so it’s correct. I agree that some more lengthier notes are needed in a prominent place.</p>
+<p>PS I’d also suggest just giving a numerical score rather than a letter grade. Maybe even just provide each state a quick table with checkmarks for each of the 4 categories.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-608539756">
+          <div class="frontmatter">
+            <div><strong>faronium</strong> commented on April 3, 2020 at 11:33 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/129#issuecomment-608539756" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <blockquote>
+<p>Actually the database gives NY’s number as NA which is not 0, so it’s correct.</p>
+</blockquote>
+<p>Ah, that makes sense. I was looking at the spreadsheet on google docs that shows a blank, so missed that it is NA in the real data.</p>
+<p>The problem with this arises here:
+<a href="https://covidtracking.com/data">https://covidtracking.com/data</a>
+Where cumulative hospitalized seems to be the sum of incomplete data and thus is misleadingly low.  In R-speak, maybe the sums for nearly incomplete data should be sum(x,na.rm=F) or some such. Folks who don’t know better will sum up the ventilator data and get a small number and may run with it.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-612326058">
+          <div class="frontmatter">
+            <div><strong>careeningspace</strong> commented on April 10, 2020 at 11:44 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/129#issuecomment-612326058" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Please check out #132 to find where we updated all of the outcome data to better match how states are reporting. We have also stopped reporting the outcome data as a national aggregate because of the <strong>@faronium</strong> raises</p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

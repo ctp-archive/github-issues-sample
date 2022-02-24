@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>[MP] Fix 9/7 Timestamp</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 818</p>
+        <p><strong>hmhoffman</strong> opened this issue on September 8, 2020 at 3:33 pm</p>
+        
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/818" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p><strong>State:</strong> MP
+<strong>Dates impacted:</strong> 9/7
+<strong>Issue described:</strong> The week of 9/1 the MP dashboard was broken for a few days. As a result we got data (including a timestamp) from queries. The 9/1 0:00 source note from the queries turned out to be more of a site updated time vs a data “as of” timestamp. However we decided to carry over the 9/1 timestamp until the dashboard is updated, on 9/7 the timestamp was accidentally changed and should be patched to 9/1 0:00
+<strong>Sources:</strong> <a href="https://covid-tracking.slack.com/archives/CUQ4MMTPD/p1599594076151900">https://covid-tracking.slack.com/archives/CUQ4MMTPD/p1599594076151900</a></p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-689187647">
+          <div class="frontmatter">
+            <div><strong>jaclyde</strong> commented on September 8, 2020 at 6:25 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/818#issuecomment-689187647" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Before:
+<img width="366" alt="Screen Shot 2020-09-08 at 4 22 53 PM" src="../assets/images/github/66583275/92536880-9fe0a980-f1ef-11ea-8d7c-ad225737f74f.png"></p>
+<p>After:
+<img width="363" alt="Screen Shot 2020-09-08 at 4 23 06 PM" src="../assets/images/github/66583275/92536936-b71f9700-f1ef-11ea-8625-e58a11b24829.png"></p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

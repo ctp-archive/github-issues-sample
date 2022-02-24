@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>[Data Quality] Backfill timeseries for total testing in as many states as possible</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 500</p>
+        <p><strong>muamichali</strong> opened this issue on June 19, 2020 at 12:48 pm</p>
+        
+          <p><strong>Labels </strong>
+            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          
+            <span class="label"><a href="../label/2036763438.html">not stale</a></span>
+          
+            <span class="label"><a href="../label/2148796965.html">Meta</a></span>
+          </p>
+          
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/500" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p><strong>Target Date:</strong> TBD
+<strong>Overview</strong>: Fill in historicals for total PCR tests by specimens and people in all states where it is available to enable drawing directly from it for as many states as possible in our new totals column. Prefer testing encounters over unique people where both are available, but do not launch extensive investigations into testing encounters vs. people where the language is unclear.
+<strong>Contribution to Milestone</strong>: This will enable the main goal of the milestone—providing explicit totals for every state, one by one, instead of using positive+negative. We cannot do that without having these values filled in.
+<strong>Other Benefits</strong>: Improved historical totals.
+<strong>Potential Challenges</strong>: It is really hard to backfill these figures and to make decisions about which kind of historical dating to use, as well as how to sync it up with our pre-existing timeseries.
+Some states may provide both testing encounters and unique people historical timeseries. We should try to capture both in our historical updates, even if not in our States Daily capture.
+DQ and backfill will be working on this from two different angles—backfill from the angle of our communication with that state, and DQ from the angle of our handling in worksheet2. We will need to ensure they coordinate.
+We will need to perform outreach to states to clarify “Unclear” totals.
+<strong>Editorial</strong>: None at this step. We will run the editorial content on the change when we surface it in the totals columns.</p>
+<p><strong>DQ:</strong></p>
+<ul>
+<li>[x] Do an annotation run on Specimens vs. People for Totals, skipping questions about  encounters vs. unique people (see questions in Annotations below, which also proposes splitting SVP into three tabs, similar to recent partitioning of PCL into two tabs).</li>
+<li>[ ] For each state with wrong worksheet2 handling that is not currently reporting “unclear” totals:
+<ul>
+<li>[ ] Fix worksheet2 handling</li>
+<li>[ ] File GH Issue investigating the total tests history and log in a central GH issue to track our investigations in all states.</li>
+<li>[ ] Fix the issue, with assist from backfill as needed</li>
+</ul>
+</li>
+<li>[ ] For any unclear totals states:
+<ul>
+<li>[ ] Reach out to them to clarify whether their totals are specimens vs people.</li>
+<li>[ ] Pass on the information from states that respond to backfill team to file GH issues.</li>
+<li>[ ] For states that do not respond, stop tracking unclear totals.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Backfill:</strong></p>
+<ul>
+<li>[ ] For each state, in order of priority depending on our communication with that state:
+<ul>
+<li>[ ] File GH Issue investigating the total tests history, with assist from DQ as needed, and log in a central GH issue to track our investigations in all states</li>
+<li>[ ] Fix the issue by filling in the timeseries</li>
+</ul>
+</li>
+</ul>
+
+      </div>
+    </div>
+    
+  
+</main>
+  </body>
+</html>

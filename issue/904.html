@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>[MO] Backfilling curr. hosp. numbers 9/29 - 10/7</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 904</p>
+        <p><strong>the-daniel-lin</strong> opened this issue on October 20, 2020 at 12:45 pm</p>
+        
+          <p><strong>Labels </strong>
+            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          
+            <span class="label"><a href="../label/2162087998.html">Backfill</a></span>
+          </p>
+          
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/904" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p><strong>State or US</strong>: Missouri</p>
+<p><strong>Describe the problem</strong>
+On 9/28, Missouri updated their dashboard. This new dashboard did not report current hospitalization numbers, so we carried over the value for 7 days. As per CTP policy, we stopped carrying over the current hospitalization value after 7 days. On 10/8, MO returned the value to their dashboard, and we have captured ever since.</p>
+<p>Backfilling the days we missed, using the hover-over graph labeled “COVID-19 Total Patients in the Hospital by Day” on the MO website, under the <a href="https://showmestrong.mo.gov/public-healthcare/">Detail: Healthcare System</a> tab.</p>
+<p><strong>Link to data source</strong>
+<a href="https://showmestrong.mo.gov/public-healthcare/">https://showmestrong.mo.gov/public-healthcare/</a></p>
+<p>As of 10/20 13:43, the values from the graph are:
+10/7: 1352
+10/6: 1249
+10/5: 1201
+10/4: 1135
+10/3: 1144
+10/2: 1184
+10/1: 1185
+9/30: 1171
+9/29: 1219</p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-713032988">
+          <div class="frontmatter">
+            <div><strong>the-daniel-lin</strong> commented on October 20, 2020 at 12:50 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/904#issuecomment-713032988" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>BEFORE:
+<img src="../assets/images/github/67408226/96624798-1deda100-12c2-11eb-9a62-86f061a0a5c7.png" alt="image"></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-713033595">
+          <div class="frontmatter">
+            <div><strong>the-daniel-lin</strong> commented on October 20, 2020 at 12:51 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/904#issuecomment-713033595" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>AFTER:
+<img src="../assets/images/github/67408226/96624887-437aaa80-12c2-11eb-99f6-7d953f435958.png" alt="image"></p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

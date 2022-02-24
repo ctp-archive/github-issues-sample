@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>Issue with testing data from CA</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 28</p>
+        <p><strong>dkondras</strong> opened this issue on March 20, 2020 at 3:03 pm</p>
+        
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/28" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p>It is taken from CDC site and incomplete.</p>
+<p>Better source is daily news release by CA department of public health
+that provides update for previous day at 6pm PCT,
+and includes testing results from private labs in addition to CDC.
+<a href="https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/nCOV2019.aspx">https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/nCOV2019.aspx</a>.</p>
+<p>For example as of the time of writing, the total tests for CA is 9844,
+while CADPH “Latest COVID-19 Facts 3-20” news release gives</p>
+<p>“As of 6 p.m. PDT on March 19, approximately 23,200 tests had been conducted in California. This includes the latest numbers California has received from commercial and private labs. At least 11,487 results have been received and another 11,700+ are pending.”</p>
+<p><img src="../assets/images/github/48700483/77202220-24593780-6aab-11ea-91f5-adeaf3ea8f66.png" alt="Screen Shot 2020-03-20 at 1 01 34 PM">
+<img src="../assets/images/github/48700483/77202224-24f1ce00-6aab-11ea-81c8-485aba719ea0.png" alt="Screen Shot 2020-03-20 at 1 00 24 PM"></p>
+<p>Thanks.</p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-601905191">
+          <div class="frontmatter">
+            <div><strong>hammer</strong> commented on March 20, 2020 at 3:50 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/28#issuecomment-601905191" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Thanks <strong>@dkondras</strong>! California’s data has been very tricky for us to report accurately.</p>
+<p>Please read the notes we’ve written at <a href="https://covidtracking.com/data/state/california">https://covidtracking.com/data/state/california</a> and let us know if you have any further questions:</p>
+<blockquote>
+<p>We report positives from the <a href="https://www.latimes.com/projects/california-coronavirus-cases-tracking-outbreak/">LA Times</a>, which is aggregated from county-level data and is ahead of the official California data site. When using LA Times data for positives, we do not add deaths back into the positive count, as they are already included. Previously, we were adding them back in because the California state site was not including them in the positive count. Negative numbers are inferred from Totals - Positives, taken from the <a href="https://www.cdph.ca.gov/Programs/OPA/Pages/NR20-028.aspx">latest press release</a>. We ignoring pending numbers when they are irregularly reported from a press conference/non-dashboard source. We’re assuming 1 test=1 person, pending further guidance.</p>
+</blockquote>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-601923324">
+          <div class="frontmatter">
+            <div><strong>dkondras</strong> commented on March 20, 2020 at 4:44 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/28#issuecomment-601923324" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Got it, thanks!</p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

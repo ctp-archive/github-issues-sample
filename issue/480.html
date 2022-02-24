@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>Columns in states_daily_4pm_et.csv reordered</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 480</p>
+        <p><strong>johnrolfeellis</strong> opened this issue on June 3, 2020 at 1:03 am</p>
+        
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/480" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p>In addition to adding new columns, the old columns in states_daily_4pm_et.csv have been reordered. Was the reordering intentional? The tables in my spreadsheets will need some reworking to accommodate the reordering.</p>
+<p><img src="../assets/images/github/6911504/83601303-2a48ab80-a525-11ea-8390-b45d3939f514.png" alt="image"></p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-642832024">
+          <div class="frontmatter">
+            <div><strong>johnrolfeellis</strong> commented on June 11, 2020 at 12:41 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/480#issuecomment-642832024" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Four more columns were added last night, in the middle of the old columns (totalTestsViral, positiveTestsViral, negativeTestsViral, positiveCasesViral).</p>
+<p>Would it be possible to always add new columns to the end, and if old columns are retired, just mark them with tombstones (like “(deleted)”)?  It’s moderately painful to adjust Excel spreadsheets when the named columns of tables change order – Excel gets confused when you copy and paste from the .csv into your worksheet. The workaround is to manually add and delete columns from the table so they match the new order, and then copy and paste from the .csv to your worksheet.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-643281147">
+          <div class="frontmatter">
+            <div><strong>MattHilliard</strong> commented on June 12, 2020 at 8:51 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/480#issuecomment-643281147" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Hi <strong>@johnrolfeellis</strong>, we appreciate the feedback. We’re sorry about the disruption to your workflow.</p>
+<p><a href="https://covidtracking.com/api">Our API page</a> describes our data structure policies. We do have a column deprecation policy similar to what you suggest, but we don’t guarantee column <em>order</em> and recommend instead looking up by column name. In Excel, you could do this by having an intermediate sheet that looks up columns by name from the raw data so that the rest of your spreadsheet can rely on the intermediate sheet’s column order.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-643556219">
+          <div class="frontmatter">
+            <div><strong>johnrolfeellis</strong> commented on June 12, 2020 at 9:30 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/480#issuecomment-643556219" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Thanks for your reply. I already use named columns in Excel tables (which is Excel best practice), but your suggestion makes for more work, not less.</p>
+<p>For future reference, in case you decide to make your exported data more Excel-friendly, here are three approaches to using the .csvs and the problems with each when column order changes. My conclusion is that the only viable Excel-friendly approach is to preserve column order.</p>
+<ol>
+<li>
+<p>Your suggestion is to have an intermediate sheet that looks up columns by name from the exported .csv. The issue with this is that every time you want to update to a new version of the .csv, which has more rows, you need to add manually more rows to the intermediate sheet, which is straightforward but easy to forget and easy to make mistakes. If you forget to add the rows, there’s nothing to alert you that your calculations aren’t including all the data from the .csv.</p>
+</li>
+<li>
+<p>My current method is to put the contents of the .csv into a sheet with a named table, and then refer to the columns by name rather than cell references.  To incorporate a new version of the .csv, I copy and paste all of its contents into the named table, and Excel will automatically add the new rows to the table.  If there are new columns added at the end, the table will be automatically extended to include them.</p>
+</li>
+</ol>
+<p>Unfortunately, if the order of columns is changed, Excel gets confused, and previous named references to a column, e.g. states_daily[hospitalizedIncrease], will get changed to some other column, e.g. states_daily[deathIncrease]. Whether this is a bug or a feature is besides the point – Excel has long worked this way and it’s very unlikely Microsoft will ever change it. But at least in this approach, you pretty quickly notice that the column order has changed, since all the calculations yield screwy results.</p>
+<p>When the column order changes, I first change the order of the columns in the named table to match the new .csv order, and then I copy and paste.  Since this occurs infrequently, this method 2 is less work and error-prone than you suggested method 1.</p>
+<ol start="3">
+<li>Another method is to save the .csv as a .xlsx and mark its contents as a named table. Then the main workbook can refer to it using an external reference, e.g. states_daily_4pm_et!states_daily[hospitalizedIncrease].  Each time a new .csv is published, I can open it, redefine the named table, and save it as a .xlsx, overwriting the old .xlsx. If the order of the columns changes, the references to the named columns continue to work properly.</li>
+</ol>
+<p>Unfortunately, this approach has a significant, fatal drawback: Excel won’t do name completion of external references when typing formulas (e.g. it won’t complete any of states_daily_4pm_et!states_daily[hospitalizedIncrease]).</p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

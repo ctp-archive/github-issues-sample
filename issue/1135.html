@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>[AZ] Move total antibody tests (specimens) timeseries into Total antibody tests (people) and backfill Total antibody tests (speicmens) </h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 1135</p>
+        <p><strong>hmhoffman</strong> opened this issue on March 7, 2021 at 11:56 am</p>
+        
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1135" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p><strong>State:</strong> AZ</p>
+<p><strong>Dates affected:</strong> 05/07/20 - 03/07/21</p>
+<p><strong>Describe the issue:</strong> The Total antibody tests (specimens) figure we have been capturing for Arizona is actuall Total antibody tests (people). Arizona also provides a true Total antibody tests (specimens) number on their dashboard. We are moving our Total antibody tests (specimens) timeseries into Total antibody tests (specimens), and will begin capturing Total antibody tests (specimens) from their data dashboard, and backfill this timeseries through 07/16/20 from the graph on Arizona’s dashboard.</p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-804495628">
+          <div class="frontmatter">
+            <div><strong>stale[bot]</strong> commented on March 22, 2021 at 7:32 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1135#issuecomment-804495628" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-811904114">
+          <div class="frontmatter">
+            <div><strong>hmhoffman</strong> commented on April 1, 2021 at 8:22 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1135#issuecomment-811904114" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Rows edited: 368</p>
+<p>AZ 2021-03-06
+totalTestsAntibody: 580318 (was None)
+AZ 2021-03-05
+totalTestsAntibody: 579560 (was None)
+AZ 2021-03-04
+totalTestsAntibody: 578537 (was None)
+AZ 2021-03-03
+totalTestsAntibody: 577188 (was None)
+AZ 2021-03-02
+totalTestsAntibody: 576217 (was None)
+AZ 2021-03-01
+totalTestsAntibody: 575979 (was None)
+AZ 2021-02-28
+totalTestsAntibody: 575378 (was None)
+AZ 2021-02-27
+totalTestsAntibody: 574247 (was None)
+AZ 2021-02-26
+totalTestsAntibody: 572668 (was None)
+AZ 2021-02-25
+totalTestsAntibody: 570842 (was None)
+AZ 2021-02-24
+totalTestsAntibody: 568862 (was None)
+AZ 2021-02-23
+totalTestsAntibody: 567459 (was None)
+AZ 2021-02-22
+totalTestsAntibody: 566978 (was None)
+AZ 2021-02-21
+totalTestsAntibody: 566114 (was None)
+AZ 2021-02-20
+totalTestsAntibody: 564619 (was None)
+AZ 2021-02-19
+totalTestsAntibody: 562963 (was None)
+AZ 2021-02-18
+totalTestsAntibody: 560865 (was None)
+AZ 2021-02-17
+totalTestsAntibody: 559074 (was None)
+AZ 2021-02-16
+totalTestsAntibody: 557794 (was None)
+AZ 2021-02-15
+totalTestsAntibody: 557403 (was None)
+AZ 2021-02-14
+totalTestsAntibody: 556629 (was None)
+AZ 2021-02-13
+totalTestsAntibody: 554886 (was None)
+AZ 2021-02-12
+totalTestsAntibody: 552818 (was None)
+AZ 2021-02-11
+totalTestsAntibody: 551406 (was None)
+AZ 2021-02-10
+totalTestsAntibody: 549670 (was None)
+AZ 2021-02-09
+totalTestsAntibody: 548188 (was None)
+AZ 2021-02-08
+totalTestsAntibody: 547915 (was None)
+AZ 2021-02-07
+totalTestsAntibody: 547275 (was None)
+AZ 2021-02-06
+totalTestsAntibody: 545719 (was None)
+AZ 2021-02-05
+totalTestsAntibody: 543935 (was None)
+AZ 2021-02-04
+totalTestsAntibody: 541820 (was None)
+AZ 2021-02-03
+totalTestsAntibody: 539976 (was None)
+AZ 2021-02-02
+totalTestsAntibody: 538419 (was None)
+AZ 2021-02-01
+totalTestsAntibody: 538066 (was None)
+AZ 2021-01-31
+totalTestsAntibody: 537315 (was None)
+AZ 2021-01-30
+totalTestsAntibody: 535655 (was None)
+AZ 2021-01-29
+totalTestsAntibody: 533935 (was None)
+AZ 2021-01-28
+totalTestsAntibody: 531723 (was None)
+AZ 2021-01-27
+totalTestsAntibody: 529787 (was None)
+AZ 2021-01-26
+totalTestsAntibody: 528280 (was None)
+AZ 2021-01-25
+totalTestsAntibody: 527775 (was None)
+AZ 2021-01-24
+totalTestsAntibody: 526923 (was None)
+AZ 2021-01-23
+totalTestsAntibody: 525195 (was None)
+AZ 2021-01-22
+totalTestsAntibody: 523200 (was None)
+AZ 2021-01-21
+totalTestsAntibody: 521618 (was None)
+AZ 2021-01-20
+totalTestsAntibody: 519466 (was None)
+AZ 2021-01-19
+totalTestsAntibody: 517937 (was None)
+AZ 2021-01-18
+totalTestsAntibody: 517482 (was None)
+AZ 2021-01-17
+totalTestsAntibody: 516750 (was None)
+AZ 2021-01-16
+totalTestsAntibody: 514886 (was None)
+AZ 2021-01-15
+totalTestsAntibody: 513006 (was None)
+AZ 2021-01-14
+totalTestsAntibody: 511180 (was None)
+AZ 2021-01-13
+totalTestsAntibody: 509039 (was None)
+AZ 2021-01-12
+totalTestsAntibody: 507483 (was None)
+AZ 2021-01-11
+totalTestsAntibody: 507098 (was None)
+AZ 2021-01-10
+totalTestsAntibody: 506459 (was None)
+AZ 2021-01-09
+totalTestsAntibody: 504461 (was None)
+AZ 2021-01-08
+totalTestsAntibody: 502366 (was None)
+AZ 2021-01-07
+totalTestsAntibody: 500180 (was None)
+AZ 2021-01-06
+totalTestsAntibody: 498185 (was None)
+AZ 2021-01-05
+totalTestsAntibody: 496403 (was None)
+AZ 2021-01-04
+totalTestsAntibody: 495894 (was None)
+AZ 2021-01-03
+totalTestsAntibody: 495218 (was None)
+AZ 2021-01-02
+totalTestsAntibody: 494862 (was None)
+AZ 2021-01-01
+totalTestsAntibody: 493757 (was None)
+AZ 2020-12-31
+totalTestsAntibody: 491918 (was None)
+AZ 2020-12-30
+totalTestsAntibody: 490174 (was None)
+AZ 2020-12-29
+totalTestsAntibody: 488839 (was None)
+AZ 2020-12-28
+totalTestsAntibody: 488550 (was None)
+AZ 2020-12-27
+totalTestsAntibody: 488191 (was None)
+AZ 2020-12-26
+totalTestsAntibody: 488056 (was None)
+AZ 2020-12-25
+totalTestsAntibody: 487302 (was None)
+AZ 2020-12-24
+totalTestsAntibody: 485476 (was None)
+AZ 2020-12-23
+totalTestsAntibody: 483451 (was None)
+AZ 2020-12-22
+totalTestsAntibody: 481747 (was None)
+AZ 2020-12-21
+totalTestsAntibody: 481340 (was None)
+AZ 2020-12-20
+totalTestsAntibody: 480619 (was None)
+AZ 2020-12-19
+totalTestsAntibody: 478903 (was None)
+AZ 2020-12-18
+totalTestsAntibody: 477028 (was None)
+AZ 2020-12-17
+totalTestsAntibody: 475090 (was None)
+AZ 2020-12-16
+totalTestsAntibody: 473513 (was None)
+AZ 2020-12-15
+totalTestsAntibody: 471973 (was None)
+AZ 2020-12-14
+totalTestsAntibody: 471658 (was None)
+AZ 2020-12-13
+totalTestsAntibody: 470894 (was None)
+AZ 2020-12-12
+totalTestsAntibody: 469285 (was None)
+AZ 2020-12-11
+totalTestsAntibody: 467314 (was None)
+AZ 2020-12-10
+totalTestsAntibody: 465235 (was None)
+AZ 2020-12-09
+totalTestsAntibody: 463284 (was None)
+AZ 2020-12-08
+totalTestsAntibody: 461682 (was None)
+AZ 2020-12-07
+totalTestsAntibody: 461323 (was None)
+AZ 2020-12-06
+totalTestsAntibody: 460621 (was None)
+AZ 2020-12-05
+totalTestsAntibody: 459090 (was None)
+AZ 2020-12-04
+totalTestsAntibody: 457196 (was None)
+AZ 2020-12-03
+totalTestsAntibody: 455091 (was None)
+AZ 2020-12-02
+totalTestsAntibody: 452708 (was None)
+AZ 2020-12-01
+totalTestsAntibody: 450648 (was None)
+AZ 2020-11-30
+totalTestsAntibody: 449973 (was None)
+AZ 2020-11-29
+totalTestsAntibody: 448883 (was None)
+AZ 2020-11-28
+totalTestsAntibody: 447812 (was None)
+AZ 2020-11-27
+totalTestsAntibody: 447576 (was None)
+AZ 2020-11-26
+totalTestsAntibody: 445594 (was None)
+AZ 2020-11-25
+totalTestsAntibody: 443634 (was None)
+AZ 2020-11-24
+totalTestsAntibody: 441838 (was None)
+AZ 2020-11-23
+totalTestsAntibody: 441256 (was None)
+AZ 2020-11-22
+totalTestsAntibody: 440171 (was None)
+AZ 2020-11-21
+totalTestsAntibody: 438044 (was None)
+AZ 2020-11-20
+totalTestsAntibody: 436592 (was None)
+AZ 2020-11-19
+totalTestsAntibody: 434419 (was None)
+AZ 2020-11-18
+totalTestsAntibody: 432134 (was None)
+AZ 2020-11-17
+totalTestsAntibody: 430364 (was None)
+AZ 2020-11-16
+totalTestsAntibody: 429493 (was None)
+AZ 2020-11-15
+totalTestsAntibody: 428367 (was None)
+AZ 2020-11-14
+totalTestsAntibody: 426466 (was None)
+AZ 2020-11-13
+totalTestsAntibody: 424886 (was None)
+AZ 2020-11-12
+totalTestsAntibody: 423350 (was None)
+AZ 2020-11-11
+totalTestsAntibody: 421428 (was None)
+AZ 2020-11-10
+totalTestsAntibody: 419691 (was None)
+AZ 2020-11-09
+totalTestsAntibody: 418900 (was None)
+AZ 2020-11-08
+totalTestsAntibody: 417658 (was None)
+AZ 2020-11-07
+totalTestsAntibody: 415900 (was None)
+AZ 2020-11-06
+totalTestsAntibody: 414437 (was None)
+AZ 2020-11-05
+totalTestsAntibody: 412908 (was None)
+AZ 2020-11-04
+totalTestsAntibody: 411072 (was None)
+AZ 2020-11-03
+totalTestsAntibody: 409383 (was None)
+AZ 2020-11-02
+totalTestsAntibody: 408714 (was None)
+AZ 2020-11-01
+totalTestsAntibody: 407735 (was None)
+AZ 2020-10-31
+totalTestsAntibody: 405894 (was None)
+AZ 2020-10-30
+totalTestsAntibody: 403989 (was None)
+AZ 2020-10-29
+totalTestsAntibody: 402085 (was None)
+AZ 2020-10-28
+totalTestsAntibody: 399841 (was None)
+AZ 2020-10-27
+totalTestsAntibody: 398028 (was None)
+AZ 2020-10-26
+totalTestsAntibody: 397342 (was None)
+AZ 2020-10-25
+totalTestsAntibody: 396285 (was None)
+AZ 2020-10-24
+totalTestsAntibody: 394092 (was None)
+AZ 2020-10-23
+totalTestsAntibody: 392396 (was None)
+AZ 2020-10-22
+totalTestsAntibody: 390954 (was None)
+AZ 2020-10-21
+totalTestsAntibody: 389111 (was None)
+AZ 2020-10-20
+totalTestsAntibody: 387436 (was None)
+AZ 2020-10-19
+totalTestsAntibody: 386709 (was None)
+AZ 2020-10-18
+totalTestsAntibody: 385544 (was None)
+AZ 2020-10-17
+totalTestsAntibody: 383829 (was None)
+AZ 2020-10-16
+totalTestsAntibody: 382075 (was None)
+AZ 2020-10-15
+totalTestsAntibody: 380398 (was None)
+AZ 2020-10-14
+totalTestsAntibody: 378395 (was None)
+AZ 2020-10-13
+totalTestsAntibody: 376656 (was None)
+AZ 2020-10-12
+totalTestsAntibody: 375886 (was None)
+AZ 2020-10-11
+totalTestsAntibody: 374816 (was None)
+AZ 2020-10-10
+totalTestsAntibody: 372442 (was None)
+AZ 2020-10-09
+totalTestsAntibody: 370643 (was None)
+AZ 2020-10-08
+totalTestsAntibody: 368482 (was None)
+AZ 2020-10-07
+totalTestsAntibody: 366319 (was None)
+AZ 2020-10-06
+totalTestsAntibody: 364637 (was None)
+AZ 2020-10-05
+totalTestsAntibody: 364033 (was None)
+AZ 2020-10-04
+totalTestsAntibody: 362622 (was None)
+AZ 2020-10-03
+totalTestsAntibody: 360730 (was None)
+AZ 2020-10-02
+totalTestsAntibody: 359060 (was None)
+AZ 2020-10-01
+totalTestsAntibody: 357414 (was None)
+AZ 2020-09-30
+totalTestsAntibody: 355410 (was None)
+AZ 2020-09-29
+totalTestsAntibody: 353517 (was None)
+AZ 2020-09-28
+totalTestsAntibody: 352876 (was None)
+AZ 2020-09-27
+totalTestsAntibody: 351862 (was None)
+AZ 2020-09-26
+totalTestsAntibody: 349938 (was None)
+AZ 2020-09-25
+totalTestsAntibody: 348167 (was None)
+AZ 2020-09-24
+totalTestsAntibody: 346495 (was None)
+AZ 2020-09-23
+totalTestsAntibody: 344432 (was None)
+AZ 2020-09-22
+totalTestsAntibody: 342782 (was None)
+AZ 2020-09-21
+totalTestsAntibody: 342299 (was None)
+AZ 2020-09-20
+totalTestsAntibody: 341668 (was None)
+AZ 2020-09-19
+totalTestsAntibody: 339866 (was None)
+AZ 2020-09-18
+totalTestsAntibody: 338768 (was None)
+AZ 2020-09-17
+totalTestsAntibody: 337526 (was None)
+AZ 2020-09-16
+totalTestsAntibody: 336133 (was None)
+AZ 2020-09-15
+totalTestsAntibody: 334680 (was None)
+AZ 2020-09-14
+totalTestsAntibody: 334187 (was None)
+AZ 2020-09-13
+totalTestsAntibody: 333533 (was None)
+AZ 2020-09-12
+totalTestsAntibody: 331886 (was None)
+AZ 2020-09-11
+totalTestsAntibody: 330810 (was None)
+AZ 2020-09-10
+totalTestsAntibody: 329718 (was None)
+AZ 2020-09-09
+totalTestsAntibody: 328275 (was None)
+AZ 2020-09-08
+totalTestsAntibody: 327779 (was None)
+AZ 2020-09-07
+totalTestsAntibody: 327217 (was None)
+AZ 2020-09-06
+totalTestsAntibody: 326608 (was None)
+AZ 2020-09-05
+totalTestsAntibody: 325245 (was None)
+AZ 2020-09-04
+totalTestsAntibody: 324138 (was None)
+AZ 2020-09-03
+totalTestsAntibody: 323046 (was None)
+AZ 2020-09-02
+totalTestsAntibody: 321549 (was None)
+AZ 2020-09-01
+totalTestsAntibody: 319986 (was None)
+AZ 2020-08-31
+totalTestsAntibody: 319534 (was None)
+AZ 2020-08-30
+totalTestsAntibody: 318906 (was None)
+AZ 2020-08-29
+totalTestsAntibody: 317139 (was None)
+AZ 2020-08-28
+totalTestsAntibody: 315723 (was None)
+AZ 2020-08-27
+totalTestsAntibody: 314349 (was None)
+AZ 2020-08-26
+totalTestsAntibody: 312454 (was None)
+AZ 2020-08-25
+totalTestsAntibody: 310714 (was None)
+AZ 2020-08-24
+totalTestsAntibody: 310224 (was None)
+AZ 2020-08-23
+totalTestsAntibody: 309582 (was None)
+AZ 2020-08-22
+totalTestsAntibody: 307676 (was None)
+AZ 2020-08-21
+totalTestsAntibody: 305925 (was None)
+AZ 2020-08-20
+totalTestsAntibody: 304283 (was None)
+AZ 2020-08-19
+totalTestsAntibody: 302087 (was None)
+AZ 2020-08-18
+totalTestsAntibody: 300007 (was None)
+AZ 2020-08-17
+totalTestsAntibody: 299451 (was None)
+AZ 2020-08-16
+totalTestsAntibody: 298808 (was None)
+AZ 2020-08-15
+totalTestsAntibody: 296673 (was None)
+AZ 2020-08-14
+totalTestsAntibody: 294763 (was None)
+AZ 2020-08-13
+totalTestsAntibody: 292825 (was None)
+AZ 2020-08-12
+totalTestsAntibody: 290414 (was None)
+AZ 2020-08-11
+totalTestsAntibody: 288276 (was None)
+AZ 2020-08-10
+totalTestsAntibody: 287773 (was None)
+AZ 2020-08-09
+totalTestsAntibody: 287117 (was None)
+AZ 2020-08-08
+totalTestsAntibody: 284895 (was None)
+AZ 2020-08-07
+totalTestsAntibody: 282598 (was None)
+AZ 2020-08-06
+totalTestsAntibody: 280696 (was None)
+AZ 2020-08-05
+totalTestsAntibody: 278398 (was None)
+AZ 2020-08-04
+totalTestsAntibody: 276051 (was None)
+AZ 2020-08-03
+totalTestsAntibody: 275562 (was None)
+AZ 2020-08-02
+totalTestsAntibody: 274873 (was None)
+AZ 2020-08-01
+totalTestsAntibody: 272439 (was None)
+AZ 2020-07-31
+totalTestsAntibody: 269923 (was None)
+AZ 2020-07-30
+totalTestsAntibody: 267105 (was None)
+AZ 2020-07-29
+totalTestsAntibody: 264215 (was None)
+AZ 2020-07-28
+totalTestsAntibody: 261430 (was None)
+AZ 2020-07-27
+totalTestsAntibody: 260983 (was None)
+AZ 2020-07-26
+totalTestsAntibody: 260351 (was None)
+AZ 2020-07-25
+totalTestsAntibody: 257551 (was None)
+AZ 2020-07-24
+totalTestsAntibody: 255150 (was None)
+AZ 2020-07-23
+totalTestsAntibody: 252884 (was None)
+AZ 2020-07-22
+totalTestsAntibody: 249837 (was None)
+AZ 2020-07-21
+totalTestsAntibody: 246810 (was None)
+AZ 2020-07-20
+totalTestsAntibody: 246336 (was None)
+AZ 2020-07-19
+totalTestsAntibody: 245671 (was None)
+AZ 2020-07-18
+totalTestsAntibody: 242837 (was None)
+AZ 2020-07-17
+totalTestsAntibody: 240534 (was None)
+AZ 2020-07-16
+totalTestsAntibody: 238219 (was None)
+AZ 2020-07-15
+totalTestsAntibody: 235288 (was None)
+AZ 2020-07-14
+totalTestsAntibody: 232343 (was None)
+AZ 2020-07-13
+totalTestsAntibody: 231791 (was None)
+AZ 2020-07-12
+totalTestsAntibody: 230956 (was None)
+AZ 2020-07-11
+totalTestsAntibody: 227933 (was None)
+AZ 2020-07-10
+totalTestsAntibody: 225140 (was None)
+AZ 2020-07-09
+totalTestsAntibody: 222446 (was None)
+AZ 2020-07-08
+totalTestsAntibody: 219114 (was None)
+AZ 2020-07-07
+totalTestsAntibody: 216268 (was None)
+AZ 2020-07-06
+totalTestsAntibody: 215791 (was None)
+AZ 2020-07-05
+totalTestsAntibody: 215183 (was None)
+AZ 2020-07-04
+totalTestsAntibody: 214173 (was None)
+AZ 2020-07-03
+totalTestsAntibody: 210982 (was None)
+AZ 2020-07-02
+totalTestsAntibody: 207746 (was None)
+AZ 2020-07-01
+totalTestsAntibody: 204412 (was None)
+AZ 2020-06-30
+totalTestsAntibody: 200303 (was None)
+AZ 2020-06-29
+totalTestsAntibody: 199719 (was None)
+AZ 2020-06-28
+totalTestsAntibody: 198787 (was None)
+AZ 2020-06-27
+totalTestsAntibody: 194641 (was None)
+AZ 2020-06-26
+totalTestsAntibody: 190579 (was None)
+AZ 2020-06-25
+totalTestsAntibody: 186691 (was None)
+AZ 2020-06-24
+totalTestsAntibody: 182563 (was None)
+AZ 2020-06-23
+totalTestsAntibody: 179185 (was None)
+AZ 2020-06-22
+totalTestsAntibody: 178473 (was None)
+AZ 2020-06-21
+totalTestsAntibody: 177548 (was None)
+AZ 2020-06-20
+totalTestsAntibody: 173613 (was None)
+AZ 2020-06-19
+totalTestsAntibody: 170096 (was None)
+AZ 2020-06-18
+totalTestsAntibody: 167002 (was None)
+AZ 2020-06-17
+totalTestsAntibody: 163007 (was None)
+AZ 2020-06-16
+totalTestsAntibody: 159813 (was None)
+AZ 2020-06-15
+totalTestsAntibody: 159138 (was None)
+AZ 2020-06-14
+totalTestsAntibody: 158218 (was None)
+AZ 2020-06-13
+totalTestsAntibody: 154757 (was None)
+AZ 2020-06-12
+totalTestsAntibody: 151020 (was None)
+AZ 2020-06-11
+totalTestsAntibody: 147343 (was None)
+AZ 2020-06-10
+totalTestsAntibody: 141708 (was None)
+AZ 2020-06-09
+totalTestsAntibody: 137700 (was None)
+AZ 2020-06-08
+totalTestsAntibody: 137046 (was None)
+AZ 2020-06-07
+totalTestsAntibody: 135958 (was None)
+AZ 2020-06-06
+totalTestsAntibody: 132191 (was None)
+AZ 2020-06-05
+totalTestsAntibody: 128552 (was None)
+AZ 2020-06-04
+totalTestsAntibody: 124976 (was None)
+AZ 2020-06-03
+totalTestsAntibody: 120814 (was None)
+AZ 2020-06-02
+totalTestsAntibody: 116283 (was None)
+AZ 2020-06-01
+totalTestsAntibody: 115519 (was None)
+AZ 2020-05-31
+totalTestsAntibody: 113623 (was None)
+AZ 2020-05-30
+totalTestsAntibody: 109543 (was None)
+AZ 2020-05-29
+totalTestsAntibody: 105486 (was None)
+AZ 2020-05-28
+totalTestsAntibody: 101232 (was None)
+AZ 2020-05-27
+totalTestsAntibody: 96842 (was None)
+AZ 2020-05-26
+totalTestsAntibody: 96266 (was None)
+AZ 2020-05-25
+totalTestsAntibody: 95583 (was None)
+AZ 2020-05-24
+totalTestsAntibody: 93312 (was None)
+AZ 2020-05-23
+totalTestsAntibody: 88847 (was None)
+AZ 2020-05-22
+totalTestsAntibody: 84064 (was None)
+AZ 2020-05-21
+totalTestsAntibody: 79108 (was None)
+AZ 2020-05-20
+totalTestsAntibody: 74087 (was None)
+AZ 2020-05-19
+totalTestsAntibody: 68912 (was None)
+AZ 2020-05-18
+totalTestsAntibody: 67571 (was None)
+AZ 2020-05-17
+totalTestsAntibody: 65780 (was None)
+AZ 2020-05-16
+totalTestsAntibody: 60776 (was None)
+AZ 2020-05-15
+totalTestsAntibody: 56355 (was None)
+AZ 2020-05-14
+totalTestsAntibody: 52083 (was None)
+AZ 2020-05-13
+totalTestsAntibody: 47603 (was None)
+AZ 2020-05-12
+totalTestsAntibody: 42820 (was None)
+AZ 2020-05-11
+totalTestsAntibody: 42352 (was None)
+AZ 2020-05-10
+totalTestsAntibody: 41318 (was None)
+AZ 2020-05-09
+totalTestsAntibody: 35782 (was None)
+AZ 2020-05-08
+totalTestsAntibody: 30842 (was None)
+AZ 2020-05-07
+totalTestsAntibody: 25887 (was None)
+AZ 2020-05-06
+totalTestsAntibody: 20997 (was None)
+AZ 2020-05-05
+totalTestsAntibody: 16134 (was None)
+AZ 2020-05-04
+totalTestsAntibody: 15730 (was None)
+AZ 2020-05-03
+totalTestsAntibody: 15195 (was None)
+AZ 2020-05-02
+totalTestsAntibody: 11014 (was None)
+AZ 2020-05-01
+totalTestsAntibody: 7495 (was None)
+AZ 2020-04-30
+totalTestsAntibody: 4225 (was None)
+AZ 2020-04-29
+totalTestsAntibody: 1901 (was None)
+AZ 2020-04-28
+totalTestsAntibody: 411 (was None)
+AZ 2020-04-27
+totalTestsAntibody: 404 (was None)
+AZ 2020-04-26
+totalTestsAntibody: 382 (was None)
+AZ 2020-04-25
+totalTestsAntibody: 221 (was None)
+AZ 2020-04-24
+totalTestsAntibody: 154 (was None)
+AZ 2020-04-23
+totalTestsAntibody: 124 (was None)
+AZ 2020-04-22
+totalTestsAntibody: 106 (was None)
+AZ 2020-04-21
+totalTestsAntibody: 75 (was None)
+AZ 2020-04-20
+totalTestsAntibody: 72 (was None)
+AZ 2020-04-19
+totalTestsAntibody: 68 (was None)
+AZ 2020-04-18
+totalTestsAntibody: 53 (was None)
+AZ 2020-04-17
+totalTestsAntibody: 43 (was None)
+AZ 2020-04-16
+totalTestsAntibody: 36 (was None)
+AZ 2020-04-15
+totalTestsAntibody: 30 (was None)
+AZ 2020-04-14
+totalTestsAntibody: 20 (was None)
+AZ 2020-04-13
+totalTestsAntibody: 18 (was None)
+AZ 2020-04-12
+totalTestsAntibody: 17 (was None)
+AZ 2020-04-11
+totalTestsAntibody: 13 (was None)
+AZ 2020-04-10
+totalTestsAntibody: 7 (was None)
+AZ 2020-04-09
+totalTestsAntibody: 5 (was None)
+AZ 2020-04-08
+totalTestsAntibody: 3 (was None)
+AZ 2020-04-07
+totalTestsAntibody: 1 (was None)
+AZ 2020-04-06
+totalTestsAntibody: 1 (was None)
+AZ 2020-04-05
+totalTestsAntibody: 1 (was None)
+AZ 2020-04-04
+totalTestsAntibody: 1 (was None)
+AZ 2020-04-03
+totalTestsAntibody: 0 (was None)
+AZ 2020-04-02
+totalTestsAntibody: 0 (was None)
+AZ 2020-04-01
+totalTestsAntibody: 0 (was None)
+AZ 2020-03-31
+totalTestsAntibody: 0 (was None)
+AZ 2020-03-30
+totalTestsAntibody: 0 (was None)
+AZ 2020-03-29
+totalTestsAntibody: 0 (was None)
+AZ 2020-03-28
+totalTestsAntibody: 0 (was None)
+AZ 2020-03-27
+totalTestsAntibody: 0 (was None)
+AZ 2020-03-26
+totalTestsAntibody: 0 (was None)
+AZ 2020-03-25
+totalTestsAntibody: 0 (was None)
+AZ 2020-03-24
+totalTestsAntibody: 0 (was None)
+AZ 2020-03-23
+totalTestsAntibody: 0 (was None)
+AZ 2020-03-22
+totalTestsAntibody: 0 (was None)
+AZ 2020-03-21
+totalTestsAntibody: 0 (was None)
+AZ 2020-03-20
+totalTestsAntibody: 0 (was None)
+AZ 2020-03-19
+totalTestsAntibody: 0 (was None)
+AZ 2020-03-18
+totalTestsAntibody: 0 (was None)
+AZ 2020-03-17
+totalTestsAntibody: 0 (was None)
+AZ 2020-03-16
+totalTestsAntibody: 0 (was None)
+AZ 2020-03-15
+totalTestsAntibody: 0 (was None)
+AZ 2020-03-14
+totalTestsAntibody: 0 (was None)
+AZ 2020-03-13
+totalTestsAntibody: 0 (was None)
+AZ 2020-03-12
+totalTestsAntibody: 0 (was None)
+AZ 2020-03-11
+totalTestsAntibody: 0 (was None)
+AZ 2020-03-10
+totalTestsAntibody: 0 (was None)
+AZ 2020-03-09
+totalTestsAntibody: 0 (was None)
+AZ 2020-03-08
+totalTestsAntibody: 0 (was None)
+AZ 2020-03-07
+totalTestsAntibody: 0 (was None)
+AZ 2020-03-06
+totalTestsAntibody: 0 (was None)
+AZ 2020-03-05
+totalTestsAntibody: 0 (was None)
+AZ 2020-03-04
+totalTestsAntibody: 0 (was None)</p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

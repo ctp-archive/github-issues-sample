@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>Arizona data quality grades not current</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 755</p>
+        <p><strong>ghost</strong> opened this issue on August 12, 2020 at 3:15 pm</p>
+        
+          <p><strong>Labels </strong>
+            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          </p>
+          
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/755" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p><strong>Arizona</strong>:</p>
+<p><strong>Describe the problem</strong>
+COVID19Tracking describes Arizona data as including all tests. This is wrong. <strong>This error in how COVID19Tracking describes these data has resulted in researchers and analysts who use these data incorrectly calculating test positivity by using all positives, but only a portion of negatives.</strong> This issue has not received attention for 15 days. It is an important, but thankfully simple fix. Update the data quality grades.</p>
+<p>COVID19Tracking Data quality grades for Arizona have a check for “Machine readable” and “Reporting total test conducted”. There are two issues here:</p>
+<ul>
+<li>
+<p>Reporting total test conducted
+The Director of the Arizona Department of Health Services, Dr. Cara Christ, is quoted in local media today as saying they do not report total tests. The dashboard reports a figure for “total tests”, but Dr. Christ explains in her interview that this is not “total tests”.  Some labs are not reporting negative results to the state, so DHS is unable to include those negative results in the total. They report all positive tests, but only some of the negative tests, making the “total test” figure the sum of the all the tests they have, rather than the actual total conducted. Please update the data quality grade accordingly.</p>
+</li>
+<li>
+<p>Machine readable
+Confirmed/probable cases and confirmed/probable deaths are reported as a tableau vizintooltip. The data itself is an image of numbers, with no alt text. I’m unable to parse the image with OCR, so I’m not sure how this is machine readable. I could be missing something, though.</p>
+</li>
+</ul>
+<p><strong>Link to data source</strong></p>
+<ul>
+<li>Total tests
+See <a href="https://www.azfamily.com/news/continuing_coverage/coronavirus_coverage/the-reason-why-there-are-so-many-conflicting-covid-19-positivity-rates-for-arizona/article_83fa2d80-dc33-11ea-8d38-17fac0e3733a.html">azfamily.com</a></li>
+</ul>
+<blockquote>
+<p>Dr. Christ says some labs across the state report all their negative and positive cases while other labs only report their positive cases.</p>
+<p>When calculating the positivity, the state does not include positive cases unless the lab also provides negative cases. Johns Hopkins uses all data collected.</p>
+<p>Dr. Christ says using the positives without the negatives creates a falsely high number.</p>
+<p>“You could have one person get tested, and it gets reported to the department, but there could have been 1,000 people tested. If those negatives don’t get included, you’d have 100% positivity, and that’s not accurate,” says Dr. Christ.</p>
+</blockquote>
+<p>Dr. Christ says more in the video. The relevant section starts at 4:06. Dr. Christ is saying that you (the source of JHU’s calculation) do not, in fact, have the denominator for the percent positivity statistic (total tests) because they (DHS) are not reporting it. This should be reflected in the data quality grade.</p>
+<p>Further reporting on this issue with comments from state public health authorities:
+<a href="https://www.abc15.com/news/state/arizonas-handling-of-covid-19-health-data-gets-new-challenge">https://www.abc15.com/news/state/arizonas-handling-of-covid-19-health-data-gets-new-challenge</a>
+<a href="https://www.azcentral.com/story/news/local/arizona-health/2020/08/17/arizona-leaves-out-written-faxed-test-results-when-calculating-covid-19-percent-positivity/5587283002/">https://www.azcentral.com/story/news/local/arizona-health/2020/08/17/arizona-leaves-out-written-faxed-test-results-when-calculating-covid-19-percent-positivity/5587283002/</a>
+<a href="https://www.azfamily.com/news/continuing_coverage/coronavirus_coverage/state-of-arizona-johns-hopkins-have-different-covid-19-stats-for-same-data/article_76bde470-de3d-11ea-957d-9f65c34e435c.html">https://www.azfamily.com/news/continuing_coverage/coronavirus_coverage/state-of-arizona-johns-hopkins-have-different-covid-19-stats-for-same-data/article_76bde470-de3d-11ea-957d-9f65c34e435c.html</a></p>
+<ul>
+<li>Machine readable
+Re: confirmed/probable, see <a href="https://azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/covid-19/dashboards/index.php">the state dashboard</a></li>
+</ul>
+<p>Extracting the vizintooltip from the page source, the breakdown of confirmed/probable (for example) is an image. The url for that image is <a href="https://tableau.azdhs.gov/vizql/tilecache/5E489168531A4CCF8BD4EE43C78B91F9-4:2/8483/VizInTooltip/157767/640CF13950CD4D8BB5F6500C2295831F.A115AB9711DD42D2835EC54DEC8E9B71.1.300.300.png">here</a>. There is no alt text.</p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-682272654">
+          <div class="frontmatter">
+            <div><strong>stale[bot]</strong> commented on August 27, 2020 at 8:25 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/755#issuecomment-682272654" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-682316420">
+          <div class="frontmatter">
+            <div><strong>ghost</strong> commented on August 27, 2020 at 11:21 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/755#issuecomment-682316420" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>This issue should receive some attention. Arizona data quality grades are in error and need to be updated. The state is not reporting total tests conducted, and not reporting all negative tests.</p>
+<p>See further news reports:</p>
+<p><a href="https://www.abc15.com/news/state/arizonas-handling-of-covid-19-health-data-gets-new-challenge">https://www.abc15.com/news/state/arizonas-handling-of-covid-19-health-data-gets-new-challenge</a>
+<a href="https://www.azfamily.com/news/continuing_coverage/coronavirus_coverage/the-reason-why-there-are-so-many-conflicting-covid-19-positivity-rates-for-arizona/article_83fa2d80-dc33-11ea-8d38-17fac0e3733a.html">https://www.azfamily.com/news/continuing_coverage/coronavirus_coverage/the-reason-why-there-are-so-many-conflicting-covid-19-positivity-rates-for-arizona/article_83fa2d80-dc33-11ea-8d38-17fac0e3733a.html</a>
+<a href="https://www.azcentral.com/story/news/local/arizona-health/2020/08/17/arizona-leaves-out-written-faxed-test-results-when-calculating-covid-19-percent-positivity/5587283002/">https://www.azcentral.com/story/news/local/arizona-health/2020/08/17/arizona-leaves-out-written-faxed-test-results-when-calculating-covid-19-percent-positivity/5587283002/</a>
+<a href="https://www.azfamily.com/news/continuing_coverage/coronavirus_coverage/state-of-arizona-johns-hopkins-have-different-covid-19-stats-for-same-data/article_76bde470-de3d-11ea-957d-9f65c34e435c.html">https://www.azfamily.com/news/continuing_coverage/coronavirus_coverage/state-of-arizona-johns-hopkins-have-different-covid-19-stats-for-same-data/article_76bde470-de3d-11ea-957d-9f65c34e435c.html</a></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-686918110">
+          <div class="frontmatter">
+            <div><strong>ghost</strong> commented on September 4, 2020 at 12:31 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/755#issuecomment-686918110" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>This issue could use some attention. The Arizona data quality grades are not accurate (not all tests are reported, see above) and they are being used by the state to avoid addressing data transparency issues. Arizona governor Doug Ducey cited their A+ data quality grade in a recent <a href="https://youtu.be/1tM8njdKj7k">press conference</a> to side step press questions about problems with data transparency. Please fix the error.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-702747531">
+          <div class="frontmatter">
+            <div><strong>muamichali</strong> commented on October 2, 2020 at 8:54 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/755#issuecomment-702747531" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>The account has been deleted so I can’t respond. But we are re-vamping the state grades and will take this feedback into consideration.</p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>Confirmed vs. suspected deaths (Puerto Rico and New York City)</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 174</p>
+        <p><strong>sacundim</strong> opened this issue on April 9, 2020 at 8:43 pm</p>
+        
+          <p><strong>Labels </strong>
+            <span class="label"><a href="../label/2025037300.html">NYC Probable Deaths</a></span>
+          </p>
+          
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/174" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p>There are reports that New York City will in the near future start reporting separate numbers for confirmed vs. suspected COVID-19 deaths, and Puerto Rico is already doing something similar as of April 9.</p>
+<p>The data set collected in this repo might be well served to make a similar distinction as well, in order to, for example, avoid big jumps in day-to-day values that are really an artifact of that sort of reporting change.  For example, your website today reports that Puerto Rico went from 24 to 33 deaths, but in reality it went from 24 to 26 under the old standard (deaths of patients with positive test results), and a new category of suspected deaths was inaugurated with 7 cases from March (and a second batch of 7 has been added since this morning).</p>
+<p>According to this April 8 story in Gothamist, New York city intends to start reporting counts both of confirmed and suspected COVID-19 deaths:</p>
+<ul>
+<li><a href="https://gothamist.com/news/death-count-expected-soar-nyc-says-it-will-begin-reporting-suspected-covid-deaths-addition-confirmed-ones">https://gothamist.com/news/death-count-expected-soar-nyc-says-it-will-begin-reporting-suspected-covid-deaths-addition-confirmed-ones</a></li>
+</ul>
+<blockquote>
+<p>New York City officials will begin to count suspected COVID-19 deaths of people who die at home following a WNYC/Gothamist report revealing a staggering number of such deaths that were not included in the official tally.</p>
+<p>In a statement, Stephanie Buhle, a spokeswoman for New York City’s Health Department, said the city would no longer report only those cases that were confirmed by a laboratory test.</p>
+<p>“The Office of the Chief Medical Examiner (OCME) and the NYC Health Department are working together to include into their reports deaths that may be linked to COVID but not lab confirmed that occur at home,” she said.</p>
+<p>She didn’t say when the city would begin reporting suspected deaths along with the overall count. But the new protocol is likely to add thousands to the toll.</p>
+</blockquote>
+<p>The story says NYC officials have given no timeline for this change, but as I mentioned above, Puerto Rico today (April 9) started reporting deaths in two similar categories as well:</p>
+<ol>
+<li>Deaths for which there is a positive COVID-19 test result</li>
+<li>Deaths for which there isn’t such a result but the doctor indicated COVID-19 in the death certificate</li>
+</ol>
+<p>As of right now (April 9, 10pm Puerto Rico time), the project’s current best source for Puerto Rico is the Institute of Statistics dashboard:</p>
+<ul>
+<li><a href="https://estadisticas.pr/en/covid-19">https://estadisticas.pr/en/covid-19</a></li>
+</ul>
+<p>…which is breaking down the deaths like this:</p>
+<ul>
+<li>33 total (“Muertes 33”)</li>
+<li>7 suspected (“Registro Demográfico = 7 (21.2%)”)</li>
+<li>26 confirmed (“Sistema de Vigilancia = 26 (78.8%)”)</li>
+</ul>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-611852830">
+          <div class="frontmatter">
+            <div><strong>muamichali</strong> commented on April 9, 2020 at 9:56 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/174#issuecomment-611852830" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Thanks for the information <strong>@sacundim.</strong> I will pass it on to the team.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-613717675">
+          <div class="frontmatter">
+            <div><strong>sacundim</strong> commented on April 14, 2020 at 5:45 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/174#issuecomment-613717675" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Update:</p>
+<blockquote>
+<h1>N.Y.C. Death Toll Soars Past 10,000 in Revised Virus Count</h1>
+<h2>The city has added more than 3,700 additional people who were presumed to have died of the coronavirus but had never tested positive.</h2>
+<p>By J. David Goodman and William K. Rashbaum
+April 14, 2020 (Updated 6:40 p.m. ET)</p>
+<p>New York City, already a world epicenter of the coronavirus outbreak, sharply increased its death toll by more than 3,700 victims on Tuesday, after officials said they were now including people who had never tested positive for the virus but were presumed to have died of it.</p>
+<p>The new figures, released by the city’s Health Department, drove up the number of people killed in New York City to more than 10,000, and appeared to increase the overall United States death count by 17 percent to more than 26,000.</p>
+</blockquote>
+<p><a href="https://www.nytimes.com/2020/04/14/nyregion/new-york-coronavirus-deaths.html">https://www.nytimes.com/2020/04/14/nyregion/new-york-coronavirus-deaths.html</a></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-621445763">
+          <div class="frontmatter">
+            <div><strong>muamichali</strong> commented on April 29, 2020 at 3:29 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/174#issuecomment-621445763" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Hi <strong>@sacundim</strong></p>
+<p>Thanks again for bringing this issue to our attention when you did. We are working on incorporating these data points from the states that provide them consistently</p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

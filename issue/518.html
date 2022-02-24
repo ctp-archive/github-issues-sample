@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>Recent Data Anomalies in KY and other states </h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 518</p>
+        <p><strong>muamichali</strong> opened this issue on June 24, 2020 at 7:47 pm</p>
+        
+          <p><strong>Labels </strong>
+            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          </p>
+          
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/518" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p>However, I have noticed in recent data pulls (over the past week or so) that there are some highly unusual (implausible) values for certain states during early-mid March. For example, KY goes from having 8 positive cases as of March 12, thousands of positive cases March 13-15, then back to 21 positive cases as of March 16. There are a number of other states with similar strange jumps in the number of positive tests (as well as decreases in the number of negative tests) in early-mid March.</p>
+<p>These problems were not present in earlier datasets that I had downloaded from your site (e.g. on May 6). Do you know what happened to explain these unusual values?</p>
+<p><img src="https://frontapp.com/assets/img/favicons/favicon-32x32.png" height="16" width="16" alt="Front logo" /> <a href="https://app.frontapp.com/open/top_250y9">Front conversations</a></p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-649158726">
+          <div class="frontmatter">
+            <div><strong>muamichali</strong> commented on June 24, 2020 at 8:25 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/518#issuecomment-649158726" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <h3>Kentucky</h3>
+<p><strong>BEFORE</strong>
+<img src="../assets/images/github/1749380/85643167-573e3900-b661-11ea-93a4-5fcd79b3522e.png" alt="image"></p>
+<p><strong>positives column to fix</strong></p>
+<p><img src="../assets/images/github/1749380/85643025-ff9fcd80-b660-11ea-8699-88be96176ac3.png" alt="image">
+<img src="../assets/images/github/1749380/85643082-265e0400-b661-11ea-9937-bdee04dff370.png" alt="image">
+<img src="../assets/images/github/1749380/85643119-34ac2000-b661-11ea-8b48-c7aad09614c8.png" alt="image"></p>
+<p><strong>Negatives column to fix</strong>
+<img src="../assets/images/github/1749380/85643693-e566ef00-b662-11ea-8b63-698acd11669b.png" alt="image">
+<img src="../assets/images/github/1749380/85643730-fd3e7300-b662-11ea-839d-dff1b8db4d2c.png" alt="image">
+<img src="../assets/images/github/1749380/85643761-16472400-b663-11ea-8363-5afcd4a68215.png" alt="image"></p>
+<p><strong>Total Tests (PCR) column to fix</strong>
+<img src="../assets/images/github/1749380/85643322-c6b42880-b661-11ea-8600-8a3347c5f530.png" alt="image"></p>
+<p><img src="../assets/images/github/1749380/85643406-fb27e480-b661-11ea-9a67-d8febc2bbce8.png" alt="image"></p>
+<p><img src="../assets/images/github/1749380/85643551-843f1b80-b662-11ea-9a35-749386e4646b.png" alt="image"></p>
+<p><strong>AFTER</strong>
+<img src="../assets/images/github/1749380/85643835-4db5d080-b663-11ea-8a88-e934c878e0c3.png" alt="image"></p>
+<h3>Kansas</h3>
+<p><strong>BEFORE</strong>
+<img src="../assets/images/github/1749380/85644984-75f2fe80-b666-11ea-88c1-78d34dd40bf1.png" alt="image"></p>
+<p>positive to fix
+<img src="../assets/images/github/1749380/85644896-3af0cb00-b666-11ea-87d8-0e21c68aeeea.png" alt="image">
+negative to fix
+<img src="../assets/images/github/1749380/85644948-5bb92080-b666-11ea-8263-e4dfcb4288df.png" alt="image"></p>
+<p><strong>AFTER</strong>
+<img src="../assets/images/github/1749380/85645092-c10d1180-b666-11ea-9c4c-ec55df24955a.png" alt="image"></p>
+<h3>Maryland</h3>
+<p><strong>BEFORE</strong>
+<img src="../assets/images/github/1749380/85645175-f0bc1980-b666-11ea-8f2d-d5ef5f9c3083.png" alt="image"></p>
+<p>positive to fix
+<img src="../assets/images/github/1749380/85645232-1cd79a80-b667-11ea-8df2-426b9cd64f6c.png" alt="image">
+negative to fix
+<img src="../assets/images/github/1749380/85645268-32e55b00-b667-11ea-8234-5098ac0e1db6.png" alt="image"></p>
+<p><strong>AFTER</strong>
+<img src="../assets/images/github/1749380/85645318-58726480-b667-11ea-9327-f3174b57244d.png" alt="image"></p>
+<h3>Rhode Island</h3>
+<p><strong>BEFORE</strong>
+<img src="../assets/images/github/1749380/85646461-244c7300-b66a-11ea-9231-5a924d7c1bed.png" alt="image"></p>
+<p>positives
+<img src="../assets/images/github/1749380/85646512-4514c880-b66a-11ea-9f2a-7b14baedbc2b.png" alt="image"></p>
+<p>negatives
+<img src="../assets/images/github/1749380/85646546-552ca800-b66a-11ea-82fc-3a66d8e7a228.png" alt="image"></p>
+<p>_I also changed 3/7 positives to 3 based on rebma’s download file from RI  _
+<strong>AFTER</strong>
+<img src="../assets/images/github/1749380/85646600-78575780-b66a-11ea-86c2-c0a97c1bdf24.png" alt="image"></p>
+<h3>Florida</h3>
+<p><strong>BEFORE</strong>
+<img src="../assets/images/github/1749380/85646689-9de46100-b66a-11ea-98d1-ab40327949b9.png" alt="image"></p>
+<p>positives
+<img src="../assets/images/github/1749380/85646705-a9d02300-b66a-11ea-9561-270b0931347b.png" alt="image">
+negatives
+<img src="../assets/images/github/1749380/85646733-bfdde380-b66a-11ea-9765-7dbeb6a17d9e.png" alt="image"></p>
+<p><strong>AFTER</strong>
+<img src="../assets/images/github/1749380/85646764-d84dfe00-b66a-11ea-8a76-0d6b92d92de4.png" alt="image"></p>
+<h3>Indiana</h3>
+<p><strong>BEFORE</strong>
+<img src="../assets/images/github/1749380/85646954-53afaf80-b66b-11ea-88bd-d9ac12df3e14.png" alt="image">
+<img src="../assets/images/github/1749380/85647007-7346d800-b66b-11ea-8687-7750aafbaa2d.png" alt="image">
+<img src="../assets/images/github/1749380/85647028-835eb780-b66b-11ea-88a0-913a4a2a4f1f.png" alt="image">
+<img src="../assets/images/github/1749380/85647086-ab4e1b00-b66b-11ea-8e28-471931b110a6.png" alt="image">
+<img src="../assets/images/github/1749380/85647123-be60eb00-b66b-11ea-9016-6786c5534588.png" alt="image">
+<img src="../assets/images/github/1749380/85647136-c7ea5300-b66b-11ea-8dc1-d36a6fb40b8e.png" alt="image">
+<img src="../assets/images/github/1749380/85647156-d5074200-b66b-11ea-8818-786936183546.png" alt="image">
+<img src="../assets/images/github/1749380/85647185-e3edf480-b66b-11ea-9a3a-c440d93819c4.png" alt="image">
+<img src="../assets/images/github/1749380/85647231-fa944b80-b66b-11ea-8b95-3ab2d3e00740.png" alt="image">
+<img src="../assets/images/github/1749380/85647254-0a139480-b66c-11ea-8dc1-fa84e5c6bae1.png" alt="image"></p>
+<p>AFTER
+<img src="../assets/images/github/1749380/85647292-21eb1880-b66c-11ea-8f20-288ecca6e477.png" alt="image"></p>
+<h3>New Hampshire</h3>
+<p><strong>BEFORE</strong>
+<img src="../assets/images/github/1749380/85647442-75f5fd00-b66c-11ea-934e-c0927ded3d26.png" alt="image"></p>
+<p><img src="../assets/images/github/1749380/85647467-8312ec00-b66c-11ea-9fa6-8f4aa656294b.png" alt="image">
+<img src="../assets/images/github/1749380/85647495-90c87180-b66c-11ea-96ad-132829876426.png" alt="image">
+<img src="../assets/images/github/1749380/85647519-a178e780-b66c-11ea-90f5-e22a480878aa.png" alt="image"></p>
+<p><strong>AFTER</strong>
+<img src="../assets/images/github/1749380/85647578-c66d5a80-b66c-11ea-80ee-72fa7871f800.png" alt="image"></p>
+<p>###Oregon
+<strong>BEFORE</strong>
+<img src="../assets/images/github/1749380/85647643-eac93700-b66c-11ea-99d5-47b0321822ca.png" alt="image"></p>
+<p><img src="../assets/images/github/1749380/85647657-f6b4f900-b66c-11ea-850f-2d449f0b6c3e.png" alt="image"></p>
+<p><strong>AFTER</strong>
+<img src="../assets/images/github/1749380/85647741-2401a700-b66d-11ea-90a8-0349c6539dce.png" alt="image"></p>
+<p>###Iowa
+<strong>BEFORE</strong>
+<img src="../assets/images/github/1749380/85647869-75119b00-b66d-11ea-8a01-4905c8355bbd.png" alt="image"></p>
+<p><img src="../assets/images/github/1749380/85647883-7fcc3000-b66d-11ea-9c4b-a68111e4ec13.png" alt="image">
+<img src="../assets/images/github/1749380/85647926-907ca600-b66d-11ea-88ff-b65e81a326fa.png" alt="image"></p>
+<p><strong>AFTER</strong>
+<img src="../assets/images/github/1749380/85647958-a4280c80-b66d-11ea-95a0-d4342d3e26ef.png" alt="image"></p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>Washington Data appears off</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 139</p>
+        <p><strong>OregonCarrot</strong> opened this issue on April 4, 2020 at 12:50 pm</p>
+        
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/139" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p>The number of cases in the covidtracking data does not match the cases listed in the <a href="https://www.doh.wa.gov/Emergencies/Coronavirus">DOH of Washington</a>.
+examples:
+3/14-
+568 cases in the covidtracking data, but 778 in the DOH of Washington data</p>
+<p>3/15
+642 in the covid tracking data, but 906 cases in the DOH of Washington data</p>
+<p>These examples show that it is not just an issue of what time of day the case number is recorded, as Covidtracking’s cases on the 15th are less than the DOH of Washington’s case number on the 14th.</p>
+<p>It appears almost every day has different data between the two sources. Should the Covidtracking data match the DOH of Washington data, as it is very likely to be the most accurate?</p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-612100496">
+          <div class="frontmatter">
+            <div><strong>careeningspace</strong> commented on April 10, 2020 at 11:11 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/139#issuecomment-612100496" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Hello,</p>
+<p>Thank you for getting this back to the top of my priority list. I have updated the CTP Washington data to match the data provided by the state. I did find a discrepancy in what is reported - WA’s daily Pos/Neg data does not match the Positive data they publish, so I have not resolved the CTP/WA negative data at this time.</p>
+<p>Washington is constantly updating its most recent data, so we will need to modify this data from time to time</p>
+<p><strong>Before</strong>
+<img src="../assets/images/github/43073915/79004551-f6ec3080-7b22-11ea-9413-b0e875b08857.png" alt="Screen Shot 2020-04-09 at 1 18 54 PM"></p>
+<p><strong>After</strong>
+<img src="../assets/images/github/43073915/79005169-4d0da380-7b24-11ea-901d-4879d7919d5d.png" alt="Screen Shot 2020-04-10 at 12 10 18 PM"></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-612485731">
+          <div class="frontmatter">
+            <div><strong>OregonCarrot</strong> commented on April 11, 2020 at 1:35 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/139#issuecomment-612485731" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Thank you!
+It looks like a lot of people are working hard to make everything as accurate as possible, which is awesome and definitely appreciated by those of us without the technical know-how.</p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

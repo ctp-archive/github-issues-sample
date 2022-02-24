@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>[MN Historicals] Data since May increasingly differs from official. </h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 553</p>
+        <p><strong>Minibadger</strong> opened this issue on June 27, 2020 at 7:42 pm</p>
+        
+          <p><strong>Labels </strong>
+            <span class="label"><a href="../label/2036763229.html">stale</a></span>
+          </p>
+          
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/553" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p>Minnesota has gradually changed its reporting methods since roughly May 1st to putting interim data in its data tables and updating it as the data is confirmed. They also have changed positive results to representing the date collected. As a result, the data in the COVID Tracking Project since that date almost always disagrees at least a little bit with the official figures, and in some cases is wildly wrong, for example the numbers reported June 15-16:</p>
+<p>COVID Tracking Project
+June 13: 9658 tested, 2 positive, 9 deaths
+June 14: 0 tested, 6 positive, 15 deaths</p>
+<p>MN Department of Health
+(<a href="https://www.health.state.mn.us/diseases/coronavirus/situation.html#testing">https://www.health.state.mn.us/diseases/coronavirus/situation.html#testing</a>, <a href="https://www.health.state.mn.us/diseases/coronavirus/situation.html#cases">https://www.health.state.mn.us/diseases/coronavirus/situation.html#cases</a>)
+June 13: 9802 tested, 153 positive, 9 deaths
+June 14: 5019 tested, 148 positive, 15 deaths</p>
+<p>To correct this, an update to the data tables is needed, and a new method of adding daily results needs to be used:</p>
+<ol>
+<li>Use the Testing and Cases data tables from the Department of Health to overwrite current historical data for testing and cases and test totals, excepting the previous 7 days before the current date.</li>
+<li>Each day, update the most recent week’s data for cases and tests (total and daily) from the revised data tables on the Minnesota Department of Health site.</li>
+<li>Get the most recent data from the “daily update” at the top of the page after 11am CST and the Testing Data table or working backward from the day-over-day cumulative total.</li>
+</ol>
+<p>I understand this is rather laborious. I’ll help any way I can.</p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-651397254">
+          <div class="frontmatter">
+            <div><strong>MattHilliard</strong> commented on June 29, 2020 at 5:13 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/553#issuecomment-651397254" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Thanks for reporting this issue <strong>@</strong>Minibadger. Unfortunately the way MN makes its updates and the way we collect data cause these problems. The day with zero positives you mention, June 14th, is an artifact of a previous historical update: <a href="https://github.com/COVID19Tracking/issues/issues/484">https://github.com/COVID19Tracking/issues/issues/484</a>  As part of that issue, we manually synchronized with MN’s case history as it was reported at that time. Since then (a) recent data has drifted out of sync as they continuously revise past days and (b) we once again became a day offset from them because we capture numbers in the afternoon when they are reporting yesterday’s data. The day with 0 new cases is the point where we got 1 day off.</p>
+<p>We could manually sync the historicals again, but the same thing would just happen again. Thanks for your suggested alternate collection process…we are currently figuring out what we should do for this and similar states and your idea is one of those being considered.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-651400313">
+          <div class="frontmatter">
+            <div><strong>Minibadger</strong> commented on June 29, 2020 at 5:21 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/553#issuecomment-651400313" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>That’s exactly as I understood the root cause; thanks for considering
+fixes. I am a passionate Minnesota resident and I offer any support you
+need; I am a Senior IT Project Manager and Analyst, and you can find my
+credentials on LinkedIn as Derek J. Wingert. I volunteered formally last
+month, so I may be on file somewhere.</p>
+<p>Keep up the important good work!</p>
+<p>On Mon, Jun 29, 2020, 5:13 PM Matt Hilliard <a href="mailto:notifications<strong>@github.com</strong>">notifications<strong>@github.com</strong></a>
+wrote:</p>
+<blockquote>
+<p>Thanks for reporting this issue <strong>@</strong>Minibadger
+<a href="https://github.com/Minibadger">https://github.com/Minibadger</a>. Unfortunately the way MN makes its
+updates and the way we collect data cause these problems. The day with zero
+positives you mention, June 14th, is an artifact of a previous historical
+update: #484 <a href="https://github.com/COVID19Tracking/issues/issues/484">https://github.com/COVID19Tracking/issues/issues/484</a> As
+part of that issue, we manually synchronized with MN’s case history as it
+was reported at that time. Since then (a) recent data has drifted out of
+sync as they continuously revise past days and (b) we once again became a
+day offset from them because we capture numbers in the afternoon when they
+are reporting yesterday’s data. The day with 0 new cases is the point where
+we got 1 day off.</p>
+<p>We could manually sync the historicals again, but the same thing would
+just happen again. Thanks for your suggested alternate collection
+process…we are currently figuring out what we should do for this and
+similar states and your idea is one of those being considered.</p>
+<p>—
+You are receiving this because you were mentioned.
+Reply to this email directly, view it on GitHub
+<a href="https://github.com/COVID19Tracking/issues/issues/553#issuecomment-651397254">https://github.com/COVID19Tracking/issues/issues/553#issuecomment-651397254</a>,
+or unsubscribe
+<a href="https://github.com/notifications/unsubscribe-auth/APK3QASSZF74GZVMWF25IG3RZEGYXANCNFSM4OKIUW6A">https://github.com/notifications/unsubscribe-auth/APK3QASSZF74GZVMWF25IG3RZEGYXANCNFSM4OKIUW6A</a>
+.</p>
+</blockquote>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-652527016">
+          <div class="frontmatter">
+            <div><strong>muamichali</strong> commented on July 1, 2020 at 11:39 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/553#issuecomment-652527016" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <blockquote>
+<p>That’s exactly as I understood the root cause; thanks for considering fixes. I am a passionate Minnesota resident and I offer any support you need; I am a Senior IT Project Manager and Analyst, and you can find my credentials on LinkedIn as Derek J. Wingert. I volunteered formally last month, so I may be on file somewhere. Keep up the important good work!
+<a href="#">…</a>
+On Mon, Jun 29, 2020, 5:13 PM Matt Hilliard <em><strong><strong>@</strong></strong></em>.***&gt; wrote: Thanks for reporting this issue <strong>@</strong>Minibadger <a href="https://github.com/Minibadger">https://github.com/Minibadger</a>. Unfortunately the way MN makes its updates and the way we collect data cause these problems. The day with zero positives you mention, June 14th, is an artifact of a previous historical update: #484 &lt;#484&gt; As part of that issue, we manually synchronized with MN’s case history as it was reported at that time. Since then (a) recent data has drifted out of sync as they continuously revise past days and (b) we once again became a day offset from them because we capture numbers in the afternoon when they are reporting yesterday’s data. The day with 0 new cases is the point where we got 1 day off. We could manually sync the historicals again, but the same thing would just happen again. Thanks for your suggested alternate collection process…we are currently figuring out what we should do for this and similar states and your idea is one of those being considered. — You are receiving this because you were mentioned. Reply to this email directly, view it on GitHub &lt;<a href="https://github.com/COVID19Tracking/issues/issues/553#issuecomment-651397254">#553 (comment)</a>&gt;, or unsubscribe <a href="https://github.com/notifications/unsubscribe-auth/APK3QASSZF74GZVMWF25IG3RZEGYXANCNFSM4OKIUW6A">https://github.com/notifications/unsubscribe-auth/APK3QASSZF74GZVMWF25IG3RZEGYXANCNFSM4OKIUW6A</a> .</p>
+</blockquote>
+<p>Thanks, <strong>@</strong>Minibadger! I found your application. We will be in touch shortly!</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-652528756">
+          <div class="frontmatter">
+            <div><strong>dhmontgomery</strong> commented on July 1, 2020 at 11:43 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/553#issuecomment-652528756" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>I’m a data journalist from MPR who’s been closely tracking Minnesota’s COVID-19 figures, including manually updating topline numbers on a spreadsheet each day. My spreadsheet has some pretty big discontinuities with the CTP’s Minnesota data, especially from late April through mid June. As of a few weeks ago — right after the dip to near-zero that’s already been mentioned — our data is back in sync:</p>
+<p><img src="../assets/images/github/12974539/86268855-715ea680-bb8e-11ea-891e-4d02489e4ea8.png" alt="image"></p>
+<p>Notably, when I went back in and looked at the screenshots you’ve taken of Minnesota’s Situation Reports, the numbers there matched my spreadsheet, not the data you’ve recorded. (For example, on June 13, you report 30,465 positive cases, but your screenshot from that evening lists 30,172.)</p>
+<p>There’s probably a few things going on here.</p>
+<ol>
+<li>Minnesota has absolutely changed its methodology a few times, most recently on June 5, when it changed its “total testing” from “total people tested” to “total tests”. It’s possible these big changes have messed things up. But as far as I can recall there haven’t been any major changes in their case methodology recently.</li>
+<li>There has been a MINOR change in their case methodology: they’ve started reporting “cases removed” each day, duplicate cases that need to be removed from the previous day’s total to get numbers to line up. Annoyingly, they bury this number at the bottom of a dropdown menu.</li>
+<li>Minnesota annoyingly doesn’t list past case totals anywhere on their situation report. They do have a historical list of cases by the data of sample collection, which is a more accurate way to analyze the disease — but also largely useless for any data that’s more recent than a week, given delays in processing. (Your case data doesn’t match any of this dataset either, so that’s not the issue.)</li>
+</ol>
+<p>For my own purposes, I’ve made the decision to not sweat their backfilling, and just report each day’s delta in the totals — if they report 300 more cases today than they did yesterday, I don’t care if 30 of those cases were retroactively assigned to Sunday’s update, I’ll just report an increase of 300. But that may not work for the CTP’s purposes.</p>
+<p>Happy to make my spreadsheet available to the project if that’s helpful.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-659539567">
+          <div class="frontmatter">
+            <div><strong>stale[bot]</strong> commented on July 16, 2020 at 11:54 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/553#issuecomment-659539567" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-664020446">
+          <div class="frontmatter">
+            <div><strong>stale[bot]</strong> commented on July 26, 2020 at 12:56 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/553#issuecomment-664020446" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>This issue has been closed because it was stale for 15 days, and there was no further activity on it for 10 days. You can feel free to re-open it if the issue is important, and label it as “not stale.”</p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>Negative values and field definitions</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 466</p>
+        <p><strong>piccolbo</strong> opened this issue on May 28, 2020 at 2:06 pm</p>
+        
+          <p><strong>Labels </strong>
+            <span class="label"><a href="../label/2036763229.html">stale</a></span>
+          </p>
+          
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/466" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p>Hi, I am using the data from <a href="https://covidtracking.com/api/v1/states/daily.csv">https://covidtracking.com/api/v1/states/daily.csv</a></p>
+<p>I noticed that the following columns contain negative values
+deathIncrease, hospitalizedIncrease, negativeIncrease, positiveIncrease, totalTestResultsIncrease</p>
+<p>which may be an error or I may be misunderstanding the definition. Take deathIncrease. It is defined as “Increase from the day before”. It doesn’t say what the source column is, so I suppose it’s the column “death”, which is defined as “Total cumulative number of people that have died.” I don’t see how that can possibly decrease, so has to give rise to a negative increase (known resurrection events did not take place on the dates considered or on US territory). With hospitalizedIncrease, there is uncertainty on the source column, which could be hospitalizedCurrently, -Cumulative or just hospitalized.  Depending on which one is the one, negative increases are a possibility. For negative, positive and totalTestResults, again I don’t see how a test can become undone after it was done (maybe retracted or invalidated?) or a person un-tested. Could you please clarify? The number of rows affected is modest, between 10 and 21 for the listed fields. Thanks</p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-643699309">
+          <div class="frontmatter">
+            <div><strong>stale[bot]</strong> commented on June 13, 2020 at 7:24 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/466#issuecomment-643699309" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-648521427">
+          <div class="frontmatter">
+            <div><strong>stale[bot]</strong> commented on June 23, 2020 at 8:03 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/466#issuecomment-648521427" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>This issue has been closed because it was stale for 15 days, and there was no further activity on it for 10 days. You can feel free to re-open it if the issue is important, and label it as “not stale.”</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-655854739">
+          <div class="frontmatter">
+            <div><strong>stale[bot]</strong> commented on July 8, 2020 at 9:14 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/466#issuecomment-655854739" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-660573799">
+          <div class="frontmatter">
+            <div><strong>stale[bot]</strong> commented on July 18, 2020 at 9:16 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/466#issuecomment-660573799" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>This issue has been closed because it was stale for 15 days, and there was no further activity on it for 10 days. You can feel free to re-open it if the issue is important, and label it as “not stale.”</p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

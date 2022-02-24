@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>States JSON parsing with ArduinoJSON issue</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 294</p>
+        <p><strong>abferguson</strong> opened this issue on April 25, 2020 at 11:10 am</p>
+        
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/294" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p>Up until sometime Thursday, April 23, I was able to use ArduinoJSON 6.15.1 to parse the states JSON:
+<a href="https://covidtracking.com/api/v1/states/current.json">https://covidtracking.com/api/v1/states/current.json</a></p>
+<p>Currently, my MCU crashes when I try to parse the JSON object.  Interestingly, I have no trouble parsing <em><a href="https://covidtracking.com/api/v1/us/current.json">https://covidtracking.com/api/v1/us/current.json</a></em> (US stats)</p>
+<p>Did something change in the states data in the last day and a half?</p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-619582013">
+          <div class="frontmatter">
+            <div><strong>abferguson</strong> commented on April 26, 2020 at 11:40 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/294#issuecomment-619582013" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Coding workaround.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-619582432">
+          <div class="frontmatter">
+            <div><strong>muamichali</strong> commented on April 26, 2020 at 11:42 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/294#issuecomment-619582432" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Hi <strong>@abferguson</strong></p>
+<p>The current JSON passed validation at <a href="http://jsonlint.com">jsonlint.com</a></p>
+<p>Do you get any specific error when parsing it? I know that the value of the notes field changed around that time.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-619599346">
+          <div class="frontmatter">
+            <div><strong>abferguson</strong> commented on April 26, 2020 at 1:18 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/294#issuecomment-619599346" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>There is NO issue with the data from the website. Being my first time using ArduinoJSON with a much larger HTTP GET data set than previous experience, I just needed to learn and apply new techniques to solve the issue.</p>
+<p>My issue was that the states JSON data just got too big for my MCU memory capacity. The unit would just spontaneously reboot when trying to deserialize the states data with a JSON capacity to fit the data.</p>
+<p>I went back to the ArduinoJSON documentation to get smarter and discovered the filtering capability. This feature reduces memory usage significantly, in my case, thus avoiding crashes.</p>
+<p>The filtering is a Very cool capability.  Thanks ArduinoJSON authors.</p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

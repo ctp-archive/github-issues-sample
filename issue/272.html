@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>[HI] Hawaii positive increase on 4/22 is a negative number</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 272</p>
+        <p><strong>loglow</strong> opened this issue on April 23, 2020 at 1:54 am</p>
+        
+          <p><strong>Labels </strong>
+            <span class="label"><a href="../label/1937937334.html">Historical Data</a></span>
+          
+            <span class="label"><a href="../label/2162087998.html">Backfill</a></span>
+          </p>
+          
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/272" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p>At present, the data returned by:</p>
+<p><code>https://covidtracking.com/api/v1/states/daily.json</code></p>
+<p>Shows the following value for <code>state = HI</code> on <code>date = 20200422</code>:</p>
+<p><code>&quot;positiveIncrease&quot;:-2</code></p>
+<p>I have not checked for the presence of any other negative values, but this is the only one I’ve come across so far.</p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-618240173">
+          <div class="frontmatter">
+            <div><strong>loglow</strong> commented on April 23, 2020 at 2:48 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/272#issuecomment-618240173" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>I found another one.</p>
+<p>WA on 4/20 = -12</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-618292399">
+          <div class="frontmatter">
+            <div><strong>loglow</strong> commented on April 23, 2020 at 4:30 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/272#issuecomment-618292399" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>I got curious and wrote a tool to find errors like this:
+<a href="https://www.covidcharts.com/data_check.html">https://www.covidcharts.com/data_check.html</a></p>
+<p>Entirely client-side JS, so feel free to re-use any of the code.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-618704895">
+          <div class="frontmatter">
+            <div><strong>hrushka</strong> commented on April 23, 2020 at 5:30 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/272#issuecomment-618704895" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <blockquote>
+<p>I got curious and wrote a tool to find errors like this:
+<a href="https://www.covidcharts.com/data_check.html">https://www.covidcharts.com/data_check.html</a></p>
+<p>Entirely client-side JS, so feel free to re-use any of the code.</p>
+</blockquote>
+<p>This is fantastic. Great work <strong>@loglow.</strong> I’ve been visually grepping through the same, but using the CSV datasource for <a href="https://c19.dev">https://c19.dev</a>.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-626059046">
+          <div class="frontmatter">
+            <div><strong>stale[bot]</strong> commented on May 8, 2020 at 6:15 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/272#issuecomment-626059046" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-630483259">
+          <div class="frontmatter">
+            <div><strong>stale[bot]</strong> commented on May 18, 2020 at 6:16 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/272#issuecomment-630483259" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>This issue has been closed because it was stale for 15 days, and there was no further activity on it for 10 days. You can feel free to re-open it if the issue is important, and label it as “not stale.”</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-661154660">
+          <div class="frontmatter">
+            <div><strong>the-daniel-lin</strong> commented on July 20, 2020 at 11:26 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/272#issuecomment-661154660" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>“There’s a potential corruption of your Confirmed Positives historical data for several states. The data as reported should be cumulative amounts i.e. either increasing or constant - but in several places there have been new spikes added to past data and occasional dips, both producing negative Daily Positives after day-to-day subtraction. This is a recent development. I compared the current report with one ending on May 31 - and the discrepancies are (format: State, date new/old values or a multiday up-and-down sequence): … 5) HI, 4/21-22, 584, 582…” Instead of 584, 582, the values should be 584, 586.</p>
+<p>Screenshot from state site on 4/21:
+<img src="../assets/images/github/67408226/87961620-d6f5d280-ca6a-11ea-9b5f-880a9fc2f2db.png" alt="image"></p>
+<p>Screenshot from state site on 4/22:
+<img src="../assets/images/github/67408226/87961695-f3920a80-ca6a-11ea-8abb-3762d25b8929.png" alt="image"></p>
+<p>***Our data for HI uses numbers “as of” the previous day according to the site</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-661393845">
+          <div class="frontmatter">
+            <div><strong>MattHilliard</strong> commented on July 20, 2020 at 5:37 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/272#issuecomment-661393845" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Independently checked the screenshots. The 6pm HI screenshot for 4/22 says 592 cases, but the surrounding numbers indicate the 12:00 screenshot matches what data entry was doing so I’m using the 12:00 number, 586.</p>
+<p>Before:
+<img src="../assets/images/github/404503/87993211-f830e000-cab7-11ea-8ad4-aef0fd9f2e07.png" alt="image"></p>
+<p>After:
+<img src="../assets/images/github/404503/87993231-01ba4800-cab8-11ea-8e5b-01bb6b6b4515.png" alt="image"></p>
+<p>Regarding WA on 4/20, there’s no longer a decline in cases on that day. I think that was probably fixed as part of a previous backfill of Washington historical data.</p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

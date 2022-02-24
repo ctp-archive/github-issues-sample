@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>incorrect data in current.json</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 407</p>
+        <p><strong>ExperimentalHypothesis</strong> opened this issue on May 11, 2020 at 10:17 am</p>
+        
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/407" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p>this is the result of current.json</p>
+<pre><code>[{'positive': 1322807,
+  'negative': 7664717,
+  'pending': 3095,
+  'hospitalizedCurrently': 44943,
+  'hospitalizedCumulative': 144780,
+  'inIcuCurrently': 11393,
+  'inIcuCumulative': 6445,
+  'onVentilatorCurrently': 6395,
+  'onVentilatorCumulative': 547,
+  'recovered': 216169,
+  'hash': 'd3b82b6b23fe73c384e58d789fb768498ef68b2f',
+  'lastModified': '2020-05-11T13:14:49.280Z',
+  'death': 74270,
+  'hospitalized': 144780,
+  'total': 8990619,
+  'totalTestResults': 8987524,
+  'posNeg': 8987524,
+  'notes': 'NOTE: &quot;total&quot;, &quot;posNeg&quot;, &quot;hospitalized&quot; will be removed in the future.'}]
+</code></pre>
+<p>are you sure that the cummulative data are less then the current?</p>
+<pre><code>  'inIcuCurrently': 11393,
+  'inIcuCumulative': 6445,
+  'onVentilatorCurrently': 6395,
+  'onVentilatorCumulative': 547
+</code></pre>
+<p>shouldnt it be vice verca?</p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-628648842">
+          <div class="frontmatter">
+            <div><strong>goldfarb</strong> commented on May 14, 2020 at 8:49 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/407#issuecomment-628648842" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p><strong>@</strong>ExperimentalHypothesis Thank you for checking. Because there are sparse data provided about hospitalizations (including ICU and Ventilator reporting), we cannot reliably calculate it in states that only report current statistics. So while perhaps counterintuitive, the sources for cumulative often lag the sources for current. Please see the disclaimer on <a href="https://covidtracking.com/data">our data page</a></p>
+<blockquote>
+<p>States are currently reporting two fundamentally unlike statistics: current hospital/ICU admissions and cumulative hospitalizations/ICU admissions. Across the country, this reporting is also sparse. In short: it is impossible to assemble anything resembling the real statistics for hospitalizations, ICU admissions, or ventilator usage across the United States. As a result, we will no longer provide national-level summary hospitalizations, ICU admissions, or ventilator usage statistics on our site.</p>
+<p>We will continue tracking these numbers on a state-by-state basis, but it does not feel responsible to continue to display these US-wide statistics for a general audience. These heavily caveated numbers will remain in the API for advanced data user</p>
+</blockquote>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

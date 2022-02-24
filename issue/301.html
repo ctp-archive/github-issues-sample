@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>Minnesota test count way off for 4/25</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 301</p>
+        <p><strong>Minibadger</strong> opened this issue on April 25, 2020 at 7:39 pm</p>
+        
+          <p><strong>Labels </strong>
+            <span class="label"><a href="../label/1937937334.html">Historical Data</a></span>
+          </p>
+          
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/301" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p>Minnesota’s test count as posted on Saturday 4/25 per the Department of Health website was 2,810. Your data is off by 2x at 5612 or something similar, yet it cites the Department of Health website as the source…</p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-619620337">
+          <div class="frontmatter">
+            <div><strong>muamichali</strong> commented on April 26, 2020 at 3:29 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/301#issuecomment-619620337" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Thanks for writing <strong>@</strong>Minibadger</p>
+<p>There was a data entry error in entering Minnesota’s negative numbers yesterday that caused this to happen. We are going to correct it.</p>
+<img width="220" alt="Screen Shot 2020-04-26 at 4 22 52 PM" src="../assets/images/github/1749380/80318835-d4bd0880-87da-11ea-9dd8-4b8d57293a15.png">
+<img width="215" alt="Screen Shot 2020-04-26 at 4 26 03 PM" src="../assets/images/github/1749380/80318836-da1a5300-87da-11ea-9f81-8e44cffbb052.png">
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-619643226">
+          <div class="frontmatter">
+            <div><strong>dan4est</strong> commented on April 26, 2020 at 6:41 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/301#issuecomment-619643226" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>‘totalTestResults’ on 4/24 is 56336, should be 53787
+‘totalTestResults’ on 4/25 is 59699, should be 56597</p>
+<p>Leads to corresponding errors in ‘negative’ for 4/24 and 4/25, and ‘negativeIncrease’ and ‘totalTestResultsIncrease’ for 4/24, 4/25, and 4/26.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-620113121">
+          <div class="frontmatter">
+            <div><strong>muamichali</strong> commented on April 27, 2020 at 12:05 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/301#issuecomment-620113121" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p><strong>@dan4est</strong> Yes. You are correct. The original data patch caused an issue because it was on the wrong cell. Here is the correct one. It should be reflected on the website this afternoon.</p>
+<img width="210" alt="Screen Shot 2020-04-27 at 1 02 51 PM" src="../assets/images/github/1749380/80399726-a9dcbe00-8887-11ea-8ec9-f70fe7cd6bc9.png">
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>PUBLISH TIME</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 169</p>
+        <p><strong>joshuaellinger</strong> opened this issue on April 8, 2020 at 11:01 am</p>
+        
+          <p><strong>Labels </strong>
+            <span class="label"><a href="../label/1937952993.html">Org</a></span>
+          
+            <span class="label"><a href="../label/2036763229.html">stale</a></span>
+          </p>
+          
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/169" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <h2>History</h2>
+<p>Alexis  Madrigal brought two pain points to my attention:
+1. He gets a lot of questions about why our data is out-of-sync with the state’s dashboards.
+2. He feels publishing to history at 5PM (in retrospect) feels like a mistake.
+3. He likes the idea of a midnight update but worries that it would be too hard on data entry.</p>
+<p>A group of us (Elliot/Zach/Julia/me) looked at how we could fix this.</p>
+<p>Elliot is close to the data entry process.  He said that 5PM ET is a problem because the west coast often does not report on/at the deadline.  He thinks 8PM ET (5PM PT) is sufficient to insure that we get an update for each state every day in the history table (assuming they make one) .</p>
+<p>The next step in fixing this is for Alexis to find the right people to hash out the best publish date.</p>
+<h2>RECOMMENDATION</h2>
+<p>Our current recommendation is that we move the publish step to 8PM ET but do not change the process otherwise (keep it in the 2nd push) in the near future.  This would reduce operational pressure and make the numbers a lot more consistent.  There are other variations that I will add as comments for separate consideration.</p>
+<p>We also recommend adding a field, called Source Date perhaps, to the published data that tells the consumers the ‘as-of’ date.  It would be on a per-state per-day basis.  It would clear up both the questions Alexis is getting and the questions about inconsistencies between Current and History.</p>
+<p>My only concern about this change is if we have consumers who are news organizations with evening edition cutoffs.  I will list some alternatives in the comments.</p>
+<h2>IMPLEMENTATION</h2>
+<ol>
+<li>[Now] Add a column called “Source Date (ET)” to the worksheet that tracks the timestamp of the data from the state and display that in the history table.  This is very close to the “Last Updated (ET)” conceptually but we may want the flexibility to put a different date into the history from the actual date that we last looked at it.</li>
+</ol>
+<p>That would enable us to be clear on the website about when each record was from.  It would also enable us to leave the old date if the state fails to make an update in the day.</p>
+<ol start="2">
+<li>
+<p>[Now] Back fill all the history records so that “Source Date (ET)” is the time of the 5PM push.  Initially, we should make it be the same time (5PM) but eventually we may update it based on the data in the CHECKS tab that records the actual time of update.</p>
+</li>
+<li>
+<p>[Now] Tell everyone that consumes is a high profile consumer of our data to that we are planning to switch to an 8 PM ET publish time in the near future and listen for objections.</p>
+</li>
+<li>
+<p>[Next Week] Move the history out of the spreadsheet into a relational database.  This is discussed as a separate issue but mentioned here because it is what will enable us to take the next steps without breaking the current process.</p>
+</li>
+<li>
+<p>[Following week]  Rebuild the history using an 8PM ET publish time using  the Checks tab, the screen shots, and backups of the worksheet.  Apply the other data fixes in the same process.   Publish it on a ‘version 2’ of the API.</p>
+</li>
+<li>
+<p>[Go Live] Data Entry switches to an 8PM ET publish time.  The web site changes to use the new version of the API.  If you use the old version, the only change is that from this date forward you have data from 8PM.  If you use the new version, you get all the changes and fixes.</p>
+</li>
+</ol>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-611049436">
+          <div class="frontmatter">
+            <div><strong>joshuaellinger</strong> commented on April 8, 2020 at 11:10 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/169#issuecomment-611049436" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <h2>VARIATION 1 - Publish by Time Zone</h2>
+<p>We divide the states into groups by time zones and update each at 5PM local.  This would be easy for our consumers to understand and not much different from the ‘polls closed’ behavior we are used to in politics.</p>
+<p>It aligns with the data update schedule of the states.  It supports consumer that really just want a single state better than a later date.  It turns the one big publish into 4 smaller publishes and opens the door to enabling people to be double checkers without having to understand the idiosyncrasies of every state.</p>
+<p>This is the best approach if we’re can’t wait until 8PM ET.   We have not investigated if this would really work for data entry</p>
+<h2>VARIATION 2: Continuous deployment</h2>
+<p>We change our model so that the current data in history is always ‘mutable’.  Current never gets out of sync with history.  For humans consuming our data, this would feel natural.  We make the first row in the history table in a different color to make it feel different.</p>
+<p>For our algorithmic consumers, we implement a web-hook that tells then when we change data.  This has the valuable side-effect that we can publish changes to history without having to reach out of each person using our data to drive other analysis.  This would make us a much more useful source of information for those systems.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-611190132">
+          <div class="frontmatter">
+            <div><strong>Jmuccigr</strong> commented on April 8, 2020 at 3:56 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/169#issuecomment-611190132" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>FYI WY is now moving to a 3 pm (MDT, I assume) data release, so 5 pm EDT.</p>
+<p><a href="https://twitter.com/SethKlamann/status/1247915490170863617">https://twitter.com/SethKlamann/status/1247915490170863617</a></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-611623748">
+          <div class="frontmatter">
+            <div><strong>joshuaellinger</strong> commented on April 9, 2020 at 11:31 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/169#issuecomment-611623748" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Related to <a href="https://github.com/COVID19Tracking/issues/issues/163">issue 163</a></p>
+<h2>VARIATION 3 - Move the Publish step out of the Google Spreadsheet.</h2>
+<p>We didn’t talk about this option in detail but natural time for the consumers of the data is “as-of” midnight.  The problem with this is that we are organized around having the 2nd shift be the critical shift that gets the most vetting and the other two shift have newer staff.</p>
+<p>To scope this, we would need to move to a system where we do most of the work on the history during the 4PM shift and then ‘pre-publish’ it to a staging location.  Then we vet every change from 4PM to midnight to decide if it should roll into the history.</p>
+<h2>POSSIBLE IMPLEMENTATION</h2>
+<ol>
+<li>
+<p>Separate the ‘Publish’ process from the ‘push’ step.  ‘Push’ happens inside of the google spreadsheet and it updates both the current and history numbers in a database table that is only visible internally.  The data entry team no longer worries about publish.</p>
+</li>
+<li>
+<p>The 4PM ET data is assumed to be well vetted.  After this push, the pre-publish table is populated with those numbers and locked.  Any changes between that will go into the public history have to be approved in a separate work.  We could also have a threshold so that small changes are allowed through automatically but big changes aren’t.</p>
+</li>
+<li>
+<p>When the 3rd shift signs off, the ‘publish manager’ (a new role) looks at a (new) web page that shows only shows everything changed between 5PM and 12PM and decides what to include on a per state basis.  It would be easy enough to use Twilio to send SMS messages so that the publish manager is an on-call type position rather than an active participant in the 3rd push.</p>
+</li>
+<li>
+<p>The table would auto-publish if there is no issues at Midnight.  Depending on editorial policy, we could have code the notifies people if there are unresolved issues or we could flag a few states as preliminary and update them in the morning.</p>
+</li>
+</ol>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-623790101">
+          <div class="frontmatter">
+            <div><strong>stale[bot]</strong> commented on May 4, 2020 at 8:20 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/169#issuecomment-623790101" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-628990102">
+          <div class="frontmatter">
+            <div><strong>stale[bot]</strong> commented on May 14, 2020 at 9:31 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/169#issuecomment-628990102" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>This issue has been closed because it was stale for 15 days, and there was no further activity on it for 10 days. You can feel free to re-open it if the issue is important, and label it as “not stale.”</p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>AZ historical data</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 498</p>
+        <p><strong>saijanai</strong> opened this issue on June 17, 2020 at 3:18 pm</p>
+        
+          <p><strong>Labels </strong>
+            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          </p>
+          
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/498" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p>[AZ]</p>
+<p>The hospitalizedIncrease in arizona says 817 increase on 28 May, but the actual figure is an increase of 34 according to the currentlyHospitalized numbers.</p>
+<p><strong>Link to data source</strong>
+<a href="https://covidtracking.com/api/v1/states/az/daily.csv">https://covidtracking.com/api/v1/states/az/daily.csv</a></p>
+<p>See:</p>
+<p>20200528,AZ,17763,185151,<strong>945</strong>,2848,374,222,4452,A+,5/28/2020 00:00,2020-05-28T00:00:00Z,05/27 20:00,857,2848,2020-05-28T00:00:00Z,202914,04,501,6147,202914,202914,6648,202914,26,<strong>817</strong>,c51ec45ecd5a03739295f1a37edb330f2d8a63a0,0,0,0,0,0,
+20200527,AZ,17262,179004,<strong>911</strong>,2031,375,237,4361,A+,5/27/2020 00:00,2020-05-27T00:00:00Z,05/26 20:00,831,2031,2020-05-27T00:00:00Z,196266,04,479,5056,196266,196266,5535,196266,24,43,894e69524aefc2edd5da2c2ca6945ec57a7d16ed,0,0,0,0,0,</p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-645674329">
+          <div class="frontmatter">
+            <div><strong>muamichali</strong> commented on June 17, 2020 at 6:15 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/498#issuecomment-645674329" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Hi <strong>@saijanai</strong></p>
+<p>The hospitalizedIncrease is reflecting the change in cumulative hospitalizations (from 2031 to 2848) as reported by AZ</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-645679533">
+          <div class="frontmatter">
+            <div><strong>saijanai</strong> commented on June 17, 2020 at 6:31 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/498#issuecomment-645679533" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>But 817 is a nonsensical figure no matter what AZ says about it as it doesn’t jibe with the hospitalizedCurrently figure.</p>
+<p>In other words it is useless data</p>
+<p>In fact, the entire 10 days surrounding that figure are in error. The rest of the days seem to match between the current and accumulated, but not that 10 day period.</p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

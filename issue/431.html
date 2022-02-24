@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>CA 3/11 - 3/17 - Data doesn&#39;t match CA official press releases/screenshots</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 431</p>
+        <p><strong>scarson</strong> opened this issue on May 17, 2020 at 10:27 pm</p>
+        
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/431" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p>Quite a few issues here.</p>
+<p>Because the screenshots are inconsistent, I reference the current official <a href="https://www.cdph.ca.gov/Programs/OPA/Pages/New-Release-2020.aspx">CA press release archive</a> instead.</p>
+<p><a href="https://www.cdph.ca.gov/Programs/OPA/Pages/NR-019.aspx">March 12 state data</a> “As of March 13, 2020, 8 a.m. PDT” (Taking early morning report as for previous day).
+<strong>3/12 should have 198 Positives instead of 202.</strong></p>
+<p><a href="https://www.cdph.ca.gov/Programs/OPA/Pages/NR20-022.aspx">March 13 state data</a> “As of March 14, 2020, 8 a.m. PDT” (Taking early morning report as for previous day).
+<strong>3/13 should have 288 Positives instead of 202.</strong>
+<strong>3/13 should have 5 Deaths instead of 4.</strong></p>
+<p><a href="https://www.cdph.ca.gov/Programs/OPA/Pages/NR20-023.aspx">March 14 state data</a> “As of March 14, 2020, 6 p.m. PDT”
+<strong>3/14 should have 335 Positives instead of 252.</strong>
+<strong>3/14 should have 6 Deaths instead of 5.</strong></p>
+<p><a href="https://www.cdph.ca.gov/Programs/OPA/Pages/NR20-024.aspx">March 15 state data</a> “As of March 15, 2020, 6 p.m. PDT”
+<strong>3/15 should have 392 Positives instead of 252.</strong>
+<strong>3/15 should have 6 Deaths instead of 5.</strong></p>
+<p><a href="https://www.cdph.ca.gov/Programs/OPA/Pages/NR20-025.aspx">March 16 state data</a> “As of March 16, 2020, 6 p.m. PDT”
+<strong>3/16 should have 472 Positives instead of 335.</strong>
+<strong>3/16 should have 11 Deaths instead of 6.</strong></p>
+<p><a href="https://www.cdph.ca.gov/Programs/OPA/Pages/NR20-026.aspx">March 17 state data</a> “As of March 17, 2020, 6 p.m. PDT”
+<strong>3/17 should have 598 Positives instead of 438.</strong>
+<strong>3/17 should have 13 Deaths instead of 11.</strong></p>
+<p>Starting March 18th California started reporting test data in their press releases, so I’m going to open a separate issue that picks up there.</p>
+<p>It makes sense to use official state reported confirmed case and death numbers for a date when those are higher than current CTP reported values. It is unlikely the state is making up higher positive case and death counts.</p>
+<p>Note 1: Original source for CTP deaths appears to be the <a href="https://github.com/datadesk/california-coronavirus-data/blob/master/latimes-state-totals.csv">L.A. Times Data Desk CA state totals</a>.</p>
+<p>Note 2:
+<a href="https://covidtracking.com/screenshots/CA/CA-20200317-180052.png">March 17 6:00 pm</a> screenshot is bad (image says “Sorry, something went wrong”) and should be removed.
+<a href="https://covidtracking.com/screenshots/CA/CA-20200318-140251.png">March 18 7:01 pm</a> screenshot is bad (image says “Sorry, something went wrong”) and should be removed.</p>
+<p><strong>@thaynedye</strong>
+<strong>@dcmoyer</strong></p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-637275878">
+          <div class="frontmatter">
+            <div><strong>stale[bot]</strong> commented on June 2, 2020 at 12:06 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/431#issuecomment-637275878" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-638202887">
+          <div class="frontmatter">
+            <div><strong>karaschechtman</strong> commented on June 3, 2020 at 8:38 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/431#issuecomment-638202887" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Hi <strong>@scarson</strong>,
+Thank you for bringing this to our attention. For those dates, we do not use the press releases to get case information, but the CA COVID homepage (see <a href="https://covidtracking.com/screenshots/CA/CA-20200316-105418.png">this screenshot</a> for an example). The press releases for CA seem to have come out later than we would check the website, explaining why the numbers are different than ours on these early days. We publish the daily stats every afternoon. If a state updates the number of tests or cases after that time, we catch that update on the following day. You can check the exact time we looked at the CA website in the “lastUpdateET” field of the API.
+I hope this is helpful!</p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

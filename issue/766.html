@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>[NJ] Probable deaths backfill for week of 8/11</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 766</p>
+        <p><strong>MattHilliard</strong> opened this issue on August 14, 2020 at 3:46 pm</p>
+        
+          <p><strong>Labels </strong>
+            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          </p>
+          
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/766" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p><strong>State or US</strong>: NJ</p>
+<p><strong>Describe the problem</strong>
+Every week New Jersey releases a time series of probable deaths. Since NJ does not do daily reports of probable deaths, we decided to do a weekly backfill to make our probable deaths column match their time series starting last week (August 7).</p>
+<p>Their dashboard’s top line probable deaths number updated on Wednesday (8/12) but the time series wasn’t available until Friday (8/14).</p>
+<p><strong>Link to data source</strong>
+<a href="https://covid19.nj.gov/#live-updates">https://covid19.nj.gov/#live-updates</a></p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-675041878">
+          <div class="frontmatter">
+            <div><strong>MattHilliard</strong> commented on August 17, 2020 at 1:32 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/766#issuecomment-675041878" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>This has been done:</p>
+<ul>
+<li>Probables column now matches last week’s NJ probable time series</li>
+<li>Confirmed deaths was extended back into March based on the assumption that pre-5/3 NJ total deaths were all confirmed</li>
+<li>Total deaths reflects our existing confirmed + new probables</li>
+</ul>
+<p>Note that we take NJ’s probable death time series because we don’t have a daily “dashboard time” series for it (NJ updates weekly) but we don’t take their “by death date” confirmed deaths series because for now we are sticking with dashboard time data.</p>
+<p>Analysis sheet, with old and new values: <a href="https://docs.google.com/spreadsheets/d/1HCQSdm9mpEOY3vCd3E9sBqxPoui4MB0M--DMrFxBTNU/edit#gid=263413081">https://docs.google.com/spreadsheets/d/1HCQSdm9mpEOY3vCd3E9sBqxPoui4MB0M--DMrFxBTNU/edit#gid=263413081</a></p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

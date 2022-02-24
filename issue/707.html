@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>[TN] PCR Test Historicals</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 707</p>
+        <p><strong>the-daniel-lin</strong> opened this issue on July 30, 2020 at 11:02 am</p>
+        
+          <p><strong>Labels </strong>
+            <span class="label"><a href="../label/1937937334.html">Historical Data</a></span>
+          
+            <span class="label"><a href="../label/2036763438.html">not stale</a></span>
+          
+            <span class="label"><a href="../label/2162087998.html">Backfill</a></span>
+          </p>
+          
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/707" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p><strong>State or US</strong>: Tennessee</p>
+<p><strong>Describe the problem</strong>
+Our current historical testing data has ‘Total PCR Tests (People)’ spanning from 5/13 - 6/11. There is a one day gap on 5/17 where the testing value was reported under ‘Total Tests (PCR).’ On 6/12, we began reporting all testing numbers under ‘Total Tests (PCR).’ This is in line with TN’s reporting change. On 6/12, they changed their testing number label to be explicitly PCR. This is what we see today in the PDFs.</p>
+<p>However, we have a 5/19 outreach that is as follows:</p>
+<hr>
+<p><strong>Q:</strong> “Does “total tested” refer to people tested or specimens tested? Are antibody tests included in this figure, and if so does the state have plans to break them out?”</p>
+<p><strong>A:</strong> &quot;The total number of negative and positive results posted on Tennessee’s websites includes PCR testing, which tests for current infection. Antibody testing is not included on our dashboards, but CDC is including antibody testing in the numbers they have reported.</p>
+<p>Additionally, we only count a positive case once; subsequent positive tests on one individual do not count toward the total tests posted on Tennessee’s website. CDC’s total testing numbers include all tests performed; therefore, multiple positive tests on one individual will be counted in CDC’s U.S. COVID Testing dashboard. CDC includes multiple positive tests in their count of all tests performed, NOT in their count of cases.&quot;</p>
+<hr>
+<p>*** This outreach question can be found in the Reporting team outreach sheet.</p>
+<p>There are testing numbers spanning all the way back to our first screenshot for 3/15, but TN only begins reporting complete testing numbers on 3/24. When TN began releasing daily PDFs on 4/11, they also included testing numbers, albeit also ambiguous as to what type of testing the numbers referred to. Given the above outreach and the fact that testing trends seem to have been consistent throughout our time series, I think we can make the inference that we should be able to back fill through 3/24. This would be a backfill team decision, though.</p>
+<p><strong>Link to data source</strong>
+This data comes from TN’s daily Epidemiology and Surveillance Data PDF: <a href="https://www.tn.gov/content/tn/health/cedep/ncov/data.html">https://www.tn.gov/content/tn/health/cedep/ncov/data.html</a></p>
+<p>And the regular state site:
+<a href="https://www.tn.gov/health/cedep/ncov.html">https://www.tn.gov/health/cedep/ncov.html</a></p>
+<p>You will have to use the Wayback machine for PDFs before 5/22, as our captures are blank before then.</p>
+<p>Screenshot from state site on 3/15:
+<a href="https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/TN/TN-20200315-164033.png">https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/TN/TN-20200315-164033.png</a>
+<img src="../assets/images/github/67408226/88945335-bab01d80-d242-11ea-9bc1-5917c10f7800.png" alt="image"></p>
+<p>Screenshot from complete test data on 3/24 (evening):
+<a href="https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/TN/TN-20200324-191014.png">https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/TN/TN-20200324-191014.png</a>
+<img src="../assets/images/github/67408226/88945433-d6b3bf00-d242-11ea-82ea-63be5c25eb5e.png" alt="image"></p>
+<p>Screenshot from 4/11 PDF (same testing format until 6/12):
+<img src="../assets/images/github/67408226/88945187-876d8e80-d242-11ea-8bf5-9319bfd64167.png" alt="image"></p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-822883262">
+          <div class="frontmatter">
+            <div><strong>jaclyde</strong> commented on April 19, 2021 at 7:33 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/707#issuecomment-822883262" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Values removed from Total PCR Tests (People):
+<a href="../assets/files/github/6339777/Changes.14.txt">Changes (14).txt</a></p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

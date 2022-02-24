@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>Arizona `negativeIncrease` is incorrectly identified</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 671</p>
+        <p><strong>rgerkin</strong> opened this issue on July 24, 2020 at 4:27 pm</p>
+        
+          <p><strong>Labels </strong>
+            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          </p>
+          
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/671" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p><strong>State or US</strong>: Arizona</p>
+<p><strong>Describe the problem</strong>
+Your API is currently using data like <a href="https://covidtracking.com/screenshots/AZ/AZ-20200723-180514.png">this</a> and  reporting <code>positiveIncrease</code> to be the “number of new cases reported today”, and <code>negativeIncrease</code> to be the number of new PCR tests minus <code>positiveIncrease</code>.  But this is invalid because the former includes <strong>PCR and serology</strong> tests, while the latter includes <strong>only PCR</strong> tests.  The correct value to use for <code>negativeIncrease</code> would be “Number of new tests reported today” which is higher since it includes serology tests.  Then at least <code>positiveIncrease</code> and <code>negativeIncrease</code> would be reporting from the same collection of tests (i.e. both PCR and serology).  Coincidentally, the fraction positive by PCR and by serology in Arizona happens to be similar at this time, due to the past and current trajectory of the epidemic.  Hopefully in the future the Arizona website will offer a daily breakdown of PCR+ and PCR- tests, but at this time they only offer the daily total of PCR tests (and of serology tests), and then the weekly breakdown on a different section of the website (see “Laboratory Testing” in the link below).</p>
+<p><strong>Link to data source</strong>
+Site: <a href="https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/covid-19/dashboards/index.php">https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/covid-19/dashboards/index.php</a>
+Screenshot example: <a href="https://covidtracking.com/screenshots/AZ/AZ-20200723-180514.png">https://covidtracking.com/screenshots/AZ/AZ-20200723-180514.png</a></p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-663741624">
+          <div class="frontmatter">
+            <div><strong>rgerkin</strong> commented on July 24, 2020 at 4:27 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/671#issuecomment-663741624" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>If someone would point me to the actual scraping code for Arizona, I would be happy to submit a PR to fix this.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-663762926">
+          <div class="frontmatter">
+            <div><strong>muamichali</strong> commented on July 24, 2020 at 5:46 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/671#issuecomment-663762926" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>HI <strong>@rgerkin</strong></p>
+<p>We do not use scrapers to capture the data. We use actual humans that visit the websites daily.</p>
+<p>Typically our positive number in Arizona includes both probable and confirmed cases, but we also separately publish in our API the number of PCR lab confirmed cases. This is slightly complicated by the fact that as of 7/18 Arizona no longer provides the breakdown of probable vs. confirmed cases via a hover-over action on their dashboard.</p>
+<p>We do not include antibody tests as part of the totals. We capture them separately, and plan to publish them in the future.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-663767339">
+          <div class="frontmatter">
+            <div><strong>rgerkin</strong> commented on July 24, 2020 at 6:05 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/671#issuecomment-663767339" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p><strong>@muamichali</strong> Thank you. Their diligent work is appreciated.</p>
+<p>Do you agree though that Arizona’s <code>positiveIncrease</code> column contains people counted by methods other than PCR+, and that consequently the <code>negativeIncrease</code>, computed by difference, contains fewer than the actual number of PCR- people?</p>
+<p>If you would prefer to exclude serology from the <code>positiveIncrease</code> and <code>negativeIncrease</code> numbers, then you should just null both of them for now.  Otherwise you get a big overestimate of % positive in downstream trackers using the API.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-664015215">
+          <div class="frontmatter">
+            <div><strong>muamichali</strong> commented on July 26, 2020 at 12:12 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/671#issuecomment-664015215" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Hi again <strong>@rgerkin</strong></p>
+<p>Thank you for your kind words.</p>
+<p>API consumers can use PCR-only fields in our API (positiveCasesViral, totalTestsViral) <em>when available from the states</em> to calculate percent positive rate.</p>
+<p>Since the number of probable cases in AZ is very small compared to the overall number of cases (as far as we can tell from when they still reported the number until 7/18) it does not result in skewing the PPR significantly.</p>
+<p>We are aware of the fact that probable cases are included in the overall cases as I mentioned above &amp; we are working to remove them (<a href="https://github.com/COVID19Tracking/issues/issues/578">https://github.com/COVID19Tracking/issues/issues/578</a>). Working with 56 different data sets from the different jurisdictions and within a mostly volunteer organization means that changes are not always immediate.</p>
+<p>Regarding the suggestion to lump serology tests and cases for calculating the percent positive rate, we published a blog post about this topic recently: <a href="https://covidtracking.com/blog/antibody-data-reporting">https://covidtracking.com/blog/antibody-data-reporting</a></p>
+<p><strong>@rgerkin</strong>: We also have a scraper that fetches data from states that enables an extra level of checks in addition to the human checkers. If you would like to contribute your PR to that effort, we would really appreciate it.
+<a href="https://github.com/COVID19Tracking/covid19-datafetcher">https://github.com/COVID19Tracking/covid19-datafetcher</a></p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-664040108">
+          <div class="frontmatter">
+            <div><strong>rgerkin</strong> commented on July 26, 2020 at 4:03 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/671#issuecomment-664040108" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p><strong>@muamichali</strong> Thanks for the clarification.  The reason I noticed the issue in the first place was that the % positive rates reported on the state website in one week bins (under the “Laboratory Testing” icon) were lower than those obtained from <code>positiveIncrease / (positiveIncrease + negativeIncrease)</code> using the API.  Part of that must have been the (small) fraction of probable-but-not-tested cases under <code>positiveIncrease</code>, but I realize now that another part was the difference between % positive by date-of-collection (reported in one week bins on the state website) and % positive by date of report (media reported and sort-of-computable from the API), which is big difference in a place with rapidly changing rates.  Since you found that the fraction of probable cases was small (when it was being reported), I think I’m happy to not worry too much about it.</p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>[NJ] SVP Fixes: Move &quot;Total Tests PCR (People)&quot; to &quot;Total Tests (PCR)&quot;  from 5/11-8/16</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 762</p>
+        <p><strong>muamichali</strong> opened this issue on August 14, 2020 at 10:09 am</p>
+        
+          <p><strong>Labels </strong>
+            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          </p>
+          
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/762" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p><strong>State or US</strong>: NJ</p>
+<p><strong>Describe the problem</strong>
+ON 5/11, NJ switched the units it reports total tests in from people to tests, but CTP continued to capture the tests in the “peoplewise” column.
+Any values captured starting 5/11 should be moved from the “Total Tests PCR (People)” column to “Total Tests (PCR)” column</p>
+<p><strong>Link to data source</strong>
+NJ Before: (reporting in people) <a href="https://covidtracking.com/screenshots/NJ/NJ-20200508-181426.png">https://covidtracking.com/screenshots/NJ/NJ-20200508-181426.png</a>
+NJ After: (reporting in tests) <a href="https://covidtracking.com/screenshots/NJ/NJ-20200511-001724.png">https://covidtracking.com/screenshots/NJ/NJ-20200511-001724.png</a></p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-674873708">
+          <div class="frontmatter">
+            <div><strong>muamichali</strong> commented on August 17, 2020 at 8:13 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/762#issuecomment-674873708" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <h3>Updating Data Store</h3>
+<p>I am copying the following values from <strong>“Total Tests PCR (People)”</strong> column to <strong>“Total Tests (PCR)”</strong>
+The screenshots reflect the top of the update portion
+BEFORE
+<img src="../assets/images/github/1749380/90399793-8a9db280-e069-11ea-92df-033ae60a72a1.png" alt="image">
+AFTER
+<img src="../assets/images/github/1749380/90399868-a7d28100-e069-11ea-94b3-b53c75718f6e.png" alt="image"></p>
+<h3>Updating Future Capture Instructions</h3>
+<p><img src="../assets/images/github/1749380/90402717-db170f00-e06d-11ea-8093-bfc59b3a12bb.png" alt="image"></p>
+<p><strong>APPENDIX: Values from 5/11-8/16</strong>
+2490186
+2461383
+2429841
+2403690
+2376016
+2350310
+2324046
+2301852
+2252792
+2252792
+2230245
+2187018
+2164580
+2164580
+2145878
+2096329
+2096329
+2059564
+2042682
+1983841
+1983841
+1953289
+1887644
+1887644
+1859638
+1840929
+1817955
+1802874
+1791137
+1781450
+1768928
+1759904
+1742347
+1721231
+1700385
+1685604
+1661284
+1623158
+1599417
+1577848
+1560133
+1549209
+1534640
+1508548
+1485501
+1463913
+1442937
+1422374
+1403984
+1387833
+1367250
+1346672
+1320910
+1299645
+1283451
+1267399
+1244967
+1218873
+1194343
+1171734
+1147841
+1131782
+1116083
+1097616
+1078215
+1055396
+1030793
+1008934
+989497
+975089
+960425
+943016
+918891
+857729
+837420
+817677
+795600
+745308
+745308
+716411
+685857
+660325
+635892
+623797
+603807
+578735
+555314
+544274
+531343
+520182
+505569
+487565
+475224
+462972
+451696
+441450
+433060
+425933</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-674922449">
+          <div class="frontmatter">
+            <div><strong>the-daniel-lin</strong> commented on August 17, 2020 at 9:41 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/762#issuecomment-674922449" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>DC’d by DZL 8/17 10:41</p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

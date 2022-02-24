@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>[NM] Shift timeseries by a day and patch a few values that do not match state reporting date </h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 961</p>
+        <p><strong>space-buzzer</strong> opened this issue on November 18, 2020 at 4:06 pm</p>
+        
+          <p><strong>Labels </strong>
+            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          </p>
+          
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/961" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p>** State or US**: New Mexico
+** Problem**
+NM updates their dashboard late during the day, so up until now, we were capturing values reported on the previous day.
+Starting today (Nov-18, 2020) we will be capturing the values NM publishing on the day of their publish, such that our dating of the data matches the states dating. For this, we will shift the entire time series by 1 day.</p>
+<p>NM publishes historic time series, available at: <a href="https://cvprovider.nmhealth.org/public-dashboard.html">https://cvprovider.nmhealth.org/public-dashboard.html</a> (clicking &quot;Show Historical Statewide Data). We’ll use this to also patch a few days and fill missing values at the beginning of the series.</p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-729992849">
+          <div class="frontmatter">
+            <div><strong>BrettBoval</strong> commented on November 18, 2020 at 4:18 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/961#issuecomment-729992849" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>For what it’s worth, NM also changed their methodology for collecting hospitalization data which resulted in a large increase (~40%) in reported values this week. (<a href="https://www.santafenewmexican.com/news/coronavirus/new-mexico-sets-daily-record-for-covid-19-cases-deaths/article_7c7cfb58-2929-11eb-b562-a39d722bccdf.html">https://www.santafenewmexican.com/news/coronavirus/new-mexico-sets-daily-record-for-covid-19-cases-deaths/article_7c7cfb58-2929-11eb-b562-a39d722bccdf.html</a>).</p>
+<p><img src="../assets/images/github/20585842/99594954-2284a280-29b1-11eb-80e5-81bd2c9d304d.png" alt="image"></p>
+<p>I don’t have an obvious solution on how to rectify this disconnect in the timeseries, but at the very least I think it’s worth adding a note at <a href="https://covidtracking.com/data/state/new-mexico">https://covidtracking.com/data/state/new-mexico</a>.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-729994948">
+          <div class="frontmatter">
+            <div><strong>space-buzzer</strong> commented on November 18, 2020 at 4:23 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/961#issuecomment-729994948" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Yeah, this is a going to be a separate issue (at least a note). Since they didnt backfill their historic timeseries of hospitalizations (+ it matches what we’ve been capturing in the past), I’ll use their history for the small fixes for days where we’ve been capturing the “correct” day.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-730013719">
+          <div class="frontmatter">
+            <div><strong>space-buzzer</strong> commented on November 18, 2020 at 5:08 pm</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/961#issuecomment-730013719" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Patching the time series for the few days that were now reporting the future.</p>
+<p><a href="../assets/files/github/5563269/Multi-edit.tool-PRODUCTION.-.NM-reb-20201118.csv.txt">Multi-edit tool-PRODUCTION - NM-reb-20201118.csv.txt</a>
+<a href="../assets/files/github/5563270/Multi-edit.tool-PRODUCTION.-.NM-reb-20201118_post.csv.txt">Multi-edit tool-PRODUCTION - NM-reb-20201118_post.csv.txt</a></p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>

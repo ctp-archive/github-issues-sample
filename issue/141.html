@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title></title>
+    <style>
+      body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 20px;
+  line-height: 2rem;
+}
+body a,
+body a:visited {
+  color: #4141cf;
+}
+
+h1 {
+  line-height: 3.5rem;
+}
+
+table th {
+  text-align: left;
+}
+
+main {
+  padding: 1rem 3rem;
+}
+
+header {
+  border-bottom: 1px solid black;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+header a,
+header a:visited {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+}
+table td,
+table th {
+  padding: 0.8rem;
+  border-bottom: 1px solid grey;
+}
+
+.label {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.label:first-child {
+  margin-left: 0;
+}
+.label a,
+.label a:visited {
+  color: black;
+}
+
+.comment,
+.issue {
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+.comment .body,
+.issue .body {
+  padding: 1rem;
+}
+.comment .body img,
+.issue .body img {
+  display: block;
+  margin: 0.5rem 0;
+}
+.comment .body p:first-child,
+.issue .body p:first-child {
+  margin-top: 0;
+}
+.comment .body p:last-child,
+.issue .body p:last-child {
+  margin-bottom: 0;
+}
+.comment .frontmatter,
+.issue .frontmatter {
+  background: #f6f8fa;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid grey;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comment .frontmatter div,
+.issue .frontmatter div {
+  width: 80%;
+}
+.comment .frontmatter div:last-child,
+.issue .frontmatter div:last-child {
+  width: 20%;
+  text-align: right;
+}
+.comment .frontmatter p,
+.issue .frontmatter p {
+  margin: 0;
+}
+.comment .frontmatter .github-link,
+.comment .frontmatter .github-link:visited,
+.issue .frontmatter .github-link,
+.issue .frontmatter .github-link:visited {
+  color: blue;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+      <header>
+  <a href="../index.html">The COVID Tracking Project Github Issue Archive</a>
+</header>
+<main >
+  <h1>CA recent numbers are strange</h1>
+  <div class="issue">
+    <div class="frontmatter">
+      <div>
+        <p><strong>Issue number</strong> 141</p>
+        <p><strong>Jmuccigr</strong> opened this issue on April 4, 2020 at 5:31 pm</p>
+        
+        </div>
+        <div>
+          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/141" target="_blank">Open in Github</a>
+        </div>
+      </div>
+      <div class="body">
+        <p>Something seems odd with the recent CA numbers:</p>
+<ol>
+<li>They got 47,000 pending tests back today and they were effectively all negative. In fact their positive increase was lower than yesterday.</li>
+<li>Even ignoring the returned pending cases, they added 30k new test results when the most they’ve been able to do before is 7k (once, over a month ago).</li>
+<li>For the third straight day, their totalTestResults were an even multiple of 100.</li>
+<li>For the past two days, their totalTestResultsIncrease was likewise a multiple of 100.</li>
+<li>Their pending cases have also been -00, but I had figured that was just routine rounding.</li>
+</ol>
+<p>I feel a little conspiracy-addled even writing this, but #1 seems so incredible to me that the others seem worth mentioning as well. This isn’t a direct issue for the project, but perhaps someone has a way to ask them about this.</p>
+
+      </div>
+    </div>
+    
+      <h2>Comments</h2>
+      
+        <div class="comment" id="issuecomment-609422024">
+          <div class="frontmatter">
+            <div><strong>careeningspace</strong> commented on April 5, 2020 at 9:06 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/141#issuecomment-609422024" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Hello,</p>
+<p>We too have struggled with the numbers coming out of California.  Check out this <a href="https://www.theatlantic.com/health/archive/2020/03/next-covid-19-testing-crisis/609193/">great article by ALEXIS C. MADRIGALROBINSON MEYER</a>that digs into some of the issues.</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-609423995">
+          <div class="frontmatter">
+            <div><strong>Jmuccigr</strong> commented on April 5, 2020 at 9:21 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/141#issuecomment-609423995" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Thanks, but how does CA rate a grade of B? They clearly have not been reporting negatives with any reliability. Is it clear where the other 30k test results came from?</p>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-609430667">
+          <div class="frontmatter">
+            <div><strong>realfuture</strong> commented on April 5, 2020 at 10:04 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/141#issuecomment-609430667" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>In retrospect, California probably should not have had as high a grade as it did.</p>
+<p>We’re working on a system to attach grades to data on a daily basis, so you could go back and see that sort of thing.</p>
+<p>As it stands, we do not have that system in place. And for right now, I think California is now a B.</p>
+<blockquote>
+<p>On Apr 5, 2020, at 7:21 AM, John Muccigrosso <a href="mailto:notifications<strong>@github.com</strong>">notifications<strong>@github.com</strong></a> wrote:</p>
+<p>Thanks, but how does CA rate a grade of B? They clearly have not been reporting negatives with any reliability. Is it clear where the other 30k test results came from?</p>
+<p>—
+You are receiving this because you are subscribed to this thread.
+Reply to this email directly, view it on GitHub, or unsubscribe.</p>
+</blockquote>
+
+          </div>
+        </div>
+      
+        <div class="comment" id="issuecomment-609430980">
+          <div class="frontmatter">
+            <div><strong>Jmuccigr</strong> commented on April 5, 2020 at 10:05 am</div>
+            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/141#issuecomment-609430980" target="_blank">Open in Github</a></div>
+          </div>
+          <div class="body">
+          <p>Thanks for the reply. My jury is still out. :-)</p>
+<p>If you will be adding grades like that, I’d suggest practical categories, like “reliable for positive rate” and so on.</p>
+
+          </div>
+        </div>
+      
+    
+  
+</main>
+  </body>
+</html>
