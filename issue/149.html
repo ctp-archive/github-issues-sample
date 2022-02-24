@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,22 +134,32 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 149</p>
-        <p><strong>Nosferican</strong> opened this issue on April 5, 2020 at 10:08 am</p>
+        <p>
+          <strong>Issue number</strong>
+          149</p>
+        <p>
+          <strong>Nosferican</strong> opened this issue on April 5, 2020 at 8:08 am</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
-          
-            <span class="label"><a href="../label/2036763229.html">stale</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/1921151980.html">Data quality</a>
+              </span>
+            
+              <span class="label">
+                <a href="../label/2036763229.html">stale</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/149" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p>I found issues such as the following,
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/149" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p>I found issues such as the following,
 Examine these two comments
 (1) <a href="https://github.com/COVID19Tracking/covid-tracking-data/commit/abef18fdd94afaeaabe40c988a04a75c3ee8a59e#r38300508">https://github.com/COVID19Tracking/covid-tracking-data/commit/abef18fdd94afaeaabe40c988a04a75c3ee8a59e#r38300508</a>
 and
@@ -156,29 +174,57 @@ There are two versions for <code>IA</code> that were checked at the same time <c
 <p>I am asking for being able to resolve those inconsistencies when they show up.
 If possible, what was the cause for the incorrect data so I may incorporate or watch out for those issues?</p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
       
         <div class="comment" id="issuecomment-609451392">
           <div class="frontmatter">
-            <div><strong>julia326</strong> commented on April 5, 2020 at 12:22 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/149#issuecomment-609451392" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>julia326</strong> commented on April 5, 2020 at 10:22 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/149#issuecomment-609451392" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Hi <strong>@</strong>Nosferican , the commits here reflect what our API is serving at the time of the commit - the later commits will reflect a later and hopefully more correct snapshot. This repository is updated every ~6 hours capturing a snapshot - for the most current data, you can use <a href="https://covidtracking.com/api">https://covidtracking.com/api</a>.</p>
+            <p>Hi <strong>@</strong>Nosferican , the commits here reflect what our API is serving at the time of the commit - the later commits will reflect a later and hopefully more correct snapshot. This repository is updated every ~6 hours capturing a snapshot - for the most current data, you can use <a href="https://covidtracking.com/api">https://covidtracking.com/api</a>.</p>
 
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-609452733">
           <div class="frontmatter">
-            <div><strong>Nosferican</strong> commented on April 5, 2020 at 12:30 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/149#issuecomment-609452733" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>Nosferican</strong> commented on April 5, 2020 at 10:30 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/149#issuecomment-609452733" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Aye. What I don’t understand is how the discrepancy had the same <code>dateChecked</code> but different data.</p>
+            <p>Aye. What I don’t understand is how the discrepancy had the same <code>dateChecked</code> but different data.</p>
 <ul>
 <li>Was that an issue with the parser of the HTML that was corrected afterwards?</li>
 <li>Is that due to a bug on how the <code>dateChecked</code> is attached to the record?</li>
@@ -191,86 +237,252 @@ If possible, what was the cause for the incorrect data so I may incorporate or w
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+            <strong>julia326</strong> added the label <span class="label">Data quality</span> on April 5, 2020 at 11:20 am
+          
+          
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-611071474">
           <div class="frontmatter">
-            <div><strong>Nosferican</strong> commented on April 8, 2020 at 11:53 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/149#issuecomment-611071474" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>Nosferican</strong> commented on April 8, 2020 at 9:53 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/149#issuecomment-611071474" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Bump.</p>
+            <p>Bump.</p>
 
           </div>
         </div>
+      
+    
       
         <div class="comment" id="issuecomment-620939634">
           <div class="frontmatter">
-            <div><strong>Nosferican</strong> commented on April 28, 2020 at 8:27 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/149#issuecomment-620939634" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>Nosferican</strong> commented on April 28, 2020 at 6:27 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/149#issuecomment-620939634" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Bump.</p>
+            <p>Bump.</p>
 
           </div>
         </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-628339936">
           <div class="frontmatter">
-            <div><strong>stale[bot]</strong> commented on May 13, 2020 at 8:58 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/149#issuecomment-628339936" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>stale[bot]</strong> commented on May 13, 2020 at 6:58 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/149#issuecomment-628339936" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
+            <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
 
           </div>
         </div>
+      
+    
+      
+        <div class="event">
+          
+          
+            <strong>stale[bot]</strong> added the label <span class="label">stale</span> on May 13, 2020 at 6:58 pm
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-628349578">
           <div class="frontmatter">
-            <div><strong>Nosferican</strong> commented on May 13, 2020 at 9:34 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/149#issuecomment-628349578" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>Nosferican</strong> commented on May 13, 2020 at 7:34 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/149#issuecomment-628349578" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Might be relevant as the grades are being recovered for the new API schema.</p>
+            <p>Might be relevant as the grades are being recovered for the new API schema.</p>
 
           </div>
         </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+            <strong>stale[bot]</strong> removed the label <span class="label">stale</span> on May 13, 2020 at 7:34 pm
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-635724799">
           <div class="frontmatter">
-            <div><strong>stale[bot]</strong> commented on May 28, 2020 at 9:45 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/149#issuecomment-635724799" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>stale[bot]</strong> commented on May 28, 2020 at 7:45 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/149#issuecomment-635724799" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
+            <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
 
           </div>
         </div>
+      
+    
+      
+        <div class="event">
+          
+          
+            <strong>stale[bot]</strong> added the label <span class="label">stale</span> on May 28, 2020 at 7:45 pm
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-640333940">
           <div class="frontmatter">
-            <div><strong>stale[bot]</strong> commented on June 7, 2020 at 9:56 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/149#issuecomment-640333940" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>stale[bot]</strong> commented on June 7, 2020 at 7:56 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/149#issuecomment-640333940" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>This issue has been closed because it was stale for 15 days, and there was no further activity on it for 10 days. You can feel free to re-open it if the issue is important, and label it as “not stale.”</p>
+            <p>This issue has been closed because it was stale for 15 days, and there was no further activity on it for 10 days. You can feel free to re-open it if the issue is important, and label it as “not stale.”</p>
 
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>stale[bot]</strong> closed the issue on June 7, 2020 at 7:56 pm
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-640975495">
           <div class="frontmatter">
-            <div><strong>muamichali</strong> commented on June 8, 2020 at 8:34 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/149#issuecomment-640975495" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>muamichali</strong> commented on June 8, 2020 at 6:34 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/149#issuecomment-640975495" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Hi <strong>@</strong>Nosferican
+            <p>Hi <strong>@</strong>Nosferican
 The stale bot has closed this issue, but if it something that you still need resolved, please open it and we will look at it.</p>
 
           </div>
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

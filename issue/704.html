@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,47 +134,151 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 704</p>
-        <p><strong>jesseandersonumd</strong> opened this issue on July 30, 2020 at 9:54 am</p>
+        <p>
+          <strong>Issue number</strong>
+          704</p>
+        <p>
+          <strong>jesseandersonumd</strong> opened this issue on July 30, 2020 at 7:54 am</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/1937937334.html">Historical Data</a></span>
-          
-            <span class="label"><a href="../label/2162087998.html">Backfill</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/1937937334.html">Historical Data</a>
+              </span>
+            
+              <span class="label">
+                <a href="../label/2162087998.html">Backfill</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/704" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p>State: MN</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/704" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p>State: MN</p>
 <p>Issue in brief: Prior to 6/14, we reported separate values for positive cases (PCR) and positive cases (people, probable+confirmed) even though we currently treat the positive cases values that MN reports as lab-confirmed only. It is unclear whether we can simply copy over the values pre-6/14 located in the positive cases (people, probable+confirmed) to the positive cases (PCR) column so that they are identical. Currently, we only have positive cases (PCR) going back to 2020/04/29 in the States Daily sheet, while positive cases (people, confirmed + probable) goes back to 2020/03/06.</p>
 <p><strong>Image showing the change on 6/14:</strong>
 <img src="../assets/images/github/57415941/88938132-0074e200-d253-11ea-8e48-3e5fa339a809.png" alt="Screen Shot 2020-07-30 at 9 39 26 AM"></p>
 <p><strong>Image showing when we started reporting positive cases (PCR) values:</strong>
 <img src="../assets/images/github/57415941/88938176-12ef1b80-d253-11ea-9f13-0a114f030e86.png" alt="Screen Shot 2020-07-30 at 10 53 57 AM"></p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+            <strong>jesseandersonumd</strong> added the label <span class="label">Data quality</span> on July 30, 2020 at 7:54 am
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+            <strong>jesseandersonumd</strong> removed the label <span class="label">Data quality</span> on July 30, 2020 at 7:55 am
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+            <strong>jesseandersonumd</strong> added the label <span class="label">Backfill</span> on July 30, 2020 at 7:55 am
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+            <strong>jesseandersonumd</strong> added the label <span class="label">Historical Data</span> on July 30, 2020 at 7:55 am
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-666467971">
           <div class="frontmatter">
-            <div><strong>MattHilliard</strong> commented on July 30, 2020 at 10:40 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/704#issuecomment-666467971" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>MattHilliard</strong> commented on July 30, 2020 at 8:40 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/704#issuecomment-666467971" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>This was a mistake in a <a href="https://github.com/COVID19Tracking/issues/issues/484">backfill on 6/14</a>…I updated Positives without also noticing I should also update Positive Cases (PCR).</p>
+            <p>This was a mistake in a <a href="https://github.com/COVID19Tracking/issues/issues/484">backfill on 6/14</a>…I updated Positives without also noticing I should also update Positive Cases (PCR).</p>
 <p>Data in Positives pre-6/14 has been copied over to Positive Cases (PCR). If we ever need to restore the old values, they are in the original Positives column of the 6/14 [backfill analysis sheet](<a href="https://docs.google.com/spreadsheets/d/1Y0ZtCoyZHOf_p0X12msYe9oKI6L38UgnGZHN8JddOHU/edit#gid=1869230983.:">https://docs.google.com/spreadsheets/d/1Y0ZtCoyZHOf_p0X12msYe9oKI6L38UgnGZHN8JddOHU/edit#gid=1869230983.:</a></p>
 
           </div>
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>MattHilliard</strong> closed the issue on July 30, 2020 at 8:40 am
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

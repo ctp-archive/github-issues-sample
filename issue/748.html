@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,22 +134,32 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 748</p>
-        <p><strong>jesseandersonumd</strong> opened this issue on August 11, 2020 at 9:04 am</p>
+        <p>
+          <strong>Issue number</strong>
+          748</p>
+        <p>
+          <strong>jesseandersonumd</strong> opened this issue on August 11, 2020 at 7:04 am</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/1937937334.html">Historical Data</a></span>
-          
-            <span class="label"><a href="../label/2162087998.html">Backfill</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/1937937334.html">Historical Data</a>
+              </span>
+            
+              <span class="label">
+                <a href="../label/2162087998.html">Backfill</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/748" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p><strong>State</strong>: Arkansas</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/748" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p><strong>State</strong>: Arkansas</p>
 <p><strong>Dates impacted</strong>: pre-7/3 (inclusive)</p>
 <p><strong>Issue</strong>: Prior to 7/3, CTP was capturing total tests in <em>Total PCR Tests (People)</em>, after 7/3 we started reporting total tests in <em>Total Tests (PCR)</em>. But, we are still reporting negative tests in people, even though negatives are reported in specimens. We think we should copy negative tests from people to Negative Tests (PCR) <strong>KEEP all values in Negative (People or Cases) and copy values to Negative Tests (PCR)</strong> to reflect the fact that negatives are reported in specimens as confirmed by outreach. We also think we should move total tests pre-7/3 to Total Tests (PCR) from Total PCR Tests (People). We should also flag that the AR total tests number is calculated by (positives cases (people) + negatives tests (specimens)). :(</p>
 <p><strong>Action Plan</strong>:</p>
@@ -151,18 +169,79 @@ table th {
 <a href="../assets/files/github/5091254/AR.Moved.Values.from.Total.Tests.PCR.People.to.Total.Tests.PCR.txt">AR Moved Values from Total Tests PCR People to Total Tests PCR.txt</a></li>
 </ul>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+            <strong>jesseandersonumd</strong> added the label <span class="label">Data quality</span> on August 11, 2020 at 7:04 am
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+            <strong>jesseandersonumd</strong> removed the label <span class="label">Data quality</span> on August 11, 2020 at 7:04 am
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+            <strong>jesseandersonumd</strong> added the label <span class="label">Backfill</span> on August 11, 2020 at 7:04 am
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+            <strong>jesseandersonumd</strong> added the label <span class="label">Historical Data</span> on August 11, 2020 at 7:05 am
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-671984557">
           <div class="frontmatter">
-            <div><strong>brianskli</strong> commented on August 11, 2020 at 9:35 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/748#issuecomment-671984557" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>brianskli</strong> commented on August 11, 2020 at 7:35 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/748#issuecomment-671984557" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p><strong>Interim changes:</strong> Negatives are now listed in both Negative Tests (People or Cases) <em>and</em> Negative Tests (PCR)</p>
+            <p><strong>Interim changes:</strong> Negatives are now listed in both Negative Tests (People or Cases) <em>and</em> Negative Tests (PCR)</p>
 <p><strong>1/2: WS2</strong>
 Before:
 <img width="1124" alt="Screen Shot 2020-08-11 at 10 33 11 AM" src="../assets/images/github/66738237/89910444-3fddef80-dbbe-11ea-8060-ec40ae14ac86.png">
@@ -177,19 +256,117 @@ After:
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-675547805">
           <div class="frontmatter">
-            <div><strong>muamichali</strong> commented on August 18, 2020 at 10:27 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/748#issuecomment-675547805" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>muamichali</strong> commented on August 18, 2020 at 8:27 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/748#issuecomment-675547805" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Moved 3/6 - 7/3 values from <code>Total Tests PCR (People)</code> to <code>Total Tests (PCR)</code> - the values moved are recorded in a txt CSV file in the issue description.</p>
+            <p>Moved 3/6 - 7/3 values from <code>Total Tests PCR (People)</code> to <code>Total Tests (PCR)</code> - the values moved are recorded in a txt CSV file in the issue description.</p>
 
           </div>
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>muamichali</strong> closed the issue on August 18, 2020 at 8:32 am
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

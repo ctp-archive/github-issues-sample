@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,34 +134,67 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 1158</p>
-        <p><strong>jaclyde</strong> opened this issue on May 3, 2021 at 3:31 pm</p>
+        <p>
+          <strong>Issue number</strong>
+          1158</p>
+        <p>
+          <strong>jaclyde</strong> opened this issue on May 3, 2021 at 1:31 pm</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/1921151980.html">Data quality</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1158" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p>States: AS, IA, IL, IN, MD, MP, PR, WV</p>
-<p>Issue: Cleaning up data gaps caused by primarily by changes in state reporting or our understanding of the definitions of metrics from early in the pandemic. Each change will have a separate comment with brief description</p>
-
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1158" target="_blank">Open in Github</a>
       </div>
     </div>
+    <div class="body">
+      <p>States: AS, IA, IL, IN, MD, MP, PR, WV</p>
+<p>Issue: Cleaning up data gaps caused by primarily by changes in state reporting or our understanding of the definitions of metrics from early in the pandemic. Each change will have a separate comment with brief description</p>
+
+    </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+            <strong>jaclyde</strong> added the label <span class="label">Data quality</span> on May 3, 2021 at 1:31 pm
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-831518802">
           <div class="frontmatter">
-            <div><strong>jaclyde</strong> commented on May 3, 2021 at 3:38 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1158#issuecomment-831518802" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>jaclyde</strong> commented on May 3, 2021 at 1:38 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1158#issuecomment-831518802" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>State: Iowa
+            <p>State: Iowa
 Issue: We recorded Iowa’s Total Test metric in both the Total tests (specimens) and Total tests (people) fields on May 17, 2020.
 Solution: Remove the value from Total tests (specimens).</p>
 <p>Value removed:
@@ -162,13 +203,18 @@ Solution: Remove the value from Total tests (specimens).</p>
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-831520936">
           <div class="frontmatter">
-            <div><strong>jaclyde</strong> commented on May 3, 2021 at 3:42 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1158#issuecomment-831520936" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>jaclyde</strong> commented on May 3, 2021 at 1:42 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1158#issuecomment-831520936" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>State: Illinois
+            <p>State: Illinois
 Issue: We recorded Illinois’s Total Test metric in both the Total tests (specimens) and Total tests (people) fields off and on between May 13, 2020 and June 11, 2020.
 Solution: Remove the values from Total tests (people).</p>
 <p>Values removed:<a href="../assets/files/github/6417657/Changes.21.txt">Changes (21).txt</a></p>
@@ -176,13 +222,18 @@ Solution: Remove the values from Total tests (people).</p>
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-831546566">
           <div class="frontmatter">
-            <div><strong>jaclyde</strong> commented on May 3, 2021 at 4:27 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1158#issuecomment-831546566" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>jaclyde</strong> commented on May 3, 2021 at 2:27 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1158#issuecomment-831546566" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>State: Indiana
+            <p>State: Indiana
 Issue: We recorded a 1 for Indiana’s Ever hospitalized from March 21, 2020 to March 25, 2020, but then did not record additional values until May 8, 2020. Additionally we were unable to verify the source for the value.
 Solution: Remove the values from Ever hospitalized from March 21, 2020 to March 25, 2020.</p>
 <p>Values removed:
@@ -191,13 +242,18 @@ Solution: Remove the values from Ever hospitalized from March 21, 2020 to March 
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-831570203">
           <div class="frontmatter">
-            <div><strong>jaclyde</strong> commented on May 3, 2021 at 5:17 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1158#issuecomment-831570203" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>jaclyde</strong> commented on May 3, 2021 at 3:17 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1158#issuecomment-831570203" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>State: Maryland
+            <p>State: Maryland
 Issue: We missed recording Total deaths for Maryland on March 17, 2020.
 Solution: Carry over the previous value.</p>
 <p>Values updated:
@@ -206,13 +262,18 @@ Solution: Carry over the previous value.</p>
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-831659517">
           <div class="frontmatter">
-            <div><strong>jaclyde</strong> commented on May 3, 2021 at 10:15 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1158#issuecomment-831659517" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>jaclyde</strong> commented on May 3, 2021 at 8:15 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1158#issuecomment-831659517" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Territory: American Samoa
+            <p>Territory: American Samoa
 Issue: We recorded zeros for several metrics in American Samoa, just to make it clear that we were tracking them. Between April 11, 2020 and April 24, 2020 we did not record zeros for Total deaths. Additionally we did not record zeros for Conformed cases between February 17, 2021 and March 7, 2021.
 Solution: Carry the zeros over in Total deaths and Confirmed cases.</p>
 <p>Values updated:
@@ -221,13 +282,18 @@ Solution: Carry the zeros over in Total deaths and Confirmed cases.</p>
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-831673458">
           <div class="frontmatter">
-            <div><strong>jaclyde</strong> commented on May 3, 2021 at 11:19 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1158#issuecomment-831673458" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>jaclyde</strong> commented on May 3, 2021 at 9:19 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1158#issuecomment-831673458" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Territory: Northern Mariana Islands
+            <p>Territory: Northern Mariana Islands
 Issue: We missed recording Total deaths for the Northern Mariana Islands on March 28, 2020 to April 1, 2020. According to a <a href="https://services8.arcgis.com/zkkZCub5I6ydvXQj/ArcGIS/rest/services/Coronavirus_PublicDashboardView/FeatureServer/3/query?where=1%3D1&amp;outStatistics=%5B%7B%27statisticType%27%3A+%27max%27%2C+%27onStatisticField%27%3A+%27reportdt%27%7D%2C+%7B%27statisticType%27%3A+%27sum%27%2C+%27onStatisticField%27%3A+%27confirmedcases%27%7D%2C+%7B%27statisticType%27%3A+%27sum%27%2C+%27onStatisticField%27%3A+%27totalspeccnmi%27%7D%2C+%7B%27statisticType%27%3A+%27sum%27%2C+%27onStatisticField%27%3A+%27deaths%27%7D%2C+%7B%27statisticType%27%3A+%27sum%27%2C+%27onStatisticField%27%3A+%27recovered%27%7D%2C+%7B%27statisticType%27%3A+%27sum%27%2C+%27onStatisticField%27%3A+%27hospitalized%27%7D%5D">query</a> on the MP ArcGis dashboard the first reported death was March 31, 2020.
 Solution: Carry over the zeroes to March 30, 2020 and then carry the 1.</p>
 <p>Values updated:
@@ -236,13 +302,18 @@ Solution: Carry over the zeroes to March 30, 2020 and then carry the 1.</p>
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-831678557">
           <div class="frontmatter">
-            <div><strong>jaclyde</strong> commented on May 3, 2021 at 11:40 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1158#issuecomment-831678557" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>jaclyde</strong> commented on May 3, 2021 at 9:40 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1158#issuecomment-831678557" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>State: West Virginia
+            <p>State: West Virginia
 Issue: We recorded Ever hospitalized, Even in ICU, and Ever on ventilator briefly between March 21 ,2020 and April 15, 2020 however the source of these values was determined to not fully represent cumulative totals for these metrics.
 Solution: Removing values recorded  in Ever hospitalized, Even in ICU, and Ever on ventilator.</p>
 <p>Values removed:<br>
@@ -251,13 +322,38 @@ Solution: Removing values recorded  in Ever hospitalized, Even in ICU, and Ever 
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-831699736">
           <div class="frontmatter">
-            <div><strong>jaclyde</strong> commented on May 4, 2021 at 12:55 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1158#issuecomment-831699736" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>jaclyde</strong> commented on May 3, 2021 at 10:55 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1158#issuecomment-831699736" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Territory: Puerto Rico
+            <p>Territory: Puerto Rico
 Issue: We stopped carrying over the Negative value for Puerto Rico between May 6, 2020 and May 20, 2020, however Puerto Rico’s Total tests are <a href="https://covidtracking.com/about-data/total-tests">calculated from Positive plus Negative</a> so we need to carry the value over.
 Solution: Carry over the value from May 5, 2020.</p>
 <p>Values updated:<br>
@@ -266,13 +362,40 @@ Solution: Carry over the value from May 5, 2020.</p>
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>jaclyde</strong> closed the issue on May 3, 2021 at 10:55 pm
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-832963556">
           <div class="frontmatter">
-            <div><strong>jaclyde</strong> commented on May 5, 2021 at 2:51 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1158#issuecomment-832963556" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>jaclyde</strong> commented on May 5, 2021 at 12:51 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1158#issuecomment-832963556" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>State: Kansas
+            <p>State: Kansas
 Issue: We missed recording Total tests (people) for Kansas between May 31, 2020 to June 11, 2020.
 Solution: Use Kansas’s <a href="https://www.coronavirus.kdheks.gov/DocumentCenter/View/1529/may-5-case-summary?bidId=">COVID-19 Summary PDF</a> to get the values for tests during that time, and patch our time series.</p>
 <p>Values updated:
@@ -282,7 +405,18 @@ Solution: Use Kansas’s <a href="https://www.coronavirus.kdheks.gov/DocumentCen
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

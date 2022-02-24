@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,20 +134,28 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 153</p>
-        <p><strong>diranl</strong> opened this issue on April 3, 2020 at 10:35 am</p>
+        <p>
+          <strong>Issue number</strong>
+          153</p>
+        <p>
+          <strong>diranl</strong> opened this issue on April 3, 2020 at 8:35 am</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/1921151980.html">Data quality</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/153" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p>Cross referencing the data between the US daily and States daily endpoints:</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/153" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p>Cross referencing the data between the US daily and States daily endpoints:</p>
 <ul>
 <li><a href="https://covidtracking.com/api/us/daily">https://covidtracking.com/api/us/daily</a></li>
 <li><a href="https://covidtracking.com/api/v1/states/daily.json">https://covidtracking.com/api/v1/states/daily.json</a></li>
@@ -154,30 +170,10 @@ table th {
 <p>Expected: US to be greater than NY in hospitalizedIncrease as US encompasses NY
 Actual: US &lt; NY in hospitalizedIncrease</p>
 
-      </div>
     </div>
-    
-      <h2>Comments</h2>
-      
-        <div class="comment" id="issuecomment-612167426">
-          <div class="frontmatter">
-            <div><strong>careeningspace</strong> commented on April 10, 2020 at 1:50 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/153#issuecomment-612167426" target="_blank">Open in Github</a></div>
-          </div>
-          <div class="body">
-          <p>Hello,
-We did go back and clean up some of our historical hospitalization data due to a modification of our process. Check out #132 for reference.</p>
-<p>Here is what I see now:</p>
-<ul>
-<li>4/2 US Daily: “hospitalizedIncrease”:4141
--4/2 NY Dail: “hospitalizedIncrease”:2449</li>
-</ul>
-
-          </div>
-        </div>
-      
-    
+  </div>
   
+
 </main>
   </body>
 </html>

@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,20 +134,28 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 70</p>
-        <p><strong>jdmaresco</strong> opened this issue on March 27, 2020 at 9:14 pm</p>
+        <p>
+          <strong>Issue number</strong>
+          70</p>
+        <p>
+          <strong>jdmaresco</strong> opened this issue on March 27, 2020 at 7:14 pm</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/1921151980.html">Data quality</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/70" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p>When a state provides a “Currently” (hospitalized, in ICU, on ventilator) number but not a “Cumulative” number, we should add a value in “Cumulative” equal to the “Currently” value, as it is implied.</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/70" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p>When a state provides a “Currently” (hospitalized, in ICU, on ventilator) number but not a “Cumulative” number, we should add a value in “Cumulative” equal to the “Currently” value, as it is implied.</p>
 <p>After splitting out these values a couple of days ago, we haven’t always done this. Our website currently only shows “Cumulative” hospitalized (this will change when we add all the new outcomes data in the next few days). So, while the daily values were accounting for a MAX() between current and cumulative (and weren’t affected), the “current data” for hospitalization values is low.</p>
 <p>Backfilling the data to add values in Cumulative for any places where Cumulative &lt; Current.</p>
 <p>Affected rows (data filtered to show only these rows)</p>
@@ -147,41 +163,118 @@ table th {
 <p>After backfill/update:
 <img src="../assets/images/github/1327983/77812516-2bb6ad00-7078-11ea-8415-cf2b276b9a3a.png" alt="image"></p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+            <strong>jdmaresco</strong> added the label <span class="label">Data quality</span> on March 27, 2020 at 7:14 pm
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-607319222">
           <div class="frontmatter">
-            <div><strong>careeningspace</strong> commented on April 1, 2020 at 10:30 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/70#issuecomment-607319222" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>careeningspace</strong> commented on April 1, 2020 at 8:30 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/70#issuecomment-607319222" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>This has been rectified</p>
+            <p>This has been rectified</p>
 
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>careeningspace</strong> closed the issue on April 1, 2020 at 8:30 am
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-609422365">
           <div class="frontmatter">
-            <div><strong>wboka</strong> commented on April 5, 2020 at 9:08 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/70#issuecomment-609422365" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>wboka</strong> commented on April 5, 2020 at 7:08 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/70#issuecomment-609422365" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Has this been fixed? Shouldn’t the cumulative numbers in this screenshot be higher than the currently numbers? Correct my ignorance if I’m wrong.</p>
+            <p>Has this been fixed? Shouldn’t the cumulative numbers in this screenshot be higher than the currently numbers? Correct my ignorance if I’m wrong.</p>
 <p><img src="../assets/images/github/8128394/78500589-51514f80-7725-11ea-8172-3c5c9c4b774d.png" alt="11EEA043-F036-4219-88F8-A8B8765AC8C6"></p>
 
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-609423236">
           <div class="frontmatter">
-            <div><strong>jdmaresco</strong> commented on April 5, 2020 at 9:15 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/70#issuecomment-609423236" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>jdmaresco</strong> commented on April 5, 2020 at 7:15 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/70#issuecomment-609423236" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p><strong>@wboka</strong> please see #132</p>
+            <p><strong>@wboka</strong> please see #132</p>
 <p>We reverted the changes originally made. We are still figuring out how to resolve the display of sums on the website but cumulative numbers are not always reported by states, and we aren’t comfortable using “current” numbers as “cumulative”.</p>
 <p>Please see the note currently displayed on the site:
 <img src="../assets/images/github/1327983/78500736-421ed180-7726-11ea-8734-37fa30310a3d.jpeg" alt="E1118B45-8928-48F5-95BD-116836C1E491"></p>
@@ -189,19 +282,45 @@ table th {
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-609423785">
           <div class="frontmatter">
-            <div><strong>jdmaresco</strong> commented on April 5, 2020 at 9:19 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/70#issuecomment-609423785" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>jdmaresco</strong> commented on April 5, 2020 at 7:19 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/70#issuecomment-609423785" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Correction: we <em>will be</em> reverting the changes originally made. In recent days, we’ve been reporting current/cumulative numbers exactly as reported by the states. Some of the early numbers counted “current” numbers as “cumulative” as shown in screenshots above — this will be reverted.</p>
+            <p>Correction: we <em>will be</em> reverting the changes originally made. In recent days, we’ve been reporting current/cumulative numbers exactly as reported by the states. Some of the early numbers counted “current” numbers as “cumulative” as shown in screenshots above — this will be reverted.</p>
 
           </div>
         </div>
       
     
   
+
 </main>
   </body>
 </html>

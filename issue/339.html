@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,45 +134,68 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 339</p>
-        <p><strong>richarddowdy</strong> opened this issue on April 30, 2020 at 11:48 am</p>
+        <p>
+          <strong>Issue number</strong>
+          339</p>
+        <p>
+          <strong>richarddowdy</strong> opened this issue on April 30, 2020 at 9:48 am</p>
         
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/339" target="_blank">Open in Github</a>
-        </div>
       </div>
-      <div class="body">
-        <p>4-29-20 <strong>@</strong> 16:00
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/339" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p>4-29-20 <strong>@</strong> 16:00
 GET to <strong>api/states</strong> returned array of data objects for each state properly.</p>
 <p>4-30-20 <strong>@</strong> 00:10
 CORS errors on GET request to <strong>api/states</strong> even though Insomnia request showed response header of &quot; access-control-allow-origin: * &quot;. Changed endpoint <strong>api/states/current.json</strong> which fetched proper data without errors.</p>
 <p>4-30-20 <strong>@</strong> 09:00
 CORS errors on GET request to <strong>api/states/current.json</strong>. Changed it back to <strong>api/states</strong> and all data is fetched properly again.</p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
       
         <div class="comment" id="issuecomment-622052300">
           <div class="frontmatter">
-            <div><strong>kevee</strong> commented on April 30, 2020 at 2:18 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/339#issuecomment-622052300" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>kevee</strong> commented on April 30, 2020 at 12:18 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/339#issuecomment-622052300" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Hi, Richard. We did have a little outage on Netlify and some routing issues yesterday into today with those legacy API paths. Our actual API endpoints start with <code>api/v1</code>, those endpoints you are referring to are deprecated. You can find a <a href="https://covidtracking.com/api/">list of all our supported endpoints on our website here</a>.</p>
+            <p>Hi, Richard. We did have a little outage on Netlify and some routing issues yesterday into today with those legacy API paths. Our actual API endpoints start with <code>api/v1</code>, those endpoints you are referring to are deprecated. You can find a <a href="https://covidtracking.com/api/">list of all our supported endpoints on our website here</a>.</p>
 
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>muamichali</strong> closed the issue on April 30, 2020 at 12:30 pm
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-634849884">
           <div class="frontmatter">
-            <div><strong>muamichali</strong> commented on May 27, 2020 at 1:16 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/339#issuecomment-634849884" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>muamichali</strong> commented on May 27, 2020 at 11:16 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/339#issuecomment-634849884" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Hi <strong>@richarddowdy</strong>
+            <p>Hi <strong>@richarddowdy</strong>
 Just wanted to give you a heads up on some changes that are coming soon from our web team (hi kevin!)</p>
 <blockquote>
 <p>We are now building the entire API to a repository. All the JSON/CSV files are built every 15 minutes and put into this repo.
@@ -182,7 +213,28 @@ Please take some time to test out the new API files and endpoint and give feedba
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

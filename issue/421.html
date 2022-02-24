@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,38 +134,81 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 421</p>
-        <p><strong>ctp-support</strong> opened this issue on May 15, 2020 at 12:22 pm</p>
+        <p>
+          <strong>Issue number</strong>
+          421</p>
+        <p>
+          <strong>ctp-support</strong> opened this issue on May 15, 2020 at 10:22 am</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/1921151980.html">Data quality</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/421" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p>From support email:</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/421" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p>From support email:</p>
 <blockquote>
 <p>April 21 and 22 for Delaware (<a href="https://covidtracking.com/data/state/delaware#historical">https://covidtracking.com/data/state/delaware#historical</a>) look off</p>
 <p>Was there really a negative New Test count on April 21?</p>
 </blockquote>
 <p><img src="https://frontapp.com/assets/img/favicons/favicon-32x32.png" height="16" width="16" alt="Front logo" /> <a href="https://app.frontapp.com/open/top_23xld">Front conversations</a></p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+            <strong>ctp-support</strong> added the label <span class="label">Data quality</span> on May 15, 2020 at 10:22 am
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-634664902">
           <div class="frontmatter">
-            <div><strong>karaschechtman</strong> commented on May 27, 2020 at 8:34 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/421#issuecomment-634664902" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>karaschechtman</strong> commented on May 27, 2020 at 6:34 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/421#issuecomment-634664902" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>On April 21, DE revised down its negatives from <a href="https://covidtracking.com/screenshots/DE/DE-20200421-120614.png">13,725</a> in the afternoon to <a href="https://covidtracking.com/screenshots/DE/DE-20200421-180454.png">12,935</a> that evening. In a press release, DE explains this is because they accidentally calculated figures for April 19-20 including non-Delaware residents. The correct figure for April 19 (which is reported April 20) should have been 12,508, and for April 20 (which is reported April 21) was indeed 12,935.</p>
+            <p>On April 21, DE revised down its negatives from <a href="https://covidtracking.com/screenshots/DE/DE-20200421-120614.png">13,725</a> in the afternoon to <a href="https://covidtracking.com/screenshots/DE/DE-20200421-180454.png">12,935</a> that evening. In a press release, DE explains this is because they accidentally calculated figures for April 19-20 including non-Delaware residents. The correct figure for April 19 (which is reported April 20) should have been 12,508, and for April 20 (which is reported April 21) was indeed 12,935.</p>
 <p><a href="https://news.delaware.gov/2020/04/21/public-health-announces-10-new-deaths-186-additional-positive-cases-of-covid-19/">https://news.delaware.gov/2020/04/21/public-health-announces-10-new-deaths-186-additional-positive-cases-of-covid-19/</a></p>
 <p>Based on slack records, we picked up the change to 12,935 on April 21 and did not update until April 22, because it appeared as if negatives were going down we were not sure if it was an error. On April 22, we revised down to <a href="https://covidtracking.com/screenshots/DE/DE-20200422-120715.png">13,353</a> when the changes persisted. Thus, in our records, it appears as if the total number of tests goes down. However, with the additional context of the 12,508 figure from the press release which should have been on the dashboard 4/20, there was never any revision that resulted in a negative delta.</p>
 <p>So to reflect DE’s remarks in their press release, I’ve gone back and changed the negative numbers for April 20 &amp; 21 from 13,725 and 13,725 to 12,508 and 12,935 respectively.</p>
@@ -170,7 +221,40 @@ table th {
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>karaschechtman</strong> closed the issue on May 27, 2020 at 6:34 am
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

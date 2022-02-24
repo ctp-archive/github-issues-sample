@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,20 +134,28 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 605</p>
-        <p><strong>muamichali</strong> opened this issue on July 12, 2020 at 8:26 am</p>
+        <p>
+          <strong>Issue number</strong>
+          605</p>
+        <p>
+          <strong>muamichali</strong> opened this issue on July 12, 2020 at 6:26 am</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/1921151980.html">Data quality</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/605" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p>From a Front ticket:</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/605" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p>From a Front ticket:</p>
 <p>&quot;I am an avid COVID-19 tracker from Cincinnati.  I refer to your Ohio page regularly to get testing data, and share that with my social network.  But your recent chart showing zero cases on July 2nd a large spike in new cases on July 3rd caught my attention.  This information is wrong.  So, I double checked the rest of July and found every single date was wrongly reported.  I did not check June’s info.</p>
 <p>July 1 you reported 1,076 new cases; actual new Ohio cases were 1,041
 July 2 you reported 0 new cases; actual new Ohio cases were 1,260
@@ -155,41 +171,76 @@ July 10 you reported 1,525 new cases; actual new Ohio cases were 1,494</p>
 <p>I strongly encourage you to correct the Ohio errors, or take down the page.&quot;</p>
 <p><img src="https://frontapp.com/assets/img/favicons/favicon-32x32.png" height="16" width="16" alt="Front logo" /> <a href="https://app.frontapp.com/open/top_25y6p">Front conversations</a></p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+            <strong>muamichali</strong> added the label <span class="label">Data quality</span> on July 12, 2020 at 6:26 am
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-657239402">
           <div class="frontmatter">
-            <div><strong>MattHilliard</strong> commented on July 12, 2020 at 10:43 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/605#issuecomment-657239402" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>MattHilliard</strong> commented on July 12, 2020 at 8:43 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/605#issuecomment-657239402" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Took a quick look. July 2 they must have updated late, we have no new numbers. On July 9th our negatives number repeats but cases and deaths were updated. I can repair July 2nd from screenshots. On July 9th, screenshots indicate the state didn’t update its total test number. So I think we are stuck there.</p>
+            <p>Took a quick look. July 2 they must have updated late, we have no new numbers. On July 9th our negatives number repeats but cases and deaths were updated. I can repair July 2nd from screenshots. On July 9th, screenshots indicate the state didn’t update its total test number. So I think we are stuck there.</p>
 <p>Based on a spot check, I believe the other “discrepancies” listed here are due to the fact our reported cases are confirmed + probables and not just probables.</p>
 
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-657240176">
           <div class="frontmatter">
-            <div><strong>MattHilliard</strong> commented on July 12, 2020 at 10:49 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/605#issuecomment-657240176" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>MattHilliard</strong> commented on July 12, 2020 at 8:49 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/605#issuecomment-657240176" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Actually re: 7/9, There’s a daily testing by result date time series available here: <a href="https://coronavirus.ohio.gov/wps/portal/gov/covid-19/dashboards/key-metrics/testing">https://coronavirus.ohio.gov/wps/portal/gov/covid-19/dashboards/key-metrics/testing</a>  However the daily totals there don’t agree with the daily reports from the state, so we would need to sync the whole history. But this seems like a valid path to fixing 7/9.</p>
+            <p>Actually re: 7/9, There’s a daily testing by result date time series available here: <a href="https://coronavirus.ohio.gov/wps/portal/gov/covid-19/dashboards/key-metrics/testing">https://coronavirus.ohio.gov/wps/portal/gov/covid-19/dashboards/key-metrics/testing</a>  However the daily totals there don’t agree with the daily reports from the state, so we would need to sync the whole history. But this seems like a valid path to fixing 7/9.</p>
 
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-657241482">
           <div class="frontmatter">
-            <div><strong>MattHilliard</strong> commented on July 12, 2020 at 10:59 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/605#issuecomment-657241482" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>MattHilliard</strong> commented on July 12, 2020 at 8:59 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/605#issuecomment-657241482" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>7/2 Before:
+            <p>7/2 Before:
 <img src="../assets/images/github/404503/87250922-36822b80-c436-11ea-900a-5e5e5da8c066.png" alt="image"></p>
 <p>7/2 After:
 <img src="../assets/images/github/404503/87251034-da6bd700-c436-11ea-95ea-8f9406befd0f.png" alt="image"></p>
@@ -199,19 +250,37 @@ July 10 you reported 1,525 new cases; actual new Ohio cases were 1,494</p>
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-657241742">
           <div class="frontmatter">
-            <div><strong>MattHilliard</strong> commented on July 12, 2020 at 11:01 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/605#issuecomment-657241742" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>MattHilliard</strong> commented on July 12, 2020 at 9:01 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/605#issuecomment-657241742" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>I’m going to close this issue and open a new one for the potential sync of daily testing data since I won’t have time to do that before today’s pub shift.</p>
+            <p>I’m going to close this issue and open a new one for the potential sync of daily testing data since I won’t have time to do that before today’s pub shift.</p>
 
           </div>
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>MattHilliard</strong> closed the issue on July 12, 2020 at 9:01 am
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

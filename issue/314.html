@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,29 +134,35 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 314</p>
-        <p><strong>discstalker</strong> opened this issue on April 27, 2020 at 6:03 pm</p>
+        <p>
+          <strong>Issue number</strong>
+          314</p>
+        <p>
+          <strong>discstalker</strong> opened this issue on April 27, 2020 at 4:03 pm</p>
         
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/314" target="_blank">Open in Github</a>
-        </div>
       </div>
-      <div class="body">
-        <p>lots of -46151 in the tests increase column today. Many states have the same number and all are in the first week of March except Massachusetts today…</p>
-
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/314" target="_blank">Open in Github</a>
       </div>
     </div>
+    <div class="body">
+      <p>lots of -46151 in the tests increase column today. Many states have the same number and all are in the first week of March except Massachusetts today…</p>
+
+    </div>
+  </div>
+  
     
-      <h2>Comments</h2>
       
         <div class="comment" id="issuecomment-620290260">
           <div class="frontmatter">
-            <div><strong>careeningspace</strong> commented on April 27, 2020 at 6:34 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/314#issuecomment-620290260" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>careeningspace</strong> commented on April 27, 2020 at 4:34 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/314#issuecomment-620290260" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Hello,</p>
+            <p>Hello,</p>
 <p>Thank you for the catch. During an update to the MA numbers, I mistakenly used the total tested for the Negatives column. This has been corrected.</p>
 <p>Can you tell me which other states you are seeing an issue with?</p>
 <table>
@@ -449,13 +463,18 @@ table th {
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-620291418">
           <div class="frontmatter">
-            <div><strong>discstalker</strong> commented on April 27, 2020 at 6:39 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/314#issuecomment-620291418" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>discstalker</strong> commented on April 27, 2020 at 4:39 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/314#issuecomment-620291418" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>The data refresh I did at 6:10pm has all of these as well…</p>
+            <p>The data refresh I did at 6:10pm has all of these as well…</p>
 <p>4/27/2020 18 1 Monday 2 Massachusetts -46151
 3/12/2020 11 4 Thursday 1 Massachusetts -46151
 3/7/2020 10 6 Saturday 1 Maine -46151
@@ -574,13 +593,18 @@ or unsubscribe
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-620938622">
           <div class="frontmatter">
-            <div><strong>john2014</strong> commented on April 28, 2020 at 8:23 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/314#issuecomment-620938622" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>john2014</strong> commented on April 28, 2020 at 6:23 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/314#issuecomment-620938622" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>In the Apr 28 refresh, for States Historical Data, the following fields have negative value</p>
+            <p>In the Apr 28 refresh, for States Historical Data, the following fields have negative value</p>
 <ol>
 <li>For totalTestResultsIncrease:</li>
 </ol>
@@ -613,13 +637,18 @@ or unsubscribe
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-620953189">
           <div class="frontmatter">
-            <div><strong>discstalker</strong> commented on April 28, 2020 at 9:08 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/314#issuecomment-620953189" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>discstalker</strong> commented on April 28, 2020 at 7:08 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/314#issuecomment-620953189" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Same data I have today, I refreshed this morning and all the problems
+            <p>Same data I have today, I refreshed this morning and all the problems
 went away…</p>
 <p>Feel free to close…</p>
 <p>Dave</p>
@@ -673,30 +702,53 @@ or unsubscribe
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-621371112">
           <div class="frontmatter">
-            <div><strong>muamichali</strong> commented on April 29, 2020 at 1:01 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/314#issuecomment-621371112" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>muamichali</strong> commented on April 29, 2020 at 11:01 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/314#issuecomment-621371112" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Thanks for letting us know, Dave! Glad the issues are resolved.</p>
+            <p>Thanks for letting us know, Dave! Glad the issues are resolved.</p>
 
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>muamichali</strong> closed the issue on April 29, 2020 at 11:01 am
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-621376940">
           <div class="frontmatter">
-            <div><strong>john2014</strong> commented on April 29, 2020 at 1:13 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/314#issuecomment-621376940" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>john2014</strong> commented on April 29, 2020 at 11:13 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/314#issuecomment-621376940" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>FYI…the issues I reported (for negative values) are still present in multiple files. Should I open a new issue for those?</p>
+            <p>FYI…the issues I reported (for negative values) are still present in multiple files. Should I open a new issue for those?</p>
 
           </div>
         </div>
       
     
   
+
 </main>
   </body>
 </html>

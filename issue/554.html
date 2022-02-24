@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,34 +134,57 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 554</p>
-        <p><strong>muamichali</strong> opened this issue on June 28, 2020 at 7:46 pm</p>
+        <p>
+          <strong>Issue number</strong>
+          554</p>
+        <p>
+          <strong>muamichali</strong> opened this issue on June 28, 2020 at 5:46 pm</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/1937937334.html">Historical Data</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/1937937334.html">Historical Data</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/554" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p>In the MD csv file the entry on 3/16 for positive cases is 2895. This is much larger than that for 3/15 or 3/17. It also doesn’t match the MD department of health value for that day of 37. I think the 3/16 value is in error.</p>
-<p><img src="https://frontapp.com/assets/img/favicons/favicon-32x32.png" height="16" width="16" alt="Front logo" /> <a href="https://app.frontapp.com/open/top_259sh">Front conversations</a></p>
-
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/554" target="_blank">Open in Github</a>
       </div>
     </div>
+    <div class="body">
+      <p>In the MD csv file the entry on 3/16 for positive cases is 2895. This is much larger than that for 3/15 or 3/17. It also doesn’t match the MD department of health value for that day of 37. I think the 3/16 value is in error.</p>
+<p><img src="https://frontapp.com/assets/img/favicons/favicon-32x32.png" height="16" width="16" alt="Front logo" /> <a href="https://app.frontapp.com/open/top_259sh">Front conversations</a></p>
+
+    </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+            <strong>muamichali</strong> added the label <span class="label">Historical Data</span> on June 28, 2020 at 5:46 pm
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-650850891">
           <div class="frontmatter">
-            <div><strong>space-buzzer</strong> commented on June 28, 2020 at 8:05 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/554#issuecomment-650850891" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>space-buzzer</strong> commented on June 28, 2020 at 6:05 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/554#issuecomment-650850891" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Here’s what I’m downloading now from CTP:</p>
+            <p>Here’s what I’m downloading now from CTP:</p>
 <pre><code>$ curl -s https://covidtracking.com/api/v1/states/md/daily.csv | cut -d, -f1-3 | grep -A 1 -B 2 20200316
 20200318,MD,85
 20200317,MD,57
@@ -166,30 +197,73 @@ table th {
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-650860591">
           <div class="frontmatter">
-            <div><strong>dmv6002</strong> commented on June 28, 2020 at 8:52 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/554#issuecomment-650860591" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>dmv6002</strong> commented on June 28, 2020 at 6:52 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/554#issuecomment-650860591" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Agree with space-buzzer. The csv file I was using was from  6/20/20 and I had only gotten around to to using it a day or two ago while testing some data reduction software. The 3/16 entry must have been corrected in the interim.</p>
-
-          </div>
-        </div>
-      
-        <div class="comment" id="issuecomment-651388956">
-          <div class="frontmatter">
-            <div><strong>MattHilliard</strong> commented on June 29, 2020 at 4:52 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/554#issuecomment-651388956" target="_blank">Open in Github</a></div>
-          </div>
-          <div class="body">
-          <p>This was addressed by <strong>@muamichali</strong> on 24 June</p>
+            <p>Agree with space-buzzer. The csv file I was using was from  6/20/20 and I had only gotten around to to using it a day or two ago while testing some data reduction software. The 3/16 entry must have been corrected in the interim.</p>
 
           </div>
         </div>
       
     
+      
+        <div class="comment" id="issuecomment-651388956">
+          <div class="frontmatter">
+            <div>
+              <strong>MattHilliard</strong> commented on June 29, 2020 at 2:52 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/554#issuecomment-651388956" target="_blank">Open in Github</a>
+            </div>
+          </div>
+          <div class="body">
+            <p>This was addressed by <strong>@muamichali</strong> on 24 June</p>
+
+          </div>
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>MattHilliard</strong> closed the issue on June 29, 2020 at 2:52 pm
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

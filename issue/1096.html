@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,32 +134,38 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 1096</p>
-        <p><strong>hmhoffman</strong> opened this issue on February 11, 2021 at 10:02 am</p>
+        <p>
+          <strong>Issue number</strong>
+          1096</p>
+        <p>
+          <strong>hmhoffman</strong> opened this issue on February 11, 2021 at 8:02 am</p>
         
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1096" target="_blank">Open in Github</a>
-        </div>
       </div>
-      <div class="body">
-        <p><strong>State:</strong> PR</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1096" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p><strong>State:</strong> PR</p>
 <p><strong>Dates affected:</strong> 10/01/20 - 02/10/21</p>
 <p><strong>Describe the issue:</strong> On October 1, 2020, we received a press release from Dept. de Salud with updated Total PCR tests (specimens), Negative PCR tests (specimens), and Positive PCR tests (specimens) for Puerto Rico dating back to August 28, 2020. We backfilled these values from August 28, 2020 through September 30, 2020, however due to an error in the backfill process, we did not begin capturing these new values on subsequent dates. On February 11, 2021, we corrected this error and backfilled our timeseries of Total PCR tests (specimens), Negative PCR tests (specimens), and Positive PCR tests (specimens) for October 1, 2020 through February 10, 2020 with the values from the August 28, 2020 press release. Our data quality team continues to search for updated data for these metrics.</p>
 <p><strong>Previous GH issues:</strong> <a href="https://github.com/COVID19Tracking/issues/issues/878">https://github.com/COVID19Tracking/issues/issues/878</a></p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
       
         <div class="comment" id="issuecomment-777604560">
           <div class="frontmatter">
-            <div><strong>hmhoffman</strong> commented on February 11, 2021 at 10:05 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1096#issuecomment-777604560" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>hmhoffman</strong> commented on February 11, 2021 at 8:05 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1096#issuecomment-777604560" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Rows edited: 133
+            <p>Rows edited: 133
 PR 2021-02-10
 totalTestsViral: 415664 (was 310546)
 positiveTestsViral: 20103 (was 7002)
@@ -689,7 +703,20 @@ negativeTestsViral: 395291 (was 303412)</p>
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>hmhoffman</strong> closed the issue on February 11, 2021 at 8:05 am
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

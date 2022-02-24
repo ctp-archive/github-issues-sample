@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,32 +134,48 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 2</p>
-        <p><strong>joshuaellinger</strong> opened this issue on March 11, 2020 at 9:02 am</p>
+        <p>
+          <strong>Issue number</strong>
+          2</p>
+        <p>
+          <strong>joshuaellinger</strong> opened this issue on March 11, 2020 at 7:02 am</p>
         
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/2" target="_blank">Open in Github</a>
-        </div>
       </div>
-      <div class="body">
-        <p>AZ uses Tableau.  We can fetch the page but we don’t alert when the numbers change.</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/2" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p>AZ uses Tableau.  We can fetch the page but we don’t alert when the numbers change.</p>
 <p>This might work with a captive browser model or you might be able to sniff out a data link in the chrome developer tools.</p>
 <p><a href="https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home">https://www.azdhs.gov/preparedness/epidemiology-disease-control/infectious-disease-epidemiology/index.php#novel-coronavirus-home</a></p>
 <p>Please create a stand-a-lone endpoint such as <a href="http://mysite.org/proxy-tableau?state=AZ">http://mysite.org/proxy-tableau?state=AZ</a> and return the data as an HTML table</p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-598012543">
           <div class="frontmatter">
-            <div><strong>joshellington</strong> commented on March 12, 2020 at 12:23 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/2#issuecomment-598012543" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>joshellington</strong> commented on March 11, 2020 at 10:23 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/2#issuecomment-598012543" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>FYI, there are “Download” links to simpler output structures for these Tableau embeds if you remove the <code>showAppBanner=false</code> and <code>toolbar=no</code> query params. For example, here are a few simple tables (still not directly embedded data):</p>
+            <p>FYI, there are “Download” links to simpler output structures for these Tableau embeds if you remove the <code>showAppBanner=false</code> and <code>toolbar=no</code> query params. For example, here are a few simple tables (still not directly embedded data):</p>
 <ul>
 <li><em>Cases</em>: <a href="https://tableau.azdhs.gov/vizql/w/COVID-19Table/v/COVID-19table/viewData/sessions/ECAEFF86A8224E18A4020737CB4BE181-1:3/views/8275719771277684273_10329084236957726728?maxrows=200&amp;viz=%7B%22worksheet%22%3A%22Cases%22%2C%22dashboard%22%3A%22COVID-19%20table%22%7D">https://tableau.azdhs.gov/vizql/w/COVID-19Table/v/COVID-19table/viewData/sessions/ECAEFF86A8224E18A4020737CB4BE181-1:3/views/8275719771277684273_10329084236957726728?maxrows=200&amp;viz={&quot;worksheet&quot;%3A&quot;Cases&quot;%2C&quot;dashboard&quot;%3A&quot;COVID-19 table&quot;}</a></li>
 <li><em>Tests</em>: <a href="https://tableau.azdhs.gov/vizql/w/COVID-19Table/v/COVID-19table/viewData/sessions/520DDAEDDAC74525A2DCC58659B97800-1:0/views/8275719771277684273_2738315765867498942?maxrows=200&amp;viz=%7B%22worksheet%22%3A%22Testing%22%2C%22dashboard%22%3A%22COVID-19%20table%22%7D">https://tableau.azdhs.gov/vizql/w/COVID-19Table/v/COVID-19table/viewData/sessions/520DDAEDDAC74525A2DCC58659B97800-1:0/views/8275719771277684273_2738315765867498942?maxrows=200&amp;viz={&quot;worksheet&quot;%3A&quot;Testing&quot;%2C&quot;dashboard&quot;%3A&quot;COVID-19 table&quot;}</a></li>
@@ -160,31 +184,104 @@ table th {
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-598835696">
           <div class="frontmatter">
-            <div><strong>joshuaellinger</strong> commented on March 13, 2020 at 12:34 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/2#issuecomment-598835696" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>joshuaellinger</strong> commented on March 13, 2020 at 10:34 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/2#issuecomment-598835696" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>I’m providing a updating screenshot at <a href="http://covid19-api.exemplartech.com/github-data/captive-browser/az_tableau.html">http://covid19-api.exemplartech.com/github-data/captive-browser/az_tableau.html</a>.</p>
+            <p>I’m providing a updating screenshot at <a href="http://covid19-api.exemplartech.com/github-data/captive-browser/az_tableau.html">http://covid19-api.exemplartech.com/github-data/captive-browser/az_tableau.html</a>.</p>
 <p>Can you confirm that either my approach or yours above is live in production and close the issue?</p>
 
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-601933118">
           <div class="frontmatter">
-            <div><strong>joshuaellinger</strong> commented on March 20, 2020 at 5:15 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/2#issuecomment-601933118" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>joshuaellinger</strong> commented on March 20, 2020 at 3:15 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/2#issuecomment-601933118" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Resolved</p>
+            <p>Resolved</p>
 
           </div>
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>joshuaellinger</strong> closed the issue on March 20, 2020 at 3:15 pm
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

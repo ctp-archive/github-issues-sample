@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,79 +134,192 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 167</p>
-        <p><strong>amandafrench</strong> opened this issue on April 8, 2020 at 7:19 am</p>
+        <p>
+          <strong>Issue number</strong>
+          167</p>
+        <p>
+          <strong>amandafrench</strong> opened this issue on April 8, 2020 at 5:19 am</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
-          
-            <span class="label"><a href="../label/1937937334.html">Historical Data</a></span>
-          
-            <span class="label"><a href="../label/1938033332.html">State Data Quality</a></span>
-          
-            <span class="label"><a href="../label/2036763229.html">stale</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/1921151980.html">Data quality</a>
+              </span>
+            
+              <span class="label">
+                <a href="../label/1937937334.html">Historical Data</a>
+              </span>
+            
+              <span class="label">
+                <a href="../label/1938033332.html">State Data Quality</a>
+              </span>
+            
+              <span class="label">
+                <a href="../label/2036763229.html">stale</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/167" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p>Guam typically includes in their overall Total, their Positives, and their Negatives some people (presumably Guam residents? sailors? not sure) who have been tested at the Naval base in San Diego. It’s unclear to me whether we are supposed to include these people in the Guam counts or if we are assuming that they are included in the CA counts. I thought it was the latter, but if so, we haven’t been subtracting those people from the Guam numbers.</p>
-<p>If we are not going to count the cases tested in San Diego for Guam, then the positive number for Guam should be a calculation – their reported Total minus the number of cases tested in San Diego. On 4/7, that would be <code>121-9</code> (see <a href="https://www.facebook.com/GHSOCD/photos/a.494946803880729/3822682364440473/?type=3&amp;theater">https://www.facebook.com/GHSOCD/photos/a.494946803880729/3822682364440473/?type=3&amp;theater</a> for the “121” number – see also press release no. 60 at <a href="https://ghs.guam.gov/jic-release-no-60-eight-test-positive-covid-19-breaking-news-found-governor-leon-guerrero%E2%80%99s-facebook">https://ghs.guam.gov/jic-release-no-60-eight-test-positive-covid-19-breaking-news-found-governor-leon-guerrero’s-facebook</a>), which would be 112, which would be one less than was reported on 4/6. We need to figure out whether to calculate Positives for Guam or to record their total, which includes the cases in San Diego.</p>
-
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/167" target="_blank">Open in Github</a>
       </div>
     </div>
+    <div class="body">
+      <p>Guam typically includes in their overall Total, their Positives, and their Negatives some people (presumably Guam residents? sailors? not sure) who have been tested at the Naval base in San Diego. It’s unclear to me whether we are supposed to include these people in the Guam counts or if we are assuming that they are included in the CA counts. I thought it was the latter, but if so, we haven’t been subtracting those people from the Guam numbers.</p>
+<p>If we are not going to count the cases tested in San Diego for Guam, then the positive number for Guam should be a calculation – their reported Total minus the number of cases tested in San Diego. On 4/7, that would be <code>121-9</code> (see <a href="https://www.facebook.com/GHSOCD/photos/a.494946803880729/3822682364440473/?type=3&amp;theater">https://www.facebook.com/GHSOCD/photos/a.494946803880729/3822682364440473/?type=3&amp;theater</a> for the “121” number – see also press release no. 60 at <a href="https://ghs.guam.gov/jic-release-no-60-eight-test-positive-covid-19-breaking-news-found-governor-leon-guerrero%E2%80%99s-facebook">https://ghs.guam.gov/jic-release-no-60-eight-test-positive-covid-19-breaking-news-found-governor-leon-guerrero’s-facebook</a>), which would be 112, which would be one less than was reported on 4/6. We need to figure out whether to calculate Positives for Guam or to record their total, which includes the cases in San Diego.</p>
+
+    </div>
+  </div>
+  
     
-      <h2>Comments</h2>
       
         <div class="comment" id="issuecomment-611631792">
           <div class="frontmatter">
-            <div><strong>careeningspace</strong> commented on April 9, 2020 at 11:48 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/167#issuecomment-611631792" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>careeningspace</strong> commented on April 9, 2020 at 9:48 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/167#issuecomment-611631792" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Because Guam has been reporting the tests from San Diego in their total, I have been advising that we do so as well. Depending on where you look, the language can imply that these tests are Guam residents but tested in San Diego (is this because the people are in San Diego, or were the tests sent to San Diego?)</p>
+            <p>Because Guam has been reporting the tests from San Diego in their total, I have been advising that we do so as well. Depending on where you look, the language can imply that these tests are Guam residents but tested in San Diego (is this because the people are in San Diego, or were the tests sent to San Diego?)</p>
 
           </div>
         </div>
+      
+    
+      
+        <div class="event">
+          
+          
+            <strong>careeningspace</strong> added the label <span class="label">Data quality</span> on April 9, 2020 at 9:48 am
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+            <strong>careeningspace</strong> added the label <span class="label">Historical Data</span> on April 9, 2020 at 9:48 am
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+            <strong>careeningspace</strong> added the label <span class="label">State Data Quality</span> on April 9, 2020 at 9:48 am
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-613012615">
           <div class="frontmatter">
-            <div><strong>amandafrench</strong> commented on April 13, 2020 at 12:52 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/167#issuecomment-613012615" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>amandafrench</strong> commented on April 13, 2020 at 10:52 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/167#issuecomment-613012615" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>I think we have decided that we should include the San Diego numbers, correct? I am quite sure that <em>most</em> of the historicals do include it – should someone (preferably not me) check <em>all</em> the historicals? I think we can close the issue unless someone is going to change the historicals.</p>
+            <p>I think we have decided that we should include the San Diego numbers, correct? I am quite sure that <em>most</em> of the historicals do include it – should someone (preferably not me) check <em>all</em> the historicals? I think we can close the issue unless someone is going to change the historicals.</p>
 
           </div>
         </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-623774987">
           <div class="frontmatter">
-            <div><strong>stale[bot]</strong> commented on May 4, 2020 at 7:20 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/167#issuecomment-623774987" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>stale[bot]</strong> commented on May 4, 2020 at 5:20 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/167#issuecomment-623774987" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
+            <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
 
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+            <strong>stale[bot]</strong> added the label <span class="label">stale</span> on May 4, 2020 at 5:21 pm
+          
+          
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-628958123">
           <div class="frontmatter">
-            <div><strong>stale[bot]</strong> commented on May 14, 2020 at 7:36 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/167#issuecomment-628958123" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>stale[bot]</strong> commented on May 14, 2020 at 5:36 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/167#issuecomment-628958123" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>This issue has been closed because it was stale for 15 days, and there was no further activity on it for 10 days. You can feel free to re-open it if the issue is important, and label it as “not stale.”</p>
+            <p>This issue has been closed because it was stale for 15 days, and there was no further activity on it for 10 days. You can feel free to re-open it if the issue is important, and label it as “not stale.”</p>
 
           </div>
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>stale[bot]</strong> closed the issue on May 14, 2020 at 5:37 pm
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
         </div>
       
     
   
+
 </main>
   </body>
 </html>

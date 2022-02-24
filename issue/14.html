@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,20 +134,28 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 14</p>
-        <p><strong>klumbard</strong> opened this issue on March 19, 2020 at 9:37 am</p>
+        <p>
+          <strong>Issue number</strong>
+          14</p>
+        <p>
+          <strong>klumbard</strong> opened this issue on March 19, 2020 at 7:37 am</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/1921151980.html">Data quality</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/14" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p>These are instances in which the cumulative count of pos/neg on a given day are less than the previous day:</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/14" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p>These are instances in which the cumulative count of pos/neg on a given day are less than the previous day:</p>
 <p>Negative:
 NM on 03-08
 CO on 03-10
@@ -154,29 +170,67 @@ AZ on 03-17</p>
 NV on 03-10
 DC on 03-11</p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-601366980">
           <div class="frontmatter">
-            <div><strong>hammer</strong> commented on March 19, 2020 at 2:15 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/14#issuecomment-601366980" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>hammer</strong> commented on March 19, 2020 at 12:15 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/14#issuecomment-601366980" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p><img src="../assets/images/github/15233/77105779-78551500-69f4-11ea-87e2-a5d420a01872.png" alt="image"></p>
+            <p><img src="../assets/images/github/15233/77105779-78551500-69f4-11ea-87e2-a5d420a01872.png" alt="image"></p>
 
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-601369327">
           <div class="frontmatter">
-            <div><strong>hammer</strong> commented on March 19, 2020 at 2:20 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/14#issuecomment-601369327" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>hammer</strong> commented on March 19, 2020 at 12:20 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/14#issuecomment-601369327" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>The NY error is likely because someone tried to keep the “total tests” number constant while using the positives number from the website. They should have carried forward the negative count from the previous day.</p>
+            <p>The NY error is likely because someone tried to keep the “total tests” number constant while using the positives number from the website. They should have carried forward the negative count from the previous day.</p>
 <blockquote>
 <p>20200316	NY	950	4,322		7	5,272
 20200315	NY	729	4,543		3	5,272</p>
@@ -185,13 +239,30 @@ DC on 03-11</p>
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+            <strong>hammer</strong> added the label <span class="label">Data quality</span> on March 19, 2020 at 12:21 pm
+          
+          
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-601374286">
           <div class="frontmatter">
-            <div><strong>hammer</strong> commented on March 19, 2020 at 2:25 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/14#issuecomment-601374286" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>hammer</strong> commented on March 19, 2020 at 12:25 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/14#issuecomment-601374286" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>The CO 3/10 error is likely because they switched from reporting samples to people.</p>
+            <p>The CO 3/10 error is likely because they switched from reporting samples to people.</p>
 <blockquote>
 <p>20200309	CO	9	266			275
 20200310	CO	12	142	1		155</p>
@@ -200,13 +271,18 @@ DC on 03-11</p>
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-601376963">
           <div class="frontmatter">
-            <div><strong>hammer</strong> commented on March 19, 2020 at 2:32 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/14#issuecomment-601376963" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>hammer</strong> commented on March 19, 2020 at 12:32 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/14#issuecomment-601376963" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>The NJ error is an odd one. It looks like we tried to carry forward the 120 from the previous day and just missed the leading 1.</p>
+            <p>The NJ error is an odd one. It looks like we tried to carry forward the 120 from the previous day and just missed the leading 1.</p>
 <p>Here are the checkers/double checkers: PR, AM (3/17); SD, AM (3/16); PR, SJ (3/15).</p>
 <blockquote>
 <p>20200317 | NJ | 267 | 163 | 55 | 3 | 485
@@ -217,13 +293,18 @@ DC on 03-11</p>
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-601377490">
           <div class="frontmatter">
-            <div><strong>hammer</strong> commented on March 19, 2020 at 2:33 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/14#issuecomment-601377490" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>hammer</strong> commented on March 19, 2020 at 12:33 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/14#issuecomment-601377490" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>I can’t explain the CO 3/15 error…</p>
+            <p>I can’t explain the CO 3/15 error…</p>
 <blockquote>
 <p>20200315 | CO | 131 | 627 |   | 1 | 758
 20200314 | CO | 101 | 712 |   | 1 | 814</p>
@@ -232,13 +313,18 @@ DC on 03-11</p>
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-601725395">
           <div class="frontmatter">
-            <div><strong>careeningspace</strong> commented on March 20, 2020 at 9:21 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/14#issuecomment-601725395" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>careeningspace</strong> commented on March 20, 2020 at 7:21 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/14#issuecomment-601725395" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>NJ Is now cleaned up. I assumed that the negatives hold steady on the 14th as the data seems to be following a similar pattern before and after.
+            <p>NJ Is now cleaned up. I assumed that the negatives hold steady on the 14th as the data seems to be following a similar pattern before and after.
 <img src="../assets/images/github/43073915/77167976-6d01f800-6a8d-11ea-8ffa-080d979fb9c4.png" alt="image"></p>
 <p>NJ Updated:
 <img src="../assets/images/github/43073915/77168342-0c26ef80-6a8e-11ea-8ef1-65c62ab3ab4e.png" alt="image"></p>
@@ -270,13 +356,18 @@ AZ corrected:
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-601775513">
           <div class="frontmatter">
-            <div><strong>realfuture</strong> commented on March 20, 2020 at 10:59 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/14#issuecomment-601775513" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>realfuture</strong> commented on March 20, 2020 at 8:59 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/14#issuecomment-601775513" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <blockquote>
+            <blockquote>
 <p>The NJ error is an odd one. It looks like we tried to carry forward the 120 from the previous day and just missed the leading 1.</p>
 <p>Here are the checkers/double checkers: PR, AM (3/17); SD, AM (3/16); PR, SJ (3/15).</p>
 <blockquote>
@@ -290,24 +381,34 @@ AZ corrected:
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-601776882">
           <div class="frontmatter">
-            <div><strong>realfuture</strong> commented on March 20, 2020 at 11:01 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/14#issuecomment-601776882" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>realfuture</strong> commented on March 20, 2020 at 9:01 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/14#issuecomment-601776882" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>The only one that flummoxes me is ID. I think we’d almost certainly have to go back to the AWS logs. Their data looked clean coming in, but maybe they were fiddling with the margins.</p>
+            <p>The only one that flummoxes me is ID. I think we’d almost certainly have to go back to the AWS logs. Their data looked clean coming in, but maybe they were fiddling with the margins.</p>
 
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-605120873">
           <div class="frontmatter">
-            <div><strong>careeningspace</strong> commented on March 27, 2020 at 12:12 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/14#issuecomment-605120873" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>careeningspace</strong> commented on March 27, 2020 at 10:12 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/14#issuecomment-605120873" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Based on our <a href="https://covid-data-archive.s3.us-east-2.amazonaws.com/state_screenshots/ID/ID-20200315-021631.png">screenshot</a> and anecdotal evidence, I am going to make a judgment call that ID reported some numbers out of sync and our math caused the fluctuation. *Once a negative, always a negative.</p>
+            <p>Based on our <a href="https://covid-data-archive.s3.us-east-2.amazonaws.com/state_screenshots/ID/ID-20200315-021631.png">screenshot</a> and anecdotal evidence, I am going to make a judgment call that ID reported some numbers out of sync and our math caused the fluctuation. *Once a negative, always a negative.</p>
 <p>Before:
 <img src="../assets/images/github/43073915/77781788-8f1aed80-702c-11ea-8179-05618fd68001.png" alt="Screen Shot 2020-03-27 at 1 10 46 PM"></p>
 <p>After:
@@ -317,7 +418,20 @@ AZ corrected:
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>careeningspace</strong> closed the issue on March 27, 2020 at 10:12 am
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

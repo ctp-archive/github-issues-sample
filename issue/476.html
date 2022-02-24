@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,39 +134,64 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 476</p>
-        <p><strong>loglow</strong> opened this issue on June 6, 2020 at 5:06 pm</p>
+        <p>
+          <strong>Issue number</strong>
+          476</p>
+        <p>
+          <strong>loglow</strong> opened this issue on June 6, 2020 at 3:06 pm</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
-          
-            <span class="label"><a href="../label/2036763229.html">stale</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/1921151980.html">Data quality</a>
+              </span>
+            
+              <span class="label">
+                <a href="../label/2036763229.html">stale</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/476" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p><strong>State or US</strong>: US</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/476" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p><strong>State or US</strong>: US</p>
 <p><strong>Describe the problem</strong>
 <code>https://covidtracking.com/api/v1/us/daily.json</code>
 <code>&quot;date&quot;:20200604</code>
 <code>&quot;hospitalizedIncrease&quot;:-2828</code></p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+            <strong>loglow</strong> added the label <span class="label">Data quality</span> on June 6, 2020 at 3:06 pm
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-640126066">
           <div class="frontmatter">
-            <div><strong>qpmnguyen</strong> commented on June 6, 2020 at 5:26 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/476#issuecomment-640126066" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>qpmnguyen</strong> commented on June 6, 2020 at 3:26 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/476#issuecomment-640126066" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Hi <strong>@loglow</strong>!</p>
+            <p>Hi <strong>@loglow</strong>!</p>
 <p>The decrease in new hospitalizations on 06/04 was driven mainly by CT, where a reporting change decreased the number of cumulative hospitalization the state reports. Specifically, the report stated that: “Starting on May 29, CHA changed to only reporting the number of patients with laboratory-confirmed COVID-19; data for previous dates include patients with laboratory-confirmed or suspected COVID-19.”</p>
 <p>The report can be viewed here: <a href="https://portal.ct.gov/-/media/Coronavirus/CTDPHCOVID19summary6042020.pdf">https://portal.ct.gov/-/media/Coronavirus/CTDPHCOVID19summary6042020.pdf</a></p>
 <p>I’m going to close this for now. Please reopen if there are any additional issues!</p>
@@ -166,36 +199,83 @@ table th {
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>qpmnguyen</strong> closed the issue on June 6, 2020 at 3:26 pm
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-640127295">
           <div class="frontmatter">
-            <div><strong>loglow</strong> commented on June 6, 2020 at 5:40 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/476#issuecomment-640127295" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>loglow</strong> commented on June 6, 2020 at 3:40 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/476#issuecomment-640127295" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>This seems like a situation where the larger previously reported number should continue to be used and carried forward until it is eclipsed by the new reporting criteria.</p>
+            <p>This seems like a situation where the larger previously reported number should continue to be used and carried forward until it is eclipsed by the new reporting criteria.</p>
 <p>A negative number in this dataset is confusing and nonsensical.</p>
 
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-640127554">
           <div class="frontmatter">
-            <div><strong>loglow</strong> commented on June 6, 2020 at 5:43 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/476#issuecomment-640127554" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>loglow</strong> commented on June 6, 2020 at 3:43 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/476#issuecomment-640127554" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>I don’t see any way to reopen this issue, perhaps I don’t have permission to do so. If I don’t hear anything back, I’ll probably open a new issue with my above reply.</p>
+            <p>I don’t see any way to reopen this issue, perhaps I don’t have permission to do so. If I don’t hear anything back, I’ll probably open a new issue with my above reply.</p>
 
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-640242194">
           <div class="frontmatter">
-            <div><strong>qpmnguyen</strong> commented on June 7, 2020 at 11:13 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/476#issuecomment-640242194" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>qpmnguyen</strong> commented on June 7, 2020 at 9:13 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/476#issuecomment-640242194" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>I can reopen the issue!</p>
+            <p>I can reopen the issue!</p>
 <p>This is a bit more complicated than what I can handle right now on Github. Here are some quick personal thoughts:</p>
 <p>So far our principle is that we’ll always revise down (with good reason) and take a hit so that our future numbers for each state can be more updated and accurate. Sure we can wait for the numbers to climb up by ~4k, but that means possibly weeks where our numbers won’t be reflective of what a state reports, and we would lose possibly some important day-to-day changes in the short term.</p>
 <p>However, this is a principle-level change so I’ll bring the conversation to the other leads. If you’re still on the slack, feel free to join!</p>
@@ -204,41 +284,93 @@ table th {
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+          
+          
+            <strong>qpmnguyen</strong> reopened this on June 7, 2020 at 9:13 am
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-640344773">
           <div class="frontmatter">
-            <div><strong>loglow</strong> commented on June 7, 2020 at 10:36 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/476#issuecomment-640344773" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>loglow</strong> commented on June 7, 2020 at 8:36 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/476#issuecomment-640344773" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>New hospitalizations have been in the range of 1000-2000 per day, so I would think it would take no more than 1-2 days for the reported numbers to catch up.</p>
-
-          </div>
-        </div>
-      
-        <div class="comment" id="issuecomment-647893973">
-          <div class="frontmatter">
-            <div><strong>stale[bot]</strong> commented on June 22, 2020 at 11:03 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/476#issuecomment-647893973" target="_blank">Open in Github</a></div>
-          </div>
-          <div class="body">
-          <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
-
-          </div>
-        </div>
-      
-        <div class="comment" id="issuecomment-653337823">
-          <div class="frontmatter">
-            <div><strong>stale[bot]</strong> commented on July 2, 2020 at 11:23 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/476#issuecomment-653337823" target="_blank">Open in Github</a></div>
-          </div>
-          <div class="body">
-          <p>This issue has been closed because it was stale for 15 days, and there was no further activity on it for 10 days. You can feel free to re-open it if the issue is important, and label it as “not stale.”</p>
+            <p>New hospitalizations have been in the range of 1000-2000 per day, so I would think it would take no more than 1-2 days for the reported numbers to catch up.</p>
 
           </div>
         </div>
       
     
+      
+        <div class="comment" id="issuecomment-647893973">
+          <div class="frontmatter">
+            <div>
+              <strong>stale[bot]</strong> commented on June 22, 2020 at 9:03 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/476#issuecomment-647893973" target="_blank">Open in Github</a>
+            </div>
+          </div>
+          <div class="body">
+            <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
+
+          </div>
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+            <strong>stale[bot]</strong> added the label <span class="label">stale</span> on June 22, 2020 at 9:03 pm
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="comment" id="issuecomment-653337823">
+          <div class="frontmatter">
+            <div>
+              <strong>stale[bot]</strong> commented on July 2, 2020 at 9:23 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/476#issuecomment-653337823" target="_blank">Open in Github</a>
+            </div>
+          </div>
+          <div class="body">
+            <p>This issue has been closed because it was stale for 15 days, and there was no further activity on it for 10 days. You can feel free to re-open it if the issue is important, and label it as “not stale.”</p>
+
+          </div>
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>stale[bot]</strong> closed the issue on July 2, 2020 at 9:23 pm
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

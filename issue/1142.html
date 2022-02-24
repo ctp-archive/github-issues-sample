@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,33 +134,39 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 1142</p>
-        <p><strong>hmhoffman</strong> opened this issue on April 6, 2021 at 11:56 am</p>
+        <p>
+          <strong>Issue number</strong>
+          1142</p>
+        <p>
+          <strong>hmhoffman</strong> opened this issue on April 6, 2021 at 9:56 am</p>
         
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1142" target="_blank">Open in Github</a>
-        </div>
       </div>
-      <div class="body">
-        <p><strong>State:</strong> OR</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1142" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p><strong>State:</strong> OR</p>
 <p><strong>Dates affected:</strong> 10/31/20 (OR was later put on a one-day lag)</p>
 <p><strong>Describe the issue:</strong> On October 30, 2020, we recorded Oregon’s Cases (confirmed + probable) as 44389, per the state page. On October 31, the state changed this number to 44388. We are updating our timeseries as well to ensure that our data matches the states as closely as possible.</p>
 <p><strong>Screenshot links:</strong> <a href="https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/OR/OR-20201031-004125.png">https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/OR/OR-20201031-004125.png</a>
 <a href="https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/OR/OR-20201030-184109.png">https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/OR/OR-20201030-184109.png</a></p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
       
         <div class="comment" id="issuecomment-814277881">
           <div class="frontmatter">
-            <div><strong>hmhoffman</strong> commented on April 6, 2021 at 11:57 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1142#issuecomment-814277881" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>hmhoffman</strong> commented on April 6, 2021 at 9:57 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1142#issuecomment-814277881" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Rows edited: 1
+            <p>Rows edited: 1
 OR 2020-10-31
 positive: 44388 (was 44389)</p>
 
@@ -160,7 +174,20 @@ positive: 44388 (was 44389)</p>
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>hmhoffman</strong> closed the issue on April 6, 2021 at 9:57 am
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

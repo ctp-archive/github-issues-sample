@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,22 +134,32 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 904</p>
-        <p><strong>the-daniel-lin</strong> opened this issue on October 20, 2020 at 12:45 pm</p>
+        <p>
+          <strong>Issue number</strong>
+          904</p>
+        <p>
+          <strong>the-daniel-lin</strong> opened this issue on October 20, 2020 at 10:45 am</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
-          
-            <span class="label"><a href="../label/2162087998.html">Backfill</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/1921151980.html">Data quality</a>
+              </span>
+            
+              <span class="label">
+                <a href="../label/2162087998.html">Backfill</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/904" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p><strong>State or US</strong>: Missouri</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/904" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p><strong>State or US</strong>: Missouri</p>
 <p><strong>Describe the problem</strong>
 On 9/28, Missouri updated their dashboard. This new dashboard did not report current hospitalization numbers, so we carried over the value for 7 days. As per CTP policy, we stopped carrying over the current hospitalization value after 7 days. On 10/8, MO returned the value to their dashboard, and we have captured ever since.</p>
 <p>Backfilling the days we missed, using the hover-over graph labeled “COVID-19 Total Patients in the Hospital by Day” on the MO website, under the <a href="https://showmestrong.mo.gov/public-healthcare/">Detail: Healthcare System</a> tab.</p>
@@ -158,37 +176,82 @@ On 9/28, Missouri updated their dashboard. This new dashboard did not report cur
 9/30: 1171
 9/29: 1219</p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+            <strong>the-daniel-lin</strong> added the label <span class="label">Data quality</span> on October 20, 2020 at 10:45 am
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+            <strong>the-daniel-lin</strong> added the label <span class="label">Backfill</span> on October 20, 2020 at 10:45 am
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-713032988">
           <div class="frontmatter">
-            <div><strong>the-daniel-lin</strong> commented on October 20, 2020 at 12:50 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/904#issuecomment-713032988" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>the-daniel-lin</strong> commented on October 20, 2020 at 10:50 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/904#issuecomment-713032988" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>BEFORE:
+            <p>BEFORE:
 <img src="../assets/images/github/67408226/96624798-1deda100-12c2-11eb-9a62-86f061a0a5c7.png" alt="image"></p>
 
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-713033595">
           <div class="frontmatter">
-            <div><strong>the-daniel-lin</strong> commented on October 20, 2020 at 12:51 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/904#issuecomment-713033595" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>the-daniel-lin</strong> commented on October 20, 2020 at 10:51 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/904#issuecomment-713033595" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>AFTER:
+            <p>AFTER:
 <img src="../assets/images/github/67408226/96624887-437aaa80-12c2-11eb-99f6-7d953f435958.png" alt="image"></p>
 
           </div>
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>the-daniel-lin</strong> closed the issue on October 20, 2020 at 10:51 am
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

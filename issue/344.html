@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,36 +134,55 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 344</p>
-        <p><strong>edurxxx</strong> opened this issue on May 1, 2020 at 8:32 am</p>
+        <p>
+          <strong>Issue number</strong>
+          344</p>
+        <p>
+          <strong>edurxxx</strong> opened this issue on May 1, 2020 at 6:32 am</p>
         
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/344" target="_blank">Open in Github</a>
-        </div>
       </div>
-      <div class="body">
-        <p>Requesting <a href="https://covidtracking.com/api/v1/states/daily.json?state=MT">https://covidtracking.com/api/v1/states/daily.json?state=MT</a> returns date for all states instead of just Montana and requesting <a href="https://covidtracking.com/api/states?state=MT">https://covidtracking.com/api/states?state=MT</a> redirects to <a href="https://covidtracking.com/api/v1/states/PA/current.json?state=PA">https://covidtracking.com/api/v1/states/PA/current.json?state=PA</a> instead of Montana</p>
-
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/344" target="_blank">Open in Github</a>
       </div>
     </div>
+    <div class="body">
+      <p>Requesting <a href="https://covidtracking.com/api/v1/states/daily.json?state=MT">https://covidtracking.com/api/v1/states/daily.json?state=MT</a> returns date for all states instead of just Montana and requesting <a href="https://covidtracking.com/api/states?state=MT">https://covidtracking.com/api/states?state=MT</a> redirects to <a href="https://covidtracking.com/api/v1/states/PA/current.json?state=PA">https://covidtracking.com/api/v1/states/PA/current.json?state=PA</a> instead of Montana</p>
+
+    </div>
+  </div>
+  
     
-      <h2>Comments</h2>
       
         <div class="comment" id="issuecomment-622411075">
           <div class="frontmatter">
-            <div><strong>kevee</strong> commented on May 1, 2020 at 9:30 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/344#issuecomment-622411075" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>kevee</strong> commented on May 1, 2020 at 7:30 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/344#issuecomment-622411075" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>The format for individual state requests is:</p>
+            <p>The format for individual state requests is:</p>
 <p><a href="https://covidtracking.com/api/v1/states/mt/daily.json">https://covidtracking.com/api/v1/states/mt/daily.json</a></p>
 
           </div>
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>kevee</strong> closed the issue on May 1, 2020 at 7:30 am
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

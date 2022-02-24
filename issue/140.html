@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,16 +134,19 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 140</p>
-        <p><strong>ammo888</strong> opened this issue on April 4, 2020 at 5:26 pm</p>
+        <p>
+          <strong>Issue number</strong>
+          140</p>
+        <p>
+          <strong>ammo888</strong> opened this issue on April 4, 2020 at 3:26 pm</p>
         
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/140" target="_blank">Open in Github</a>
-        </div>
       </div>
-      <div class="body">
-        <p>The number of states, positive, negative, and most of other values are off by multiple of 4:</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/140" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p>The number of states, positive, negative, and most of other values are off by multiple of 4:</p>
 <p><a href="https://covidtracking.com/api/us/daily">https://covidtracking.com/api/us/daily</a></p>
 <pre><code class="language-json">{
     &quot;date&quot;: 20200404,
@@ -165,18 +176,21 @@ table th {
 }
 </code></pre>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
       
         <div class="comment" id="issuecomment-609422139">
           <div class="frontmatter">
-            <div><strong>careeningspace</strong> commented on April 5, 2020 at 9:07 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/140#issuecomment-609422139" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>careeningspace</strong> commented on April 5, 2020 at 7:07 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/140#issuecomment-609422139" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Hello,</p>
+            <p>Hello,</p>
 <p>We had a temporary publishing glitch where more and more results were pushed to the website. This has been fixed.</p>
 <p>Thanks</p>
 
@@ -184,7 +198,20 @@ table th {
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>careeningspace</strong> closed the issue on April 5, 2020 at 7:07 am
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

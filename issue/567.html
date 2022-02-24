@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,37 +134,60 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 567</p>
-        <p><strong>muamichali</strong> opened this issue on July 2, 2020 at 7:47 am</p>
+        <p>
+          <strong>Issue number</strong>
+          567</p>
+        <p>
+          <strong>muamichali</strong> opened this issue on July 2, 2020 at 5:47 am</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/1921151980.html">Data quality</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/567" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p><strong>State or US</strong>: California</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/567" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p><strong>State or US</strong>: California</p>
 <p><strong>Describe the problem</strong>
 On 7/1 CA reported ~9k tests;, but  actually some were from yesterday, some from the day before that etc.</p>
 <p><strong>Link to data source</strong>
 <img src="../assets/images/github/1749380/86360510-7da33c00-bc40-11ea-9214-267872b6455e.png" alt="image"></p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+            <strong>muamichali</strong> added the label <span class="label">Data quality</span> on July 2, 2020 at 5:47 am
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-653175249">
           <div class="frontmatter">
-            <div><strong>space-buzzer</strong> commented on July 2, 2020 at 2:07 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/567#issuecomment-653175249" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>space-buzzer</strong> commented on July 2, 2020 at 12:07 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/567#issuecomment-653175249" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>We have 5 values that differ between what’s currently reported by the state of California and CTPs data.</p>
+            <p>We have 5 values that differ between what’s currently reported by the state of California and CTPs data.</p>
 <table>
 <thead>
 <tr>
@@ -213,24 +244,34 @@ On 7/1 CA reported ~9k tests;, but  actually some were from yesterday, some from
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-653313579">
           <div class="frontmatter">
-            <div><strong>space-buzzer</strong> commented on July 2, 2020 at 10:04 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/567#issuecomment-653313579" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>space-buzzer</strong> commented on July 2, 2020 at 8:04 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/567#issuecomment-653313579" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>The numbers keep changing, we can patch now and repeat later, as needed. I don’t know whether it’s a process change from what they’ve been doing</p>
+            <p>The numbers keep changing, we can patch now and repeat later, as needed. I don’t know whether it’s a process change from what they’ve been doing</p>
 
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-660251940">
           <div class="frontmatter">
-            <div><strong>space-buzzer</strong> commented on July 17, 2020 at 12:47 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/567#issuecomment-660251940" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>space-buzzer</strong> commented on July 17, 2020 at 10:47 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/567#issuecomment-660251940" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>This stabilized now, so we’ll backfill with the numbers displayed on the dashboard now.</p>
+            <p>This stabilized now, so we’ll backfill with the numbers displayed on the dashboard now.</p>
 <p>The fields that changed are: <code>Positive Cases (PCR)</code>,<code>Positive</code>, <code>Negative</code></p>
 <p>2020-07-05 | 260155 | 265985 |  
 – | – | – | –
@@ -246,7 +287,20 @@ On 7/1 CA reported ~9k tests;, but  actually some were from yesterday, some from
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>space-buzzer</strong> closed the issue on July 17, 2020 at 11:05 am
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

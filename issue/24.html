@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,42 +134,98 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 24</p>
-        <p><strong>eric-czech</strong> opened this issue on March 20, 2020 at 7:41 am</p>
+        <p>
+          <strong>Issue number</strong>
+          24</p>
+        <p>
+          <strong>eric-czech</strong> opened this issue on March 20, 2020 at 5:41 am</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/1921151980.html">Data quality</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/24" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p>I noticed that the SC counts didn’t update last night (<a href="https://covidtracking.com/data/state/south-carolina/">https://covidtracking.com/data/state/south-carolina/</a>):</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/24" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p>I noticed that the SC counts didn’t update last night (<a href="https://covidtracking.com/data/state/south-carolina/">https://covidtracking.com/data/state/south-carolina/</a>):</p>
 <p><img src="../assets/images/github/6130352/77164033-c7975600-6a85-11ea-8f1b-c4ebd0614cf0.png" alt="Screen Shot 2020-03-20 at 8 35 05 AM"></p>
 <p>Is there some way to verify that this was due to the underlying source (currently <a href="https://scdhec.gov/monitoring-testing-covid-19">https://scdhec.gov/monitoring-testing-covid-19</a>) not updating rather than some collection bug?</p>
 <p>Similarly, is it possible to get a sense of how often underlying source pages are changing?  I’m not sure if the SC monitoring page is being updated multiple times daily or not, and I thought something collected by the current crawlers might give me that sense.</p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+            <strong>eric-czech</strong> added the label <span class="label">Data quality</span> on March 20, 2020 at 5:41 am
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-601695460">
           <div class="frontmatter">
-            <div><strong>hammer</strong> commented on March 20, 2020 at 8:17 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/24#issuecomment-601695460" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>hammer</strong> commented on March 20, 2020 at 6:17 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/24#issuecomment-601695460" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p><strong>@eric-czech</strong> the current count for SC is 81 so looks like this was due to either SC reporting late or us not checking it near enough to 4 pm. It’s an acknowledged caveat with our data: <a href="https://covidtracking.com/newsroom-expert-faq">https://covidtracking.com/newsroom-expert-faq</a>. We do keep a log of each time a state has been checked, so we could conceivably generate a report on which states update multiple times per day, but that’s not something we do currently nor do we plan to do it soon.</p>
+            <p><strong>@eric-czech</strong> the current count for SC is 81 so looks like this was due to either SC reporting late or us not checking it near enough to 4 pm. It’s an acknowledged caveat with our data: <a href="https://covidtracking.com/newsroom-expert-faq">https://covidtracking.com/newsroom-expert-faq</a>. We do keep a log of each time a state has been checked, so we could conceivably generate a report on which states update multiple times per day, but that’s not something we do currently nor do we plan to do it soon.</p>
 
           </div>
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>hammer</strong> closed the issue on March 20, 2020 at 6:17 am
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

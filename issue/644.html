@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,34 +134,57 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 644</p>
-        <p><strong>brianskli</strong> opened this issue on July 17, 2020 at 7:37 pm</p>
+        <p>
+          <strong>Issue number</strong>
+          644</p>
+        <p>
+          <strong>brianskli</strong> opened this issue on July 17, 2020 at 5:37 pm</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/1937937334.html">Historical Data</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/1937937334.html">Historical Data</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/644" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p>Hosp and ICU are typically sourced from the patient census table, but it appears as though these values were sourced from elsewhere on 6/21, interrupting the time-series.</p>
-<p><img src="https://frontapp.com/assets/img/favicons/favicon-32x32.png" height="16" width="16" alt="Front logo" /> <a href="https://app.frontapp.com/open/top_26fkh">Front conversations</a></p>
-
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/644" target="_blank">Open in Github</a>
       </div>
     </div>
+    <div class="body">
+      <p>Hosp and ICU are typically sourced from the patient census table, but it appears as though these values were sourced from elsewhere on 6/21, interrupting the time-series.</p>
+<p><img src="https://frontapp.com/assets/img/favicons/favicon-32x32.png" height="16" width="16" alt="Front logo" /> <a href="https://app.frontapp.com/open/top_26fkh">Front conversations</a></p>
+
+    </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+            <strong>brianskli</strong> added the label <span class="label">Historical Data</span> on July 17, 2020 at 5:37 pm
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-660396552">
           <div class="frontmatter">
-            <div><strong>brianskli</strong> commented on July 17, 2020 at 7:54 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/644#issuecomment-660396552" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>brianskli</strong> commented on July 17, 2020 at 5:54 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/644#issuecomment-660396552" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Upon reviewing screenshots, numbers from the patient census were used: <a href="https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/MI/MI-secondary-20200621-183853.png">https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/MI/MI-secondary-20200621-183853.png</a>
+            <p>Upon reviewing screenshots, numbers from the patient census were used: <a href="https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/MI/MI-secondary-20200621-183853.png">https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/MI/MI-secondary-20200621-183853.png</a>
 After:
 <img width="768" alt="After" src="../assets/images/github/66738237/87840829-a1d16080-c86f-11ea-81dd-d539aa596b03.png">
 Before:
@@ -162,13 +193,52 @@ Before:
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>brianskli</strong> closed the issue on July 17, 2020 at 5:54 pm
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+            <strong>brianskli</strong> reopened this on July 17, 2020 at 6:12 pm
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-660402781">
           <div class="frontmatter">
-            <div><strong>brianskli</strong> commented on July 17, 2020 at 8:33 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/644#issuecomment-660402781" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>brianskli</strong> commented on July 17, 2020 at 6:33 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/644#issuecomment-660402781" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>A second look was taken at 6/15-/30. Fixed using screenshots of the patient census table.
+            <p>A second look was taken at 6/15-/30. Fixed using screenshots of the patient census table.
 Other issues found: Inaccurate vents on 6/21 (298 -&gt; 209)
 Before:
 <img width="599" alt="MIBefore" src="../assets/images/github/66738237/87841690-338f9c80-c875-11ea-8e02-85a587baa41b.png">
@@ -179,7 +249,20 @@ After:
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>brianskli</strong> closed the issue on July 17, 2020 at 6:33 pm
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

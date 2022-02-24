@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,26 +134,40 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 726</p>
-        <p><strong>brianskli</strong> opened this issue on August 3, 2020 at 8:59 am</p>
+        <p>
+          <strong>Issue number</strong>
+          726</p>
+        <p>
+          <strong>brianskli</strong> opened this issue on August 3, 2020 at 6:59 am</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/1937937334.html">Historical Data</a></span>
-          
-            <span class="label"><a href="../label/2036763438.html">not stale</a></span>
-          
-            <span class="label"><a href="../label/2158480839.html">PCL/SVP Historicals</a></span>
-          
-            <span class="label"><a href="../label/2199367619.html">Missing Data</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/1937937334.html">Historical Data</a>
+              </span>
+            
+              <span class="label">
+                <a href="../label/2036763438.html">not stale</a>
+              </span>
+            
+              <span class="label">
+                <a href="../label/2158480839.html">PCL/SVP Historicals</a>
+              </span>
+            
+              <span class="label">
+                <a href="../label/2199367619.html">Missing Data</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/726" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p><strong>State or US</strong>: New Hampshire</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/726" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p><strong>State or US</strong>: New Hampshire</p>
 <p><strong>Describe the problem</strong>
 5/13 Positive Cases is lower than surrounding days
 Screenshots definitions for positives alternate between “presumptive-positive and CDC confirmed” and “CDC confirmed” only (e.g. 5/10-13), requiring review, especially before 4/29</p>
@@ -153,18 +175,79 @@ Screenshots definitions for positives alternate between “presumptive-positive 
 <a href="https://www.nh.gov/covid19/">https://www.nh.gov/covid19/</a>
 <a href="http://covid-tracking-project-data.s3-website.us-east-1.amazonaws.com/state_screenshots/NH/">http://covid-tracking-project-data.s3-website.us-east-1.amazonaws.com/state_screenshots/NH/</a></p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+            <strong>brianskli</strong> added the label <span class="label">Historical Data</span> on August 3, 2020 at 6:59 am
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+            <strong>brianskli</strong> added the label <span class="label">not stale</span> on August 3, 2020 at 6:59 am
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+            <strong>brianskli</strong> added the label <span class="label">PCL/SVP Historicals</span> on August 3, 2020 at 6:59 am
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+            <strong>brianskli</strong> added the label <span class="label">Missing Data</span> on August 3, 2020 at 6:59 am
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-691345271">
           <div class="frontmatter">
-            <div><strong>MattHilliard</strong> commented on September 11, 2020 at 5:55 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/726#issuecomment-691345271" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>MattHilliard</strong> commented on September 11, 2020 at 3:55 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/726#issuecomment-691345271" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p><img src="../assets/images/github/404503/92979150-cad13480-f45f-11ea-90be-30471c3d68f6.png" alt="image">
+            <p><img src="../assets/images/github/404503/92979150-cad13480-f45f-11ea-90be-30471c3d68f6.png" alt="image">
 Spent a while looking at this. Some preliminary conclusions:</p>
 <ul>
 <li>The 5/13 and 5/14 numbers for Positive Cases (PCR) are clearly not from the same dataset. In the screenshot, the 5/13 positive cases (PCR) number (1863) is the number of “current cases” (e.g. unrecovered) which seems like a data entry error. I don’t know where the 5/14 number comes from; it’s not in the screenshot.</li>
@@ -180,24 +263,64 @@ Spent a while looking at this. Some preliminary conclusions:</p>
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-691346761">
           <div class="frontmatter">
-            <div><strong>MattHilliard</strong> commented on September 11, 2020 at 6:01 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/726#issuecomment-691346761" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>MattHilliard</strong> commented on September 11, 2020 at 4:01 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/726#issuecomment-691346761" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Small note, looks like the 5/14 number came from a “Weekly Report” that data entry was using for hospitalization numbers. Unfortunately this was an old value from more than a week prior, but after the mistake the previous day, perhaps it seemed plausible since it was an increase.</p>
+            <p>Small note, looks like the 5/14 number came from a “Weekly Report” that data entry was using for hospitalization numbers. Unfortunately this was an old value from more than a week prior, but after the mistake the previous day, perhaps it seemed plausible since it was an increase.</p>
 
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-703116117">
           <div class="frontmatter">
-            <div><strong>MattHilliard</strong> commented on October 3, 2020 at 9:55 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/726#issuecomment-703116117" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>MattHilliard</strong> commented on October 3, 2020 at 7:55 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/726#issuecomment-703116117" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>After discussion on the backfill team, we decided to be conservative and repair the clearly incorrect data from 5/10 through 5/15 in the Positive Cases (PCR) column but not copy the longer history of the Positives column.</p>
+            <p>After discussion on the backfill team, we decided to be conservative and repair the clearly incorrect data from 5/10 through 5/15 in the Positive Cases (PCR) column but not copy the longer history of the Positives column.</p>
 <p>Before:
 <img src="../assets/images/github/404503/94994593-946e6d00-0566-11eb-97a3-e844405d0030.png" alt="image"></p>
 <p>After:
@@ -207,7 +330,30 @@ Spent a while looking at this. Some preliminary conclusions:</p>
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>MattHilliard</strong> closed the issue on October 3, 2020 at 7:55 am
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

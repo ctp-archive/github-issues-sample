@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,20 +134,28 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 568</p>
-        <p><strong>sacundim</strong> opened this issue on July 2, 2020 at 3:40 pm</p>
+        <p>
+          <strong>Issue number</strong>
+          568</p>
+        <p>
+          <strong>sacundim</strong> opened this issue on July 2, 2020 at 1:40 pm</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/1921151980.html">Data quality</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/568" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p><strong>State or US</strong>: Puerto Rico</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/568" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p><strong>State or US</strong>: Puerto Rico</p>
 <p><strong>Describe the problem</strong></p>
 <p>Since Puerto Rico’s Department of Health doesn’t publish tests data regularly, and when it does it doesn’t do so in any manner or medium that’s amenable to automatic capture, the testing data in the Project for Puerto Rico is very sorely out of date, leading to <a href="https://coronavirus.jhu.edu/testing/testing-positivity">reports that show, for example, Puerto Rico’s COVID-19 positive test rate at 100%</a> which then <a href="https://www.metro.pr/pr/noticias/2020/07/02/puerto-rico-tiene-la-mayor-tasa-de-casos-positivos-de-coronavirus-en-estados-unidos.html">get picked up by the press</a>.</p>
 <p>I have been manually compiling a set of the official data that has been available. The official reports linked below are shared with some journalists by the Department of Health, with no appreciable schedule. These journalists tweet images of these reports out, which I have collected and copied their data into a CSV (also linked) over at my repo for my Puerto Rico data project:</p>
@@ -157,46 +173,174 @@ table th {
 </ul>
 <p>While there is no evident path to automating the capture of this data, even a small one-time manual update to your numbers would likely avoid some modest amount of public misinformation.</p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+            <strong>sacundim</strong> added the label <span class="label">Data quality</span> on July 2, 2020 at 1:40 pm
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-654990076">
           <div class="frontmatter">
-            <div><strong>MattHilliard</strong> commented on July 7, 2020 at 11:49 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/568#issuecomment-654990076" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>MattHilliard</strong> commented on July 7, 2020 at 9:49 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/568#issuecomment-654990076" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p><strong>@sacundim</strong>, thank you for bringing this to our attention! I’ve updated our historical data based on these five data points. It should be visible on the web site within an hour. Hopefully we can get a more reliable official source at some point, but in the meantime if you catch more things like this, please don’t hesitate to open more Github issues!</p>
+            <p><strong>@sacundim</strong>, thank you for bringing this to our attention! I’ve updated our historical data based on these five data points. It should be visible on the web site within an hour. Hopefully we can get a more reliable official source at some point, but in the meantime if you catch more things like this, please don’t hesitate to open more Github issues!</p>
 
           </div>
         </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>MattHilliard</strong> closed the issue on July 7, 2020 at 9:49 am
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-655193892">
           <div class="frontmatter">
-            <div><strong>muamichali</strong> commented on July 7, 2020 at 6:35 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/568#issuecomment-655193892" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>muamichali</strong> commented on July 7, 2020 at 4:35 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/568#issuecomment-655193892" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p><strong>@sacundim</strong> would you kindly share with us the twitter handles of the journalists that post this info so we can follow them as well?</p>
+            <p><strong>@sacundim</strong> would you kindly share with us the twitter handles of the journalists that post this info so we can follow them as well?</p>
 
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-655415928">
           <div class="frontmatter">
-            <div><strong>sacundim</strong> commented on July 8, 2020 at 4:51 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/568#issuecomment-655415928" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>sacundim</strong> commented on July 8, 2020 at 2:51 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/568#issuecomment-655415928" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p><strong>@muamichali</strong> The two journalists I follow who post these on Twitter are <strong>@angelicaserran0</strong> and <strong>@</strong>RobbyCortes.</p>
+            <p><strong>@muamichali</strong> The two journalists I follow who post these on Twitter are <strong>@angelicaserran0</strong> and <strong>@</strong>RobbyCortes.</p>
 
           </div>
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
         </div>
       
     
   
+
 </main>
   </body>
 </html>

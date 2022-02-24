@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,16 +134,19 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 243</p>
-        <p><strong>camille-le</strong> opened this issue on April 20, 2020 at 10:48 pm</p>
+        <p>
+          <strong>Issue number</strong>
+          243</p>
+        <p>
+          <strong>camille-le</strong> opened this issue on April 20, 2020 at 8:48 pm</p>
         
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/243" target="_blank">Open in Github</a>
-        </div>
       </div>
-      <div class="body">
-        <p>Hello, reporting a change in MA’s count for hospitalized. They are now including suspected and confirmed.</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/243" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p>Hello, reporting a change in MA’s count for hospitalized. They are now including suspected and confirmed.</p>
 <ul>
 <li>Prior to 4/13 only confirmed cases were included in the hospitalization count data</li>
 <li>Starting 4/13 both confirmed and suspected cases are included</li>
@@ -146,31 +157,10 @@ table th {
 <p>Thanks!
 Camille</p>
 
-      </div>
     </div>
-    
-      <h2>Comments</h2>
-      
-        <div class="comment" id="issuecomment-617473182">
-          <div class="frontmatter">
-            <div><strong>muamichali</strong> commented on April 21, 2020 at 7:05 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/243#issuecomment-617473182" target="_blank">Open in Github</a></div>
-          </div>
-          <div class="body">
-          <p>Source PDF
-<img width="991" alt="MA Hospitalizations Source" src="../assets/images/github/1749380/79926591-52fc6200-840b-11ea-8674-e06a9ce08acf.png"></p>
-<p>MA Hosp Before
-<img width="404" alt="MA Hospitalizations Before" src="../assets/images/github/1749380/79926609-5c85ca00-840b-11ea-94ea-48fb9d5a434d.png"></p>
-<p>MA Hosp After
-<img width="357" alt="MA Hospitzalitions After" src="../assets/images/github/1749380/79926620-61e31480-840b-11ea-98ec-f247d05a6a1f.png"></p>
-<p>Hi Camille,
-The spreadsheet was updated based on the data in the PDF. I am assigning to AFG to double check before closing the ticket.</p>
-
-          </div>
-        </div>
-      
-    
+  </div>
   
+
 </main>
   </body>
 </html>

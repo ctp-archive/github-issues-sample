@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,35 +134,46 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 222</p>
-        <p><strong>BrianSublett</strong> opened this issue on April 18, 2020 at 11:22 pm</p>
+        <p>
+          <strong>Issue number</strong>
+          222</p>
+        <p>
+          <strong>BrianSublett</strong> opened this issue on April 18, 2020 at 9:22 pm</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/1921151980.html">Data quality</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/222" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p>Why do the number of U.S. deaths on your Covid19 Tracking site differ so much from the Johns Hopkins Coronavirus site?  For today (4-18-20) your site reports 34,139 U.S. deaths, while the Johns Hopkins site reports 38,910 U.S. deaths.  I’ve been watching them both and they seem to have matched fairly well until about 2 days ago.
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/222" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p>Why do the number of U.S. deaths on your Covid19 Tracking site differ so much from the Johns Hopkins Coronavirus site?  For today (4-18-20) your site reports 34,139 U.S. deaths, while the Johns Hopkins site reports 38,910 U.S. deaths.  I’ve been watching them both and they seem to have matched fairly well until about 2 days ago.
 Johns Hopkins Coronavirus site:
 <a href="https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6">https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6</a></p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
       
         <div class="comment" id="issuecomment-616140604">
           <div class="frontmatter">
-            <div><strong>muamichali</strong> commented on April 19, 2020 at 8:55 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/222#issuecomment-616140604" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>muamichali</strong> commented on April 19, 2020 at 6:55 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/222#issuecomment-616140604" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Hi Brian,</p>
+            <p>Hi Brian,</p>
 <p>The reason for the discrepancy is that NYC on 4/14 added more than 3700 presumed deaths retroactively to its deaths count.
 <a href="https://www.reuters.com/article/us-health-coronavirus-usa-idUSKCN21W20G">https://www.reuters.com/article/us-health-coronavirus-usa-idUSKCN21W20G</a></p>
 <p>We have not yet added these presumed historical deaths into our reports.</p>
@@ -162,24 +181,34 @@ Johns Hopkins Coronavirus site:
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-616215223">
           <div class="frontmatter">
-            <div><strong>sincav87</strong> commented on April 19, 2020 at 2:54 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/222#issuecomment-616215223" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>sincav87</strong> commented on April 19, 2020 at 12:54 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/222#issuecomment-616215223" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Thank you for “qualifying” this data and keeping it segregated for now.  What will the standard be to include it, or not?  You might also question the Positive Case numbers for NYC as well since there is mounting evidence that several NY hospitals are indiscriminately using the unique CDC-issued “Covid-19” code.  It’s difficult to find these number reliable when U.S. Medicare and CARES Act funding is tied to Covid-19 patient load.  It could be 1-2 years before any of these numbers are audited.  You might qualify that in your reporting as well.  Kevin Sincavage, Emerson NJ</p>
+            <p>Thank you for “qualifying” this data and keeping it segregated for now.  What will the standard be to include it, or not?  You might also question the Positive Case numbers for NYC as well since there is mounting evidence that several NY hospitals are indiscriminately using the unique CDC-issued “Covid-19” code.  It’s difficult to find these number reliable when U.S. Medicare and CARES Act funding is tied to Covid-19 patient load.  It could be 1-2 years before any of these numbers are audited.  You might qualify that in your reporting as well.  Kevin Sincavage, Emerson NJ</p>
 
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-617272626">
           <div class="frontmatter">
-            <div><strong>muamichali</strong> commented on April 21, 2020 at 11:35 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/222#issuecomment-617272626" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>muamichali</strong> commented on April 21, 2020 at 9:35 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/222#issuecomment-617272626" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Thank you, Kevin.</p>
+            <p>Thank you, Kevin.</p>
 <p>NYC has been publishing a daily report of confirmed and suspected COVID deaths in Github. <a href="https://github.com/nychealth/coronavirus-data/blob/master/probable-confirmed-dod.csv">You can see it here. </a></p>
 <p>In recent days, states are starting to report confirmed as well as probable cases and also deaths. We are watching that development so we can continue to aggregate the most accurate and transparent information.</p>
 
@@ -187,7 +216,32 @@ Johns Hopkins Coronavirus site:
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>muamichali</strong> closed the issue on April 21, 2020 at 9:35 am
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+            <strong>muamichali</strong> added the label <span class="label">Data quality</span> on April 21, 2020 at 9:38 am
+          
+          
+          
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

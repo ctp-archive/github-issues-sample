@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,37 +134,60 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 1153</p>
-        <p><strong>muamichali</strong> opened this issue on April 16, 2021 at 12:47 pm</p>
+        <p>
+          <strong>Issue number</strong>
+          1153</p>
+        <p>
+          <strong>muamichali</strong> opened this issue on April 16, 2021 at 10:47 am</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/1921151980.html">Data quality</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1153" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p><strong>State or US</strong>:  Vermont</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1153" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p><strong>State or US</strong>:  Vermont</p>
 <p><strong>Describe the problem</strong>
 On December 4 through 6, we subtracted Positive cases (confirmed + probable) instead of Positive PCR tests (people) to calculate negatives in Vermont. This uses the correct values in calculation and fixes the 3 values based on Vermont’s reporting at the time.</p>
 <p><strong>Link to data source</strong>
 <a href="https://experience.arcgis.com/experience/85f43bd849e743cb957993a545d17170">https://experience.arcgis.com/experience/85f43bd849e743cb957993a545d17170</a></p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+            <strong>muamichali</strong> added the label <span class="label">Data quality</span> on April 16, 2021 at 10:47 am
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-822721807">
           <div class="frontmatter">
-            <div><strong>muamichali</strong> commented on April 19, 2021 at 2:19 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1153#issuecomment-822721807" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>muamichali</strong> commented on April 19, 2021 at 12:19 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1153#issuecomment-822721807" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Rows edited: 3
+            <p>Rows edited: 3
 VT 2020-12-06
 negative: 228996 (was 228865)
 VT 2020-12-05
@@ -168,7 +199,20 @@ negative: 225472 (was 225346)</p>
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>muamichali</strong> closed the issue on April 19, 2021 at 12:19 pm
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

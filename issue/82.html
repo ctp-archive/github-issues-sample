@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,50 +134,74 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 82</p>
-        <p><strong>vnminin</strong> opened this issue on March 30, 2020 at 1:02 am</p>
+        <p>
+          <strong>Issue number</strong>
+          82</p>
+        <p>
+          <strong>vnminin</strong> opened this issue on March 29, 2020 at 11:02 pm</p>
         
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/82" target="_blank">Open in Github</a>
-        </div>
       </div>
-      <div class="body">
-        <p>When I use the following R code:</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/82" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p>When I use the following R code:</p>
 <p><code>covid_us_data = read.csv(&quot;https://covidtracking.com/api/states/daily.csv&quot;, stringsAsFactors = FALSE)</code></p>
 <p><code>covid_as_data = dplyr::filter(covid_us_data, state==&quot;AS&quot;)</code></p>
 <p><code>covid_as_data</code> has no data.</p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
       
         <div class="comment" id="issuecomment-605803141">
           <div class="frontmatter">
-            <div><strong>hammer</strong> commented on March 30, 2020 at 1:14 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/82#issuecomment-605803141" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>hammer</strong> commented on March 29, 2020 at 11:14 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/82#issuecomment-605803141" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Ah, that’s because <code>AS</code> is <a href="https://en.wikipedia.org/wiki/American_Samoa">American Samoa</a>, and we have had a hard time finding data for it!</p>
+            <p>Ah, that’s because <code>AS</code> is <a href="https://en.wikipedia.org/wiki/American_Samoa">American Samoa</a>, and we have had a hard time finding data for it!</p>
 <p><code>AK</code> is Alaska and should have data 🤞.</p>
 
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-605805008">
           <div class="frontmatter">
-            <div><strong>vnminin</strong> commented on March 30, 2020 at 1:19 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/82#issuecomment-605805008" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>vnminin</strong> commented on March 29, 2020 at 11:19 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/82#issuecomment-605805008" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Oops. My bad</p>
+            <p>Oops. My bad</p>
 
           </div>
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>vnminin</strong> closed the issue on March 29, 2020 at 11:19 pm
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,42 +134,78 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 1063</p>
-        <p><strong>space-buzzer</strong> opened this issue on January 13, 2021 at 12:07 pm</p>
+        <p>
+          <strong>Issue number</strong>
+          1063</p>
+        <p>
+          <strong>space-buzzer</strong> opened this issue on January 13, 2021 at 10:07 am</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/1921151980.html">Data quality</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1063" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p><strong>Target Date:</strong> Entire time series
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1063" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p><strong>Target Date:</strong> Entire time series
 <strong>Overview:</strong> OR reports their daily numbers very later, which means that if we want to be on their schedule we need to backfill it daily (either in the evening or the following day). This is inconvenient and error-prone</p>
 <p>We’re moving their time series 1 day back in our dating and reporting. The actual date the state updates the data does not change, and remains in <code>lastUpdatedAt</code> field.</p>
 <p>No metrics and no values are changing due to this update</p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+            <strong>space-buzzer</strong> added the label <span class="label">Data quality</span> on January 13, 2021 at 10:07 am
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-759624981">
           <div class="frontmatter">
-            <div><strong>space-buzzer</strong> commented on January 13, 2021 at 12:09 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1063#issuecomment-759624981" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>space-buzzer</strong> commented on January 13, 2021 at 10:09 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1063#issuecomment-759624981" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Done in batch #764</p>
+            <p>Done in batch #764</p>
 
           </div>
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>space-buzzer</strong> closed the issue on January 13, 2021 at 11:55 am
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

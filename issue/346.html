@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,35 +134,68 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 346</p>
-        <p><strong>mathcoder3141</strong> opened this issue on May 1, 2020 at 10:56 pm</p>
+        <p>
+          <strong>Issue number</strong>
+          346</p>
+        <p>
+          <strong>mathcoder3141</strong> opened this issue on May 1, 2020 at 8:56 pm</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/1937937334.html">Historical Data</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/1937937334.html">Historical Data</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/346" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p>I noticed that the data for TX is the same for some of the fields in the JSON file. Looks like it is affecting the <code>positive</code>, <code>negative</code>, <code>death</code>, <code>recovered</code>, <code>total</code>, <code>PosNeg</code>, and the associated increases i.e., <code>deathIncrease</code>, <code>positiveIncrease</code> etc.</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/346" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p>I noticed that the data for TX is the same for some of the fields in the JSON file. Looks like it is affecting the <code>positive</code>, <code>negative</code>, <code>death</code>, <code>recovered</code>, <code>total</code>, <code>PosNeg</code>, and the associated increases i.e., <code>deathIncrease</code>, <code>positiveIncrease</code> etc.</p>
 <p>I’m doing some analysis and this data quality issue is causing me to do some manual work. This may be the same for other states as well. Can this be fixed?
 <img src="../assets/images/github/22652147/80854706-fdd90100-8bff-11ea-976b-1aa43036a0e7.png" alt="image"></p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+            <strong>muamichali</strong> added the label <span class="label">Historical Data</span> on May 2, 2020 at 5:27 am
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-622947210">
           <div class="frontmatter">
-            <div><strong>muamichali</strong> commented on May 2, 2020 at 7:37 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/346#issuecomment-622947210" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>muamichali</strong> commented on May 2, 2020 at 5:37 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/346#issuecomment-622947210" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Hi <strong>@mathcoder3141</strong>
+            <p>Hi <strong>@mathcoder3141</strong>
 Thanks for reporting this issue. We are going to update the 4/30 data based on <a href="https://covidtracking.com/screenshots/TX/TX-20200430-182114.png">https://covidtracking.com/screenshots/TX/TX-20200430-182114.png</a> You should see the correct data reflected on the site this afternoon.</p>
 <p><strong>Before</strong>
 <img src="../assets/images/github/1749380/80864360-14a74400-8c50-11ea-883c-30771a235775.png" alt="Screenshot_2020-05-02 Coronavirus numbers by state (CovidTracking, DEV COPY)"></p>
@@ -164,26 +205,86 @@ Thanks for reporting this issue. We are going to update the 4/30 data based on <
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-622968928">
           <div class="frontmatter">
-            <div><strong>mathcoder3141</strong> commented on May 2, 2020 at 10:13 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/346#issuecomment-622968928" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>mathcoder3141</strong> commented on May 2, 2020 at 8:13 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/346#issuecomment-622968928" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p><strong>@muamichali</strong> that looks to be consistent with what I hardcoded yesterday, thanks for updating!</p>
+            <p><strong>@muamichali</strong> that looks to be consistent with what I hardcoded yesterday, thanks for updating!</p>
 <p>If this happens again in the future, how can I help troubleshoot? Is this y’all manually updating or what? I have little knowledge of APIs and I genuinely want to learn
 .</p>
 
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-623000846">
           <div class="frontmatter">
-            <div><strong>muamichali</strong> commented on May 2, 2020 at 2:15 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/346#issuecomment-623000846" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>muamichali</strong> commented on May 2, 2020 at 12:15 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/346#issuecomment-623000846" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Hi <strong>@mathcoder3141</strong></p>
+            <p>Hi <strong>@mathcoder3141</strong></p>
 <p>That’s great</p>
 <p>We have a data entry team manually check and enter the data. TX updated late that day so it missed our publication cut off.
 You are always welcome to let us know here when the data doesn’t match the state data and we will look into it as soon as we can.</p>
@@ -192,7 +293,104 @@ You are always welcome to let us know here when the data doesn’t match the sta
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>muamichali</strong> closed the issue on May 2, 2020 at 12:15 pm
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+            <strong>muamichali</strong> reopened this on May 2, 2020 at 12:20 pm
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>qpmnguyen</strong> closed the issue on May 5, 2020 at 7:44 am
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

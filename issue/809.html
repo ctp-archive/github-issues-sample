@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,39 +134,64 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 809</p>
-        <p><strong>jaclyde</strong> opened this issue on September 3, 2020 at 12:49 am</p>
+        <p>
+          <strong>Issue number</strong>
+          809</p>
+        <p>
+          <strong>jaclyde</strong> opened this issue on September 2, 2020 at 10:49 pm</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
-          
-            <span class="label"><a href="../label/1937937334.html">Historical Data</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/1921151980.html">Data quality</a>
+              </span>
+            
+              <span class="label">
+                <a href="../label/1937937334.html">Historical Data</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/809" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p>State: OK</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/809" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p>State: OK</p>
 <p>Describe the problem: CTP started calculating negative serology tests on 5/22/2020 based on OK’s Total antibody tests - Positive antibody tests. We are removing this metric.</p>
 <p>While verifying that the metric was always calculated, we realized that OK started reporting Total and Positive Antibody a week before CTP started recording it. Backfilling that week (the values only update weekly) from the May 8-May 14 Weekly Epidemiology and Surveillance Report.
 Source:
 <a href="../assets/files/github/5166431/2020.05.15_weekly_epi_report.pdf">2020.05.15_weekly_epi_report.pdf</a></p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+            <strong>jaclyde</strong> added the label <span class="label">Data quality</span> on September 2, 2020 at 10:49 pm
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-686270741">
           <div class="frontmatter">
-            <div><strong>jaclyde</strong> commented on September 3, 2020 at 12:53 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/809#issuecomment-686270741" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>jaclyde</strong> commented on September 2, 2020 at 10:53 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/809#issuecomment-686270741" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>BEFORE:
+            <p>BEFORE:
 <img width="316" alt="Screen Shot 2020-09-02 at 10 51 58 PM" src="../assets/images/github/66583275/92076255-181e1980-ed6f-11ea-97ac-054519b582b3.png"></p>
 <p>AFTER:
 <img width="273" alt="Screen Shot 2020-09-02 at 10 52 46 PM" src="../assets/images/github/66583275/92076270-1fddbe00-ed6f-11ea-933b-8df6381f6e27.png"></p>
@@ -271,13 +304,28 @@ Source:
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-686271855">
           <div class="frontmatter">
-            <div><strong>jaclyde</strong> commented on September 3, 2020 at 12:56 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/809#issuecomment-686271855" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>jaclyde</strong> commented on September 2, 2020 at 10:56 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/809#issuecomment-686271855" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>BEFORE:
+            <p>BEFORE:
 <img width="254" alt="Screen Shot 2020-09-02 at 10 54 33 PM" src="../assets/images/github/66583275/92076521-8d89ea00-ed6f-11ea-9cf6-64b898d3e1d7.png"></p>
 <p>AFTER:
 <img width="263" alt="Screen Shot 2020-09-02 at 10 55 01 PM" src="../assets/images/github/66583275/92076546-98447f00-ed6f-11ea-9efb-1316c322db38.png"></p>
@@ -285,41 +333,139 @@ Source:
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+            <strong>jaclyde</strong> added the label <span class="label">Historical Data</span> on September 2, 2020 at 11:03 pm
+          
+          
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-694728159">
           <div class="frontmatter">
-            <div><strong>stale[bot]</strong> commented on September 18, 2020 at 3:17 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/809#issuecomment-694728159" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>stale[bot]</strong> commented on September 18, 2020 at 1:17 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/809#issuecomment-694728159" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
-
-          </div>
-        </div>
-      
-        <div class="comment" id="issuecomment-699897009">
-          <div class="frontmatter">
-            <div><strong>stale[bot]</strong> commented on September 28, 2020 at 4:36 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/809#issuecomment-699897009" target="_blank">Open in Github</a></div>
-          </div>
-          <div class="body">
-          <p>This issue has been closed because it was stale for 15 days, and there was no further activity on it for 10 days. You can feel free to re-open it if the issue is important, and label it as “not stale.”</p>
-
-          </div>
-        </div>
-      
-        <div class="comment" id="issuecomment-700340692">
-          <div class="frontmatter">
-            <div><strong>jaclyde</strong> commented on September 28, 2020 at 6:46 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/809#issuecomment-700340692" target="_blank">Open in Github</a></div>
-          </div>
-          <div class="body">
-          <p>This was completed. I just forgot to close the issue.</p>
+            <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
 
           </div>
         </div>
       
     
+      
+        <div class="event">
+          
+          
+            <strong>stale[bot]</strong> added the label <span class="label">stale</span> on September 18, 2020 at 1:17 am
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="comment" id="issuecomment-699897009">
+          <div class="frontmatter">
+            <div>
+              <strong>stale[bot]</strong> commented on September 28, 2020 at 2:36 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/809#issuecomment-699897009" target="_blank">Open in Github</a>
+            </div>
+          </div>
+          <div class="body">
+            <p>This issue has been closed because it was stale for 15 days, and there was no further activity on it for 10 days. You can feel free to re-open it if the issue is important, and label it as “not stale.”</p>
+
+          </div>
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>stale[bot]</strong> closed the issue on September 28, 2020 at 2:36 am
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+            <strong>jaclyde</strong> reopened this on September 28, 2020 at 4:45 pm
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+            <strong>stale[bot]</strong> removed the label <span class="label">stale</span> on September 28, 2020 at 4:45 pm
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="comment" id="issuecomment-700340692">
+          <div class="frontmatter">
+            <div>
+              <strong>jaclyde</strong> commented on September 28, 2020 at 4:46 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/809#issuecomment-700340692" target="_blank">Open in Github</a>
+            </div>
+          </div>
+          <div class="body">
+            <p>This was completed. I just forgot to close the issue.</p>
+
+          </div>
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>jaclyde</strong> closed the issue on September 28, 2020 at 4:46 pm
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,24 +134,36 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 252</p>
-        <p><strong>sacundim</strong> opened this issue on April 21, 2020 at 7:00 pm</p>
+        <p>
+          <strong>Issue number</strong>
+          252</p>
+        <p>
+          <strong>sacundim</strong> opened this issue on April 21, 2020 at 5:00 pm</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/1921155910.html">Data source</a></span>
-          
-            <span class="label"><a href="../label/1979554454.html">Feature Request</a></span>
-          
-            <span class="label"><a href="../label/2036763229.html">stale</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/1921155910.html">Data source</a>
+              </span>
+            
+              <span class="label">
+                <a href="../label/1979554454.html">Feature Request</a>
+              </span>
+            
+              <span class="label">
+                <a href="../label/2036763229.html">stale</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/252" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p>Puerto Rico’s Department of Health has been most days reporting new daily figures each morning in a bulletin that labels the data as being <strong>as of the previous day</strong>. But your website is instead reporting the same figures as of the day that the scraper picks them up, leading to an off-by-one day discrepancy between your data set and other sources that show Puerto Rico data, which I’ve seen has confused a few people.</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/252" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p>Puerto Rico’s Department of Health has been most days reporting new daily figures each morning in a bulletin that labels the data as being <strong>as of the previous day</strong>. But your website is instead reporting the same figures as of the day that the scraper picks them up, leading to an off-by-one day discrepancy between your data set and other sources that show Puerto Rico data, which I’ve seen has confused a few people.</p>
 <p>I think there’s nothing wrong with your website’s semantics, it’s just different, but I’ve seen this detail confuse a handful of people already and thus see this as a reasonable choice but one that ought to be documented.</p>
 <p>Concrete example: here’s an excerpt from the Puerto Rico Department of Health’s most recent morning bulletin:</p>
 <p><img src="../assets/images/github/4076056/79925727-e7f16200-83ef-11ea-8c75-bc336fb55520.jpeg" alt="Boletín 20 abril"></p>
@@ -157,48 +177,150 @@ table th {
 </ul>
 <p>The COVID Tracking Project data set is picking up these figures, but attributing them to <strong>April 21</strong>, the date that your scraper picks up the new numbers.</p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
       
         <div class="comment" id="issuecomment-617905582">
           <div class="frontmatter">
-            <div><strong>muamichali</strong> commented on April 22, 2020 at 12:01 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/252#issuecomment-617905582" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>muamichali</strong> commented on April 22, 2020 at 10:01 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/252#issuecomment-617905582" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Thank you for this feedback <strong>@sacundim</strong></p>
+            <p>Thank you for this feedback <strong>@sacundim</strong></p>
 <p>We understand how it could be confusing. The data we capture on a given day from the state might reflect the numbers for the previous day. We keep track of the “as of” timestamp of each data point, but it seems like it is not included in all API endpoints.</p>
 <p>We are planning to make the time of the state update available in the daily states endpoint. Due to differences in state reporting, we do not always know exactly for which date the data is, in which case we might report when the state updated it.</p>
 
           </div>
         </div>
       
-        <div class="comment" id="issuecomment-625387050">
-          <div class="frontmatter">
-            <div><strong>stale[bot]</strong> commented on May 7, 2020 at 12:17 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/252#issuecomment-625387050" target="_blank">Open in Github</a></div>
-          </div>
-          <div class="body">
-          <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
-
-          </div>
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
         </div>
       
-        <div class="comment" id="issuecomment-629836075">
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+            <strong>muamichali</strong> added the label <span class="label">Data source</span> on April 22, 2020 at 10:01 am
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+            <strong>muamichali</strong> added the label <span class="label">Feature Request</span> on April 22, 2020 at 10:01 am
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="comment" id="issuecomment-625387050">
           <div class="frontmatter">
-            <div><strong>stale[bot]</strong> commented on May 17, 2020 at 12:54 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/252#issuecomment-629836075" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>stale[bot]</strong> commented on May 7, 2020 at 10:17 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/252#issuecomment-625387050" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>This issue has been closed because it was stale for 15 days, and there was no further activity on it for 10 days. You can feel free to re-open it if the issue is important, and label it as “not stale.”</p>
+            <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
 
           </div>
         </div>
       
     
+      
+        <div class="event">
+          
+          
+            <strong>stale[bot]</strong> added the label <span class="label">stale</span> on May 7, 2020 at 10:17 am
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="comment" id="issuecomment-629836075">
+          <div class="frontmatter">
+            <div>
+              <strong>stale[bot]</strong> commented on May 17, 2020 at 10:54 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/252#issuecomment-629836075" target="_blank">Open in Github</a>
+            </div>
+          </div>
+          <div class="body">
+            <p>This issue has been closed because it was stale for 15 days, and there was no further activity on it for 10 days. You can feel free to re-open it if the issue is important, and label it as “not stale.”</p>
+
+          </div>
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>stale[bot]</strong> closed the issue on May 17, 2020 at 10:54 am
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

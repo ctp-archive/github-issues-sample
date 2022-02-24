@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,39 +134,86 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 831</p>
-        <p><strong>karaschechtman</strong> opened this issue on September 14, 2020 at 4:20 pm</p>
+        <p>
+          <strong>Issue number</strong>
+          831</p>
+        <p>
+          <strong>karaschechtman</strong> opened this issue on September 14, 2020 at 2:20 pm</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
-          
-            <span class="label"><a href="../label/2036763438.html">not stale</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/1921151980.html">Data quality</a>
+              </span>
+            
+              <span class="label">
+                <a href="../label/2036763438.html">not stale</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/831" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p><strong>State or US</strong>: DC</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/831" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p><strong>State or US</strong>: DC</p>
 <p><strong>Describe the problem</strong>
 DC’s “Total Number of DC Residents Tested” represents people according to our outreach. Once totalTestResults is switched in the API for DC, fill DC’s people timeseries from that field</p>
 <p><strong>Link to data source</strong>
 <a href="https://coronavirus.dc.gov/data">https://coronavirus.dc.gov/data</a> each day listed here</p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+            <strong>karaschechtman</strong> added the label <span class="label">Data quality</span> on September 14, 2020 at 2:20 pm
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+            <strong>karaschechtman</strong> added the label <span class="label">not stale</span> on September 14, 2020 at 2:20 pm
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-695322042">
           <div class="frontmatter">
-            <div><strong>karaschechtman</strong> commented on September 19, 2020 at 11:15 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/831#issuecomment-695322042" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>karaschechtman</strong> commented on September 19, 2020 at 9:15 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/831#issuecomment-695322042" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>I also patched 5/23 and 5/24 for total test encounters the day the timeseries became available to reflect revisions because it looks like we patched with the wrong values.</p>
+            <p>I also patched 5/23 and 5/24 for total test encounters the day the timeseries became available to reflect revisions because it looks like we patched with the wrong values.</p>
 <p>The drop on 5/23 was due to a review of data
 <a href="https://coronavirus.dc.gov/release/coronavirus-data-may-23-2020">https://coronavirus.dc.gov/release/coronavirus-data-may-23-2020</a></p>
 <p><strong>Before</strong>
@@ -174,7 +229,20 @@ DC’s “Total Number of DC Residents Tested” represents people according to 
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>karaschechtman</strong> closed the issue on September 19, 2020 at 9:15 am
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,20 +134,28 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 369</p>
-        <p><strong>sdangt</strong> opened this issue on May 6, 2020 at 9:57 am</p>
+        <p>
+          <strong>Issue number</strong>
+          369</p>
+        <p>
+          <strong>sdangt</strong> opened this issue on May 6, 2020 at 7:57 am</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/2044859300.html">API</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/2044859300.html">API</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/369" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p>I appreciate what you guys are doing.</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/369" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p>I appreciate what you guys are doing.</p>
 <p>I will just note that I think it’s helpful once you have columns established to leave them where they are.</p>
 <p>I think next time I may choose a different data source, because I’ve run into a time-wasters.</p>
 <p>First, and least troublesome, the time series are in backwards order, so have to be reversed for charting.  Secondly the dates are not readable by Excel (have to be parsed even though Excel can read a wide variety of standard date formats).  And as I <a href="https://github.com/COVID19Tracking/issues/issues/210">mentioned before</a>, data for hospitalizedCurrently and hospitalizedCumulative were for awhile swapped (now are switched back), so Currently was larger than Cumulative.</p>
@@ -156,42 +172,119 @@ table th {
 <p>Anyway, good job overall with all of the tracking.  I think this is very important.  And all things considered I think the glitches have been minimal.</p>
 <p>Dan</p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-625553415">
           <div class="frontmatter">
-            <div><strong>muamichali</strong> commented on May 7, 2020 at 6:50 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/369#issuecomment-625553415" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>muamichali</strong> commented on May 7, 2020 at 4:50 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/369#issuecomment-625553415" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Hi <strong>@sdangt</strong></p>
+            <p>Hi <strong>@sdangt</strong></p>
 <p>We appreciate your feedback. I am sorry that the change created issues for your implementation and I am glad you were able to catch it quickly. We wanted to provide the information about the <code>as of</code> timestamp and the state grade which were requested by some users.</p>
 <p>We are discussing how to communicate these kinds of changes better in the future in addition to the doucmented API on the website <a href="https://covidtracking.com/api">https://covidtracking.com/api</a></p>
 
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>muamichali</strong> closed the issue on May 7, 2020 at 4:50 pm
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+            <strong>muamichali</strong> added the label <span class="label">API</span> on May 7, 2020 at 4:50 pm
+          
+          
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-626073235">
           <div class="frontmatter">
-            <div><strong>sdangt</strong> commented on May 8, 2020 at 7:21 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/369#issuecomment-626073235" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>sdangt</strong> commented on May 8, 2020 at 5:21 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/369#issuecomment-626073235" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Thanks for your reply.  I did alter the way I use the data, just to double-check that the column is right, but I think that could throw some people.  Good job overall.  Dan</p>
+            <p>Thanks for your reply.  I did alter the way I use the data, just to double-check that the column is right, but I think that could throw some people.  Good job overall.  Dan</p>
 
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-634847795">
           <div class="frontmatter">
-            <div><strong>muamichali</strong> commented on May 27, 2020 at 1:12 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/369#issuecomment-634847795" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>muamichali</strong> commented on May 27, 2020 at 11:12 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/369#issuecomment-634847795" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Hi <strong>@sdangt</strong>,</p>
+            <p>Hi <strong>@sdangt</strong>,</p>
 <p>Wanted to give you a heads up on this from our webteam</p>
 <blockquote>
 <p>We are now building the entire API to a repository. All the JSON/CSV files are built every 15 minutes and put into this repo.
@@ -208,24 +301,54 @@ Please take some time to test out the new API files and endpoint and give feedba
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-634913422">
           <div class="frontmatter">
-            <div><strong>sdangt</strong> commented on May 27, 2020 at 3:10 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/369#issuecomment-634913422" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>sdangt</strong> commented on May 27, 2020 at 1:10 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/369#issuecomment-634913422" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Thanks, and you have made a great effort in tackling a tough set of data.  You all have made a noteworthy contribution to our store of knowledge, and I do appreciate it.</p>
+            <p>Thanks, and you have made a great effort in tackling a tough set of data.  You all have made a noteworthy contribution to our store of knowledge, and I do appreciate it.</p>
 
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-639812342">
           <div class="frontmatter">
-            <div><strong>sdangt</strong> commented on June 5, 2020 at 3:55 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/369#issuecomment-639812342" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>sdangt</strong> commented on June 5, 2020 at 1:55 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/369#issuecomment-639812342" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Well, you changed the columns around now for the other data – <a href="https://covidtracking.com/api/v1/us/daily.csv">https://covidtracking.com/api/v1/us/daily.csv</a> at <a href="https://covidtracking.com/api">https://covidtracking.com/api</a> – which in my view is unnecessary and only results in people who have created charts tied to specific columns having to redo them.</p>
+            <p>Well, you changed the columns around now for the other data – <a href="https://covidtracking.com/api/v1/us/daily.csv">https://covidtracking.com/api/v1/us/daily.csv</a> at <a href="https://covidtracking.com/api">https://covidtracking.com/api</a> – which in my view is unnecessary and only results in people who have created charts tied to specific columns having to redo them.</p>
 <p>What’s the reasoning for changing the columns around as you add data to the same dataset?  Is there a good justification for it?  Because it just means I have to do more work to use your data.  If there’s no good reason for it, then why do it?  But I’ve already stated my opinion on it, and I guess someone disagrees.</p>
 <p>I do appreciate the data you provide, and you provide a valuable resource, but as I said, I might have used a different source if I had to do it all over again.  Obviously if I were to start out from scratch, I would assume that you move your columns around when you please, and so not assume they are fixed, but I didn’t know that in the beginning.  I automated it for the other column in the other data, but didn’t change this one.</p>
 <p>In Excel for example it is significantly more work to create a chart if you cannot assume that the data is going to be in the same place every time.  It means using some rather ugly formulas and extra processing time.</p>
@@ -235,13 +358,18 @@ Please take some time to test out the new API files and endpoint and give feedba
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-644286404">
           <div class="frontmatter">
-            <div><strong>sdangt</strong> commented on June 15, 2020 at 1:06 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/369#issuecomment-644286404" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>sdangt</strong> commented on June 15, 2020 at 11:06 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/369#issuecomment-644286404" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>You changed the columns yet again.</p>
+            <p>You changed the columns yet again.</p>
 <p><a href="https://covidtracking.com/api/v1/states/daily.csv">https://covidtracking.com/api/v1/states/daily.csv</a></p>
 <p>It seems to me just an unnecessary inconvenience for data-users.  Just leave the columns alone until the end.  Why keep moving them around?</p>
 <p>Anyway, I don’t get the sense that you are interested in my input, since you keep doing this and haven’t provided any explanation as to why it’s necessary to do it.</p>
@@ -252,6 +380,7 @@ Please take some time to test out the new API files and endpoint and give feedba
       
     
   
+
 </main>
   </body>
 </html>

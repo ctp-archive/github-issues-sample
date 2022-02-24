@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,38 +134,71 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 804</p>
-        <p><strong>karaschechtman</strong> opened this issue on August 29, 2020 at 1:26 pm</p>
+        <p>
+          <strong>Issue number</strong>
+          804</p>
+        <p>
+          <strong>karaschechtman</strong> opened this issue on August 29, 2020 at 11:26 am</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/1921151980.html">Data quality</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/804" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p><strong>State or US</strong>: NY</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/804" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p><strong>State or US</strong>: NY</p>
 <p><strong>Describe the problem</strong>
 From NY’s regional PPR dashboard: “Total persons tested” = “The number of tests of individuals performed on the test date. This total includes positives, negatives, and inconclusive results.” <a href="https://forward.ny.gov/percentage-positive-results-region-dashboard">https://forward.ny.gov/percentage-positive-results-region-dashboard</a></p>
 <p>The daily numbers of people tested on that dashboard for all regions are the same as the diffs as our data, meaning that we can extrapolate that the grand total we record is test encounters. We should move the timeseries from people to encounters and start capturing in encounters</p>
 <p><strong>Link to data source</strong>
 people timeseries</p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+            <strong>karaschechtman</strong> added the label <span class="label">Data quality</span> on August 29, 2020 at 11:26 am
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-683326935">
           <div class="frontmatter">
-            <div><strong>karaschechtman</strong> commented on August 29, 2020 at 1:32 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/804#issuecomment-683326935" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>karaschechtman</strong> commented on August 29, 2020 at 11:32 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/804#issuecomment-683326935" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p><strong>Before</strong>
+            <p><strong>Before</strong>
 <img width="212" alt="Screen Shot 2020-08-29 at 2 30 13 PM" src="../assets/images/github/15933271/91643796-6b593a80-ea04-11ea-87c6-bd6c238f9783.png">
 <img width="212" alt="Screen Shot 2020-08-29 at 2 30 23 PM" src="../assets/images/github/15933271/91643797-6dbb9480-ea04-11ea-9ec6-02d652d68654.png"></p>
 <p><strong>After</strong>
@@ -167,20 +208,38 @@ people timeseries</p>
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-683327616">
           <div class="frontmatter">
-            <div><strong>karaschechtman</strong> commented on August 29, 2020 at 1:38 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/804#issuecomment-683327616" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>karaschechtman</strong> commented on August 29, 2020 at 11:38 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/804#issuecomment-683327616" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <img width="292" alt="Screen Shot 2020-08-29 at 2 37 54 PM" src="../assets/images/github/15933271/91643900-41544800-ea05-11ea-84ce-7f3da5588cc7.png">
+            <img width="292" alt="Screen Shot 2020-08-29 at 2 37 54 PM" src="../assets/images/github/15933271/91643900-41544800-ea05-11ea-84ce-7f3da5588cc7.png">
 <img width="282" alt="Screen Shot 2020-08-29 at 2 37 45 PM" src="../assets/images/github/15933271/91643901-46b19280-ea05-11ea-8ada-b17112bf5c9b.png">
 
           </div>
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>karaschechtman</strong> closed the issue on August 29, 2020 at 11:38 am
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

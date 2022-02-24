@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,53 +134,99 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 51</p>
-        <p><strong>breyed</strong> opened this issue on March 25, 2020 at 9:14 am</p>
+        <p>
+          <strong>Issue number</strong>
+          51</p>
+        <p>
+          <strong>breyed</strong> opened this issue on March 25, 2020 at 7:14 am</p>
         
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/51" target="_blank">Open in Github</a>
-        </div>
       </div>
-      <div class="body">
-        <p>How many cases we have now matters much more for decision-making than how many we’ve ever had.</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/51" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p>How many cases we have now matters much more for decision-making than how many we’ve ever had.</p>
 <p>For example, an increase in daily positive results relative to daily total results is generally indicative of the disease spreading, and likewise a decrease indicative of receding. With all-time cumulative numbers, that kind of analysis doesn’t hold.</p>
 <p>The cumulative is useful for a retrospective. At some point, that’s what we’ll want to do. But first we’ve got to make smart trade-offs to curb the disease. Let’s focus the data there.</p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
       
         <div class="comment" id="issuecomment-603940327">
           <div class="frontmatter">
-            <div><strong>kevee</strong> commented on March 25, 2020 at 11:24 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/51#issuecomment-603940327" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>kevee</strong> commented on March 25, 2020 at 9:24 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/51#issuecomment-603940327" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Hi, <strong>@breyed</strong>, I think this is a great point, and should be bubbled up to the larger issues queue so that it can be discussed by the data folks.</p>
+            <p>Hi, <strong>@breyed</strong>, I think this is a great point, and should be bubbled up to the larger issues queue so that it can be discussed by the data folks.</p>
 
           </div>
         </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-604169341">
           <div class="frontmatter">
-            <div><strong>mymil</strong> commented on March 25, 2020 at 8:05 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/51#issuecomment-604169341" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>mymil</strong> commented on March 25, 2020 at 6:05 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/51#issuecomment-604169341" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Agreed, but there are issues with converting the cumulative data (see eg #41: almost half of states have at least one apparent “negative” daily value)</p>
+            <p>Agreed, but there are issues with converting the cumulative data (see eg #41: almost half of states have at least one apparent “negative” daily value)</p>
 
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-604822235">
           <div class="frontmatter">
-            <div><strong>careeningspace</strong> commented on March 27, 2020 at 12:28 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/51#issuecomment-604822235" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>careeningspace</strong> commented on March 26, 2020 at 10:28 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/51#issuecomment-604822235" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <ul>
+            <ul>
 <li>[ ] You can calculate the daily delta by subtracting yesterday from today.</li>
 <li>[ ] We are deprecating the datapoint that included “pending” which was causing a lot of confusion. you can find more about it here:   <a href="https://covidtracking.com/api/">COVID API</a></li>
 <li>[ ] Most states share a cumulative number and that is what we have chosen to report.</li>
@@ -182,25 +236,67 @@ table th {
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>careeningspace</strong> closed the issue on March 26, 2020 at 10:28 pm
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-604912404">
           <div class="frontmatter">
-            <div><strong>breyed</strong> commented on March 27, 2020 at 4:54 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/51#issuecomment-604912404" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>breyed</strong> commented on March 27, 2020 at 2:54 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/51#issuecomment-604912404" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p><strong>@careeningspace</strong> What do you think about having a JavaScript toggle on the history page and including the pros and cons of daily versus cumulative metrics on the <a href="https://covidtracking.com/about-tracker/">methodology</a> page?</p>
+            <p><strong>@careeningspace</strong> What do you think about having a JavaScript toggle on the history page and including the pros and cons of daily versus cumulative metrics on the <a href="https://covidtracking.com/about-tracker/">methodology</a> page?</p>
 <p>Any plans to make the page templates open source? I’d be happy to submit a PR for the JavaScript toggle.</p>
 
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-604934738">
           <div class="frontmatter">
-            <div><strong>breyed</strong> commented on March 27, 2020 at 5:48 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/51#issuecomment-604934738" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>breyed</strong> commented on March 27, 2020 at 3:48 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/51#issuecomment-604934738" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Another approach is with tabs, like John Hopkins does on its <a href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6">dashboard</a> with its <code>Cumulative Confirmed Cases</code> and <code>Active Cases</code> tabs and <code>Confirmed</code> and <code>Daily Increase</code> tabs. I think a checkbox would fit better with the style of the covidtracking site, but I thought I’d mention it as a useful point of reference.</p>
+            <p>Another approach is with tabs, like John Hopkins does on its <a href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6">dashboard</a> with its <code>Cumulative Confirmed Cases</code> and <code>Active Cases</code> tabs and <code>Confirmed</code> and <code>Daily Increase</code> tabs. I think a checkbox would fit better with the style of the covidtracking site, but I thought I’d mention it as a useful point of reference.</p>
 <p>In any case, the labeling on covidtracking should be updated. Currently, it’s technically ambiguous as to whether it’s reporting daily or cumulative data. Other sites, like John Hopkins and the <a href="https://www.cdc.gov/coronavirus/2019-ncov/cases-updates/cases-in-us.html">CDC</a>, are careful to specify that aspect.</p>
 
           </div>
@@ -208,6 +304,7 @@ table th {
       
     
   
+
 </main>
   </body>
 </html>

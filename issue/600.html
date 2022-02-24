@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,24 +134,36 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 600</p>
-        <p><strong>pscsharon</strong> opened this issue on July 10, 2020 at 10:23 am</p>
+        <p>
+          <strong>Issue number</strong>
+          600</p>
+        <p>
+          <strong>pscsharon</strong> opened this issue on July 10, 2020 at 8:23 am</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/2158480839.html">PCL/SVP Historicals</a></span>
-          
-            <span class="label"><a href="../label/2162087998.html">Backfill</a></span>
-          
-            <span class="label"><a href="../label/2199367619.html">Missing Data</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/2158480839.html">PCL/SVP Historicals</a>
+              </span>
+            
+              <span class="label">
+                <a href="../label/2162087998.html">Backfill</a>
+              </span>
+            
+              <span class="label">
+                <a href="../label/2199367619.html">Missing Data</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/600" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p>Need to finalize decision on whether we can or cannot use KS’s historical case data for our Positive Cases (PCR) historicals. If yes, please backfill all days.  We have not yet recorded any.</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/600" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p>Need to finalize decision on whether we can or cannot use KS’s historical case data for our Positive Cases (PCR) historicals. If yes, please backfill all days.  We have not yet recorded any.</p>
 <p>WS2:
 <img width="1225" alt="Screen Shot 2020-07-10 at 8 00 27 AM" src="../assets/images/github/67423649/87170432-304d4d00-c286-11ea-8886-2baff2a9aff3.png"></p>
 <p>States Daily:
@@ -156,18 +176,57 @@ table th {
 <p>PRESS RELEASES:  <em>Strange.  They just add the current day’s to the front and re-PDF the whole thing.  This action leads me to think their historicals are not updated to be only confirmed… if they just keep adding today’s press release to prior days, but I am stretching - yes.</em>
 <a href="https://www.coronavirus.kdheks.gov/DocumentCenter/View/1125/Historical---July-8?bidId=">https://www.coronavirus.kdheks.gov/DocumentCenter/View/1125/Historical---July-8?bidId=</a></p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+            <strong>pscsharon</strong> added the label <span class="label">PCL/SVP Historicals</span> on July 10, 2020 at 8:23 am
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+            <strong>pscsharon</strong> added the label <span class="label">Backfill</span> on July 10, 2020 at 8:23 am
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+            <strong>space-buzzer</strong> added the label <span class="label">Missing Data</span> on July 14, 2020 at 10:49 am
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-664426082">
           <div class="frontmatter">
-            <div><strong>the-daniel-lin</strong> commented on July 27, 2020 at 9:21 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/600#issuecomment-664426082" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>the-daniel-lin</strong> commented on July 27, 2020 at 7:21 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/600#issuecomment-664426082" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>The historical hover-over graph is most-likely a lumped figure, so we can’t use it for backfill. We are waiting for confirmation from outreach.</p>
+            <p>The historical hover-over graph is most-likely a lumped figure, so we can’t use it for backfill. We are waiting for confirmation from outreach.</p>
 <p>The ‘<a href="https://www.coronavirus.kdheks.gov/DocumentCenter/View/1125/Historical---July-24?bidId=">COVID-19 Summary</a>’ under ‘Daily Case Summary &amp; Historical Data’ on the state page reports the number of positive tests, but these seem to be ‘specimens,’ rather than people. This is also inconclusive.</p>
 <p>This problem is further complicated when considering that the ‘Negative Tests’ number is a lumped value (<a href="https://covid-tracking.slack.com/archives/C0124MP2E5C/p1592283152088300">https://covid-tracking.slack.com/archives/C0124MP2E5C/p1592283152088300</a>)</p>
 <p>There is a separate number on the <a href="https://www.coronavirus.kdheks.gov/160/COVID-19-in-Kansas">state page</a> through the ‘Testing Rates’ button. In the ‘Positive PCR Tests by Performing Lab’ table, under ‘Number of Cases,’ we suspect that this number indicates lab-confirmed cases. We are waiting for confirmation from outreach on this and are working to take screenshots in order to have a record for potential back-filling.</p>
@@ -176,13 +235,28 @@ table th {
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-665092531">
           <div class="frontmatter">
-            <div><strong>karaschechtman</strong> commented on July 28, 2020 at 10:00 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/600#issuecomment-665092531" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>karaschechtman</strong> commented on July 28, 2020 at 8:00 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/600#issuecomment-665092531" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>We decided not to use the number from this graph as “Confirmed Cases”:
+            <p>We decided not to use the number from this graph as “Confirmed Cases”:
 <img src="../assets/images/github/15933271/88683210-8d883180-d0c1-11ea-8aa3-5a16f5c77d11.png" alt="Screen Shot 2020-07-28 at 11 00 22 AM"></p>
 <p>Reasons:</p>
 <ul>
@@ -196,7 +270,20 @@ table th {
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>karaschechtman</strong> closed the issue on July 28, 2020 at 8:38 am
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

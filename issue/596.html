@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,24 +134,36 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 596</p>
-        <p><strong>pscsharon</strong> opened this issue on July 10, 2020 at 9:32 am</p>
+        <p>
+          <strong>Issue number</strong>
+          596</p>
+        <p>
+          <strong>pscsharon</strong> opened this issue on July 10, 2020 at 7:32 am</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/2158480839.html">PCL/SVP Historicals</a></span>
-          
-            <span class="label"><a href="../label/2162087998.html">Backfill</a></span>
-          
-            <span class="label"><a href="../label/2199367619.html">Missing Data</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/2158480839.html">PCL/SVP Historicals</a>
+              </span>
+            
+              <span class="label">
+                <a href="../label/2162087998.html">Backfill</a>
+              </span>
+            
+              <span class="label">
+                <a href="../label/2199367619.html">Missing Data</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/596" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p><strong>State</strong>: Iowa</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/596" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p><strong>State</strong>: Iowa</p>
 <p><strong>Description</strong>:
 CTP started capturing <strong>Positive Cases (PCR) / positiveTestsViral</strong> on 4/29. We should back-fill the values before that date in Iowa.
 It is unlikely that IA used lumped values and then went to lab-confirmed only, given the consistent time-series for Positives. The wording before the dashboard changed also is in line with our definition for Lab Confirmed Only.</p>
@@ -153,18 +173,113 @@ Positives should therefore be copied into Positive Cases (PCR).</p>
 </blockquote>
 <p><strong>Source</strong>: Screenshots from Iowa’s websites &amp; previous capture by CTP of the same information</p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+            <strong>pscsharon</strong> added the label <span class="label">Data quality</span> on July 10, 2020 at 7:32 am
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+            <strong>pscsharon</strong> added the label <span class="label">Historical Data</span> on July 10, 2020 at 7:32 am
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+            <strong>pscsharon</strong> removed the label <span class="label">Data quality</span> on July 10, 2020 at 7:32 am
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+            <strong>qpmnguyen</strong> added the label <span class="label">PCL/SVP Historicals</span> on July 10, 2020 at 7:33 am
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+            <strong>qpmnguyen</strong> removed the label <span class="label">Historical Data</span> on July 10, 2020 at 7:33 am
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+            <strong>qpmnguyen</strong> added the label <span class="label">Backfill</span> on July 10, 2020 at 7:33 am
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-657603893">
           <div class="frontmatter">
-            <div><strong>jesseandersonumd</strong> commented on July 13, 2020 at 9:46 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/596#issuecomment-657603893" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>jesseandersonumd</strong> commented on July 13, 2020 at 7:46 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/596#issuecomment-657603893" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p><strong>UPDATE: 7/13</strong></p>
+            <p><strong>UPDATE: 7/13</strong></p>
 <p><em>While backfiling, we came across a graph on the website that reports confirmed cases by day [<a href="https://coronavirus.iowa.gov/pages/case-counts">https://coronavirus.iowa.gov/pages/case-counts</a>]. Here is the graph:</em></p>
 <p><img src="../assets/images/github/57415941/87318053-d0f57400-c4f5-11ea-8341-946e5864d253.png" alt="Screen Shot 2020-07-13 at 9 32 39 AM"></p>
 <p>This graph is <strong>hoverable</strong> and <strong>the data can be automatically fetched from ArcGIS layers.</strong></p>
@@ -172,13 +287,30 @@ Positives should therefore be copied into Positive Cases (PCR).</p>
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+            <strong>space-buzzer</strong> added the label <span class="label">Missing Data</span> on July 14, 2020 at 10:49 am
+          
+          
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-663019169">
           <div class="frontmatter">
-            <div><strong>brianskli</strong> commented on July 23, 2020 at 8:51 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/596#issuecomment-663019169" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>brianskli</strong> commented on July 23, 2020 at 6:51 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/596#issuecomment-663019169" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Using IA’s data definition, it was confirmed that IA reports in lab-confirmed cases. Values from Positives were then copied into Positive Cases (PCR) in States Daily.</p>
+            <p>Using IA’s data definition, it was confirmed that IA reports in lab-confirmed cases. Values from Positives were then copied into Positive Cases (PCR) in States Daily.</p>
 <p>Before:
 <img width="783" alt="Screen Shot 2020-07-23 at 9 37 14 AM" src="../assets/images/github/66738237/88293478-0e61ba80-ccc9-11ea-9eaf-eec7c39dcce8.png">
 After:
@@ -188,7 +320,20 @@ After:
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>brianskli</strong> closed the issue on July 23, 2020 at 6:51 am
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,16 +134,19 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 15</p>
-        <p><strong>dimitrilucas</strong> opened this issue on March 18, 2020 at 9:04 pm</p>
+        <p>
+          <strong>Issue number</strong>
+          15</p>
+        <p>
+          <strong>dimitrilucas</strong> opened this issue on March 18, 2020 at 7:04 pm</p>
         
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/15" target="_blank">Open in Github</a>
-        </div>
       </div>
-      <div class="body">
-        <p>Hello,</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/15" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p>Hello,</p>
 <p>I’m writing because there seems to be a discrepancy between the number of daily new US cases on your site vs the CDC website.  According to my calculations based on numbers reported on <a href="https://covidtracking.com/us-daily/">https://covidtracking.com/us-daily/</a>, there were 528, 723, 846 new positive cases reported on March 14, 15 and 16.    Here is a screenshot of those dates and numbers:
 <img src="../assets/images/github/38146219/77024019-cff77000-6963-11ea-8bf0-f67a42693400.png" alt="image"></p>
 <p>The CDC’s website shows a chart with different numbers for the 15th and 16th.<br>
@@ -144,48 +155,104 @@ table th {
 <p>As you can see, the CDC chart doesn’t show the exact numbers.  However, I drew red lines to show the approximate numbers for each bar for the last three days.  The number for the new positives on the 14th seems to be the same, ~528.  However, the CDC charted values aren’t close to what the covidtracking website is reporting for the 15th and 16th.  Looks like ~1,000 for the 15th and ~780 for the 16th.  Some of the other dates appear to be a mismatch as well.</p>
 <p>I am wondering if there is something I am missing, or if there is a mistake in one of the website’s calculations.</p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
       
         <div class="comment" id="issuecomment-600950248">
           <div class="frontmatter">
-            <div><strong>hammer</strong> commented on March 18, 2020 at 9:13 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/15#issuecomment-600950248" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>hammer</strong> commented on March 18, 2020 at 7:13 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/15#issuecomment-600950248" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>hey <strong>@dimitrilucas</strong> thanks for the question!</p>
+            <p>hey <strong>@dimitrilucas</strong> thanks for the question!</p>
 <p>it may be because our daily numbers are as of 4 pm ET. the total number on 3/16 for us was 4,019 while the cdc has 4,226, so we’re definitely in the same ballpark. states report their data at different times on different days so i wouldn’t focus too much on the precise number each day. a trend line would be more useful.</p>
 <p>for more details on our methods, see <a href="https://covidtracking.com/newsroom-expert-faq">https://covidtracking.com/newsroom-expert-faq</a>.</p>
 
           </div>
         </div>
       
-        <div class="comment" id="issuecomment-601013877">
-          <div class="frontmatter">
-            <div><strong>metasj</strong> commented on March 19, 2020 at 1:39 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/15#issuecomment-601013877" target="_blank">Open in Github</a></div>
-          </div>
-          <div class="body">
-          <p>Also I find the CDC’s data rather opaque and confusing. There is no way to know exactly where it is coming from or what their update process is, nor an issue tracker to leave questions or suggestions…</p>
-
-          </div>
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
         </div>
       
-        <div class="comment" id="issuecomment-601368148">
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="comment" id="issuecomment-601013877">
           <div class="frontmatter">
-            <div><strong>kissane</strong> commented on March 19, 2020 at 2:18 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/15#issuecomment-601368148" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>metasj</strong> commented on March 18, 2020 at 11:39 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/15#issuecomment-601013877" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Man there is just not an emoji to appropriately respond to this.</p>
+            <p>Also I find the CDC’s data rather opaque and confusing. There is no way to know exactly where it is coming from or what their update process is, nor an issue tracker to leave questions or suggestions…</p>
 
           </div>
         </div>
       
     
+      
+        <div class="comment" id="issuecomment-601368148">
+          <div class="frontmatter">
+            <div>
+              <strong>kissane</strong> commented on March 19, 2020 at 12:18 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/15#issuecomment-601368148" target="_blank">Open in Github</a>
+            </div>
+          </div>
+          <div class="body">
+            <p>Man there is just not an emoji to appropriately respond to this.</p>
+
+          </div>
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>careeningspace</strong> closed the issue on March 26, 2020 at 10:57 pm
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

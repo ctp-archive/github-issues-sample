@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,29 +134,35 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 129</p>
-        <p><strong>faronium</strong> opened this issue on April 3, 2020 at 1:31 am</p>
+        <p>
+          <strong>Issue number</strong>
+          129</p>
+        <p>
+          <strong>faronium</strong> opened this issue on April 2, 2020 at 11:31 pm</p>
         
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/129" target="_blank">Open in Github</a>
-        </div>
       </div>
-      <div class="body">
-        <p>Can you please update your website to note that the non-testing related numbers are mostly unavailable from states and thus national totals can be wildly inaccurate? For example, your US total ventilator number is currently 67 and lists zero people in NY despite yesterday’s death number of more than 300.  That’s simply impossible. Other hot spots like Louisiana, Michigan, New Jersey, and Florida don’t list any ICU or ventilator data and thus your US totals are way low. This is fueling the conspiracy folks who are claiming that this is all a hoax or that the modeled case forecasts are completely wrong and overblown. Please, either don’t report the data or somehow clearly quality the US totals so that people know what is trustworthy.</p>
-
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/129" target="_blank">Open in Github</a>
       </div>
     </div>
+    <div class="body">
+      <p>Can you please update your website to note that the non-testing related numbers are mostly unavailable from states and thus national totals can be wildly inaccurate? For example, your US total ventilator number is currently 67 and lists zero people in NY despite yesterday’s death number of more than 300.  That’s simply impossible. Other hot spots like Louisiana, Michigan, New Jersey, and Florida don’t list any ICU or ventilator data and thus your US totals are way low. This is fueling the conspiracy folks who are claiming that this is all a hoax or that the modeled case forecasts are completely wrong and overblown. Please, either don’t report the data or somehow clearly quality the US totals so that people know what is trustworthy.</p>
+
+    </div>
+  </div>
+  
     
-      <h2>Comments</h2>
       
         <div class="comment" id="issuecomment-608336952">
           <div class="frontmatter">
-            <div><strong>Jmuccigr</strong> commented on April 3, 2020 at 4:36 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/129#issuecomment-608336952" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>Jmuccigr</strong> commented on April 3, 2020 at 2:36 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/129#issuecomment-608336952" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <blockquote>
+            <blockquote>
 <p>For example, your US total ventilator number is currently 67 and lists zero people in NY despite yesterday’s death number of more than 300.</p>
 </blockquote>
 <p>Actually the database gives NY’s number as <code>NA</code> which is not 0, so it’s correct. I agree that some more lengthier notes are needed in a prominent place.</p>
@@ -157,13 +171,18 @@ table th {
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-608539756">
           <div class="frontmatter">
-            <div><strong>faronium</strong> commented on April 3, 2020 at 11:33 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/129#issuecomment-608539756" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>faronium</strong> commented on April 3, 2020 at 9:33 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/129#issuecomment-608539756" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <blockquote>
+            <blockquote>
 <p>Actually the database gives NY’s number as NA which is not 0, so it’s correct.</p>
 </blockquote>
 <p>Ah, that makes sense. I was looking at the spreadsheet on google docs that shows a blank, so missed that it is NA in the real data.</p>
@@ -174,19 +193,57 @@ Where cumulative hospitalized seems to be the sum of incomplete data and thus is
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-612326058">
           <div class="frontmatter">
-            <div><strong>careeningspace</strong> commented on April 10, 2020 at 11:44 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/129#issuecomment-612326058" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>careeningspace</strong> commented on April 10, 2020 at 9:44 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/129#issuecomment-612326058" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Please check out #132 to find where we updated all of the outcome data to better match how states are reporting. We have also stopped reporting the outcome data as a national aggregate because of the <strong>@faronium</strong> raises</p>
+            <p>Please check out #132 to find where we updated all of the outcome data to better match how states are reporting. We have also stopped reporting the outcome data as a national aggregate because of the <strong>@faronium</strong> raises</p>
 
           </div>
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>careeningspace</strong> closed the issue on April 10, 2020 at 9:44 pm
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

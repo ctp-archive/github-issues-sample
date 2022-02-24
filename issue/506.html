@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,37 +134,60 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 506</p>
-        <p><strong>muamichali</strong> opened this issue on June 19, 2020 at 4:44 pm</p>
+        <p>
+          <strong>Issue number</strong>
+          506</p>
+        <p>
+          <strong>muamichali</strong> opened this issue on June 19, 2020 at 2:44 pm</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/1921151980.html">Data quality</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/506" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p>Oklahoma</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/506" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p>Oklahoma</p>
 <p>Front Issue
 Your most recent data for Oklahoma shows Thursday June 18 the total cases were 8,904 which is the same number as Wednesday for positive cases. However, the State Dept. of Health is showing a 450 jump in cases with a total of 9354 cases.</p>
 <p><strong>Link to data source</strong>
 <a href="https://covidtracking.com/screenshots/OK/OK-20200618-184250.png">https://covidtracking.com/screenshots/OK/OK-20200618-184250.png</a></p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+            <strong>muamichali</strong> added the label <span class="label">Data quality</span> on June 19, 2020 at 2:44 pm
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-647033176">
           <div class="frontmatter">
-            <div><strong>MattHilliard</strong> commented on June 20, 2020 at 1:55 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/506#issuecomment-647033176" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>MattHilliard</strong> commented on June 20, 2020 at 11:55 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/506#issuecomment-647033176" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Oklahoma’s <a href="https://coronavirus.health.ok.gov/sites/g/files/gmc786/f/eo_-_covid-19_report_-_6-18-20.pdf">executive order report for 6/18</a> has the correct numbers. This looks like a state where we are typically off by one day for hospitalization and testing information…that data in the report matches what we have for 6/19, whereas 6/18 has distinct values from 6/17 for testing and hospitalization numbers. For now I’m leaving those as-is; fixing that without screwing up people’s trend analysis would mean a re-sync of all OK historicals (after which we’d once more be off a day going forward).</p>
+            <p>Oklahoma’s <a href="https://coronavirus.health.ok.gov/sites/g/files/gmc786/f/eo_-_covid-19_report_-_6-18-20.pdf">executive order report for 6/18</a> has the correct numbers. This looks like a state where we are typically off by one day for hospitalization and testing information…that data in the report matches what we have for 6/19, whereas 6/18 has distinct values from 6/17 for testing and hospitalization numbers. For now I’m leaving those as-is; fixing that without screwing up people’s trend analysis would mean a re-sync of all OK historicals (after which we’d once more be off a day going forward).</p>
 <p>The more important issue here is we didn’t get an updated number for cases, recovered, and deaths on 6/18 but did get updated numbers for hospitalizations and tests. Therefore I’m patching in the executive order numbers for positives, recovered, and deaths.</p>
 <p>Before:
 <img src="../assets/images/github/404503/85209410-be788800-b305-11ea-90e6-a08516861bc9.png" alt="image"></p>
@@ -167,7 +198,20 @@ Your most recent data for Oklahoma shows Thursday June 18 the total cases were 8
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>MattHilliard</strong> closed the issue on June 20, 2020 at 11:55 am
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

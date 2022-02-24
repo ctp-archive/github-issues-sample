@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,22 +134,32 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 721</p>
-        <p><strong>muamichali</strong> opened this issue on July 31, 2020 at 9:20 pm</p>
+        <p>
+          <strong>Issue number</strong>
+          721</p>
+        <p>
+          <strong>muamichali</strong> opened this issue on July 31, 2020 at 7:20 pm</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
-          
-            <span class="label"><a href="../label/2036763438.html">not stale</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/1921151980.html">Data quality</a>
+              </span>
+            
+              <span class="label">
+                <a href="../label/2036763438.html">not stale</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/721" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p><strong>State or US</strong>: CT</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/721" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p><strong>State or US</strong>: CT</p>
 <p><strong>Describe the problem</strong>
 CT had two dumps of old test results from Enzo Labs, an out of state lab that just submitted their results to CT in two batches in the past 7 days.  These data date back to April, but because they were dumped into CT totals now</p>
 <p>Specifically this catch up data included 440 cases reported last Friday + 384 Wednesday = 824 cases that should be removed from our recent totals to better reflect recent trends.</p>
@@ -149,69 +167,203 @@ CT had two dumps of old test results from Enzo Labs, an out of state lab that ju
 <img width="1415" alt="Screen Shot 2020-07-31 at 10 25 14 PM" src="../assets/images/github/1749380/89092112-cacc1800-d37c-11ea-8b18-d585399e2919.png"></p>
 <img width="1437" alt="Screen Shot 2020-07-31 at 10 26 59 PM" src="../assets/images/github/1749380/89092138-17175800-d37d-11ea-8ddf-f8448212b966.png">
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+            <strong>muamichali</strong> added the label <span class="label">Data quality</span> on July 31, 2020 at 7:20 pm
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-671661874">
           <div class="frontmatter">
-            <div><strong>MattHilliard</strong> commented on August 10, 2020 at 7:52 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/721#issuecomment-671661874" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>MattHilliard</strong> commented on August 10, 2020 at 5:52 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/721#issuecomment-671661874" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p><strong>@muamichali</strong> CT provides two time series for confirmed cases: positive cases by dashboard time and positive cases by specimen collection time. The former matches what we already have and includes the July 24 jump, the latter smooths that out but would result in mixing. I don’t think there’s much we can do until we have a “state revised time series” strategy in place.</p>
+            <p><strong>@muamichali</strong> CT provides two time series for confirmed cases: positive cases by dashboard time and positive cases by specimen collection time. The former matches what we already have and includes the July 24 jump, the latter smooths that out but would result in mixing. I don’t think there’s much we can do until we have a “state revised time series” strategy in place.</p>
 
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-674239674">
           <div class="frontmatter">
-            <div><strong>theomichel</strong> commented on August 14, 2020 at 2:33 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/721#issuecomment-674239674" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>theomichel</strong> commented on August 14, 2020 at 12:33 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/721#issuecomment-674239674" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Based on our meeting yesterday, I would say that this backfill would not meet the mixery-exception bar. (because it’s not a new column where we’re bootstrapping old history)</p>
+            <p>Based on our meeting yesterday, I would say that this backfill would not meet the mixery-exception bar. (because it’s not a new column where we’re bootstrapping old history)</p>
 <p>So, I would like to close this “won’t fix”. If CT puts pressure on us, that pressure should go towards adding a new column with approprirate “by date” assignment. I’ve started a slack conversation to get consensus.</p>
 
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-674326415">
           <div class="frontmatter">
-            <div><strong>theomichel</strong> commented on August 14, 2020 at 8:06 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/721#issuecomment-674326415" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>theomichel</strong> commented on August 14, 2020 at 6:06 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/721#issuecomment-674326415" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>There was some more discussion about just giving CT a new column (similar to RI and CO) instead of this. More to come.</p>
-
-          </div>
-        </div>
-      
-        <div class="comment" id="issuecomment-683366073">
-          <div class="frontmatter">
-            <div><strong>stale[bot]</strong> commented on August 29, 2020 at 9:02 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/721#issuecomment-683366073" target="_blank">Open in Github</a></div>
-          </div>
-          <div class="body">
-          <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
-
-          </div>
-        </div>
-      
-        <div class="comment" id="issuecomment-814450798">
-          <div class="frontmatter">
-            <div><strong>muamichali</strong> commented on April 6, 2021 at 4:28 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/721#issuecomment-814450798" target="_blank">Open in Github</a></div>
-          </div>
-          <div class="body">
-          <p>Does not meet the mixery-exception bar.</p>
+            <p>There was some more discussion about just giving CT a new column (similar to RI and CO) instead of this. More to come.</p>
 
           </div>
         </div>
       
     
+      
+        <div class="comment" id="issuecomment-683366073">
+          <div class="frontmatter">
+            <div>
+              <strong>stale[bot]</strong> commented on August 29, 2020 at 7:02 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/721#issuecomment-683366073" target="_blank">Open in Github</a>
+            </div>
+          </div>
+          <div class="body">
+            <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
+
+          </div>
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+            <strong>stale[bot]</strong> added the label <span class="label">stale</span> on August 29, 2020 at 7:02 pm
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+            <strong>brianskli</strong> removed the label <span class="label">stale</span> on September 1, 2020 at 6:25 am
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+            <strong>brianskli</strong> added the label <span class="label">not stale</span> on September 1, 2020 at 6:25 am
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="comment" id="issuecomment-814450798">
+          <div class="frontmatter">
+            <div>
+              <strong>muamichali</strong> commented on April 6, 2021 at 2:28 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/721#issuecomment-814450798" target="_blank">Open in Github</a>
+            </div>
+          </div>
+          <div class="body">
+            <p>Does not meet the mixery-exception bar.</p>
+
+          </div>
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>muamichali</strong> closed the issue on April 6, 2021 at 2:28 pm
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

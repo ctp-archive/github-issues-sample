@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,16 +134,19 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 7</p>
-        <p><strong>joshellington</strong> opened this issue on March 12, 2020 at 12:03 am</p>
+        <p>
+          <strong>Issue number</strong>
+          7</p>
+        <p>
+          <strong>joshellington</strong> opened this issue on March 11, 2020 at 10:03 pm</p>
         
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/7" target="_blank">Open in Github</a>
-        </div>
       </div>
-      <div class="body">
-        <p>Currently all requests from <code>urlwatch</code>/<code>curl</code>/<code>pyppeteer</code> etc are failing due to an obfuscated Javascript redirect 😞. Attempts at getting around the redirect with various User Agents/Cookies/system time settings have failed so far.</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/7" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p>Currently all requests from <code>urlwatch</code>/<code>curl</code>/<code>pyppeteer</code> etc are failing due to an obfuscated Javascript redirect 😞. Attempts at getting around the redirect with various User Agents/Cookies/system time settings have failed so far.</p>
 <p>We need help setting up a proxy that uses manually tuned headless browser behaviors to execute/follow the redirect. Zach found an issue containing potential solutions that deals with a similar issue (using <code>puppeteer</code>): <a href="https://github.com/puppeteer/puppeteer/issues/3323">https://github.com/puppeteer/puppeteer/issues/3323</a></p>
 <p>Couple additional notes:</p>
 <ul>
@@ -144,24 +155,40 @@ table th {
 <li>Other header attempts: <a href="https://covid-tracking.slack.com/archives/CUW8MKCD7/p1583988346289300">https://covid-tracking.slack.com/archives/CUW8MKCD7/p1583988346289300</a></li>
 </ul>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
       
         <div class="comment" id="issuecomment-599155033">
           <div class="frontmatter">
-            <div><strong>joshellington</strong> commented on March 14, 2020 at 8:18 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/7#issuecomment-599155033" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>joshellington</strong> commented on March 14, 2020 at 6:18 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/7#issuecomment-599155033" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Proxy is up and working!</p>
+            <p>Proxy is up and working!</p>
 
           </div>
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>joshellington</strong> closed the issue on March 14, 2020 at 6:18 pm
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

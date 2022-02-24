@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,31 +134,37 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 1089</p>
-        <p><strong>hmhoffman</strong> opened this issue on February 5, 2021 at 10:07 am</p>
+        <p>
+          <strong>Issue number</strong>
+          1089</p>
+        <p>
+          <strong>hmhoffman</strong> opened this issue on February 5, 2021 at 8:07 am</p>
         
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1089" target="_blank">Open in Github</a>
-        </div>
       </div>
-      <div class="body">
-        <p><strong>State:</strong> HI</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1089" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p><strong>State:</strong> HI</p>
 <p><strong>Dates affected:</strong> 04/01/20 - 02/04/21</p>
 <p><strong>Describe the issue:</strong> On February 3, 2021, we learned via outreach that Hawaii’s “Total fatalities” include only covid confirmed deaths which are confirmed through PCR testing. As a result, we are able to capture Deaths (confirmed) for Hawaii, and are duplicating our Deaths (confirmed + probable) timeseries to Deaths (confirmed), as only confirmed deaths are included.</p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
       
         <div class="comment" id="issuecomment-774127637">
           <div class="frontmatter">
-            <div><strong>hmhoffman</strong> commented on February 5, 2021 at 10:09 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1089#issuecomment-774127637" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>hmhoffman</strong> commented on February 5, 2021 at 8:09 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1089#issuecomment-774127637" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Rows edited: 310
+            <p>Rows edited: 310
 HI 2021-02-04
 deathConfirmed: 416 (was None)
 HI 2021-02-03
@@ -776,7 +790,20 @@ deathConfirmed: 1 (was None)</p>
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>hmhoffman</strong> closed the issue on February 5, 2021 at 8:09 am
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

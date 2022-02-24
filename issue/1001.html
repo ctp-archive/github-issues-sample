@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,20 +134,28 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 1001</p>
-        <p><strong>muamichali</strong> opened this issue on December 10, 2020 at 11:01 am</p>
+        <p>
+          <strong>Issue number</strong>
+          1001</p>
+        <p>
+          <strong>muamichali</strong> opened this issue on December 10, 2020 at 9:01 am</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/1921151980.html">Data quality</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1001" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p><strong>State or US</strong>:  North Dakota</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1001" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p><strong>State or US</strong>:  North Dakota</p>
 <p><strong>Describe the problem</strong></p>
 <ol>
 <li>The definitions on North Dakota’s website do not explicitly classify deaths as confirmed or probable. We were previously capturing positive deaths as confirmed, but since it is now clear that they include antigen and PCR positives, and since ND does not call these confirmed deaths, we do not think we should label them as confirmed deaths.</li>
@@ -149,18 +165,43 @@ table th {
 <p><strong>Link to data source</strong>
 <a href="https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases">https://www.health.nd.gov/diseases-conditions/coronavirus/north-dakota-coronavirus-cases</a></p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+            <strong>muamichali</strong> added the label <span class="label">Data quality</span> on December 10, 2020 at 9:01 am
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-742667692">
           <div class="frontmatter">
-            <div><strong>glasswoman</strong> commented on December 10, 2020 at 11:23 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1001#issuecomment-742667692" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>glasswoman</strong> commented on December 10, 2020 at 9:23 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1001#issuecomment-742667692" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p><strong>Before:</strong>
+            <p><strong>Before:</strong>
 <a href="../assets/files/github/5674588/ND.Deaths.12-10-2020.xlsx">ND Deaths 12-10-2020.xlsx</a></p>
 <p><strong>After:</strong>
 <a href="../assets/files/github/5674586/ND.Probable.deaths.deleted.12-10-20.xlsx">ND Probable deaths deleted 12-10-20.xlsx</a>
@@ -170,7 +211,20 @@ table th {
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>glasswoman</strong> closed the issue on December 10, 2020 at 10:11 pm
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

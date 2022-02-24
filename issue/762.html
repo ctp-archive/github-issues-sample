@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,20 +134,28 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 762</p>
-        <p><strong>muamichali</strong> opened this issue on August 14, 2020 at 10:09 am</p>
+        <p>
+          <strong>Issue number</strong>
+          762</p>
+        <p>
+          <strong>muamichali</strong> opened this issue on August 14, 2020 at 8:09 am</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/1921151980.html">Data quality</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/762" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p><strong>State or US</strong>: NJ</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/762" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p><strong>State or US</strong>: NJ</p>
 <p><strong>Describe the problem</strong>
 ON 5/11, NJ switched the units it reports total tests in from people to tests, but CTP continued to capture the tests in the “peoplewise” column.
 Any values captured starting 5/11 should be moved from the “Total Tests PCR (People)” column to “Total Tests (PCR)” column</p>
@@ -147,18 +163,53 @@ Any values captured starting 5/11 should be moved from the “Total Tests PCR (P
 NJ Before: (reporting in people) <a href="https://covidtracking.com/screenshots/NJ/NJ-20200508-181426.png">https://covidtracking.com/screenshots/NJ/NJ-20200508-181426.png</a>
 NJ After: (reporting in tests) <a href="https://covidtracking.com/screenshots/NJ/NJ-20200511-001724.png">https://covidtracking.com/screenshots/NJ/NJ-20200511-001724.png</a></p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+            <strong>muamichali</strong> added the label <span class="label">Data quality</span> on August 14, 2020 at 8:09 am
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-674873708">
           <div class="frontmatter">
-            <div><strong>muamichali</strong> commented on August 17, 2020 at 8:13 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/762#issuecomment-674873708" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>muamichali</strong> commented on August 17, 2020 at 6:13 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/762#issuecomment-674873708" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <h3>Updating Data Store</h3>
+            <h3>Updating Data Store</h3>
 <p>I am copying the following values from <strong>“Total Tests PCR (People)”</strong> column to <strong>“Total Tests (PCR)”</strong>
 The screenshots reflect the top of the update portion
 BEFORE
@@ -270,19 +321,47 @@ AFTER
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>muamichali</strong> closed the issue on August 17, 2020 at 6:50 am
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-674922449">
           <div class="frontmatter">
-            <div><strong>the-daniel-lin</strong> commented on August 17, 2020 at 9:41 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/762#issuecomment-674922449" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>the-daniel-lin</strong> commented on August 17, 2020 at 7:41 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/762#issuecomment-674922449" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>DC’d by DZL 8/17 10:41</p>
+            <p>DC’d by DZL 8/17 10:41</p>
 
           </div>
         </div>
       
     
   
+
 </main>
   </body>
 </html>

@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,47 +134,107 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 805</p>
-        <p><strong>whobody</strong> opened this issue on August 30, 2020 at 4:20 pm</p>
+        <p>
+          <strong>Issue number</strong>
+          805</p>
+        <p>
+          <strong>whobody</strong> opened this issue on August 30, 2020 at 2:20 pm</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
-          
-            <span class="label"><a href="../label/2036763438.html">not stale</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/1921151980.html">Data quality</a>
+              </span>
+            
+              <span class="label">
+                <a href="../label/2036763438.html">not stale</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/805" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p><strong>State or US</strong>: [State name, or “US” if this is an issue with country-wide data]
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/805" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p><strong>State or US</strong>: [State name, or “US” if this is an issue with country-wide data]
 Northern Marianas Islands</p>
 <p><strong>Describe the problem</strong></p>
 <p>MP (who updates infrequently) had new testing values on 8/27 (13540) and then new case values (specifically confirmed) on 8/29 (56). Because MP doesn’t post explicit negatives, we calculate the negatives by subtracting Confirmed cases from Total PCR Tests (People). It’s our policy not to update the negatives when the testing metric in the calculation doesn’t update, however the calculation was updated on 8/30. Backfilling 8/30-9/9 to stay the same as 8/27-8/29 until the testing metric updated on 9/10.</p>
 <p><strong>Link to data source</strong></p>
 <p><a href="https://cnmichcc.maps.arcgis.com/apps/opsdashboard/index.html#/4061b674fc964efe84f7774b7979d2b5">https://cnmichcc.maps.arcgis.com/apps/opsdashboard/index.html#/4061b674fc964efe84f7774b7979d2b5</a></p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+            <strong>whobody</strong> added the label <span class="label">Data quality</span> on August 30, 2020 at 2:20 pm
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+            <strong>brianskli</strong> added the label <span class="label">not stale</span> on September 1, 2020 at 6:29 am
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-822846918">
           <div class="frontmatter">
-            <div><strong>jaclyde</strong> commented on April 19, 2021 at 6:08 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/805#issuecomment-822846918" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>jaclyde</strong> commented on April 19, 2021 at 4:08 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/805#issuecomment-822846918" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Values updated:
+            <p>Values updated:
 <a href="../assets/files/github/6339555/Changes.12.txt">Changes (12).txt</a></p>
 
           </div>
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>jaclyde</strong> closed the issue on April 19, 2021 at 4:08 pm
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

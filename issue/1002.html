@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,38 +134,61 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 1002</p>
-        <p><strong>muamichali</strong> opened this issue on December 10, 2020 at 11:38 am</p>
+        <p>
+          <strong>Issue number</strong>
+          1002</p>
+        <p>
+          <strong>muamichali</strong> opened this issue on December 10, 2020 at 9:38 am</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/1921151980.html">Data quality</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1002" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p><strong>State or US</strong>: Arizona</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1002" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p><strong>State or US</strong>: Arizona</p>
 <p><strong>Describe the problem</strong>
 Arizona started publishing in tests in specimens units on 12/8. This backfills the timeseries from the data that was available on their tableau dashboard on that day. We had to scrape the tableau data since the information is not available in downloadable format.</p>
 <p><strong>Link to data source</strong>
 Arizona’s website.
 <img src="../assets/images/github/1749380/101808681-a16a8800-3ae4-11eb-8f14-3f5ee4aef5af.png" alt="image"></p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+            <strong>muamichali</strong> added the label <span class="label">Data quality</span> on December 10, 2020 at 9:38 am
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-742769776">
           <div class="frontmatter">
-            <div><strong>muamichali</strong> commented on December 10, 2020 at 2:12 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1002#issuecomment-742769776" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>muamichali</strong> commented on December 10, 2020 at 12:12 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1002#issuecomment-742769776" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p><strong>Before</strong>
+            <p><strong>Before</strong>
 <a href="../assets/files/github/5675375/AZ-Before.xlsx">AZ-Before.xlsx</a></p>
 <p><strong>After</strong>
 <a href="../assets/files/github/5675373/AZ-After.xlsx">AZ-After.xlsx</a></p>
@@ -166,7 +197,20 @@ Arizona’s website.
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>muamichali</strong> closed the issue on December 10, 2020 at 12:12 pm
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,57 +134,90 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 135</p>
-        <p><strong>Greg-Boggs</strong> opened this issue on March 26, 2020 at 2:08 am</p>
+        <p>
+          <strong>Issue number</strong>
+          135</p>
+        <p>
+          <strong>Greg-Boggs</strong> opened this issue on March 26, 2020 at 12:08 am</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/2017157139.html">Publish Time</a></span>
-          
-            <span class="label"><a href="../label/2036763229.html">stale</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/2017157139.html">Publish Time</a>
+              </span>
+            
+              <span class="label">
+                <a href="../label/2036763229.html">stale</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/135" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p>It’s happened a couple of times where the API fetches Oregon Data just before the Oregon Health department updates the numbers. So, the API shows the same data for two days in a row. Can we adjust the timing on the Oregon data scrape so that it’s a bit later in the day?</p>
-
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/135" target="_blank">Open in Github</a>
       </div>
     </div>
+    <div class="body">
+      <p>It’s happened a couple of times where the API fetches Oregon Data just before the Oregon Health department updates the numbers. So, the API shows the same data for two days in a row. Can we adjust the timing on the Oregon data scrape so that it’s a bit later in the day?</p>
+
+    </div>
+  </div>
+  
     
-      <h2>Comments</h2>
       
         <div class="comment" id="issuecomment-604596311">
           <div class="frontmatter">
-            <div><strong>gwynnebaer</strong> commented on March 26, 2020 at 1:20 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/135#issuecomment-604596311" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>gwynnebaer</strong> commented on March 26, 2020 at 11:20 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/135#issuecomment-604596311" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Alternative, make a request more than once in 24 hours? Is there harm in making a request 12 hours out of phase? Oregon has not consistently updated their data (at the same time of day). For that, what is the harm in making regular (4-6 hour) requests?</p>
+            <p>Alternative, make a request more than once in 24 hours? Is there harm in making a request 12 hours out of phase? Oregon has not consistently updated their data (at the same time of day). For that, what is the harm in making regular (4-6 hour) requests?</p>
 
           </div>
         </div>
+      
+    
       
         <div class="comment" id="issuecomment-604704666">
           <div class="frontmatter">
-            <div><strong>kevee</strong> commented on March 26, 2020 at 4:49 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/135#issuecomment-604704666" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>kevee</strong> commented on March 26, 2020 at 2:49 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/135#issuecomment-604704666" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Reassigning to the API team.</p>
+            <p>Reassigning to the API team.</p>
 
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-604828028">
           <div class="frontmatter">
-            <div><strong>careeningspace</strong> commented on March 27, 2020 at 12:52 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/135#issuecomment-604828028" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>careeningspace</strong> commented on March 26, 2020 at 10:52 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/135#issuecomment-604828028" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>FYI - the API from <a href="https://covidtracking.com/api/">https://covidtracking.com/api/</a> is curated by people who make sure the most accurate data we have is available. We have set our cutoff at four for our daily data to create a fixed daily data point. Unfortunately, some states are not very consistent with their updates. We try to accommodate if possible, but there is a limit to how much we can tweak our data.</p>
+            <p>FYI - the API from <a href="https://covidtracking.com/api/">https://covidtracking.com/api/</a> is curated by people who make sure the most accurate data we have is available. We have set our cutoff at four for our daily data to create a fixed daily data point. Unfortunately, some states are not very consistent with their updates. We try to accommodate if possible, but there is a limit to how much we can tweak our data.</p>
 <blockquote>
 <p>The best thing you can do is to push your government to improve their reporting process.</p>
 </blockquote>
@@ -188,19 +229,81 @@ table th {
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+            <strong>muamichali</strong> added the label <span class="label">Publish Time</span> on April 26, 2020 at 2:46 pm
+          
+          
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-626989961">
           <div class="frontmatter">
-            <div><strong>stale[bot]</strong> commented on May 11, 2020 at 5:03 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/135#issuecomment-626989961" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>stale[bot]</strong> commented on May 11, 2020 at 3:03 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/135#issuecomment-626989961" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
+            <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
 
           </div>
         </div>
       
     
+      
+        <div class="event">
+          
+          
+            <strong>stale[bot]</strong> added the label <span class="label">stale</span> on May 11, 2020 at 3:04 pm
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>muamichali</strong> closed the issue on May 21, 2020 at 7:26 am
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

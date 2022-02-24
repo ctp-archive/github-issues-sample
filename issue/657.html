@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,16 +134,19 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 657</p>
-        <p><strong>airhadoken</strong> opened this issue on July 14, 2020 at 6:43 pm</p>
+        <p>
+          <strong>Issue number</strong>
+          657</p>
+        <p>
+          <strong>airhadoken</strong> opened this issue on July 14, 2020 at 4:43 pm</p>
         
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/657" target="_blank">Open in Github</a>
-        </div>
       </div>
-      <div class="body">
-        <p>Output from covid19-datafetch for Massachusetts yields this table (null columns removed for brevity):</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/657" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p>Output from covid19-datafetch for Massachusetts yields this table (null columns removed for brevity):</p>
 <table>
 <thead>
 <tr>
@@ -270,37 +281,118 @@ table th {
 <p>As far as I understand from reading over the code, the total test results in the output are calculated from <code>positive + negative + probable</code> from the datafetch input (where <code>negative = total - positive</code>, so <code>total + probable</code>). For reference, the value from the output table above is 978214.</p>
 <p>This count leaves out negative antibody tests.  A correct count for <code>total</code> in the public api should be <code>positive + negative + antibody_total</code>, which would total 1053595 in the example.</p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-662734768">
           <div class="frontmatter">
-            <div><strong>muamichali</strong> commented on July 22, 2020 at 5:46 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/657#issuecomment-662734768" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>muamichali</strong> commented on July 22, 2020 at 3:46 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/657#issuecomment-662734768" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Hi <strong>@airhadoken</strong></p>
+            <p>Hi <strong>@airhadoken</strong></p>
 <p>The total test numbers we report, by design, include only viral/diagnostic tests.
 We do capture Antibody tests as well separately and plan to publish them in the future.</p>
 
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>muamichali</strong> closed the issue on July 22, 2020 at 3:46 pm
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-665308043">
           <div class="frontmatter">
-            <div><strong>airhadoken</strong> commented on July 28, 2020 at 5:06 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/657#issuecomment-665308043" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>airhadoken</strong> commented on July 28, 2020 at 3:06 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/657#issuecomment-665308043" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p><strong>@muamichali</strong> Thanks for clarifying.  However, in the case you are describing, you should not be including Probable cases for Massachusetts at all – the count of probable cases specifically excludes the results of molecular tests.</p>
+            <p><strong>@muamichali</strong> Thanks for clarifying.  However, in the case you are describing, you should not be including Probable cases for Massachusetts at all – the count of probable cases specifically excludes the results of molecular tests.</p>
 
           </div>
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

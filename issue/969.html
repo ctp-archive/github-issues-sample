@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,31 +134,37 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 969</p>
-        <p><strong>hmhoffman</strong> opened this issue on November 23, 2020 at 8:35 am</p>
+        <p>
+          <strong>Issue number</strong>
+          969</p>
+        <p>
+          <strong>hmhoffman</strong> opened this issue on November 23, 2020 at 6:35 am</p>
         
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/969" target="_blank">Open in Github</a>
-        </div>
       </div>
-      <div class="body">
-        <p><strong>State:</strong> AZ</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/969" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p><strong>State:</strong> AZ</p>
 <p><strong>Dates affected:</strong> 11/5</p>
 <p><strong>Describe the issue:</strong> On 11/5, Negative PCR tests (people), was incorrectly calculated as {Total PCR tests (people) - Cases (confirmed plus probable)} instead of {Total PCR tests (people) - Positive PCR tests (people)}. We should patch this mistake.</p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
       
         <div class="comment" id="issuecomment-732202181">
           <div class="frontmatter">
-            <div><strong>hmhoffman</strong> commented on November 23, 2020 at 8:37 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/969#issuecomment-732202181" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>hmhoffman</strong> commented on November 23, 2020 at 6:37 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/969#issuecomment-732202181" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>BEFORE:
+            <p>BEFORE:
 <img width="180" alt="Screen Shot 2020-11-23 at 9 36 31 AM" src="../assets/images/github/68712382/99974753-5f64e680-2d6f-11eb-8b73-1e358ed849bd.png"></p>
 <p>AFTER:
 <img width="181" alt="Screen Shot 2020-11-23 at 9 37 23 AM" src="../assets/images/github/68712382/99974864-7f94a580-2d6f-11eb-9080-a1ae0874d2b8.png"></p>
@@ -159,7 +173,20 @@ table th {
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>hmhoffman</strong> closed the issue on November 23, 2020 at 6:37 am
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

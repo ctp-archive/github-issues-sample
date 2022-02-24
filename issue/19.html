@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,41 +134,52 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 19</p>
-        <p><strong>cephillips</strong> opened this issue on March 12, 2020 at 10:19 am</p>
+        <p>
+          <strong>Issue number</strong>
+          19</p>
+        <p>
+          <strong>cephillips</strong> opened this issue on March 12, 2020 at 8:19 am</p>
         
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/19" target="_blank">Open in Github</a>
-        </div>
       </div>
-      <div class="body">
-        <p>Hi – here to volunteer our help. Small team of four data journalists, plus a half-time engineer. Just launched our data-sharing for journalists platform, built around a robust API, ability to open data into tools, such as Datasette (SQL), or use api to open into Jupyter Notebooks, etc. We archive data with Stanford Libraries. Would like to help track and also create an open project that puts a new daily version into our platform so we can eventually archive and have a permanent record of this tracking. Let me know. <a href="mailto:cep3<strong>@stanford.edu</strong>">cep3<strong>@stanford.edu</strong></a> Also, site is at <a href="https://biglocalnews.stanford.edu">https://biglocalnews.org/</a></p>
-
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/19" target="_blank">Open in Github</a>
       </div>
     </div>
+    <div class="body">
+      <p>Hi – here to volunteer our help. Small team of four data journalists, plus a half-time engineer. Just launched our data-sharing for journalists platform, built around a robust API, ability to open data into tools, such as Datasette (SQL), or use api to open into Jupyter Notebooks, etc. We archive data with Stanford Libraries. Would like to help track and also create an open project that puts a new daily version into our platform so we can eventually archive and have a permanent record of this tracking. Let me know. <a href="mailto:cep3<strong>@stanford.edu</strong>">cep3<strong>@stanford.edu</strong></a> Also, site is at <a href="https://biglocalnews.stanford.edu">https://biglocalnews.org/</a></p>
+
+    </div>
+  </div>
+  
     
-      <h2>Comments</h2>
       
         <div class="comment" id="issuecomment-598866180">
           <div class="frontmatter">
-            <div><strong>metasj</strong> commented on March 13, 2020 at 1:52 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/19#issuecomment-598866180" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>metasj</strong> commented on March 13, 2020 at 11:52 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/19#issuecomment-598866180" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>That sounds lovely - a daily archive is important.<br>
+            <p>That sounds lovely - a daily archive is important.<br>
 Do you have the access you need from the public sheet to set up the archived daily version?</p>
 
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-598874361">
           <div class="frontmatter">
-            <div><strong>cephillips</strong> commented on March 13, 2020 at 2:15 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/19#issuecomment-598874361" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>cephillips</strong> commented on March 13, 2020 at 12:15 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/19#issuecomment-598874361" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Looping in Eric Sagara, one of our senior data journalists. Eric can you take a look at the COVID19Tracking site and spreadsheet. The idea is we would add this as a daily snapshot into our Public Project on Coronavirus data</p>
+            <p>Looping in Eric Sagara, one of our senior data journalists. Eric can you take a look at the COVID19Tracking site and spreadsheet. The idea is we would add this as a daily snapshot into our Public Project on Coronavirus data</p>
 <p><a href="https://covidtracking.com/">https://covidtracking.com/</a></p>
 <p>Cheryl
 <a href="mailto:cep3<strong>@stanford.edu</strong>">cep3<strong>@stanford.edu</strong></a><a href="mailto:cep3<strong>@stanford.edu</strong>">mailto:cep3<strong>@stanford.edu</strong></a></p>
@@ -174,30 +193,63 @@ Reply to this email directly, view it on GitHub<a href="https://github.com/COVID
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-598899267">
           <div class="frontmatter">
-            <div><strong>esagara</strong> commented on March 13, 2020 at 3:30 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/19#issuecomment-598899267" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>esagara</strong> commented on March 13, 2020 at 1:30 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/19#issuecomment-598899267" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>It should be fairly easy to use your API to grab the data and upload through our own API. What files should be archived daily and when is the optimal time to ping the API? I am assuming sometime after 4 p.m. EST.</p>
-
-          </div>
-        </div>
-      
-        <div class="comment" id="issuecomment-601982624">
-          <div class="frontmatter">
-            <div><strong>careeningspace</strong> commented on March 20, 2020 at 9:46 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/19#issuecomment-601982624" target="_blank">Open in Github</a></div>
-          </div>
-          <div class="body">
-          <p>We spend about 30-45 minutes after 4 pm ET verifying the data, so maybe at 5 pm ET would be a good time to pull our data?</p>
+            <p>It should be fairly easy to use your API to grab the data and upload through our own API. What files should be archived daily and when is the optimal time to ping the API? I am assuming sometime after 4 p.m. EST.</p>
 
           </div>
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="comment" id="issuecomment-601982624">
+          <div class="frontmatter">
+            <div>
+              <strong>careeningspace</strong> commented on March 20, 2020 at 7:46 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/19#issuecomment-601982624" target="_blank">Open in Github</a>
+            </div>
+          </div>
+          <div class="body">
+            <p>We spend about 30-45 minutes after 4 pm ET verifying the data, so maybe at 5 pm ET would be a good time to pull our data?</p>
+
+          </div>
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>careeningspace</strong> closed the issue on March 26, 2020 at 10:19 pm
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

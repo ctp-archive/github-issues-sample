@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,35 +134,48 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 72</p>
-        <p><strong>hammer</strong> opened this issue on March 28, 2020 at 12:05 am</p>
+        <p>
+          <strong>Issue number</strong>
+          72</p>
+        <p>
+          <strong>hammer</strong> opened this issue on March 27, 2020 at 10:05 pm</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
-          
-            <span class="label"><a href="../label/2036763229.html">stale</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/1921151980.html">Data quality</a>
+              </span>
+            
+              <span class="label">
+                <a href="../label/2036763229.html">stale</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/72" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p>We should publish to a staging sheet, wire that sheet up to the API, and run some data quality checks before publishing to the production sheet.</p>
-
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/72" target="_blank">Open in Github</a>
       </div>
     </div>
+    <div class="body">
+      <p>We should publish to a staging sheet, wire that sheet up to the API, and run some data quality checks before publishing to the production sheet.</p>
+
+    </div>
+  </div>
+  
     
-      <h2>Comments</h2>
       
         <div class="comment" id="issuecomment-605396201">
           <div class="frontmatter">
-            <div><strong>hammer</strong> commented on March 28, 2020 at 12:10 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/72#issuecomment-605396201" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>hammer</strong> commented on March 27, 2020 at 10:10 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/72#issuecomment-605396201" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <ul>
+            <ul>
 <li>[x] Make sure no cumulative values go down</li>
 <li>[x] Warn if increases are outside of the normal rate of increases</li>
 <li>[x] Make sure no daily or current values are greater than cumulative values</li>
@@ -169,46 +190,118 @@ table th {
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+            <strong>hammer</strong> added the label <span class="label">Data quality</span> on March 27, 2020 at 10:12 pm
+          
+          
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-605516287">
           <div class="frontmatter">
-            <div><strong>Erin-Boehmer</strong> commented on March 28, 2020 at 3:36 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/72#issuecomment-605516287" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>Erin-Boehmer</strong> commented on March 28, 2020 at 1:36 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/72#issuecomment-605516287" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Dev starting in <a href="https://github.com/COVID19Tracking/quality-control">quality-control repo</a></p>
+            <p>Dev starting in <a href="https://github.com/COVID19Tracking/quality-control">quality-control repo</a></p>
 
           </div>
         </div>
+      
+    
       
         <div class="comment" id="issuecomment-605523945">
           <div class="frontmatter">
-            <div><strong>joshuaellinger</strong> commented on March 28, 2020 at 4:47 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/72#issuecomment-605523945" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>joshuaellinger</strong> commented on March 28, 2020 at 2:47 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/72#issuecomment-605523945" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>I’ve only got internal self-tests right now.  I want to work out the data flow and will get the cross data checks next.</p>
+            <p>I’ve only got internal self-tests right now.  I want to work out the data flow and will get the cross data checks next.</p>
 
           </div>
         </div>
+      
+    
       
         <div class="comment" id="issuecomment-605783604">
           <div class="frontmatter">
-            <div><strong>hammer</strong> commented on March 30, 2020 at 12:02 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/72#issuecomment-605783604" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>hammer</strong> commented on March 29, 2020 at 10:02 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/72#issuecomment-605783604" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p><strong>@joshuaellinger</strong> sorry for the slow replies this weekend, was hanging with the fam. Awesome that you jumped on this one so quickly, I’ll have more comments tomorrow (today?) when I’m back at my desk.</p>
+            <p><strong>@joshuaellinger</strong> sorry for the slow replies this weekend, was hanging with the fam. Awesome that you jumped on this one so quickly, I’ll have more comments tomorrow (today?) when I’m back at my desk.</p>
 
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-606075735">
           <div class="frontmatter">
-            <div><strong>joshuaellinger</strong> commented on March 30, 2020 at 10:38 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/72#issuecomment-606075735" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>joshuaellinger</strong> commented on March 30, 2020 at 8:38 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/72#issuecomment-606075735" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>I ran it as the update was happening yesterday and make some improvements.  I want to do that against today and then I’ll publish it to an HTML endpoint.  A number of states don’t update tests on the weekend.</p>
+            <p>I ran it as the update was happening yesterday and make some improvements.  I want to do that against today and then I’ll publish it to an HTML endpoint.  A number of states don’t update tests on the weekend.</p>
 <p>The current ERROR results are listed below.  I have checks implemented for missing checker initials that show up as we approach 5PM.  There are a lot of little engineering judgement decisions on when to make something an error vs a warning.</p>
 <p>=====| ERROR |===========
 CA: positive value (5,708) has not changed since 03/28 (2 days)
@@ -232,30 +325,105 @@ RI: positive value (294) has not changed since 03/28 (2 days)</p>
           </div>
         </div>
       
-        <div class="comment" id="issuecomment-623800965">
-          <div class="frontmatter">
-            <div><strong>stale[bot]</strong> commented on May 4, 2020 at 9:20 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/72#issuecomment-623800965" target="_blank">Open in Github</a></div>
-          </div>
-          <div class="body">
-          <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
-
-          </div>
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
         </div>
       
-        <div class="comment" id="issuecomment-628989967">
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="comment" id="issuecomment-623800965">
           <div class="frontmatter">
-            <div><strong>stale[bot]</strong> commented on May 14, 2020 at 9:30 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/72#issuecomment-628989967" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>stale[bot]</strong> commented on May 4, 2020 at 7:20 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/72#issuecomment-623800965" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>This issue has been closed because it was stale for 15 days, and there was no further activity on it for 10 days. You can feel free to re-open it if the issue is important, and label it as “not stale.”</p>
+            <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
 
           </div>
         </div>
       
     
+      
+        <div class="event">
+          
+          
+            <strong>stale[bot]</strong> added the label <span class="label">stale</span> on May 4, 2020 at 7:20 pm
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="comment" id="issuecomment-628989967">
+          <div class="frontmatter">
+            <div>
+              <strong>stale[bot]</strong> commented on May 14, 2020 at 7:30 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/72#issuecomment-628989967" target="_blank">Open in Github</a>
+            </div>
+          </div>
+          <div class="body">
+            <p>This issue has been closed because it was stale for 15 days, and there was no further activity on it for 10 days. You can feel free to re-open it if the issue is important, and label it as “not stale.”</p>
+
+          </div>
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>stale[bot]</strong> closed the issue on May 14, 2020 at 7:31 pm
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

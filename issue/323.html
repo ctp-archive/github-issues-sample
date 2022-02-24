@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,45 +134,56 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 323</p>
-        <p><strong>ppasquar</strong> opened this issue on April 28, 2020 at 5:22 pm</p>
+        <p>
+          <strong>Issue number</strong>
+          323</p>
+        <p>
+          <strong>ppasquar</strong> opened this issue on April 28, 2020 at 3:22 pm</p>
         
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/323" target="_blank">Open in Github</a>
-        </div>
       </div>
-      <div class="body">
-        <p>Today (4/28), the national data release reported an increase in recovered patients by more than 40,000 units (from 94,745 to 139,299), after prior changes of no more than a few thousands.</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/323" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p>Today (4/28), the national data release reported an increase in recovered patients by more than 40,000 units (from 94,745 to 139,299), after prior changes of no more than a few thousands.</p>
 <p>This is either the result of data entry error or the result of a sudden update in the recoveries after days of stale information. Either way, can you please clarify, as this number is crucial to compute Active cases in any reasonable prediction model?</p>
 <p>Thanks!</p>
 <p>Paolo</p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
       
         <div class="comment" id="issuecomment-620900684">
           <div class="frontmatter">
-            <div><strong>careeningspace</strong> commented on April 28, 2020 at 6:06 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/323#issuecomment-620900684" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>careeningspace</strong> commented on April 28, 2020 at 4:06 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/323#issuecomment-620900684" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Hello,</p>
+            <p>Hello,</p>
 <p>The jump in recoveries is from NY. We resolved how to calculate a base line from the data they have been releasing. Unfortunately they stopped publishing a specific number and it took a while to come up with a reasonable solution.</p>
 <p>Thanks!</p>
 
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-620904650">
           <div class="frontmatter">
-            <div><strong>ppasquar</strong> commented on April 28, 2020 at 6:20 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/323#issuecomment-620904650" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>ppasquar</strong> commented on April 28, 2020 at 4:20 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/323#issuecomment-620904650" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Thank you!</p>
+            <p>Thank you!</p>
 <p>Will you implement your fix soon and retroactively? If not, I may have to
 interpolate the data points.</p>
 <p>Paolo</p>
@@ -204,13 +223,18 @@ or unsubscribe
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-620977702">
           <div class="frontmatter">
-            <div><strong>careeningspace</strong> commented on April 28, 2020 at 11:04 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/323#issuecomment-620977702" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>careeningspace</strong> commented on April 28, 2020 at 9:04 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/323#issuecomment-620977702" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Hello,</p>
+            <p>Hello,</p>
 <p>I have backfilled the calculated data for NY:</p>
 <p><strong>Before</strong>
 <img src="../assets/images/github/43073915/80559983-5b294400-89ad-11ea-9f8d-f2de4eb0833b.png" alt="Screen Shot 2020-04-29 at 12 06 44 AM"></p>
@@ -220,13 +244,30 @@ or unsubscribe
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>careeningspace</strong> closed the issue on April 28, 2020 at 9:04 pm
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-621122733">
           <div class="frontmatter">
-            <div><strong>ppasquar</strong> commented on April 29, 2020 at 5:45 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/323#issuecomment-621122733" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>ppasquar</strong> commented on April 29, 2020 at 3:45 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/323#issuecomment-621122733" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Thank you!</p>
+            <p>Thank you!</p>
 <p>Paolo</p>
 <p>Paolo Pasquariello
 Professor of Finance
@@ -268,6 +309,7 @@ or unsubscribe
       
     
   
+
 </main>
   </body>
 </html>

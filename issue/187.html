@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,16 +134,19 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 187</p>
-        <p><strong>gitjeff05</strong> opened this issue on April 12, 2020 at 2:06 pm</p>
+        <p>
+          <strong>Issue number</strong>
+          187</p>
+        <p>
+          <strong>gitjeff05</strong> opened this issue on April 12, 2020 at 12:06 pm</p>
         
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/187" target="_blank">Open in Github</a>
-        </div>
       </div>
-      <div class="body">
-        <p>While working on <a href="https://github.com/COVID19Tracking/website/pull/510">tests for cumulative (+/-) values</a>, I encountered 4 anomalies in <a href="https://covidtracking.com/api">States Historical Data</a>. There are some cumulative entries that are <em>less than</em> the value for previous date. This should never happen if values are cumulative.</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/187" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p>While working on <a href="https://github.com/COVID19Tracking/website/pull/510">tests for cumulative (+/-) values</a>, I encountered 4 anomalies in <a href="https://covidtracking.com/api">States Historical Data</a>. There are some cumulative entries that are <em>less than</em> the value for previous date. This should never happen if values are cumulative.</p>
 <p>I know the state websites are the “source of truth” but anomalies like this suggest that their public websites may have experienced a sort of regression and I wonder if we shouldn’t correct it or seek clarification? Anyways, I thought I would open the issue to at least document these somewhere:</p>
 <p><strong>RI</strong></p>
 <pre><code class="language-json">{
@@ -178,40 +189,107 @@ table th {
 }
 </code></pre>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
       
         <div class="comment" id="issuecomment-612869213">
           <div class="frontmatter">
-            <div><strong>gitjeff05</strong> commented on April 13, 2020 at 6:55 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/187#issuecomment-612869213" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>gitjeff05</strong> commented on April 13, 2020 at 4:55 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/187#issuecomment-612869213" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>In the case Delaware, it appears that it may have been a regression on their part. Does the recorder take the highest value if there are multiple values for positive/negative on a single day?</p>
+            <p>In the case Delaware, it appears that it may have been a regression on their part. Does the recorder take the highest value if there are multiple values for positive/negative on a single day?</p>
 
           </div>
         </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-623775002">
           <div class="frontmatter">
-            <div><strong>stale[bot]</strong> commented on May 4, 2020 at 7:20 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/187#issuecomment-623775002" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>stale[bot]</strong> commented on May 4, 2020 at 5:20 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/187#issuecomment-623775002" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
+            <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
 
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+            <strong>stale[bot]</strong> added the label <span class="label">stale</span> on May 4, 2020 at 5:21 pm
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+            <strong>stale[bot]</strong> removed the label <span class="label">stale</span> on May 11, 2020 at 7:55 am
+          
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-626806786">
           <div class="frontmatter">
-            <div><strong>karaschechtman</strong> commented on May 11, 2020 at 11:22 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/187#issuecomment-626806786" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>karaschechtman</strong> commented on May 11, 2020 at 9:22 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/187#issuecomment-626806786" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Hi <strong>@gitjeff05</strong>,
+            <p>Hi <strong>@gitjeff05</strong>,
 Thanks for pointing these discrepancies out!</p>
 <p>WI and DE: Since these numbers come directly from the states according to historical screenshots (<a href="https://covidtracking.com/screenshots/DE/DE-20200411-180500.png">DE</a> + <a href="https://covidtracking.com/screenshots/WI/WI-20200330-181607.png">WI</a>), we are going to leave as is and make a public note that the states revised down.
 WY: data on positives for 4/10 was a data entry mistake corrected down to 253 on 4/18, which fixed the problem.
@@ -222,7 +300,70 @@ RI: I think you meant the discrepancy between 3/6 and 3/7 rather than 3/5 to 3/6
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>muamichali</strong> closed the issue on May 14, 2020 at 7:12 am
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

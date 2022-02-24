@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,44 +134,80 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 1134</p>
-        <p><strong>muamichali</strong> opened this issue on March 5, 2021 at 7:56 pm</p>
+        <p>
+          <strong>Issue number</strong>
+          1134</p>
+        <p>
+          <strong>muamichali</strong> opened this issue on March 5, 2021 at 5:56 pm</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/1921151980.html">Data quality</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1134" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p><strong>State or US</strong>: New Mexico</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1134" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p><strong>State or US</strong>: New Mexico</p>
 <p><strong>Describe the problem</strong>
 We were previously calcaulating Negative (People or Cases) in New Mexico because our system relied on adding positive+negative to get total tests. Since this is no longer the case, we are removing the calculated negatives timeseries.</p>
 <p>The last time NM reported negatives explicitly was for April 4th, 2020:
 <a href="https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200405-001135.png">https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200405-001135.png</a>
 <a href="https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200406-121242.png">https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/NM/NM-20200406-121242.png</a></p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+            <strong>muamichali</strong> added the label <span class="label">Data quality</span> on March 5, 2021 at 5:56 pm
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-791838742">
           <div class="frontmatter">
-            <div><strong>muamichali</strong> commented on March 5, 2021 at 8:02 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1134#issuecomment-791838742" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>muamichali</strong> commented on March 5, 2021 at 6:02 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1134#issuecomment-791838742" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p><a href="../assets/files/github/6094527/Changes.2.txt">Changes (2).txt</a></p>
+            <p><a href="../assets/files/github/6094527/Changes.2.txt">Changes (2).txt</a></p>
 
           </div>
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>muamichali</strong> closed the issue on March 5, 2021 at 6:02 pm
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

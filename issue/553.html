@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,20 +134,28 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 553</p>
-        <p><strong>Minibadger</strong> opened this issue on June 27, 2020 at 7:42 pm</p>
+        <p>
+          <strong>Issue number</strong>
+          553</p>
+        <p>
+          <strong>Minibadger</strong> opened this issue on June 27, 2020 at 5:42 pm</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/2036763229.html">stale</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/2036763229.html">stale</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/553" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p>Minnesota has gradually changed its reporting methods since roughly May 1st to putting interim data in its data tables and updating it as the data is confirmed. They also have changed positive results to representing the date collected. As a result, the data in the COVID Tracking Project since that date almost always disagrees at least a little bit with the official figures, and in some cases is wildly wrong, for example the numbers reported June 15-16:</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/553" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p>Minnesota has gradually changed its reporting methods since roughly May 1st to putting interim data in its data tables and updating it as the data is confirmed. They also have changed positive results to representing the date collected. As a result, the data in the COVID Tracking Project since that date almost always disagrees at least a little bit with the official figures, and in some cases is wildly wrong, for example the numbers reported June 15-16:</p>
 <p>COVID Tracking Project
 June 13: 9658 tested, 2 positive, 9 deaths
 June 14: 0 tested, 6 positive, 15 deaths</p>
@@ -155,30 +171,68 @@ June 14: 5019 tested, 148 positive, 15 deaths</p>
 </ol>
 <p>I understand this is rather laborious. I’ll help any way I can.</p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-651397254">
           <div class="frontmatter">
-            <div><strong>MattHilliard</strong> commented on June 29, 2020 at 5:13 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/553#issuecomment-651397254" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>MattHilliard</strong> commented on June 29, 2020 at 3:13 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/553#issuecomment-651397254" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Thanks for reporting this issue <strong>@</strong>Minibadger. Unfortunately the way MN makes its updates and the way we collect data cause these problems. The day with zero positives you mention, June 14th, is an artifact of a previous historical update: <a href="https://github.com/COVID19Tracking/issues/issues/484">https://github.com/COVID19Tracking/issues/issues/484</a>  As part of that issue, we manually synchronized with MN’s case history as it was reported at that time. Since then (a) recent data has drifted out of sync as they continuously revise past days and (b) we once again became a day offset from them because we capture numbers in the afternoon when they are reporting yesterday’s data. The day with 0 new cases is the point where we got 1 day off.</p>
+            <p>Thanks for reporting this issue <strong>@</strong>Minibadger. Unfortunately the way MN makes its updates and the way we collect data cause these problems. The day with zero positives you mention, June 14th, is an artifact of a previous historical update: <a href="https://github.com/COVID19Tracking/issues/issues/484">https://github.com/COVID19Tracking/issues/issues/484</a>  As part of that issue, we manually synchronized with MN’s case history as it was reported at that time. Since then (a) recent data has drifted out of sync as they continuously revise past days and (b) we once again became a day offset from them because we capture numbers in the afternoon when they are reporting yesterday’s data. The day with 0 new cases is the point where we got 1 day off.</p>
 <p>We could manually sync the historicals again, but the same thing would just happen again. Thanks for your suggested alternate collection process…we are currently figuring out what we should do for this and similar states and your idea is one of those being considered.</p>
 
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-651400313">
           <div class="frontmatter">
-            <div><strong>Minibadger</strong> commented on June 29, 2020 at 5:21 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/553#issuecomment-651400313" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>Minibadger</strong> commented on June 29, 2020 at 3:21 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/553#issuecomment-651400313" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>That’s exactly as I understood the root cause; thanks for considering
+            <p>That’s exactly as I understood the root cause; thanks for considering
 fixes. I am a passionate Minnesota resident and I offer any support you
 need; I am a Senior IT Project Manager and Analyst, and you can find my
 credentials on LinkedIn as Derek J. Wingert. I volunteered formally last
@@ -214,13 +268,38 @@ or unsubscribe
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-652527016">
           <div class="frontmatter">
-            <div><strong>muamichali</strong> commented on July 1, 2020 at 11:39 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/553#issuecomment-652527016" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>muamichali</strong> commented on July 1, 2020 at 9:39 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/553#issuecomment-652527016" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <blockquote>
+            <blockquote>
 <p>That’s exactly as I understood the root cause; thanks for considering fixes. I am a passionate Minnesota resident and I offer any support you need; I am a Senior IT Project Manager and Analyst, and you can find my credentials on LinkedIn as Derek J. Wingert. I volunteered formally last month, so I may be on file somewhere. Keep up the important good work!
 <a href="#">…</a>
 On Mon, Jun 29, 2020, 5:13 PM Matt Hilliard <em><strong><strong>@</strong></strong></em>.***&gt; wrote: Thanks for reporting this issue <strong>@</strong>Minibadger <a href="https://github.com/Minibadger">https://github.com/Minibadger</a>. Unfortunately the way MN makes its updates and the way we collect data cause these problems. The day with zero positives you mention, June 14th, is an artifact of a previous historical update: #484 &lt;#484&gt; As part of that issue, we manually synchronized with MN’s case history as it was reported at that time. Since then (a) recent data has drifted out of sync as they continuously revise past days and (b) we once again became a day offset from them because we capture numbers in the afternoon when they are reporting yesterday’s data. The day with 0 new cases is the point where we got 1 day off. We could manually sync the historicals again, but the same thing would just happen again. Thanks for your suggested alternate collection process…we are currently figuring out what we should do for this and similar states and your idea is one of those being considered. — You are receiving this because you were mentioned. Reply to this email directly, view it on GitHub &lt;<a href="https://github.com/COVID19Tracking/issues/issues/553#issuecomment-651397254">#553 (comment)</a>&gt;, or unsubscribe <a href="https://github.com/notifications/unsubscribe-auth/APK3QASSZF74GZVMWF25IG3RZEGYXANCNFSM4OKIUW6A">https://github.com/notifications/unsubscribe-auth/APK3QASSZF74GZVMWF25IG3RZEGYXANCNFSM4OKIUW6A</a> .</p>
@@ -230,13 +309,38 @@ On Mon, Jun 29, 2020, 5:13 PM Matt Hilliard <em><strong><strong>@</strong></stro
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-652528756">
           <div class="frontmatter">
-            <div><strong>dhmontgomery</strong> commented on July 1, 2020 at 11:43 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/553#issuecomment-652528756" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>dhmontgomery</strong> commented on July 1, 2020 at 9:43 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/553#issuecomment-652528756" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>I’m a data journalist from MPR who’s been closely tracking Minnesota’s COVID-19 figures, including manually updating topline numbers on a spreadsheet each day. My spreadsheet has some pretty big discontinuities with the CTP’s Minnesota data, especially from late April through mid June. As of a few weeks ago — right after the dip to near-zero that’s already been mentioned — our data is back in sync:</p>
+            <p>I’m a data journalist from MPR who’s been closely tracking Minnesota’s COVID-19 figures, including manually updating topline numbers on a spreadsheet each day. My spreadsheet has some pretty big discontinuities with the CTP’s Minnesota data, especially from late April through mid June. As of a few weeks ago — right after the dip to near-zero that’s already been mentioned — our data is back in sync:</p>
 <p><img src="../assets/images/github/12974539/86268855-715ea680-bb8e-11ea-891e-4d02489e4ea8.png" alt="image"></p>
 <p>Notably, when I went back in and looked at the screenshots you’ve taken of Minnesota’s Situation Reports, the numbers there matched my spreadsheet, not the data you’ve recorded. (For example, on June 13, you report 30,465 positive cases, but your screenshot from that evening lists 30,172.)</p>
 <p>There’s probably a few things going on here.</p>
@@ -251,30 +355,65 @@ On Mon, Jun 29, 2020, 5:13 PM Matt Hilliard <em><strong><strong>@</strong></stro
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-659539567">
           <div class="frontmatter">
-            <div><strong>stale[bot]</strong> commented on July 16, 2020 at 11:54 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/553#issuecomment-659539567" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>stale[bot]</strong> commented on July 16, 2020 at 9:54 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/553#issuecomment-659539567" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
-
-          </div>
-        </div>
-      
-        <div class="comment" id="issuecomment-664020446">
-          <div class="frontmatter">
-            <div><strong>stale[bot]</strong> commented on July 26, 2020 at 12:56 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/553#issuecomment-664020446" target="_blank">Open in Github</a></div>
-          </div>
-          <div class="body">
-          <p>This issue has been closed because it was stale for 15 days, and there was no further activity on it for 10 days. You can feel free to re-open it if the issue is important, and label it as “not stale.”</p>
+            <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
 
           </div>
         </div>
       
     
+      
+        <div class="event">
+          
+          
+            <strong>stale[bot]</strong> added the label <span class="label">stale</span> on July 16, 2020 at 9:54 am
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="comment" id="issuecomment-664020446">
+          <div class="frontmatter">
+            <div>
+              <strong>stale[bot]</strong> commented on July 26, 2020 at 10:56 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/553#issuecomment-664020446" target="_blank">Open in Github</a>
+            </div>
+          </div>
+          <div class="body">
+            <p>This issue has been closed because it was stale for 15 days, and there was no further activity on it for 10 days. You can feel free to re-open it if the issue is important, and label it as “not stale.”</p>
+
+          </div>
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>stale[bot]</strong> closed the issue on July 26, 2020 at 10:56 am
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

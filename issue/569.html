@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,16 +134,19 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 569</p>
-        <p><strong>muamichali</strong> opened this issue on July 2, 2020 at 6:00 pm</p>
+        <p>
+          <strong>Issue number</strong>
+          569</p>
+        <p>
+          <strong>muamichali</strong> opened this issue on July 2, 2020 at 4:00 pm</p>
         
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/569" target="_blank">Open in Github</a>
-        </div>
       </div>
-      <div class="body">
-        <p>Hello,</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/569" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p>Hello,</p>
 <p>I build and update a coronavirus tracker for Crain’s New York Business. The COVID Tracking Project is a great source for us, but I wanted to point out a few apparent errors I believe I’ve spotted in the New York data.</p>
 <p><strong>Metric: Current Hospitalizations</strong>
 In the hospitalizations data, the COVID Tracking Project is reporting some numbers that don’t match up with the figures the state is publishing in its own dashboard. These could be typos or results of the state’s revisions to hospitalization figures in the days that followed. Here are the updated numbers I’m using in my own tracker, which subtracts a day from the Tracking Project dates so it matches state sources:
@@ -149,18 +160,41 @@ Date,Revised hospitalizations
 <p><strong>Metric: Current ICU</strong>
 I should also note that the <a href="https://forward.ny.gov/daily-hospitalization-summary-region">New York dashboard</a> contains daily ICU numbers. Those could be used to fill in the gap in the COVID Tracking Project’s ICU data (spanning from 4/27 through 5/6) and to update existing numbers. For instance, the current figures from the Tracking Project have 5,016 ICU admissions daily between 4/18 and 4/26, whereas the actual numbers reported by the state continuously decreased.</p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-653688709">
           <div class="frontmatter">
-            <div><strong>MattHilliard</strong> commented on July 3, 2020 at 5:25 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/569#issuecomment-653688709" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>MattHilliard</strong> commented on July 3, 2020 at 3:25 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/569#issuecomment-653688709" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>I confirmed the provided numbers matched the NY dashboard and then made six patches for current hospitalization:</p>
+            <p>I confirmed the provided numbers matched the NY dashboard and then made six patches for current hospitalization:</p>
 <p>Before:
 <img src="../assets/images/github/404503/86499441-41afca00-bd59-11ea-9918-96691dab81dd.png" alt="image"></p>
 <p>After:
@@ -190,24 +224,34 @@ I should also note that the <a href="https://forward.ny.gov/daily-hospitalizatio
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-653691340">
           <div class="frontmatter">
-            <div><strong>MattHilliard</strong> commented on July 3, 2020 at 5:50 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/569#issuecomment-653691340" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>MattHilliard</strong> commented on July 3, 2020 at 3:50 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/569#issuecomment-653691340" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>I pulled the data for the ICU backfill, will finish later tonight</p>
+            <p>I pulled the data for the ICU backfill, will finish later tonight</p>
 
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-653707349">
           <div class="frontmatter">
-            <div><strong>MattHilliard</strong> commented on July 3, 2020 at 8:53 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/569#issuecomment-653707349" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>MattHilliard</strong> commented on July 3, 2020 at 6:53 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/569#issuecomment-653707349" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Here’s what we had for NY ICU until now:
+            <p>Here’s what we had for NY ICU until now:
 <img src="../assets/images/github/404503/86502998-7599e800-bd77-11ea-9d32-672b148f71c9.png" alt="image"></p>
 <p>Here’s the official numbers I pulled from the dashboard linked in the issue description:
 <img src="../assets/images/github/404503/86503009-9104f300-bd77-11ea-9b4f-a8fa24e94c6f.png" alt="image"></p>
@@ -217,46 +261,78 @@ I should also note that the <a href="https://forward.ny.gov/daily-hospitalizatio
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>MattHilliard</strong> closed the issue on July 3, 2020 at 6:53 pm
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-653707900">
           <div class="frontmatter">
-            <div><strong>MattHilliard</strong> commented on July 3, 2020 at 9:01 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/569#issuecomment-653707900" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>MattHilliard</strong> commented on July 3, 2020 at 7:01 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/569#issuecomment-653707900" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Also, for the ICU updates, as with the hospitalization updates, I didn’t “fix” the fact we are a day behind the official numbers (since we’d just immediately fall behind again)</p>
+            <p>Also, for the ICU updates, as with the hospitalization updates, I didn’t “fix” the fact we are a day behind the official numbers (since we’d just immediately fall behind again)</p>
 
           </div>
         </div>
+      
+    
       
         <div class="comment" id="issuecomment-653708178">
           <div class="frontmatter">
-            <div><strong>muamichali</strong> commented on July 3, 2020 at 9:04 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/569#issuecomment-653708178" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>muamichali</strong> commented on July 3, 2020 at 7:04 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/569#issuecomment-653708178" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Amazing, Matt, Thanks so much! The graphs here are really helpful too.</p>
+            <p>Amazing, Matt, Thanks so much! The graphs here are really helpful too.</p>
 
           </div>
         </div>
+      
+    
       
         <div class="comment" id="issuecomment-653831452">
           <div class="frontmatter">
-            <div><strong>gschifman</strong> commented on July 4, 2020 at 8:48 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/569#issuecomment-653831452" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>gschifman</strong> commented on July 4, 2020 at 6:48 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/569#issuecomment-653831452" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Everything matches up. Thanks so much for your work here.</p>
+            <p>Everything matches up. Thanks so much for your work here.</p>
 
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-653897516">
           <div class="frontmatter">
-            <div><strong>realfuture</strong> commented on July 5, 2020 at 9:44 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/569#issuecomment-653897516" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>realfuture</strong> commented on July 5, 2020 at 7:44 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/569#issuecomment-653897516" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Just adding my thanks!</p>
+            <p>Just adding my thanks!</p>
 <p>On Sat, Jul 4, 2020 at 6:48 PM Gerald Schifman <a href="mailto:notifications<strong>@github.com</strong>">notifications<strong>@github.com</strong></a>
 wrote:</p>
 <blockquote>
@@ -280,6 +356,7 @@ m. 415 602 4953</p>
       
     
   
+
 </main>
   </body>
 </html>

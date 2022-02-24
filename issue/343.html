@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,16 +134,19 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 343</p>
-        <p><strong>mezcalhead</strong> opened this issue on April 30, 2020 at 11:30 pm</p>
+        <p>
+          <strong>Issue number</strong>
+          343</p>
+        <p>
+          <strong>mezcalhead</strong> opened this issue on April 30, 2020 at 9:30 pm</p>
         
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/343" target="_blank">Open in Github</a>
-        </div>
       </div>
-      <div class="body">
-        <p>Hi all, I run <a href="https://github.com/mezcalhead/covid-19-tools">covid-19-tools</a> which is more of a python library for working with covid-data in object oriented structures.  It does a good job of processing JHU’s data as well.  One of the things we can do quickly is run the state-by-state comparison, just after midnight EST.</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/343" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p>Hi all, I run <a href="https://github.com/mezcalhead/covid-19-tools">covid-19-tools</a> which is more of a python library for working with covid-data in object oriented structures.  It does a good job of processing JHU’s data as well.  One of the things we can do quickly is run the state-by-state comparison, just after midnight EST.</p>
 <p>In the following, the first number is JHU’s state death count (summed up from the county level).  The second number is the death count from Covid19Tracking’s JSON API.  Third number is the delta.  As you can see there are some very good perfect matches here, but NY is obscenely off (JHU problem).</p>
 <p>I’m willing to look at calibrating the models a little bit. In fact, calibrating the JHU county level data to the Covid19Tracking because if we’re interested in the best possible data, we ought to be synthesizing as many sources as possible.</p>
 <pre><code>AK,9,9,0
@@ -197,24 +208,80 @@ VI,4,4,0
 
 </code></pre>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-626757830">
           <div class="frontmatter">
-            <div><strong>qpmnguyen</strong> commented on May 11, 2020 at 9:58 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/343#issuecomment-626757830" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>qpmnguyen</strong> commented on May 11, 2020 at 7:58 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/343#issuecomment-626757830" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Thank you for your input <strong>@mezcalhead</strong>! The difference in NY can be attributed to the differences between how NYC and NY state reports data. Please refer to issue #331 for a more detailed explanation.</p>
+            <p>Thank you for your input <strong>@mezcalhead</strong>! The difference in NY can be attributed to the differences between how NYC and NY state reports data. Please refer to issue #331 for a more detailed explanation.</p>
 
           </div>
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>qpmnguyen</strong> closed the issue on May 11, 2020 at 7:58 am
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

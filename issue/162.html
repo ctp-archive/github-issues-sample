@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,31 +134,37 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 162</p>
-        <p><strong>TraceGroot</strong> opened this issue on April 7, 2020 at 1:26 am</p>
+        <p>
+          <strong>Issue number</strong>
+          162</p>
+        <p>
+          <strong>TraceGroot</strong> opened this issue on April 6, 2020 at 11:26 pm</p>
         
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/162" target="_blank">Open in Github</a>
-        </div>
       </div>
-      <div class="body">
-        <p>For “States Historical Data”, there used to only be the single field, “hospitalized”.  A few days ago, two more related fields were added, “hospitalizedCurrently” and “hospitalizedCumulative”.</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/162" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p>For “States Historical Data”, there used to only be the single field, “hospitalized”.  A few days ago, two more related fields were added, “hospitalizedCurrently” and “hospitalizedCumulative”.</p>
 <p>The problem is that data is not consistently in either “hospitalized” or “hospitalizedCumulative”.  So some states have empty fields in one while other states have empty fields in the other.  In addition, some states have both of those fields empty, with the only number being in “hospitalizedCurrently”.</p>
 <p>That inconsistency makes the hospitalization data useless, as is.  You can’t even set up a simple plot anymore without doing some serious massaging of the data in order to try and wrangle these three fields into something meaningful.</p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
       
         <div class="comment" id="issuecomment-610441726">
           <div class="frontmatter">
-            <div><strong>muamichali</strong> commented on April 7, 2020 at 10:06 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/162#issuecomment-610441726" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>muamichali</strong> commented on April 7, 2020 at 8:06 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/162#issuecomment-610441726" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p><strong>@</strong>TraceGroot Yes. This is an inherent issue with the way states are reporting the hospitalizations data.</p>
+            <p><strong>@</strong>TraceGroot Yes. This is an inherent issue with the way states are reporting the hospitalizations data.</p>
 <p>This was also the reason the project will no longer report overall US hospitalizations
 <img src="../assets/images/github/1749380/78685350-a2954680-78bf-11ea-843e-6cb71c6f08c9.png" alt="hospitalized"></p>
 <p><a href="https://twitter.com/COVID19Tracking/status/1247296434698719232">https://twitter.com/COVID19Tracking/status/1247296434698719232</a></p>
@@ -158,19 +172,57 @@ table th {
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-611637647">
           <div class="frontmatter">
-            <div><strong>careeningspace</strong> commented on April 9, 2020 at 11:59 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/162#issuecomment-611637647" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>careeningspace</strong> commented on April 9, 2020 at 9:59 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/162#issuecomment-611637647" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Duplicate of #132 and you can find the resolution process on that issue</p>
+            <p>Duplicate of #132 and you can find the resolution process on that issue</p>
 
           </div>
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>careeningspace</strong> closed the issue on April 9, 2020 at 9:59 am
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

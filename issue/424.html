@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,16 +134,19 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 424</p>
-        <p><strong>ggrowe</strong> opened this issue on May 15, 2020 at 5:59 pm</p>
+        <p>
+          <strong>Issue number</strong>
+          424</p>
+        <p>
+          <strong>ggrowe</strong> opened this issue on May 15, 2020 at 3:59 pm</p>
         
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/424" target="_blank">Open in Github</a>
-        </div>
       </div>
-      <div class="body">
-        <p>From the support request:</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/424" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p>From the support request:</p>
 <ol>
 <li>
 <p>your case counts are the same for april 25-27. This is not reflected on the washington DOH site, which is where you claim to get your data from. I suspect this is because you (or the DOH site) had a retrieval failure on those days, but that failure should not be reflected in historical data.</p>
@@ -149,29 +160,57 @@ table th {
 this seems like a big ask and not sure if it is even doable.  Let me know.</p>
 <p><img src="https://frontapp.com/assets/img/favicons/favicon-32x32.png" height="16" width="16" alt="Front logo" /> <a href="https://app.frontapp.com/open/top_23xsh">Front conversations</a></p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-629648781">
           <div class="frontmatter">
-            <div><strong>muamichali</strong> commented on May 16, 2020 at 8:49 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/424#issuecomment-629648781" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>muamichali</strong> commented on May 16, 2020 at 6:49 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/424#issuecomment-629648781" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>This seems to be related to <a href="https://github.com/COVID19Tracking/issues/issues/233">https://github.com/COVID19Tracking/issues/issues/233</a> where we patched historical data based on revised data from WA and in general to the fact that WA revises historical data <a href="https://github.com/COVID19Tracking/issues/issues/307">https://github.com/COVID19Tracking/issues/issues/307</a>. I will look into it further.</p>
+            <p>This seems to be related to <a href="https://github.com/COVID19Tracking/issues/issues/233">https://github.com/COVID19Tracking/issues/issues/233</a> where we patched historical data based on revised data from WA and in general to the fact that WA revises historical data <a href="https://github.com/COVID19Tracking/issues/issues/307">https://github.com/COVID19Tracking/issues/issues/307</a>. I will look into it further.</p>
 
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-630906360">
           <div class="frontmatter">
-            <div><strong>muamichali</strong> commented on May 19, 2020 at 10:42 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/424#issuecomment-630906360" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>muamichali</strong> commented on May 19, 2020 at 8:42 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/424#issuecomment-630906360" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>We updated the historical information in WA today based on the raw JSON from their data dashboard.
+            <p>We updated the historical information in WA today based on the raw JSON from their data dashboard.
 <img src="../assets/images/github/1749380/82347375-84922a00-99c5-11ea-9e1c-c54793245492.png" alt="Screenshot_2020-05-19 COVID-19 Data Dashboard Washington State Department of Health"></p>
 <p>The raw JSON and the “before” info in our “States Daily” tab is saved into this spreadsheet.
 <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSou-cRR9OPyrUrM6lYmW-qOdU9DoCrwB7Tw8mEQESzOfL5AHA8VEiZ2hUG-3I-5ARUvStOExfRRaMS/pubhtml">https://docs.google.com/spreadsheets/d/e/2PACX-1vSou-cRR9OPyrUrM6lYmW-qOdU9DoCrwB7Tw8mEQESzOfL5AHA8VEiZ2hUG-3I-5ARUvStOExfRRaMS/pubhtml</a></p>
@@ -180,43 +219,125 @@ this seems like a big ask and not sure if it is even doable.  Let me know.</p>
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>muamichali</strong> closed the issue on May 19, 2020 at 8:42 am
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-631003885">
           <div class="frontmatter">
-            <div><strong>ggrowe</strong> commented on May 19, 2020 at 1:34 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/424#issuecomment-631003885" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>ggrowe</strong> commented on May 19, 2020 at 11:34 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/424#issuecomment-631003885" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Thank you, I’ll report back to the individual!</p>
+            <p>Thank you, I’ll report back to the individual!</p>
 
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-631594543">
           <div class="frontmatter">
-            <div><strong>ggrowe</strong> commented on May 20, 2020 at 11:47 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/424#issuecomment-631594543" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>ggrowe</strong> commented on May 20, 2020 at 9:47 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/424#issuecomment-631594543" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Hi, here is a message back from the external source with an offer help make it happen!
+            <p>Hi, here is a message back from the external source with an offer help make it happen!
 Link to Front message: <a href="https://app.frontapp.com/open/msg_dg7d9u9">https://app.frontapp.com/open/msg_dg7d9u9</a>
 I’ll say that I’ve passed it along.  Reopening the issue, if you can please respond and then if there is no other action, just close it again.</p>
 
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+          
+          
+            <strong>ggrowe</strong> reopened this on May 20, 2020 at 9:47 am
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-631630385">
           <div class="frontmatter">
-            <div><strong>muamichali</strong> commented on May 20, 2020 at 12:54 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/424#issuecomment-631630385" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>muamichali</strong> commented on May 20, 2020 at 10:54 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/424#issuecomment-631630385" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Closing issue. I replied in Front</p>
+            <p>Closing issue. I replied in Front</p>
 
           </div>
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>muamichali</strong> closed the issue on May 20, 2020 at 10:54 am
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

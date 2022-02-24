@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,20 +134,28 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 745</p>
-        <p><strong>ladyzhetse</strong> opened this issue on August 10, 2020 at 11:33 am</p>
+        <p>
+          <strong>Issue number</strong>
+          745</p>
+        <p>
+          <strong>ladyzhetse</strong> opened this issue on August 10, 2020 at 9:33 am</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/1921151980.html">Data quality</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/745" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p><strong>State or US</strong>: Alabama</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/745" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p><strong>State or US</strong>: Alabama</p>
 <p><strong>Describe the problem</strong>
 Alabama updates its current hospitalization data retroactively. For example: our dataset lists 1575 current COVID-19 patients for 8/5, 8/6, 8/7, and 8/8, but in fact this was only the number on 8/5, according to the state’s dashboard. Other previous dates have also been retroactively updated. We should double-check our current hosp time series against the AL dashboard for the time period since we last did a backfill for this state (7/22). I suggest having morning shifts or backfill shifts check on AL hosp data once a week going forward.</p>
 <p><strong>Link to data source</strong>
@@ -147,18 +163,43 @@ Alabama updates its current hospitalization data retroactively. For example: our
 Daily hospitalizations of confirmed cases chart on Tab 9</p>
 <p><img src="../assets/images/github/67837472/89806593-48beba80-db05-11ea-9e17-7188d4d4ccf4.png" alt="image"></p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+            <strong>ladyzhetse</strong> added the label <span class="label">Data quality</span> on August 10, 2020 at 9:33 am
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-675759899">
           <div class="frontmatter">
-            <div><strong>MattHilliard</strong> commented on August 18, 2020 at 5:58 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/745#issuecomment-675759899" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>MattHilliard</strong> commented on August 18, 2020 at 3:58 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/745#issuecomment-675759899" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>I’ve pulled in the state’s official data as of this evening. Here’s a chart showing the impact:</p>
+            <p>I’ve pulled in the state’s official data as of this evening. Here’s a chart showing the impact:</p>
 <p><img src="../assets/images/github/404503/90573297-1d327480-e184-11ea-8afd-cc335df23d3d.png" alt="image"></p>
 <p>It’s good to make sure we have the official data but until we automate this, I don’t think we are able to do it once week.</p>
 <p>Analysis spreadsheet, including before/after values: <a href="https://docs.google.com/spreadsheets/d/1zhMdtviXvMZiBImDqX5zsiWhBYWGld6PTvg1cMgKIXI/edit">https://docs.google.com/spreadsheets/d/1zhMdtviXvMZiBImDqX5zsiWhBYWGld6PTvg1cMgKIXI/edit</a></p>
@@ -167,7 +208,40 @@ Daily hospitalizations of confirmed cases chart on Tab 9</p>
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>MattHilliard</strong> closed the issue on August 18, 2020 at 3:58 pm
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

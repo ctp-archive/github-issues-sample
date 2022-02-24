@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,64 +134,97 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 272</p>
-        <p><strong>loglow</strong> opened this issue on April 23, 2020 at 1:54 am</p>
+        <p>
+          <strong>Issue number</strong>
+          272</p>
+        <p>
+          <strong>loglow</strong> opened this issue on April 22, 2020 at 11:54 pm</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/1937937334.html">Historical Data</a></span>
-          
-            <span class="label"><a href="../label/2162087998.html">Backfill</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/1937937334.html">Historical Data</a>
+              </span>
+            
+              <span class="label">
+                <a href="../label/2162087998.html">Backfill</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/272" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p>At present, the data returned by:</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/272" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p>At present, the data returned by:</p>
 <p><code>https://covidtracking.com/api/v1/states/daily.json</code></p>
 <p>Shows the following value for <code>state = HI</code> on <code>date = 20200422</code>:</p>
 <p><code>&quot;positiveIncrease&quot;:-2</code></p>
 <p>I have not checked for the presence of any other negative values, but this is the only one I’ve come across so far.</p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
       
         <div class="comment" id="issuecomment-618240173">
           <div class="frontmatter">
-            <div><strong>loglow</strong> commented on April 23, 2020 at 2:48 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/272#issuecomment-618240173" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>loglow</strong> commented on April 23, 2020 at 12:48 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/272#issuecomment-618240173" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>I found another one.</p>
+            <p>I found another one.</p>
 <p>WA on 4/20 = -12</p>
 
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-618292399">
           <div class="frontmatter">
-            <div><strong>loglow</strong> commented on April 23, 2020 at 4:30 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/272#issuecomment-618292399" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>loglow</strong> commented on April 23, 2020 at 2:30 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/272#issuecomment-618292399" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>I got curious and wrote a tool to find errors like this:
+            <p>I got curious and wrote a tool to find errors like this:
 <a href="https://www.covidcharts.com/data_check.html">https://www.covidcharts.com/data_check.html</a></p>
 <p>Entirely client-side JS, so feel free to re-use any of the code.</p>
 
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-618704895">
           <div class="frontmatter">
-            <div><strong>hrushka</strong> commented on April 23, 2020 at 5:30 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/272#issuecomment-618704895" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>hrushka</strong> commented on April 23, 2020 at 3:30 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/272#issuecomment-618704895" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <blockquote>
+            <blockquote>
 <p>I got curious and wrote a tool to find errors like this:
 <a href="https://www.covidcharts.com/data_check.html">https://www.covidcharts.com/data_check.html</a></p>
 <p>Entirely client-side JS, so feel free to re-use any of the code.</p>
@@ -193,35 +234,114 @@ table th {
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-626059046">
           <div class="frontmatter">
-            <div><strong>stale[bot]</strong> commented on May 8, 2020 at 6:15 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/272#issuecomment-626059046" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>stale[bot]</strong> commented on May 8, 2020 at 4:15 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/272#issuecomment-626059046" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
+            <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
 
           </div>
         </div>
+      
+    
+      
+        <div class="event">
+          
+          
+            <strong>stale[bot]</strong> added the label <span class="label">stale</span> on May 8, 2020 at 4:15 pm
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-630483259">
           <div class="frontmatter">
-            <div><strong>stale[bot]</strong> commented on May 18, 2020 at 6:16 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/272#issuecomment-630483259" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>stale[bot]</strong> commented on May 18, 2020 at 4:16 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/272#issuecomment-630483259" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>This issue has been closed because it was stale for 15 days, and there was no further activity on it for 10 days. You can feel free to re-open it if the issue is important, and label it as “not stale.”</p>
+            <p>This issue has been closed because it was stale for 15 days, and there was no further activity on it for 10 days. You can feel free to re-open it if the issue is important, and label it as “not stale.”</p>
 
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>stale[bot]</strong> closed the issue on May 18, 2020 at 4:16 pm
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-661154660">
           <div class="frontmatter">
-            <div><strong>the-daniel-lin</strong> commented on July 20, 2020 at 11:26 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/272#issuecomment-661154660" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>the-daniel-lin</strong> commented on July 20, 2020 at 9:26 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/272#issuecomment-661154660" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>“There’s a potential corruption of your Confirmed Positives historical data for several states. The data as reported should be cumulative amounts i.e. either increasing or constant - but in several places there have been new spikes added to past data and occasional dips, both producing negative Daily Positives after day-to-day subtraction. This is a recent development. I compared the current report with one ending on May 31 - and the discrepancies are (format: State, date new/old values or a multiday up-and-down sequence): … 5) HI, 4/21-22, 584, 582…” Instead of 584, 582, the values should be 584, 586.</p>
+            <p>“There’s a potential corruption of your Confirmed Positives historical data for several states. The data as reported should be cumulative amounts i.e. either increasing or constant - but in several places there have been new spikes added to past data and occasional dips, both producing negative Daily Positives after day-to-day subtraction. This is a recent development. I compared the current report with one ending on May 31 - and the discrepancies are (format: State, date new/old values or a multiday up-and-down sequence): … 5) HI, 4/21-22, 584, 582…” Instead of 584, 582, the values should be 584, 586.</p>
 <p>Screenshot from state site on 4/21:
 <img src="../assets/images/github/67408226/87961620-d6f5d280-ca6a-11ea-9b5f-880a9fc2f2db.png" alt="image"></p>
 <p>Screenshot from state site on 4/22:
@@ -231,13 +351,76 @@ table th {
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+          
+          
+            <strong>the-daniel-lin</strong> reopened this on July 20, 2020 at 9:26 am
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+            <strong>stale[bot]</strong> removed the label <span class="label">stale</span> on July 20, 2020 at 9:26 am
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+            <strong>the-daniel-lin</strong> added the label <span class="label">Backfill</span> on July 20, 2020 at 9:27 am
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+            <strong>the-daniel-lin</strong> added the label <span class="label">Historical Data</span> on July 20, 2020 at 9:27 am
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-661393845">
           <div class="frontmatter">
-            <div><strong>MattHilliard</strong> commented on July 20, 2020 at 5:37 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/272#issuecomment-661393845" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>MattHilliard</strong> commented on July 20, 2020 at 3:37 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/272#issuecomment-661393845" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Independently checked the screenshots. The 6pm HI screenshot for 4/22 says 592 cases, but the surrounding numbers indicate the 12:00 screenshot matches what data entry was doing so I’m using the 12:00 number, 586.</p>
+            <p>Independently checked the screenshots. The 6pm HI screenshot for 4/22 says 592 cases, but the surrounding numbers indicate the 12:00 screenshot matches what data entry was doing so I’m using the 12:00 number, 586.</p>
 <p>Before:
 <img src="../assets/images/github/404503/87993211-f830e000-cab7-11ea-8ad4-aef0fd9f2e07.png" alt="image"></p>
 <p>After:
@@ -248,7 +431,40 @@ table th {
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>MattHilliard</strong> closed the issue on July 20, 2020 at 3:37 pm
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

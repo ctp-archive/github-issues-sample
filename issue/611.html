@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,24 +134,36 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 611</p>
-        <p><strong>pscsharon</strong> opened this issue on July 13, 2020 at 8:44 am</p>
+        <p>
+          <strong>Issue number</strong>
+          611</p>
+        <p>
+          <strong>pscsharon</strong> opened this issue on July 13, 2020 at 6:44 am</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/2158480839.html">PCL/SVP Historicals</a></span>
-          
-            <span class="label"><a href="../label/2162087998.html">Backfill</a></span>
-          
-            <span class="label"><a href="../label/2199367619.html">Missing Data</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/2158480839.html">PCL/SVP Historicals</a>
+              </span>
+            
+              <span class="label">
+                <a href="../label/2162087998.html">Backfill</a>
+              </span>
+            
+              <span class="label">
+                <a href="../label/2199367619.html">Missing Data</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/611" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p>Alaska has been reporting Confirmed Cases. Please backfill the Confirmed Cases.</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/611" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p>Alaska has been reporting Confirmed Cases. Please backfill the Confirmed Cases.</p>
 <p>Background:</p>
 <p>In WS2, we do not populate “Positive Cases (PCR)” which feeds column V in States’ Daily.
 <img width="1391" alt="Screen Shot 2020-07-13 at 6 16 58 AM" src="../assets/images/github/67423649/87311351-f96c7680-c4d3-11ea-82ab-8a3c6db81430.png"></p>
@@ -151,18 +171,67 @@ table th {
 <img width="1403" alt="Screen Shot 2020-07-13 at 6 16 45 AM" src="../assets/images/github/67423649/87311394-06896580-c4d4-11ea-8858-698e5f9fc121.png"></p>
 <p>It appears we said cases were unclear if they are distinct or lumped.  From re-review of their testing guidance on arcgis, I believe now it is lab-confirmed.  Refer to questions 1 in this linked PDF. <a href="https://coronavirus-response-alaska-dhss.hub.arcgis.com/datasets/cases-and-testing-frequently-asked-questions">https://coronavirus-response-alaska-dhss.hub.arcgis.com/datasets/cases-and-testing-frequently-asked-questions</a></p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+            <strong>pscsharon</strong> added the label <span class="label">PCL/SVP Historicals</span> on July 13, 2020 at 6:44 am
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+            <strong>pscsharon</strong> added the label <span class="label">Backfill</span> on July 13, 2020 at 6:44 am
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+            <strong>space-buzzer</strong> added the label <span class="label">Missing Data</span> on July 14, 2020 at 10:49 am
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-661061107">
           <div class="frontmatter">
-            <div><strong>brianskli</strong> commented on July 20, 2020 at 9:05 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/611#issuecomment-661061107" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>brianskli</strong> commented on July 20, 2020 at 7:05 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/611#issuecomment-661061107" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>AK confirmed to report only lab-confirmed cases. WS2 pop-ups was also modified to account for this.</p>
+            <p>AK confirmed to report only lab-confirmed cases. WS2 pop-ups was also modified to account for this.</p>
 <p>States daily corrected, values in C also added to V.</p>
 <p>Before:
 <img width="803" alt="Screen Shot 2020-07-20 at 10 01 52 AM" src="../assets/images/github/66738237/87946781-779ac100-ca70-11ea-9771-79eb3997b5d0.png">
@@ -173,7 +242,20 @@ After:
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>brianskli</strong> closed the issue on July 20, 2020 at 7:05 am
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

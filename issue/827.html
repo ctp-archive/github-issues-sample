@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,20 +134,28 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 827</p>
-        <p><strong>karaschechtman</strong> opened this issue on September 14, 2020 at 10:39 am</p>
+        <p>
+          <strong>Issue number</strong>
+          827</p>
+        <p>
+          <strong>karaschechtman</strong> opened this issue on September 14, 2020 at 8:39 am</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/1921151980.html">Data quality</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/827" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p><strong>State or US</strong>: AR</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/827" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p><strong>State or US</strong>: AR</p>
 <p><strong>Describe the problem</strong>
 AR updated its dashboard with new sources, we need to change our capture and patch our handling on 9/13 (and 9/12 for hospitalizations)</p>
 <p>Negative Tests (PCR) and Negative (People or Cases) - PCR negatives from dashboard, no backfill because incomplete timeseries, but start using the numbers, patch yesterday and write a public note
@@ -166,18 +182,33 @@ September 12 Hosps graphics
 September 12 cases
 <a href="https://covidtracking.com/screenshots/AR/AR-secondary-20200913-180451.png">https://covidtracking.com/screenshots/AR/AR-secondary-20200913-180451.png</a></p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+            <strong>karaschechtman</strong> added the label <span class="label">Data quality</span> on September 14, 2020 at 8:39 am
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-692167352">
           <div class="frontmatter">
-            <div><strong>karaschechtman</strong> commented on September 14, 2020 at 11:25 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/827#issuecomment-692167352" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>karaschechtman</strong> commented on September 14, 2020 at 9:25 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/827#issuecomment-692167352" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p><strong>Source note changes to Worksheet2</strong>
+            <p><strong>Source note changes to Worksheet2</strong>
 <img width="247" alt="Screen Shot 2020-09-14 at 12 24 44 PM" src="../assets/images/github/15933271/93111903-4bbd4580-f685-11ea-8ed1-443c10a95ba7.png">
 <img width="81" alt="Screen Shot 2020-09-14 at 12 04 41 PM" src="../assets/images/github/15933271/93111718-fe40d880-f684-11ea-901b-3c45a3cbb8aa.png">
 <img width="334" alt="Screen Shot 2020-09-14 at 12 27 52 PM" src="../assets/images/github/15933271/93112226-ba9a9e80-f685-11ea-9a6a-177ccb2424ef.png">
@@ -187,13 +218,18 @@ September 12 cases
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-692179946">
           <div class="frontmatter">
-            <div><strong>karaschechtman</strong> commented on September 14, 2020 at 11:48 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/827#issuecomment-692179946" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>karaschechtman</strong> commented on September 14, 2020 at 9:48 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/827#issuecomment-692179946" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p><strong>Patches from 9/13 of cases and tests</strong>
+            <p><strong>Patches from 9/13 of cases and tests</strong>
 Before
 <img width="481" alt="Screen Shot 2020-09-14 at 12 43 48 PM" src="../assets/images/github/15933271/93114464-9e4c3100-f688-11ea-9699-a6932a8400f6.png">
 After
@@ -202,13 +238,18 @@ After
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-692181481">
           <div class="frontmatter">
-            <div><strong>karaschechtman</strong> commented on September 14, 2020 at 11:51 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/827#issuecomment-692181481" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>karaschechtman</strong> commented on September 14, 2020 at 9:51 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/827#issuecomment-692181481" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p><strong>Hospitalizations changes</strong></p>
+            <p><strong>Hospitalizations changes</strong></p>
 <p>Before
 <img width="416" alt="Screen Shot 2020-09-14 at 12 50 01 PM" src="../assets/images/github/15933271/93114766-03a02200-f689-11ea-972e-ecb3e6616aa6.png"></p>
 <p>After
@@ -217,13 +258,18 @@ After
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-692182965">
           <div class="frontmatter">
-            <div><strong>karaschechtman</strong> commented on September 14, 2020 at 11:54 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/827#issuecomment-692182965" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>karaschechtman</strong> commented on September 14, 2020 at 9:54 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/827#issuecomment-692182965" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p><strong>Deaths changes</strong>
+            <p><strong>Deaths changes</strong>
 Before
 <img width="181" alt="Screen Shot 2020-09-14 at 12 54 13 PM" src="../assets/images/github/15933271/93115104-73aea800-f689-11ea-9f51-22e930d17ca1.png">
 After
@@ -233,7 +279,20 @@ After
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>karaschechtman</strong> closed the issue on September 14, 2020 at 11:04 am
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

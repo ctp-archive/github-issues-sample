@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,37 +134,48 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 215</p>
-        <p><strong>datadict</strong> opened this issue on April 18, 2020 at 3:22 am</p>
+        <p>
+          <strong>Issue number</strong>
+          215</p>
+        <p>
+          <strong>datadict</strong> opened this issue on April 18, 2020 at 1:22 am</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/2036763229.html">stale</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/2036763229.html">stale</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/215" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p>Dear team,</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/215" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p>Dear team,</p>
 <p>It seems like CDC has updated their guidelines how to count deaths. They want probable deaths (no laboratory confirmation required) added to the confirmed deaths.</p>
 <p>How will you continue to report your numbers: Incl. probable deaths or excl. probable deaths? And if you plan to include it, how do you go about New York’s 3,778 probable deaths, that are not allocated to specific dates yet?</p>
 <p>Thanks,
 Patrick</p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
       
         <div class="comment" id="issuecomment-615873438">
           <div class="frontmatter">
-            <div><strong>muamichali</strong> commented on April 18, 2020 at 8:38 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/215#issuecomment-615873438" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>muamichali</strong> commented on April 18, 2020 at 6:38 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/215#issuecomment-615873438" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Thanks, Patrick!</p>
+            <p>Thanks, Patrick!</p>
 <p>We are discussing how to handle the probable deaths as its own metric.</p>
 <p>For now, we are including public notes about each state where the probable deaths are included and we do include the probable deaths within the overall deaths. See for example Puerto Rico’s note here <a href="https://covidtracking.com/data#state-pr">https://covidtracking.com/data#state-pr</a></p>
 <p><img src="../assets/images/github/1749380/79639222-587e5180-8158-11ea-8c6c-79358d44ba6f.PNG" alt="PR"></p>
@@ -164,13 +183,18 @@ Patrick</p>
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-615876160">
           <div class="frontmatter">
-            <div><strong>datadict</strong> commented on April 18, 2020 at 8:57 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/215#issuecomment-615876160" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>datadict</strong> commented on April 18, 2020 at 6:57 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/215#issuecomment-615876160" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Michal,</p>
+            <p>Michal,</p>
 <p>Thank you for your quick and helpful reply!</p>
 <p>That makes sense! Would it be fair to say that most states still report “confirmed” only (also when they do not comment on it)?</p>
 <p>FYI: Other than for Puerto Rico, I saw that New York publishes separate figures (<a href="https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-deaths-confirmed-probable-daily-04152020.pdf">https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-deaths-confirmed-probable-daily-04152020.pdf</a>). As far as I am aware, these deaths cannot be fully allocated to specific days, so for my analysis I excluded these to not mess up the growth rates.</p>
@@ -195,13 +219,18 @@ This email and any files transmitted with it are confidential and intended solel
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-616968584">
           <div class="frontmatter">
-            <div><strong>InALunch</strong> commented on April 21, 2020 at 12:55 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/215#issuecomment-616968584" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>InALunch</strong> commented on April 20, 2020 at 10:55 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/215#issuecomment-616968584" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Is there an update on this? The choice of different metrics to use is leading to a large discrepancy, for example <a href="https://www.worldometers.info/coronavirus/country/us/">Worldometers</a> is reporting 18,929 deaths for New York State(similar numbers on JHU map, but harder to disentangle), while COVID Tracker is reporting 14,347 deaths <a href="https://docs.google.com/spreadsheets/u/2/d/e/2PACX-1vRwAqp96T9sYYq2-i7Tj0pvTf6XVHjDSMIKBdZHXiCGGdNC0ypEU9NbngS8mxea55JuCFuua1MUeOj5/pubhtml#">here</a>.</p>
+            <p>Is there an update on this? The choice of different metrics to use is leading to a large discrepancy, for example <a href="https://www.worldometers.info/coronavirus/country/us/">Worldometers</a> is reporting 18,929 deaths for New York State(similar numbers on JHU map, but harder to disentangle), while COVID Tracker is reporting 14,347 deaths <a href="https://docs.google.com/spreadsheets/u/2/d/e/2PACX-1vRwAqp96T9sYYq2-i7Tj0pvTf6XVHjDSMIKBdZHXiCGGdNC0ypEU9NbngS8mxea55JuCFuua1MUeOj5/pubhtml#">here</a>.</p>
 <p>In particular, I’m interested in understanding whether the numbers of deaths reported will change by April 26 or May 8, since this is germane to a number of forecasts I’d like to do.</p>
 <p>For reference, this is how worldometers handles it:</p>
 <blockquote>
@@ -217,30 +246,85 @@ Most state reports and dashboards (such as Texas, Pennsylvania, North Carolina, 
           </div>
         </div>
       
-        <div class="comment" id="issuecomment-624685171">
-          <div class="frontmatter">
-            <div><strong>stale[bot]</strong> commented on May 6, 2020 at 9:33 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/215#issuecomment-624685171" target="_blank">Open in Github</a></div>
-          </div>
-          <div class="body">
-          <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
-
-          </div>
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
         </div>
       
-        <div class="comment" id="issuecomment-629657371">
+    
+      
+        <div class="comment" id="issuecomment-624685171">
           <div class="frontmatter">
-            <div><strong>stale[bot]</strong> commented on May 16, 2020 at 9:47 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/215#issuecomment-629657371" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>stale[bot]</strong> commented on May 6, 2020 at 7:33 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/215#issuecomment-624685171" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>This issue has been closed because it was stale for 15 days, and there was no further activity on it for 10 days. You can feel free to re-open it if the issue is important, and label it as “not stale.”</p>
+            <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
 
           </div>
         </div>
       
     
+      
+        <div class="event">
+          
+          
+            <strong>stale[bot]</strong> added the label <span class="label">stale</span> on May 6, 2020 at 7:33 am
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="comment" id="issuecomment-629657371">
+          <div class="frontmatter">
+            <div>
+              <strong>stale[bot]</strong> commented on May 16, 2020 at 7:47 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/215#issuecomment-629657371" target="_blank">Open in Github</a>
+            </div>
+          </div>
+          <div class="body">
+            <p>This issue has been closed because it was stale for 15 days, and there was no further activity on it for 10 days. You can feel free to re-open it if the issue is important, and label it as “not stale.”</p>
+
+          </div>
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>stale[bot]</strong> closed the issue on May 16, 2020 at 7:47 am
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

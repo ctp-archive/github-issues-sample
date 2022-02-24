@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,20 +134,28 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 499</p>
-        <p><strong>camille-le</strong> opened this issue on June 18, 2020 at 9:24 am</p>
+        <p>
+          <strong>Issue number</strong>
+          499</p>
+        <p>
+          <strong>camille-le</strong> opened this issue on June 18, 2020 at 7:24 am</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/1921151980.html">Data quality</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/499" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p><strong>State or US</strong>: Nevada</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/499" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p><strong>State or US</strong>: Nevada</p>
 <p><strong>Describe the problem</strong>
 <em>This GitHub issue is filed to request updating the time series for cumulative deaths.</em></p>
 <p><em>Context</em>: NV publishes Daily/Weekly Situation Reports which include time series charts of tests performed, cases, cumulative deaths and additional data.</p>
@@ -188,42 +204,77 @@ table th {
 <li>June 4 Situation Report: <a href="https://nvhealthresponse.nv.gov/wp-content/uploads/2020/06/06.4.20-Daily-SitRep-final.pdf">https://nvhealthresponse.nv.gov/wp-content/uploads/2020/06/06.4.20-Daily-SitRep-final.pdf</a></li>
 </ul>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+            <strong>camille-le</strong> added the label <span class="label">Data quality</span> on June 18, 2020 at 7:24 am
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-646228346">
           <div class="frontmatter">
-            <div><strong>space-buzzer</strong> commented on June 18, 2020 at 1:17 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/499#issuecomment-646228346" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>space-buzzer</strong> commented on June 18, 2020 at 11:17 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/499#issuecomment-646228346" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>This looks like a screenshot from the dashboard (page5).
+            <p>This looks like a screenshot from the dashboard (page5).
 At least there’s no need to copy numbers from PDFs. Here’s the CSV version, that I took from the dashboard
 <a href="../assets/files/github/4800419/nv_deaths_cumsum.zip">nv_deaths_cumsum.zip</a></p>
 
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-647035308">
           <div class="frontmatter">
-            <div><strong>MattHilliard</strong> commented on June 20, 2020 at 2:16 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/499#issuecomment-647035308" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>MattHilliard</strong> commented on June 20, 2020 at 12:16 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/499#issuecomment-647035308" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Nevada looks like they revise historicals to account for reporting lags and such; the curves for cases and deaths on their dashboard (you can right click and view as table) don’t match ours until the current day. (edit: the total tests curve on the other hand does match ours, just offset by one day)</p>
+            <p>Nevada looks like they revise historicals to account for reporting lags and such; the curves for cases and deaths on their dashboard (you can right click and view as table) don’t match ours until the current day. (edit: the total tests curve on the other hand does match ours, just offset by one day)</p>
 
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-648479602">
           <div class="frontmatter">
-            <div><strong>MattHilliard</strong> commented on June 23, 2020 at 6:27 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/499#issuecomment-648479602" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>MattHilliard</strong> commented on June 23, 2020 at 4:27 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/499#issuecomment-648479602" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Small adjustment to what I said: they only revise historical deaths.</p>
+            <p>Small adjustment to what I said: they only revise historical deaths.</p>
 <p>Cases and total tests are mostly offset by one day because of when we update. There are some small differences in cases, especially back in March, but I don’t think correcting minor errors is worth the “bubble” (one day with double cases) it will introduce, because it corrects the off-by-one effect for the data that exists only to have future data entry shifts reintroduce it.</p>
 <p>So: I’ve updated deaths all the way back and the confirmed deaths column. These were fairly off from what we had because of the revisions. For example, in between 19 June and today, they added a new death back in early May! Data and analysis here: <a href="https://docs.google.com/spreadsheets/d/10jJ5Fq9M6CamVAELZK2dfendTMYfJy5bEZMFdEsuBf0/edit#gid=0">https://docs.google.com/spreadsheets/d/10jJ5Fq9M6CamVAELZK2dfendTMYfJy5bEZMFdEsuBf0/edit#gid=0</a></p>
 
@@ -231,7 +282,20 @@ At least there’s no need to copy numbers from PDFs. Here’s the CSV version, 
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>MattHilliard</strong> closed the issue on June 23, 2020 at 4:27 pm
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

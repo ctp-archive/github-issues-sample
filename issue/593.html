@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,20 +134,28 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 593</p>
-        <p><strong>waded</strong> opened this issue on July 9, 2020 at 10:51 am</p>
+        <p>
+          <strong>Issue number</strong>
+          593</p>
+        <p>
+          <strong>waded</strong> opened this issue on July 9, 2020 at 8:51 am</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/1921151980.html">Data quality</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/593" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p><strong>State or US</strong>: Idaho</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/593" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p><strong>State or US</strong>: Idaho</p>
 <p><strong>Describe the problem</strong>
 On July 8, if not before, Idaho updated history of daily hospitalizations, such that what COVID Tracking Project reports now doesn’t match the state’s dashboard. It appears COVID Tracking Project first captured the history with <a href="https://github.com/COVID19Tracking/issues/issues/572">https://github.com/COVID19Tracking/issues/issues/572</a>.</p>
 <p>e.g. Idaho’s now reporting daily hospitalizations on May 5 2020 = 27, but CTP reports 45 at <a href="https://covidtracking.com/data/state/idaho">https://covidtracking.com/data/state/idaho</a>. That’s a bit of an exception, but almost every day’s number has changed. Generally March-May numbers are down, and more recent numbers are up.</p>
@@ -149,30 +165,84 @@ State COVID dashboard: <a href="https://public.tableau.com/profile/idaho.divisio
 <p>Here’s a screenshot of the daily hospitalizations chart and the May 5 example point as of now:</p>
 <p><img src="../assets/images/github/1535656/87062008-ba83ab80-c1c9-11ea-853e-c0e56daeeb15.png" alt="image"></p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+            <strong>waded</strong> added the label <span class="label">Data quality</span> on July 9, 2020 at 8:51 am
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-656214206">
           <div class="frontmatter">
-            <div><strong>waded</strong> commented on July 9, 2020 at 11:04 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/593#issuecomment-656214206" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>waded</strong> commented on July 9, 2020 at 9:04 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/593#issuecomment-656214206" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>To add a little more context, in case helpful, here’s a screenshot of the same chart from the dashboard I captured July 3. The shape is pretty close, but you can see that difference on May 5 pretty easily.</p>
+            <p>To add a little more context, in case helpful, here’s a screenshot of the same chart from the dashboard I captured July 3. The shape is pretty close, but you can see that difference on May 5 pretty easily.</p>
 <p><img src="../assets/images/github/1535656/87063304-6b3e7a80-c1cb-11ea-8d20-0d07a76538c4.png" alt="image"></p>
 
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+            <strong>space-buzzer</strong> added the label <span class="label">Missing Data</span> on July 14, 2020 at 10:49 am
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+            <strong>space-buzzer</strong> removed the label <span class="label">Missing Data</span> on July 14, 2020 at 4:24 pm
+          
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-658460790">
           <div class="frontmatter">
-            <div><strong>space-buzzer</strong> commented on July 14, 2020 at 6:24 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/593#issuecomment-658460790" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>space-buzzer</strong> commented on July 14, 2020 at 4:24 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/593#issuecomment-658460790" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>CSVs of data.
+            <p>CSVs of data.
 Hospitalizations and ICU, ICU starts only end of May, and includes only confirmed patients, hospitalization is confirmed + suspected, goes back to end of March</p>
 <p><a href="../assets/files/github/4921977/confirmed_and_suspected_in_hospital_20200714.txt">confirmed_and_suspected_in_hospital_20200714.txt</a>
 <a href="../assets/files/github/4921978/confirmed_in_icu_20200714.txt">confirmed_in_icu_20200714.txt</a></p>
@@ -180,13 +250,18 @@ Hospitalizations and ICU, ICU starts only end of May, and includes only confirme
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-659064506">
           <div class="frontmatter">
-            <div><strong>waded</strong> commented on July 15, 2020 at 6:21 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/593#issuecomment-659064506" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>waded</strong> commented on July 15, 2020 at 4:21 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/593#issuecomment-659064506" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Idaho updated this data again today, 7/15. IDHW claims they update this particular data Monday, Wednesdays, Fridays at 5PM Mountain, and so far that’s been mostly accurate. I do see a historical difference again, but perhaps not as far back, vs. what <strong>@space-buzzer</strong> provided on 7/14. I’ll attach the latest files here since I have them, but latest can be downloaded by:</p>
+            <p>Idaho updated this data again today, 7/15. IDHW claims they update this particular data Monday, Wednesdays, Fridays at 5PM Mountain, and so far that’s been mostly accurate. I do see a historical difference again, but perhaps not as far back, vs. what <strong>@space-buzzer</strong> provided on 7/14. I’ll attach the latest files here since I have them, but latest can be downloaded by:</p>
 <ul>
 <li>click on the desired visualization at dashboard link provided in issue (Tableau gives no visual feedback when you do this, but it gives the next step context)</li>
 <li>click the “Download” button on the toolbar along the bottom of the dashboard</li>
@@ -199,13 +274,38 @@ Hospitalizations and ICU, ICU starts only end of May, and includes only confirme
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-659144414">
           <div class="frontmatter">
-            <div><strong>waded</strong> commented on July 15, 2020 at 11:02 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/593#issuecomment-659144414" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>waded</strong> commented on July 15, 2020 at 9:02 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/593#issuecomment-659144414" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>For whoever’s planning out work on this</p>
+            <p>For whoever’s planning out work on this</p>
 <ul>
 <li>
 <p>an <a href="https://amp.idahostatesman.com/news/local/investigations/watchdog/article244260242.html">Idaho Statesman article states </a> notes numbers changed in the past because “Idaho’s hospitals and Health and Welfare also spent time updating numbers for prior days, when necessary, to make sure the records were as accurate as possible, according to Idaho’s deputy state epidemiologist.”</p>
@@ -218,13 +318,18 @@ Hospitalizations and ICU, ICU starts only end of May, and includes only confirme
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-659609195">
           <div class="frontmatter">
-            <div><strong>theomichel</strong> commented on July 16, 2020 at 2:02 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/593#issuecomment-659609195" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>theomichel</strong> commented on July 16, 2020 at 12:02 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/593#issuecomment-659609195" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Worksheet (in 3 forms for redundancy :)): <a href="https://docs.google.com/spreadsheets/d/1RvgAucNP8G4opp4sbvmzbAcbJQZ7EiUC-6aN7V2ktVk/edit#gid=2035568933">https://docs.google.com/spreadsheets/d/1RvgAucNP8G4opp4sbvmzbAcbJQZ7EiUC-6aN7V2ktVk/edit#gid=2035568933</a>
+            <p>Worksheet (in 3 forms for redundancy :)): <a href="https://docs.google.com/spreadsheets/d/1RvgAucNP8G4opp4sbvmzbAcbJQZ7EiUC-6aN7V2ktVk/edit#gid=2035568933">https://docs.google.com/spreadsheets/d/1RvgAucNP8G4opp4sbvmzbAcbJQZ7EiUC-6aN7V2ktVk/edit#gid=2035568933</a>
 <a href="../assets/files/github/4939013/ID.-.Analysis.GH.593.txt">ID - Analysis GH#593.txt</a>
 <a href="../assets/files/github/4939014/backfill_ID_2020_0716.pdf">backfill_ID_2020_0716.pdf</a></p>
 <p>Generally updated numbers (for hospitalizations and ICU) look good, but date alignment is an issue. Data Entry has been using the last day in the graph as “today”, but it’s actually ~3 days old. This update shifts things back to the actual dates on the graph, which results in ~zeros~ carrying forward of 7/13 data to more recent days.</p>
@@ -233,19 +338,37 @@ Hospitalizations and ICU, ICU starts only end of May, and includes only confirme
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-660231676">
           <div class="frontmatter">
-            <div><strong>theomichel</strong> commented on July 17, 2020 at 12:11 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/593#issuecomment-660231676" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>theomichel</strong> commented on July 17, 2020 at 10:11 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/593#issuecomment-660231676" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Update complete!</p>
+            <p>Update complete!</p>
 
           </div>
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>theomichel</strong> closed the issue on July 17, 2020 at 10:11 am
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

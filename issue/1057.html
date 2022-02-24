@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,31 +134,37 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 1057</p>
-        <p><strong>hmhoffman</strong> opened this issue on January 9, 2021 at 4:32 pm</p>
+        <p>
+          <strong>Issue number</strong>
+          1057</p>
+        <p>
+          <strong>hmhoffman</strong> opened this issue on January 9, 2021 at 2:32 pm</p>
         
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1057" target="_blank">Open in Github</a>
-        </div>
       </div>
-      <div class="body">
-        <p><strong>State:</strong> NJ</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1057" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p><strong>State:</strong> NJ</p>
 <p><strong>Dates affected:</strong> 01/08</p>
 <p><strong>Describe the issue:</strong> On January 8, 2021 New Jersey’s <strong>Probable cases</strong> increased from 53,967 to 72,123 without explanation. This affected their Cases (confirmed + probable), which is calculated as Positive PCR tests (people) plus Probable cases in the absence of an explicit total case number. On January 9, 2021, their Probable cases decreased from 72,123 to 56,147. Because of this, we believe that the figure reported on  January 8, 2021 was a mistake, and are editing the number in out timeseries. In the absence of a historical timeseries for Probable cases, we are updating Probable cases for January 8, 2021 to be 53967, the same figure reported on January 7, 2021.</p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
       
         <div class="comment" id="issuecomment-757377758">
           <div class="frontmatter">
-            <div><strong>hmhoffman</strong> commented on January 9, 2021 at 4:36 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1057#issuecomment-757377758" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>hmhoffman</strong> commented on January 9, 2021 at 2:36 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1057#issuecomment-757377758" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Rows edited: 1
+            <p>Rows edited: 1
 NJ 2021-01-08
 positive: 570575 (was 588731)
 probableCases: 53967 (was 72123)</p>
@@ -158,13 +172,42 @@ probableCases: 53967 (was 72123)</p>
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>hmhoffman</strong> closed the issue on January 9, 2021 at 2:36 pm
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+            <strong>space-buzzer</strong> reopened this on January 9, 2021 at 3:15 pm
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-757382256">
           <div class="frontmatter">
-            <div><strong>space-buzzer</strong> commented on January 9, 2021 at 5:16 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1057#issuecomment-757382256" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>space-buzzer</strong> commented on January 9, 2021 at 3:16 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1057#issuecomment-757382256" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Updated the values again, using the data from “Case and Mortality Summaries” tab, and then inside the “PCR and Antigen Positives” (with value captured on 2021-01-08)</p>
+            <p>Updated the values again, using the data from “Case and Mortality Summaries” tab, and then inside the “PCR and Antigen Positives” (with value captured on 2021-01-08)</p>
 <p><a href="../assets/files/github/5791965/Multi-edit.tool-PRODUCTION.-.NJ-HMH-20210109_post.csv.txt">Multi-edit tool-PRODUCTION - NJ-HMH-20210109_post.csv.txt</a>
 <a href="../assets/files/github/5791966/Multi-edit.tool-PRODUCTION.-.NJ-pre-20210109.csv.txt">Multi-edit tool-PRODUCTION - NJ-pre-20210109.csv.txt</a></p>
 
@@ -172,7 +215,20 @@ probableCases: 53967 (was 72123)</p>
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>space-buzzer</strong> closed the issue on January 10, 2021 at 11:03 am
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

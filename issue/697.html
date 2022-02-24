@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,35 +134,104 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 697</p>
-        <p><strong>space-buzzer</strong> opened this issue on July 29, 2020 at 10:15 pm</p>
+        <p>
+          <strong>Issue number</strong>
+          697</p>
+        <p>
+          <strong>space-buzzer</strong> opened this issue on July 29, 2020 at 8:15 pm</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/2036763438.html">not stale</a></span>
-          
-            <span class="label"><a href="../label/2162087998.html">Backfill</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/2036763438.html">not stale</a>
+              </span>
+            
+              <span class="label">
+                <a href="../label/2162087998.html">Backfill</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/697" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p>Rhode Island publishes a Google Spreadsheet with full time series for all the metrics we capture. We need to check whether we miss weekend updates because the dashboard is frozen, and backfill from RI’s data if this is the case</p>
-
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/697" target="_blank">Open in Github</a>
       </div>
     </div>
+    <div class="body">
+      <p>Rhode Island publishes a Google Spreadsheet with full time series for all the metrics we capture. We need to check whether we miss weekend updates because the dashboard is frozen, and backfill from RI’s data if this is the case</p>
+
+    </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+            <strong>space-buzzer</strong> added the label <span class="label">Data quality</span> on July 29, 2020 at 8:15 pm
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+            <strong>space-buzzer</strong> removed the label <span class="label">Data quality</span> on July 29, 2020 at 8:16 pm
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+            <strong>space-buzzer</strong> added the label <span class="label">Backfill</span> on July 29, 2020 at 8:16 pm
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-671547685">
           <div class="frontmatter">
-            <div><strong>theomichel</strong> commented on August 10, 2020 at 2:35 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/697#issuecomment-671547685" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>theomichel</strong> commented on August 10, 2020 at 12:35 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/697#issuecomment-671547685" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>We concluded that we aren’t missing cases in the cumulative counts, but our graphs are ugly with giant dips on weekends followed by spikes on Mondays, because RI doesn’t update their dashboard on the weekends.</p>
+            <p>We concluded that we aren’t missing cases in the cumulative counts, but our graphs are ugly with giant dips on weekends followed by spikes on Mondays, because RI doesn’t update their dashboard on the weekends.</p>
 <p>We decided to go ahead and do a very targeted weekly backfill, where every Monday we backfill in RI’s cumulative totals for Saturday and Sunday from their google sheet of data. This will smooth the graph somewhat, although it’ll leave a small spike on saturday.</p>
 <p>The likely reason for the saturday spike is that the monday spikes were actually due to 2 factors:</p>
 <ol>
@@ -166,59 +243,154 @@ table th {
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-671607592">
           <div class="frontmatter">
-            <div><strong>theomichel</strong> commented on August 10, 2020 at 4:50 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/697#issuecomment-671607592" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>theomichel</strong> commented on August 10, 2020 at 2:50 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/697#issuecomment-671607592" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p><img src="../assets/images/github/17862035/89835007-bb856100-db18-11ea-97a1-bc28858bf764.png" alt="image">The bold cells are the values that we changed. (<strong>@space-buzzer</strong> made the change)</p>
+            <p><img src="../assets/images/github/17862035/89835007-bb856100-db18-11ea-97a1-bc28858bf764.png" alt="image">The bold cells are the values that we changed. (<strong>@space-buzzer</strong> made the change)</p>
 
           </div>
         </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-673037126">
           <div class="frontmatter">
-            <div><strong>theomichel</strong> commented on August 12, 2020 at 1:26 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/697#issuecomment-673037126" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>theomichel</strong> commented on August 12, 2020 at 11:26 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/697#issuecomment-673037126" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>This is now a weekly task and we (<strong>@space-buzzer</strong> <strong>@muamichali</strong> and I) agreed that we’ll use a slack shiftbot for the weekly reminder. So now the work for this issue is to create and train the shift bot. : )</p>
+            <p>This is now a weekly task and we (<strong>@space-buzzer</strong> <strong>@muamichali</strong> and I) agreed that we’ll use a slack shiftbot for the weekly reminder. So now the work for this issue is to create and train the shift bot. : )</p>
 
           </div>
         </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-673049908">
           <div class="frontmatter">
-            <div><strong>theomichel</strong> commented on August 12, 2020 at 1:53 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/697#issuecomment-673049908" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>theomichel</strong> commented on August 12, 2020 at 11:53 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/697#issuecomment-673049908" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>I created a workflow for mondays at 11am with the RI reminder. I don’t see a way to manually trigger it now to test it, so I’m moving this card to “needs verification” and set myself a separate reminder for next Monday.</p>
+            <p>I created a workflow for mondays at 11am with the RI reminder. I don’t see a way to manually trigger it now to test it, so I’m moving this card to “needs verification” and set myself a separate reminder for next Monday.</p>
 
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-675127764">
           <div class="frontmatter">
-            <div><strong>space-buzzer</strong> commented on August 17, 2020 at 4:35 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/697#issuecomment-675127764" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>space-buzzer</strong> commented on August 17, 2020 at 2:35 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/697#issuecomment-675127764" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Update 2020-08-17
+            <p>Update 2020-08-17
 <img src="../assets/images/github/62236447/90446822-e92d5580-e096-11ea-9bf9-f21d01a16706.png" alt="Screenshot from 2020-08-17 14-33-17">
 <img src="../assets/images/github/62236447/90446824-e9c5ec00-e096-11ea-88d0-0a38fc41af52.png" alt="Screenshot from 2020-08-17 14-33-42"></p>
 
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-675202584">
           <div class="frontmatter">
-            <div><strong>space-buzzer</strong> commented on August 17, 2020 at 8:48 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/697#issuecomment-675202584" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>space-buzzer</strong> commented on August 17, 2020 at 6:48 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/697#issuecomment-675202584" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>We shifted the days we filled by 1 day, to be compatible with how pub-shift is capturing the numbers.
+            <p>We shifted the days we filled by 1 day, to be compatible with how pub-shift is capturing the numbers.
 Every day, during pub shift, we capture numbers for the previous day (and they’re added to todays count). For weekend update, we should continue using the same strategy, otherwise, we report the “Sunday” number twice – for Sunday and Monday</p>
 <p>To remedy it, weekend update will behave exactly like pub-shift wrt day attribution</p>
 <p><img src="../assets/images/github/62236447/90461063-3373fe00-e0ba-11ea-87e9-1bf1735dd776.png" alt="Screenshot from 2020-08-17 18-38-59">
@@ -227,39 +399,66 @@ Every day, during pub shift, we capture numbers for the previous day (and they�
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-683978273">
           <div class="frontmatter">
-            <div><strong>space-buzzer</strong> commented on August 31, 2020 at 2:17 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/697#issuecomment-683978273" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>space-buzzer</strong> commented on August 31, 2020 at 12:17 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/697#issuecomment-683978273" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Another week, another update
+            <p>Another week, another update
 <img src="../assets/images/github/62236447/91757829-d67d4b00-eb83-11ea-873d-85e4786adcd7.png" alt="Screenshot from 2020-08-31 12-15-06">
 <img src="../assets/images/github/62236447/91757831-d715e180-eb83-11ea-8db0-23cdf094726f.png" alt="Screenshot from 2020-08-31 12-15-36"></p>
 
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+            <strong>brianskli</strong> added the label <span class="label">not stale</span> on September 8, 2020 at 6:54 am
+          
+          
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-689006982">
           <div class="frontmatter">
-            <div><strong>space-buzzer</strong> commented on September 8, 2020 at 11:51 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/697#issuecomment-689006982" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>space-buzzer</strong> commented on September 8, 2020 at 9:51 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/697#issuecomment-689006982" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Laber day weekend
+            <p>Laber day weekend
 <img src="../assets/images/github/62236447/92505395-e1a22d80-f1b8-11ea-9c6f-cc894c5097cf.png" alt="Screenshot from 2020-09-08 09-49-21">
 <img src="../assets/images/github/62236447/92505400-e23ac400-f1b8-11ea-9f3c-2ddc0c15024e.png" alt="Screenshot from 2020-09-08 09-50-29"></p>
 
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-692236591">
           <div class="frontmatter">
-            <div><strong>theomichel</strong> commented on September 14, 2020 at 1:35 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/697#issuecomment-692236591" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>theomichel</strong> commented on September 14, 2020 at 11:35 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/697#issuecomment-692236591" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Weekend fill for 9/12 and 9/13:</p>
+            <p>Weekend fill for 9/12 and 9/13:</p>
 <p>Rows edited: 2</p>
 <p>RI 2020-09-13
 positive: 23098 (was 22905)
@@ -290,13 +489,18 @@ totalTestsPeopleViral: 306136 (was 303023)</p>
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-696264825">
           <div class="frontmatter">
-            <div><strong>space-buzzer</strong> commented on September 21, 2020 at 12:39 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/697#issuecomment-696264825" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>space-buzzer</strong> commented on September 21, 2020 at 10:39 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/697#issuecomment-696264825" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>2020-09-21
+            <p>2020-09-21
 All done!</p>
 <p><img src="../assets/images/github/62236447/93801319-aa8b3d80-fbf6-11ea-8cfa-415fff2d7875.png" alt="Screenshot from 2020-09-21 10-31-44">
 <img src="../assets/images/github/62236447/93801322-ab23d400-fbf6-11ea-8499-05bfce5bb03f.png" alt="Screenshot from 2020-09-21 10-35-09"></p>
@@ -304,19 +508,87 @@ All done!</p>
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-812551987">
           <div class="frontmatter">
-            <div><strong>hmhoffman</strong> commented on April 2, 2021 at 9:22 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/697#issuecomment-812551987" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>hmhoffman</strong> commented on April 2, 2021 at 7:22 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/697#issuecomment-812551987" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p><strong>@space-buzzer</strong> <strong>@theomichel</strong> I think this was solved with RI bot! Unless we need to log those edits here, I’m going to close this issue.</p>
+            <p><strong>@space-buzzer</strong> <strong>@theomichel</strong> I think this was solved with RI bot! Unless we need to log those edits here, I’m going to close this issue.</p>
 
           </div>
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>hmhoffman</strong> closed the issue on April 2, 2021 at 7:22 am
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

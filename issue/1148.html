@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,31 +134,37 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 1148</p>
-        <p><strong>hmhoffman</strong> opened this issue on April 12, 2021 at 11:49 am</p>
+        <p>
+          <strong>Issue number</strong>
+          1148</p>
+        <p>
+          <strong>hmhoffman</strong> opened this issue on April 12, 2021 at 9:49 am</p>
         
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1148" target="_blank">Open in Github</a>
-        </div>
       </div>
-      <div class="body">
-        <p><strong>State:</strong> OK</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1148" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p><strong>State:</strong> OK</p>
 <p><strong>Dates affected:</strong> 01/19/21-01/21/21</p>
 <p><strong>Describe the issue:</strong> Oklahoma frequently published their executive order reports (EORs) after the time of our daily update, so the metrics we source from them(Total PCR tests (specimens), Positive PCR tests (specimens), Negative PCR tests (specimens), Negative PCR tests (people), Pending, Currently hospitalized, and Currently in ICU) were on a one day lag in our timeseries. Additionally, Oklahoma did not publish EORs on weekends or federal holidays. On January 18, 2021, they did not publish an EOR due to the holiday, and so on January 19, 2021, we should not have had an updated data source for the EOR metrics, and should have carried over the previous days values. However, on January 19, 2021, they released their EOR anomalously early, and we updated our data for January 19, 2021. The EOR for January 20, 2021 was published unusually early as well, and we caught those numbers in our data for January 20, 2021, instead of our numbers for January 21, 2021. As a result, we were unable to update their EOR metrics for January 21, 2020, as the EOR was not published early enough for us to catch it. We are patching their timeseries to ensure that the EOR metrics are consistently on a one-day lag.</p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
       
         <div class="comment" id="issuecomment-817970384">
           <div class="frontmatter">
-            <div><strong>hmhoffman</strong> commented on April 12, 2021 at 11:56 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1148#issuecomment-817970384" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>hmhoffman</strong> commented on April 12, 2021 at 9:56 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1148#issuecomment-817970384" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Rows edited: 2
+            <p>Rows edited: 2
 OK 2021-01-20
 negative: 2642075 (was 2653602)
 pending: 3664 (was 3976)
@@ -172,7 +186,20 @@ negativeTestsViral: 2943409 (was 2642075)</p>
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>hmhoffman</strong> closed the issue on April 12, 2021 at 9:56 am
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

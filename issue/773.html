@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,40 +134,89 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 773</p>
-        <p><strong>jaclyde</strong> opened this issue on August 17, 2020 at 11:03 pm</p>
+        <p>
+          <strong>Issue number</strong>
+          773</p>
+        <p>
+          <strong>jaclyde</strong> opened this issue on August 17, 2020 at 9:03 pm</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
-          
-            <span class="label"><a href="../label/1937937334.html">Historical Data</a></span>
-          
-            <span class="label"><a href="../label/2036763229.html">stale</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/1921151980.html">Data quality</a>
+              </span>
+            
+              <span class="label">
+                <a href="../label/1937937334.html">Historical Data</a>
+              </span>
+            
+              <span class="label">
+                <a href="../label/2036763229.html">stale</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/773" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p>State: PA</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/773" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p>State: PA</p>
 <p>Dates impacted: 8/17 - 3/11</p>
 <p>Issues: PA report positive cases and negatives. We add these values to get Total Tests, however the units of the negative tests is unclear. We are moving the Total Test values from “Total PCR Tests (People)” to “Total Tests (PCR).”</p>
 <p>Additionally, we are backfilling the Total Tests (PCR) metric from 3/11-5/17 using the positive case values plus the negative case values we had already recorded. In doing the backfill we noticed that the total had been carried over from 5/12-5/17. During this period we were unsure what was included in PA’s case number, the backfill includes replacing that carried over value with the value that matches positive+negative.</p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+            <strong>jaclyde</strong> added the label <span class="label">Data quality</span> on August 17, 2020 at 9:03 pm
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+            <strong>jaclyde</strong> added the label <span class="label">Historical Data</span> on August 17, 2020 at 9:03 pm
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-675262843">
           <div class="frontmatter">
-            <div><strong>jaclyde</strong> commented on August 18, 2020 at 12:37 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/773#issuecomment-675262843" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>jaclyde</strong> commented on August 17, 2020 at 10:37 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/773#issuecomment-675262843" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>BEFORE MOVE
+            <p>BEFORE MOVE
 <img width="419" alt="PA Before" src="../assets/images/github/66583275/90474075-5366ea00-e0d9-11ea-8b9f-c17c1ec6b51c.png">
 AFTER MOVE
 <img width="406" alt="PA After Move" src="../assets/images/github/66583275/90474380-fddf0d00-e0d9-11ea-8dfd-94faa69237be.png"></p>
@@ -167,13 +224,18 @@ AFTER MOVE
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-675266011">
           <div class="frontmatter">
-            <div><strong>jaclyde</strong> commented on August 18, 2020 at 12:46 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/773#issuecomment-675266011" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>jaclyde</strong> commented on August 17, 2020 at 10:46 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/773#issuecomment-675266011" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>BEFORE BACKFILL
+            <p>BEFORE BACKFILL
 <img width="241" alt="PA Before Backfill" src="../assets/images/github/66583275/90474792-f704ca00-e0da-11ea-8f41-f8d6535098f8.png">
 AFTER
 <img width="290" alt="Screen Shot 2020-08-17 at 10 44 38 PM" src="../assets/images/github/66583275/90474966-64b0f600-e0db-11ea-86e6-2e21b7abf5bd.png"></p>
@@ -250,19 +312,49 @@ AFTER
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-685376877">
           <div class="frontmatter">
-            <div><strong>stale[bot]</strong> commented on September 2, 2020 at 1:56 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/773#issuecomment-685376877" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>stale[bot]</strong> commented on September 1, 2020 at 11:56 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/773#issuecomment-685376877" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
+            <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
 
           </div>
         </div>
       
     
+      
+        <div class="event">
+          
+          
+            <strong>stale[bot]</strong> added the label <span class="label">stale</span> on September 1, 2020 at 11:56 pm
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>muamichali</strong> closed the issue on September 4, 2020 at 1:25 pm
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

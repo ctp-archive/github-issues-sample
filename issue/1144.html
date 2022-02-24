@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,32 +134,38 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 1144</p>
-        <p><strong>hmhoffman</strong> opened this issue on April 6, 2021 at 12:24 pm</p>
+        <p>
+          <strong>Issue number</strong>
+          1144</p>
+        <p>
+          <strong>hmhoffman</strong> opened this issue on April 6, 2021 at 10:24 am</p>
         
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1144" target="_blank">Open in Github</a>
-        </div>
       </div>
-      <div class="body">
-        <p><strong>State:</strong> OR</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1144" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p><strong>State:</strong> OR</p>
 <p><strong>Dates affected:</strong> 12/01/20 (OR was later put on a one day lag)</p>
 <p><strong>Describe the issue:</strong> On November 30, 2020, Oregon did not update their data dashboard until after the time of our daily update, but did provide a <a href="https://www.oregon.gov/oha/ERD/Pages/Oregon-reports-1314-new-confirmed-and-presumptive-COVID-19-cases-7-new-deaths.aspx">press release</a> with data. We sourced their Positive Cases (People, confirmed + probable), Currently hospitalized, Currently in ICU, Deaths (confirmed and probable) from this press release. We later learned that the hospitalization figures from the press releases are different from the numbers we usually captured, and are backfilling their Currently hospitalized, Currently in ICU, and Currently on ventilator from screenshots.</p>
 <p><strong>Screenshot links:</strong> <a href="https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/OR/OR-quaternary-20201201-054743.png">https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/OR/OR-quaternary-20201201-054743.png</a></p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
       
         <div class="comment" id="issuecomment-814296371">
           <div class="frontmatter">
-            <div><strong>hmhoffman</strong> commented on April 6, 2021 at 12:24 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1144#issuecomment-814296371" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>hmhoffman</strong> commented on April 6, 2021 at 10:24 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1144#issuecomment-814296371" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Rows edited: 1
+            <p>Rows edited: 1
 OR 2020-12-01
 hospitalizedCurrently: 662 (was 584)
 inIcuCurrently: 127 (was 117)
@@ -161,7 +175,20 @@ onVentilatorCurrently: 58 (was 50)</p>
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>hmhoffman</strong> closed the issue on April 6, 2021 at 10:24 am
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

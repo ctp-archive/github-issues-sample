@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,44 +134,80 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 496</p>
-        <p><strong>salmasian</strong> opened this issue on June 15, 2020 at 1:00 pm</p>
+        <p>
+          <strong>Issue number</strong>
+          496</p>
+        <p>
+          <strong>salmasian</strong> opened this issue on June 15, 2020 at 11:00 am</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/1921151980.html">Data quality</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/496" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p><strong>State or US</strong>: MA</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/496" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p><strong>State or US</strong>: MA</p>
 <p><strong>Describe the problem</strong>
 The number of confirmed cases in Massachusetts on June 1st is shown as 96,965 which is the same as the day before. This is inaccurate. The 6:34 PM update (linked <a href="https://covidtracking.com/screenshots/MA/MA-20200601-183437.png">here</a> and on the COVIDtracking project) shows the number was 100,805. This also impacts the positiveIncrease column for June 2nd, where currently a jump of more than 4000 cases is shown, but in reality it was two smaller jumps of ~2000 cases in the two days.</p>
 <p><strong>Link to data source</strong>
 <a href="https://covidtracking.com/screenshots/MA/MA-20200601-183437.png">https://covidtracking.com/screenshots/MA/MA-20200601-183437.png</a></p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+            <strong>salmasian</strong> added the label <span class="label">Data quality</span> on June 15, 2020 at 11:00 am
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-646006540">
           <div class="frontmatter">
-            <div><strong>muamichali</strong> commented on June 18, 2020 at 8:10 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/496#issuecomment-646006540" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>muamichali</strong> commented on June 18, 2020 at 6:10 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/496#issuecomment-646006540" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Hi salmasian,</p>
+            <p>Hi salmasian,</p>
 <p>Thanks for letting us know. We fixed it via #473 last night.</p>
 
           </div>
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>muamichali</strong> closed the issue on June 18, 2020 at 6:10 am
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

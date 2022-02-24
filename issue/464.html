@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,20 +134,28 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 464</p>
-        <p><strong>chriscanipe</strong> opened this issue on May 28, 2020 at 10:34 am</p>
+        <p>
+          <strong>Issue number</strong>
+          464</p>
+        <p>
+          <strong>chriscanipe</strong> opened this issue on May 28, 2020 at 8:34 am</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/1921151980.html">Data quality</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/464" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p><strong>State</strong>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/464" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p><strong>State</strong>
 South Carolina</p>
 <p><strong>Describe the problem</strong>
 The Sunday, May 17 case total is off in the data API. The May 17 SC Health Dept. press release shows 8,816 cases as of May 17. But the CTP historical data shows 8,661 for that date. Possible to get that fixed? (The last screenshot is correct. Looks like the feed still includes the screenshot from earlier in the day).</p>
@@ -149,18 +165,43 @@ The Sunday, May 17 case total is off in the data API. The May 17 SC Health Dept.
 <a href="https://www.scdhec.gov/news-releases/south-carolina-announces-latest-covid-19-update-may-17-2020">https://www.scdhec.gov/news-releases/south-carolina-announces-latest-covid-19-update-may-17-2020</a></p>
 <p>Thanks!</p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+            <strong>chriscanipe</strong> added the label <span class="label">Data quality</span> on May 28, 2020 at 8:34 am
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-635978560">
           <div class="frontmatter">
-            <div><strong>camille-le</strong> commented on May 29, 2020 at 8:40 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/464#issuecomment-635978560" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>camille-le</strong> commented on May 29, 2020 at 6:40 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/464#issuecomment-635978560" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Hi Chris, thanks for your input. On 5/17, South Carolina updated total positive cases from <a href="https://covidtracking.com/screenshots/SC/SC-20200517-124509.png">8661</a> to <a href="https://covidtracking.com/screenshots/SC/SC-20200517-184615.png">8816</a> after we published.</p>
+            <p>Hi Chris, thanks for your input. On 5/17, South Carolina updated total positive cases from <a href="https://covidtracking.com/screenshots/SC/SC-20200517-124509.png">8661</a> to <a href="https://covidtracking.com/screenshots/SC/SC-20200517-184615.png">8816</a> after we published.</p>
 <p>We are going to update the 5/17 data based on the South Carolina 5/17 evening screenshot. You should see the correct data reflected on the site shortly.</p>
 <p><strong>BEFORE:</strong>
 <img width="421" alt="2020-05-17_SC_BEFORE" src="../assets/images/github/31285549/83265707-b9953e00-a176-11ea-93da-f47ac61cba62.png"></p>
@@ -173,7 +214,30 @@ Camille</p>
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>camille-le</strong> closed the issue on May 29, 2020 at 6:40 am
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,49 +134,79 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 575</p>
-        <p><strong>jaclyde</strong> opened this issue on July 3, 2020 at 8:59 pm</p>
+        <p>
+          <strong>Issue number</strong>
+          575</p>
+        <p>
+          <strong>jaclyde</strong> opened this issue on July 3, 2020 at 6:59 pm</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
-          
-            <span class="label"><a href="../label/2036763229.html">stale</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/1921151980.html">Data quality</a>
+              </span>
+            
+              <span class="label">
+                <a href="../label/2036763229.html">stale</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/575" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p>We have been recording AR’s Total Tests as “Total PCR Tests (people)”, however we received information from outreach that they are (partly) specimens. Need to move values to column “Total Tests (PCR).”</p>
-<p>See — AR 6/26 SvP Update — in Slack for details.</p>
-
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/575" target="_blank">Open in Github</a>
       </div>
     </div>
+    <div class="body">
+      <p>We have been recording AR’s Total Tests as “Total PCR Tests (people)”, however we received information from outreach that they are (partly) specimens. Need to move values to column “Total Tests (PCR).”</p>
+<p>See — AR 6/26 SvP Update — in Slack for details.</p>
+
+    </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+            <strong>jaclyde</strong> added the label <span class="label">Data quality</span> on July 3, 2020 at 6:59 pm
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-653708191">
           <div class="frontmatter">
-            <div><strong>jaclyde</strong> commented on July 3, 2020 at 9:04 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/575#issuecomment-653708191" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>jaclyde</strong> commented on July 3, 2020 at 7:04 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/575#issuecomment-653708191" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>I updated WS2 (source note was also moved).
+            <p>I updated WS2 (source note was also moved).
 <img width="441" alt="Screen Shot 2020-07-03 at 7 02 33 PM" src="../assets/images/github/66583275/86503163-11b7f500-bd60-11ea-8ef7-c62f8f41af75.png">
 <img width="822" alt="Screen Shot 2020-07-03 at 7 01 18 PM" src="../assets/images/github/66583275/86503164-12e92200-bd60-11ea-965d-ebe8270011e2.png"></p>
 
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-653780458">
           <div class="frontmatter">
-            <div><strong>MattHilliard</strong> commented on July 4, 2020 at 10:38 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/575#issuecomment-653780458" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>MattHilliard</strong> commented on July 4, 2020 at 8:38 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/575#issuecomment-653780458" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Before we move the column, a couple concerns:
+            <p>Before we move the column, a couple concerns:
 (a) Before 5/15, the column is calculated via formula. Are there really supposed to be formulas on States Daily?
 (b) From 5/12 to 5/14, the formula adds “Positive Cases (PCR)” to Negatives. This doesn’t seem like something we want to put in “Positive Tests (PCR)”
 © Before 5/12, the formula is Positives + Negatives.</p>
@@ -176,30 +214,65 @@ table th {
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-660670318">
           <div class="frontmatter">
-            <div><strong>stale[bot]</strong> commented on July 19, 2020 at 11:16 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/575#issuecomment-660670318" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>stale[bot]</strong> commented on July 19, 2020 at 9:16 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/575#issuecomment-660670318" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
-
-          </div>
-        </div>
-      
-        <div class="comment" id="issuecomment-665774093">
-          <div class="frontmatter">
-            <div><strong>stale[bot]</strong> commented on July 29, 2020 at 11:41 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/575#issuecomment-665774093" target="_blank">Open in Github</a></div>
-          </div>
-          <div class="body">
-          <p>This issue has been closed because it was stale for 15 days, and there was no further activity on it for 10 days. You can feel free to re-open it if the issue is important, and label it as “not stale.”</p>
+            <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
 
           </div>
         </div>
       
     
+      
+        <div class="event">
+          
+          
+            <strong>stale[bot]</strong> added the label <span class="label">stale</span> on July 19, 2020 at 9:16 am
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="comment" id="issuecomment-665774093">
+          <div class="frontmatter">
+            <div>
+              <strong>stale[bot]</strong> commented on July 29, 2020 at 9:41 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/575#issuecomment-665774093" target="_blank">Open in Github</a>
+            </div>
+          </div>
+          <div class="body">
+            <p>This issue has been closed because it was stale for 15 days, and there was no further activity on it for 10 days. You can feel free to re-open it if the issue is important, and label it as “not stale.”</p>
+
+          </div>
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>stale[bot]</strong> closed the issue on July 29, 2020 at 9:41 am
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

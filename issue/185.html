@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,55 +134,103 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 185</p>
-        <p><strong>hammer</strong> opened this issue on April 12, 2020 at 4:51 am</p>
+        <p>
+          <strong>Issue number</strong>
+          185</p>
+        <p>
+          <strong>hammer</strong> opened this issue on April 12, 2020 at 2:51 am</p>
         
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/185" target="_blank">Open in Github</a>
-        </div>
       </div>
-      <div class="body">
-        <p>SC’s hospitalization numbers look wrong from 3/31 - 4/2 <a href="https://covidtracking.com/data/state/south-carolina">https://covidtracking.com/data/state/south-carolina</a>.</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/185" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p>SC’s hospitalization numbers look wrong from 3/31 - 4/2 <a href="https://covidtracking.com/data/state/south-carolina">https://covidtracking.com/data/state/south-carolina</a>.</p>
 <ul>
 <li>4/2: the number “896” appears to come from a survey of 896 cases in which 27% were reported to be hospitalized at time of reported illness. Later days use 896 * .27 = 241 as cumulative number hospitalized, so we should probably just change this day to 241.</li>
 <li>3/31 - 4/1: I have no theory about the origin of these numbers. There’s a survey of 424 cases in which 24% are reported hospitalized at time of illness; using the logic from 4/1 we’d have 424 * .24 = 101 as a lower bound on cumulative.</li>
 </ul>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
       
         <div class="comment" id="issuecomment-616221503">
           <div class="frontmatter">
-            <div><strong>mlgnight</strong> commented on April 19, 2020 at 3:38 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/185#issuecomment-616221503" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>mlgnight</strong> commented on April 19, 2020 at 1:38 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/185#issuecomment-616221503" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Also, the data goes from 129 to 259 to 349 to 241 to 896 and back down to 241</p>
+            <p>Also, the data goes from 129 to 259 to 349 to 241 to 896 and back down to 241</p>
 
           </div>
         </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-623774906">
           <div class="frontmatter">
-            <div><strong>stale[bot]</strong> commented on May 4, 2020 at 7:20 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/185#issuecomment-623774906" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>stale[bot]</strong> commented on May 4, 2020 at 5:20 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/185#issuecomment-623774906" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
+            <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
 
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+            <strong>stale[bot]</strong> added the label <span class="label">stale</span> on May 4, 2020 at 5:20 pm
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-626754190">
           <div class="frontmatter">
-            <div><strong>karaschechtman</strong> commented on May 11, 2020 at 9:52 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/185#issuecomment-626754190" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>karaschechtman</strong> commented on May 11, 2020 at 7:52 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/185#issuecomment-626754190" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Hi <strong>@hammer</strong> and <strong>@mlgnight</strong>,
+            <p>Hi <strong>@hammer</strong> and <strong>@mlgnight</strong>,
 Thanks for catching this. The 4/2 number does look like a misreading of the charts. According to records we noticed the mistake for hospitalizations 4/3 and corrected but did not update the historical data.
 <img src="../assets/images/github/15933271/81573304-49af4700-9372-11ea-8c8b-268ad33fa897.png" alt="comment 4/3">
 I’ve gone in and updated that value.
@@ -188,7 +244,102 @@ After:
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+            <strong>stale[bot]</strong> removed the label <span class="label">stale</span> on May 11, 2020 at 7:52 am
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>muamichali</strong> closed the issue on May 14, 2020 at 7:08 am
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

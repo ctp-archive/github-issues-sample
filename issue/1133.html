@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,37 +134,62 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 1133</p>
-        <p><strong>theomichel</strong> opened this issue on March 5, 2021 at 3:50 pm</p>
+        <p>
+          <strong>Issue number</strong>
+          1133</p>
+        <p>
+          <strong>theomichel</strong> opened this issue on March 5, 2021 at 1:50 pm</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
-          
-            <span class="label"><a href="../label/2036763229.html">stale</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/1921151980.html">Data quality</a>
+              </span>
+            
+              <span class="label">
+                <a href="../label/2036763229.html">stale</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1133" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p>Our totalTestsViral time series for Montana goes back to 3/28/2020. This was populated by a backfill in august using a time series provided by the state. However, we have additional data which we collected back to 3/7/2020 (stored in our negative and positive columns), and we have screenshot evidence for this data.</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1133" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p>Our totalTestsViral time series for Montana goes back to 3/28/2020. This was populated by a backfill in august using a time series provided by the state. However, we have additional data which we collected back to 3/7/2020 (stored in our negative and positive columns), and we have screenshot evidence for this data.</p>
 <p>We will go ahead and copy this data (sum negative+positive) into the totalTestsViral column, for each day 3/7 to 3/27. This will enable us to switch MT’s totalTestResults column refer directly to totalTestsViral.</p>
 <p>The only concern with this early data from the state is that it was unclear whether the data was for unique people tested, or specimens tested. However, because its was so early in the pandemic and testing was scarce, we believe that re-testing was rare, and thus unique people and specimens tested would have been very similar numbers.</p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+            <strong>theomichel</strong> added the label <span class="label">Data quality</span> on March 5, 2021 at 1:50 pm
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-791841861">
           <div class="frontmatter">
-            <div><strong>theomichel</strong> commented on March 5, 2021 at 8:14 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1133#issuecomment-791841861" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>theomichel</strong> commented on March 5, 2021 at 6:14 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1133#issuecomment-791841861" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Done, with some modifications versus the plan described above:</p>
+            <p>Done, with some modifications versus the plan described above:</p>
 <ul>
 <li>3/07 to 3/20: from totaltestresults, which was based off explicit negatives+positives</li>
 <li>3/21 to 3/27: from screenshots of total people tested or tests. (except 3/22 and 3/23: carry forward due to no data / screenshots)</li>
@@ -168,30 +201,65 @@ table th {
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-803515158">
           <div class="frontmatter">
-            <div><strong>stale[bot]</strong> commented on March 21, 2021 at 12:19 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1133#issuecomment-803515158" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>stale[bot]</strong> commented on March 20, 2021 at 10:19 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1133#issuecomment-803515158" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
-
-          </div>
-        </div>
-      
-        <div class="comment" id="issuecomment-810788197">
-          <div class="frontmatter">
-            <div><strong>stale[bot]</strong> commented on March 31, 2021 at 12:55 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1133#issuecomment-810788197" target="_blank">Open in Github</a></div>
-          </div>
-          <div class="body">
-          <p>This issue has been closed because it was stale for 15 days, and there was no further activity on it for 10 days. You can feel free to re-open it if the issue is important, and label it as “not stale.”</p>
+            <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
 
           </div>
         </div>
       
     
+      
+        <div class="event">
+          
+          
+            <strong>stale[bot]</strong> added the label <span class="label">stale</span> on March 20, 2021 at 10:19 pm
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="comment" id="issuecomment-810788197">
+          <div class="frontmatter">
+            <div>
+              <strong>stale[bot]</strong> commented on March 30, 2021 at 10:55 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1133#issuecomment-810788197" target="_blank">Open in Github</a>
+            </div>
+          </div>
+          <div class="body">
+            <p>This issue has been closed because it was stale for 15 days, and there was no further activity on it for 10 days. You can feel free to re-open it if the issue is important, and label it as “not stale.”</p>
+
+          </div>
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>stale[bot]</strong> closed the issue on March 30, 2021 at 10:55 pm
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,16 +134,19 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 287</p>
-        <p><strong>acobolew</strong> opened this issue on April 24, 2020 at 11:12 pm</p>
+        <p>
+          <strong>Issue number</strong>
+          287</p>
+        <p>
+          <strong>acobolew</strong> opened this issue on April 24, 2020 at 9:12 pm</p>
         
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/287" target="_blank">Open in Github</a>
-        </div>
       </div>
-      <div class="body">
-        <p>Guam has positiveIncrease  &lt; 0 on 2020-04-20</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/287" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p>Guam has positiveIncrease  &lt; 0 on 2020-04-20</p>
 <blockquote>
 <p>library(data.table)
 covidtracking.dt &lt;- fread(‘<a href="https://covidtracking.com/api/v1/states/daily.csv">https://covidtracking.com/api/v1/states/daily.csv</a>’)
@@ -148,18 +159,21 @@ date state positive positiveIncrease
 4: 2020-04-22    PR      915             -383</p>
 </blockquote>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
       
         <div class="comment" id="issuecomment-620148626">
           <div class="frontmatter">
-            <div><strong>muamichali</strong> commented on April 27, 2020 at 1:14 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/287#issuecomment-620148626" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>muamichali</strong> commented on April 27, 2020 at 11:14 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/287#issuecomment-620148626" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Hi <strong>@acobolew</strong>
+            <p>Hi <strong>@acobolew</strong>
 It turned that the 136 numbers included 3 probable cases, we revised the historical data to exclude them <a href="https://covidtracking.com/screenshots/GU/GU-20200420-180557.png">https://covidtracking.com/screenshots/GU/GU-20200420-180557.png</a></p>
 <p><strong>Before</strong>
 <img width="170" alt="Screen Shot 2020-04-27 at 2 10 21 PM" src="../assets/images/github/1749380/80405894-39d33580-8891-11ea-82fd-73c5118fa9c9.png"></p>
@@ -170,7 +184,50 @@ It turned that the 136 numbers included 3 probable cases, we revised the histori
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>muamichali</strong> closed the issue on April 27, 2020 at 11:14 am
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

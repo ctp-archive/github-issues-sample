@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,51 +134,123 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 716</p>
-        <p><strong>space-buzzer</strong> opened this issue on July 31, 2020 at 2:14 pm</p>
+        <p>
+          <strong>Issue number</strong>
+          716</p>
+        <p>
+          <strong>space-buzzer</strong> opened this issue on July 31, 2020 at 12:14 pm</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/2162087998.html">Backfill</a></span>
-          
-            <span class="label"><a href="../label/2199367619.html">Missing Data</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/2162087998.html">Backfill</a>
+              </span>
+            
+              <span class="label">
+                <a href="../label/2199367619.html">Missing Data</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/716" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p>CO publishes a “Test Encounters” value, and we recently added it to our worksheet, we need to backfill past data for this metric</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/716" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p>CO publishes a “Test Encounters” value, and we recently added it to our worksheet, we need to backfill past data for this metric</p>
 <p>We started collecting numbers on 7/27, when CO started publishing them on the dashboard.</p>
 <p>To fill the values before 7/27, we used the “Testing Encounters” daily bar chart, to calculate cumulative sum by date.
 The values we used in this initial population of the time series were calculated from data as downloaded on 8/1.</p>
 <p>We’re using this calculated backfill only for dates before the 27th, and going forward <em>(despite the bar chart with daily test encounters being continuously back-filled)</em> we’re only going to use the number posted on the dashboard.
 Since the numbers on the dashboard normally correspond to data as of two days previous, we are shifting the total test encounters to reflect what would have been displayed on the dashboard on the corresponding date.</p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+            <strong>space-buzzer</strong> added the label <span class="label">Backfill</span> on July 31, 2020 at 12:14 pm
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+            <strong>space-buzzer</strong> added the label <span class="label">Missing Data</span> on July 31, 2020 at 12:14 pm
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-670657973">
           <div class="frontmatter">
-            <div><strong>space-buzzer</strong> commented on August 7, 2020 at 1:47 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/716#issuecomment-670657973" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>space-buzzer</strong> commented on August 7, 2020 at 11:47 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/716#issuecomment-670657973" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p><img src="../assets/images/github/62236447/89678219-afdd3480-d8a3-11ea-9f39-9dfe37377c5d.png" alt="Screenshot from 2020-08-07 11-41-45"></p>
+            <p><img src="../assets/images/github/62236447/89678219-afdd3480-d8a3-11ea-9f39-9dfe37377c5d.png" alt="Screenshot from 2020-08-07 11-41-45"></p>
 
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-670695685">
           <div class="frontmatter">
-            <div><strong>space-buzzer</strong> commented on August 7, 2020 at 3:16 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/716#issuecomment-670695685" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>space-buzzer</strong> commented on August 7, 2020 at 1:16 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/716#issuecomment-670695685" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Done
+            <p>Done
 Before:
 <img src="../assets/images/github/62236447/89684871-1b2d0380-d8b0-11ea-820f-e4540dc3a9e2.png" alt="Screenshot from 2020-08-07 13-13-00">
 After
@@ -180,7 +260,40 @@ After
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>space-buzzer</strong> closed the issue on August 7, 2020 at 2:56 pm
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

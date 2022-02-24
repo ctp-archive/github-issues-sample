@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,20 +134,28 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 755</p>
-        <p><strong>ghost</strong> opened this issue on August 12, 2020 at 3:15 pm</p>
+        <p>
+          <strong>Issue number</strong>
+          755</p>
+        <p>
+          <strong>ghost</strong> opened this issue on August 12, 2020 at 1:15 pm</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/1921151980.html">Data quality</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/755" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p><strong>Arizona</strong>:</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/755" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p><strong>Arizona</strong>:</p>
 <p><strong>Describe the problem</strong>
 COVID19Tracking describes Arizona data as including all tests. This is wrong. <strong>This error in how COVID19Tracking describes these data has resulted in researchers and analysts who use these data incorrectly calculating test positivity by using all positives, but only a portion of negatives.</strong> This issue has not received attention for 15 days. It is an important, but thankfully simple fix. Update the data quality grades.</p>
 <p>COVID19Tracking Data quality grades for Arizona have a check for “Machine readable” and “Reporting total test conducted”. There are two issues here:</p>
@@ -175,29 +191,61 @@ Re: confirmed/probable, see <a href="https://azdhs.gov/preparedness/epidemiology
 </ul>
 <p>Extracting the vizintooltip from the page source, the breakdown of confirmed/probable (for example) is an image. The url for that image is <a href="https://tableau.azdhs.gov/vizql/tilecache/5E489168531A4CCF8BD4EE43C78B91F9-4:2/8483/VizInTooltip/157767/640CF13950CD4D8BB5F6500C2295831F.A115AB9711DD42D2835EC54DEC8E9B71.1.300.300.png">here</a>. There is no alt text.</p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+            <strong></strong> added the label <span class="label">Data quality</span> on August 12, 2020 at 1:15 pm
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-682272654">
           <div class="frontmatter">
-            <div><strong>stale[bot]</strong> commented on August 27, 2020 at 8:25 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/755#issuecomment-682272654" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>stale[bot]</strong> commented on August 27, 2020 at 6:25 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/755#issuecomment-682272654" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
+            <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
 
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+            <strong>stale[bot]</strong> added the label <span class="label">stale</span> on August 27, 2020 at 6:25 pm
+          
+          
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-682316420">
           <div class="frontmatter">
-            <div><strong>ghost</strong> commented on August 27, 2020 at 11:21 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/755#issuecomment-682316420" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>ghost</strong> commented on August 27, 2020 at 9:21 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/755#issuecomment-682316420" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>This issue should receive some attention. Arizona data quality grades are in error and need to be updated. The state is not reporting total tests conducted, and not reporting all negative tests.</p>
+            <p>This issue should receive some attention. Arizona data quality grades are in error and need to be updated. The state is not reporting total tests conducted, and not reporting all negative tests.</p>
 <p>See further news reports:</p>
 <p><a href="https://www.abc15.com/news/state/arizonas-handling-of-covid-19-health-data-gets-new-challenge">https://www.abc15.com/news/state/arizonas-handling-of-covid-19-health-data-gets-new-challenge</a>
 <a href="https://www.azfamily.com/news/continuing_coverage/coronavirus_coverage/the-reason-why-there-are-so-many-conflicting-covid-19-positivity-rates-for-arizona/article_83fa2d80-dc33-11ea-8d38-17fac0e3733a.html">https://www.azfamily.com/news/continuing_coverage/coronavirus_coverage/the-reason-why-there-are-so-many-conflicting-covid-19-positivity-rates-for-arizona/article_83fa2d80-dc33-11ea-8d38-17fac0e3733a.html</a>
@@ -207,30 +255,75 @@ Re: confirmed/probable, see <a href="https://azdhs.gov/preparedness/epidemiology
           </div>
         </div>
       
-        <div class="comment" id="issuecomment-686918110">
-          <div class="frontmatter">
-            <div><strong>ghost</strong> commented on September 4, 2020 at 12:31 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/755#issuecomment-686918110" target="_blank">Open in Github</a></div>
-          </div>
-          <div class="body">
-          <p>This issue could use some attention. The Arizona data quality grades are not accurate (not all tests are reported, see above) and they are being used by the state to avoid addressing data transparency issues. Arizona governor Doug Ducey cited their A+ data quality grade in a recent <a href="https://youtu.be/1tM8njdKj7k">press conference</a> to side step press questions about problems with data transparency. Please fix the error.</p>
-
-          </div>
+    
+      
+        <div class="event">
+          
+          
+          
+            <strong>stale[bot]</strong> removed the label <span class="label">stale</span> on August 27, 2020 at 9:21 pm
+          
+          
+          
         </div>
       
-        <div class="comment" id="issuecomment-702747531">
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="comment" id="issuecomment-686918110">
           <div class="frontmatter">
-            <div><strong>muamichali</strong> commented on October 2, 2020 at 8:54 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/755#issuecomment-702747531" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>ghost</strong> commented on September 3, 2020 at 10:31 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/755#issuecomment-686918110" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>The account has been deleted so I can’t respond. But we are re-vamping the state grades and will take this feedback into consideration.</p>
+            <p>This issue could use some attention. The Arizona data quality grades are not accurate (not all tests are reported, see above) and they are being used by the state to avoid addressing data transparency issues. Arizona governor Doug Ducey cited their A+ data quality grade in a recent <a href="https://youtu.be/1tM8njdKj7k">press conference</a> to side step press questions about problems with data transparency. Please fix the error.</p>
 
           </div>
         </div>
       
     
+      
+        <div class="comment" id="issuecomment-702747531">
+          <div class="frontmatter">
+            <div>
+              <strong>muamichali</strong> commented on October 2, 2020 at 6:54 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/755#issuecomment-702747531" target="_blank">Open in Github</a>
+            </div>
+          </div>
+          <div class="body">
+            <p>The account has been deleted so I can’t respond. But we are re-vamping the state grades and will take this feedback into consideration.</p>
+
+          </div>
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>muamichali</strong> closed the issue on October 2, 2020 at 6:54 am
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

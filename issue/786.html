@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,20 +134,28 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 786</p>
-        <p><strong>johnrolfeellis</strong> opened this issue on August 21, 2020 at 5:36 pm</p>
+        <p>
+          <strong>Issue number</strong>
+          786</p>
+        <p>
+          <strong>johnrolfeellis</strong> opened this issue on August 21, 2020 at 3:36 pm</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/1921151980.html">Data quality</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/786" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p>Many of the US CSV files haven’t been updated for 3-4 days:</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/786" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p>Many of the US CSV files haven’t been updated for 3-4 days:</p>
 <p>counties.csv Updating public spreadsheet CSV backups 4 days ago
 states_current.csv Updating public spreadsheet CSV backups 3 days ago
 states_daily_4pm_et.csv Updating public spreadsheet CSV backups 4 days ago
@@ -151,30 +167,62 @@ us_daily.csv Updating public spreadsheet CSV backups 3 days ago</p>
 <p>Redirecting to <a href="https://api.covidtracking.com/v1/states/daily.csv">https://api.covidtracking.com/v1/states/daily.csv</a></p>
 </blockquote>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+            <strong>johnrolfeellis</strong> added the label <span class="label">Data quality</span> on August 21, 2020 at 3:36 pm
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-678548490">
           <div class="frontmatter">
-            <div><strong>kevee</strong> commented on August 21, 2020 at 5:55 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/786#issuecomment-678548490" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>kevee</strong> commented on August 21, 2020 at 3:55 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/786#issuecomment-678548490" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Hi, John, the API has moved to <a href="https://api.covidtracking.com/">https://api.covidtracking.com/</a>, per our <a href="https://apichanges.covidtracking.com/new-api-domain-name-162768">API changelog</a>. The website is trying to have you redirect to the new URL, but it appears whatever tool you are using does not respect 301 URL redirects.</p>
+            <p>Hi, John, the API has moved to <a href="https://api.covidtracking.com/">https://api.covidtracking.com/</a>, per our <a href="https://apichanges.covidtracking.com/new-api-domain-name-162768">API changelog</a>. The website is trying to have you redirect to the new URL, but it appears whatever tool you are using does not respect 301 URL redirects.</p>
 <p>Please refer to our <a href="https://covidtracking.com/data/api">API page</a> and use the URLs in the documentation.</p>
 
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>kevee</strong> closed the issue on August 21, 2020 at 3:55 pm
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-678591239">
           <div class="frontmatter">
-            <div><strong>johnrolfeellis</strong> commented on August 21, 2020 at 11:14 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/786#issuecomment-678591239" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>johnrolfeellis</strong> commented on August 21, 2020 at 9:14 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/786#issuecomment-678591239" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p><code>The website is trying to have you redirect to the new URL, but it appears whatever tool you are using does not respect 301 URL redirects.</code></p>
+            <p><code>The website is trying to have you redirect to the new URL, but it appears whatever tool you are using does not respect 301 URL redirects.</code></p>
 <p>Thanks, but that’s not the explanation. If you go to <a href="https://github.com/COVID19Tracking/covid-tracking-data/blob/master/data/us_daily.csv">https://github.com/COVID19Tracking/covid-tracking-data/blob/master/data/us_daily.csv</a> and click Raw, the download URL is:</p>
 <p><a href="https://raw.githubusercontent.com/COVID19Tracking/covid-tracking-data/master/data/us_daily.csv">https://raw.githubusercontent.com/COVID19Tracking/covid-tracking-data/master/data/us_daily.csv</a></p>
 <p>and downloading it in Chrome or with wget yields a 200 response with the single line:</p>
@@ -193,6 +241,7 @@ us_daily.csv Updating public spreadsheet CSV backups 3 days ago</p>
       
     
   
+
 </main>
   </body>
 </html>

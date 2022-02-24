@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,16 +134,19 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 312</p>
-        <p><strong>nshpritz</strong> opened this issue on April 27, 2020 at 3:05 pm</p>
+        <p>
+          <strong>Issue number</strong>
+          312</p>
+        <p>
+          <strong>nshpritz</strong> opened this issue on April 27, 2020 at 1:05 pm</p>
         
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/312" target="_blank">Open in Github</a>
-        </div>
       </div>
-      <div class="body">
-        <p>The number of deaths due to coronavirus disease seemed low to me over the weekend and so I went back to some historical data and it seems as if there has been a complete restatement of deaths by date in MA.  I doubt this was intentional.</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/312" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p>The number of deaths due to coronavirus disease seemed low to me over the weekend and so I went back to some historical data and it seems as if there has been a complete restatement of deaths by date in MA.  I doubt this was intentional.</p>
 <p>For example, the MA history shows that MA suffered its 1000th death on April 12 yet this report from the local NPR affiliate, and a number of other sources, cites April 15. <a href="https://www.wbur.org/commonhealth/2020/04/15/coronavirus-1000-deaths-massachusetts">https://www.wbur.org/commonhealth/2020/04/15/coronavirus-1000-deaths-massachusetts</a></p>
 <p>On that date, the COVID Tracking States Daily report shows MA went over 1500 deaths.  This constrasts with the unbelievably (unfortunately) small 22 deaths over the entire weekend.</p>
 <p>The historical Daily tracking reports used to match much more closely to figures reported in the press.  Finally, here are a few days as they were posted on Friday on GitHub.  The Wednesday number of total deaths from last Friday’s data shows 2,182 (see below).  That number currently on GitHub is now 2,597.</p>
@@ -360,18 +371,21 @@ table th {
 </tbody>
 </table>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
       
         <div class="comment" id="issuecomment-620278023">
           <div class="frontmatter">
-            <div><strong>bodysurfinyon</strong> commented on April 27, 2020 at 5:56 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/312#issuecomment-620278023" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>bodysurfinyon</strong> commented on April 27, 2020 at 3:56 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/312#issuecomment-620278023" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>It seems as tho the total tested got swapped for the total negative - based on my extensive examination of 1 datapoint. The sheet in question is:
+            <p>It seems as tho the total tested got swapped for the total negative - based on my extensive examination of 1 datapoint. The sheet in question is:
 <a href="https://docs.google.com/spreadsheets/u/2/d/e/2PACX-1vRwAqp96T9sYYq2-i7Tj0pvTf6XVHjDSMIKBdZHXiCGGdNC0ypEU9NbngS8mxea55JuCFuua1MUeOj5/pubhtml#">https://docs.google.com/spreadsheets/u/2/d/e/2PACX-1vRwAqp96T9sYYq2-i7Tj0pvTf6XVHjDSMIKBdZHXiCGGdNC0ypEU9NbngS8mxea55JuCFuua1MUeOj5/pubhtml#</a></p>
 <p>On 4/25 originally reported 173,497 negatives - I know this because I’ve been copying it daily.</p>
 <p>Now, the same sheet shows negatives for 4/25  as 226,845.</p>
@@ -383,13 +397,18 @@ table th {
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-620655683">
           <div class="frontmatter">
-            <div><strong>nshpritz</strong> commented on April 28, 2020 at 9:50 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/312#issuecomment-620655683" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>nshpritz</strong> commented on April 28, 2020 at 7:50 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/312#issuecomment-620655683" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Thank you for this Project and for fixing the MA testing data.  However, there is still a problem in the daily history for both positive tests and deaths.  Here is what is currently currently on the MA Daily page:</p>
+            <p>Thank you for this Project and for fixing the MA testing data.  However, there is still a problem in the daily history for both positive tests and deaths.  Here is what is currently currently on the MA Daily page:</p>
 <p><img src="../assets/images/github/61600690/80500475-df3ee580-8933-11ea-8908-d1c58fdad16c.png" alt="image"></p>
 <p>And this is what was pulled down on Friday:</p>
 <table>
@@ -624,31 +643,182 @@ table th {
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-628094255">
           <div class="frontmatter">
-            <div><strong>stale[bot]</strong> commented on May 13, 2020 at 11:13 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/312#issuecomment-628094255" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>stale[bot]</strong> commented on May 13, 2020 at 9:13 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/312#issuecomment-628094255" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
+            <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
 
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+            <strong>stale[bot]</strong> added the label <span class="label">stale</span> on May 13, 2020 at 9:14 am
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+            <strong>stale[bot]</strong> removed the label <span class="label">stale</span> on May 21, 2020 at 6:20 am
+          
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-632108976">
           <div class="frontmatter">
-            <div><strong>erfgottlieb</strong> commented on May 21, 2020 at 9:12 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/312#issuecomment-632108976" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>erfgottlieb</strong> commented on May 21, 2020 at 7:12 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/312#issuecomment-632108976" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Thanks <strong>@nshpritz</strong> ! The data that you pulled on Friday 4/24 were the states’ reported numbers at that point. On 4/27 we caught an error in the state data. The numbers that MA had previously been reporting for the daily and cumulative deaths did not match up with a bar chart that they published on 4/26. So we went back and revised our daily death and cumulative death numbers to match their chart.
+            <p>Thanks <strong>@nshpritz</strong> ! The data that you pulled on Friday 4/24 were the states’ reported numbers at that point. On 4/27 we caught an error in the state data. The numbers that MA had previously been reporting for the daily and cumulative deaths did not match up with a bar chart that they published on 4/26. So we went back and revised our daily death and cumulative death numbers to match their chart.
 <img src="../assets/images/github/64613495/82567189-0a8bad80-9b4b-11ea-9ec6-cce9194e06d4.png" alt="Screen Shot 2020-05-21 at 10 08 19 AM"></p>
 
           </div>
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>erfgottlieb</strong> closed the issue on May 21, 2020 at 7:14 am
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+            <strong>erfgottlieb</strong> reopened this on May 21, 2020 at 7:14 am
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>erfgottlieb</strong> closed the issue on May 21, 2020 at 7:15 am
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

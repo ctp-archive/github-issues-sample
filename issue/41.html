@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,36 +134,71 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 41</p>
-        <p><strong>nickblink</strong> opened this issue on March 23, 2020 at 6:43 am</p>
+        <p>
+          <strong>Issue number</strong>
+          41</p>
+        <p>
+          <strong>nickblink</strong> opened this issue on March 23, 2020 at 4:43 am</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
-          
-            <span class="label"><a href="../label/2036763229.html">stale</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/1921151980.html">Data quality</a>
+              </span>
+            
+              <span class="label">
+                <a href="../label/2036763229.html">stale</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/41" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p>For DC and NV, there is a day when positive tests decrease from the previous day. For the other four states, there are days when negative tests decrease.</p>
-<p>Thanks for putting this together!</p>
-
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/41" target="_blank">Open in Github</a>
       </div>
     </div>
+    <div class="body">
+      <p>For DC and NV, there is a day when positive tests decrease from the previous day. For the other four states, there are days when negative tests decrease.</p>
+<p>Thanks for putting this together!</p>
+
+    </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+            <strong>hammer</strong> added the label <span class="label">Data quality</span> on March 23, 2020 at 10:01 am
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-604027085">
           <div class="frontmatter">
-            <div><strong>mymil</strong> commented on March 25, 2020 at 2:01 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/41#issuecomment-604027085" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>mymil</strong> commented on March 25, 2020 at 12:01 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/41#issuecomment-604027085" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Uploading a spreadsheet of <strong>all</strong> decreases (more than documented previously), current as of today:
+            <p>Uploading a spreadsheet of <strong>all</strong> decreases (more than documented previously), current as of today:
 <a href="../assets/files/github/4382958/covidtracking_problemdates.xlsx">covidtracking_problemdates.xlsx</a></p>
 <p>States affected: AK, AL, AZ, CO, DC, DE, FL, HI, IA, KS, MA, MD, MI, NJ, NM, NV, NY, OH, OK, PR, RI, SC, WI</p>
 <p>This is my R code to calculate new cases and pull records that decreased from the prior day (any variable) AND the prior day’s row for comparison:</p>
@@ -172,26 +215,46 @@ covidtracking %&gt;%
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-604194160">
           <div class="frontmatter">
-            <div><strong>breyed</strong> commented on March 25, 2020 at 9:36 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/41#issuecomment-604194160" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>breyed</strong> commented on March 25, 2020 at 7:36 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/41#issuecomment-604194160" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>I wonder if the problem is an error in the data source in which corrections for prior day results are included as adjustments on the day the error was discovered. This is common in the banking world because of the value of keeping past transactions immutable. It’s poor practice for scientific data, however, because the test counts on a given day matter.</p>
+            <p>I wonder if the problem is an error in the data source in which corrections for prior day results are included as adjustments on the day the error was discovered. This is common in the banking world because of the value of keeping past transactions immutable. It’s poor practice for scientific data, however, because the test counts on a given day matter.</p>
 <p>If the problem is deferred adjustment, the idea solution is to inform the data sources and ask for better quality data. Short of that, an corrective approach is to reverse the error to the best extent that the data allows: Where a daily result is negative, set that day to zero, and decrease the count of the previous day by the corresponding amount.</p>
 <p>Such a correction would not be perfect since (a) you don’t know for sure whether the error was from the previous day versus earlier and (b) it doesn’t correct any of the cases where adjustments didn’t cause negative result. Still, it leads to better data quality than making no correction and avoids the confusion of negative daily counts.</p>
 
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-604422947">
           <div class="frontmatter">
-            <div><strong>careeningspace</strong> commented on March 26, 2020 at 8:12 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/41#issuecomment-604422947" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>careeningspace</strong> commented on March 26, 2020 at 6:12 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/41#issuecomment-604422947" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Hello, and thank you for helping us clean our data. Please see the following:</p>
+            <p>Hello, and thank you for helping us clean our data. Please see the following:</p>
 <p><strong>New York:</strong></p>
 <ul>
 <li>[ ] 3/7 to 3/8 the total changed due to pending tests no longer being reported.</li>
@@ -231,13 +294,18 @@ covidtracking %&gt;%
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-604474721">
           <div class="frontmatter">
-            <div><strong>mymil</strong> commented on March 26, 2020 at 9:50 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/41#issuecomment-604474721" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>mymil</strong> commented on March 26, 2020 at 7:50 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/41#issuecomment-604474721" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Thank you for these clarifications, <strong>@careeningspace</strong>, and for working on providing these data so accessibly! In terms of cleaning up these records for use:</p>
+            <p>Thank you for these clarifications, <strong>@careeningspace</strong>, and for working on providing these data so accessibly! In terms of cleaning up these records for use:</p>
 <ol>
 <li>Has the NJ correction been applied to the live data?</li>
 <li>Given the inconsistencies with pending data, do you foresee any problems with subtracting pending cases from the totals?</li>
@@ -246,13 +314,38 @@ covidtracking %&gt;%
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-604808719">
           <div class="frontmatter">
-            <div><strong>careeningspace</strong> commented on March 26, 2020 at 11:28 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/41#issuecomment-604808719" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>careeningspace</strong> commented on March 26, 2020 at 9:28 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/41#issuecomment-604808719" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>The NJ correction should be in the live feed. Going forward, our API will no longer be focusing on including Pending in our “Total”. You can find more detail on our <a href="https://covidtracking.com/api/">API Page</a></p>
+            <p>The NJ correction should be in the live feed. Going forward, our API will no longer be focusing on including Pending in our “Total”. You can find more detail on our <a href="https://covidtracking.com/api/">API Page</a></p>
 <ul>
 <li>[ ] totalTestResults - Calculated value (positive + negative) of total test results.</li>
 <li>[ ] total - DEPRECATED Will be removed in the future. (positive + negative + pending). Pending has been an unstable value and should not count in any totals.</li>
@@ -262,26 +355,60 @@ covidtracking %&gt;%
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>careeningspace</strong> closed the issue on March 26, 2020 at 9:28 pm
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+            <strong>careeningspace</strong> reopened this on March 26, 2020 at 9:29 pm
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-604981218">
           <div class="frontmatter">
-            <div><strong>mymil</strong> commented on March 27, 2020 at 7:45 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/41#issuecomment-604981218" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>mymil</strong> commented on March 27, 2020 at 5:45 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/41#issuecomment-604981218" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Great, thanks. That fixes problems in many states and leaves only AK, DC, HI, ID, KY, MI, NV, and SC with negative “increases”:
+            <p>Great, thanks. That fixes problems in many states and leaves only AK, DC, HI, ID, KY, MI, NV, and SC with negative “increases”:
 <a href="../assets/files/github/4393534/covidtracking_problemdates.xlsx">covidtracking_problemdates.xlsx</a></p>
 <p><code>covidtracking %&gt;% arrange(state, date) %&gt;% group_by(state) %&gt;%  filter_at(vars(ends_with(&quot;Increase&quot;)), any_vars(. &lt; 0 | lead(.) &lt; 0)) %&gt;% ungroup()</code></p>
 
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-607946910">
           <div class="frontmatter">
-            <div><strong>careeningspace</strong> commented on April 2, 2020 at 11:19 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/41#issuecomment-607946910" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>careeningspace</strong> commented on April 2, 2020 at 9:19 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/41#issuecomment-607946910" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>-[ ] Alaska has a period of data flux that needs more research 3/17 - 3/19:
+            <p>-[ ] Alaska has a period of data flux that needs more research 3/17 - 3/19:
 Data Log:
 <img src="../assets/images/github/43073915/78261233-fa513d80-74cc-11ea-8fd6-501820e8cb3c.png" alt="Screen Shot 2020-04-02 at 10 28 34 AM"></p>
 <p>Daily Report:
@@ -298,13 +425,18 @@ Data Log:
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-607951727">
           <div class="frontmatter">
-            <div><strong>careeningspace</strong> commented on April 2, 2020 at 11:28 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/41#issuecomment-607951727" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>careeningspace</strong> commented on April 2, 2020 at 9:28 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/41#issuecomment-607951727" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>District of Columbia 3/10 - 3/11</p>
+            <p>District of Columbia 3/10 - 3/11</p>
 <ul>
 <li>[ ] We do not have screen grabs from this time period</li>
 <li>[ ] It looks like DC changed how they were reporting data. I am going to make both days match</li>
@@ -317,13 +449,18 @@ Data Log:
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-608199727">
           <div class="frontmatter">
-            <div><strong>careeningspace</strong> commented on April 2, 2020 at 9:47 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/41#issuecomment-608199727" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>careeningspace</strong> commented on April 2, 2020 at 7:47 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/41#issuecomment-608199727" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <ul>
+            <ul>
 <li>
 <p>[ ] ID has an issue with a change in data from 3/18 to 3/19
 <img src="../assets/images/github/43073915/78318525-f952f700-7532-11ea-8fda-612743140fea.png" alt="Screen Shot 2020-04-02 at 10 40 26 PM"></p>
@@ -345,30 +482,85 @@ Data Log:
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-623790137">
           <div class="frontmatter">
-            <div><strong>stale[bot]</strong> commented on May 4, 2020 at 8:20 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/41#issuecomment-623790137" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>stale[bot]</strong> commented on May 4, 2020 at 6:20 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/41#issuecomment-623790137" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
-
-          </div>
-        </div>
-      
-        <div class="comment" id="issuecomment-628990054">
-          <div class="frontmatter">
-            <div><strong>stale[bot]</strong> commented on May 14, 2020 at 9:30 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/41#issuecomment-628990054" target="_blank">Open in Github</a></div>
-          </div>
-          <div class="body">
-          <p>This issue has been closed because it was stale for 15 days, and there was no further activity on it for 10 days. You can feel free to re-open it if the issue is important, and label it as “not stale.”</p>
+            <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
 
           </div>
         </div>
       
     
+      
+        <div class="event">
+          
+          
+            <strong>stale[bot]</strong> added the label <span class="label">stale</span> on May 4, 2020 at 6:20 pm
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="comment" id="issuecomment-628990054">
+          <div class="frontmatter">
+            <div>
+              <strong>stale[bot]</strong> commented on May 14, 2020 at 7:30 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/41#issuecomment-628990054" target="_blank">Open in Github</a>
+            </div>
+          </div>
+          <div class="body">
+            <p>This issue has been closed because it was stale for 15 days, and there was no further activity on it for 10 days. You can feel free to re-open it if the issue is important, and label it as “not stale.”</p>
+
+          </div>
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>stale[bot]</strong> closed the issue on May 14, 2020 at 7:31 pm
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

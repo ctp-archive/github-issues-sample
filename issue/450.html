@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,32 +134,88 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 450</p>
-        <p><strong>jedludlow</strong> opened this issue on May 24, 2020 at 12:42 pm</p>
+        <p>
+          <strong>Issue number</strong>
+          450</p>
+        <p>
+          <strong>jedludlow</strong> opened this issue on May 24, 2020 at 10:42 am</p>
         
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/450" target="_blank">Open in Github</a>
-        </div>
       </div>
-      <div class="body">
-        <p>The state of Utah had an outage on May 19 which caused that day’s data to be a duplicate of May 18.</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/450" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p>The state of Utah had an outage on May 19 which caused that day’s data to be a duplicate of May 18.</p>
 <p>Hospitalization data for May 22 and 23 was incorrect with respect to totals on the state’s site as retrieved around 11:30 am on May 23 and May 24, respectively.</p>
 <p>This pull request documents the required repairs. I realize that directly incorporating the pull request into <code>covid-tracking-data</code> may not be the best repair strategy, but it served as a convenient way to convey the required changes and allowed me to continue plotting without strange aberrations.</p>
 <p><a href="https://github.com/COVID19Tracking/covid-tracking-data/pull/73">https://github.com/COVID19Tracking/covid-tracking-data/pull/73</a></p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-637907429">
           <div class="frontmatter">
-            <div><strong>jedludlow</strong> commented on June 2, 2020 at 8:58 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/450#issuecomment-637907429" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>jedludlow</strong> commented on June 2, 2020 at 6:58 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/450#issuecomment-637907429" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>For simplicity, here are the minimal required repairs spelled out for the days in question ignoring the deprecated data fields.</p>
+            <p>For simplicity, here are the minimal required repairs spelled out for the days in question ignoring the deprecated data fields.</p>
 <h3>2020-05-19</h3>
 <p>There was an outage on the state’s data website for this day, causing it to be a duplicate of May 18. The correct data was posted later in the evening and can be obtained from a <a href="https://www.ksl.com/article/46754950/utah-reports-highest-single-day-covid-19-death-total-of-8-with-134-new-cases">KSL News story</a> from that day:</p>
 <ul>
@@ -168,13 +232,18 @@ table th {
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-640286723">
           <div class="frontmatter">
-            <div><strong>camille-le</strong> commented on June 7, 2020 at 5:04 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/450#issuecomment-640286723" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>camille-le</strong> commented on June 7, 2020 at 3:04 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/450#issuecomment-640286723" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Hi Jed, thank you for your input and for sharing the KSL News Story. We’ve reviewed the historical screenshots from 5/18, 5/19, 5/22 and 5/23 for Utah. The cumulative hospitalization data will be updated in our next publish. We are still reviewing the remaining changes you’ve mentioned for 5/19.</p>
+            <p>Hi Jed, thank you for your input and for sharing the KSL News Story. We’ve reviewed the historical screenshots from 5/18, 5/19, 5/22 and 5/23 for Utah. The cumulative hospitalization data will be updated in our next publish. We are still reviewing the remaining changes you’ve mentioned for 5/19.</p>
 <p><strong>BEFORE:</strong>
 <img src="../assets/images/github/31285549/83981114-e6acc380-a8cf-11ea-835d-bbd6bb3d845f.png" alt="2020-06-07_UT_BEFORE"></p>
 <p><strong>AFTER:</strong>
@@ -185,13 +254,18 @@ Camille</p>
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-640288800">
           <div class="frontmatter">
-            <div><strong>camille-le</strong> commented on June 7, 2020 at 5:24 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/450#issuecomment-640288800" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>camille-le</strong> commented on June 7, 2020 at 3:24 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/450#issuecomment-640288800" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>For the remaining changes for 5/19, data will be updated in our next publish for positive cases, negative cases, hospitalized (currently), hospitalized (cumulative), recovered and deaths.</p>
+            <p>For the remaining changes for 5/19, data will be updated in our next publish for positive cases, negative cases, hospitalized (currently), hospitalized (cumulative), recovered and deaths.</p>
 <p><strong>BEFORE:</strong>
 <img src="../assets/images/github/31285549/83981446-b0247800-a8d2-11ea-8961-0a08684a5c8a.png" alt="UT_05-19_BEFORE"></p>
 <p><strong>AFTER:</strong>
@@ -201,7 +275,74 @@ Camille</p>
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>camille-le</strong> closed the issue on June 7, 2020 at 3:24 pm
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+            <strong>camille-le</strong> added the label <span class="label">Data quality</span> on June 7, 2020 at 3:24 pm
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+            <strong>camille-le</strong> removed the label <span class="label">Data quality</span> on June 7, 2020 at 3:25 pm
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

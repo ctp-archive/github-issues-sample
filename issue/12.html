@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,16 +134,19 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 12</p>
-        <p><strong>olivierlacan</strong> opened this issue on March 17, 2020 at 10:24 pm</p>
+        <p>
+          <strong>Issue number</strong>
+          12</p>
+        <p>
+          <strong>olivierlacan</strong> opened this issue on March 17, 2020 at 8:24 pm</p>
         
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/12" target="_blank">Open in Github</a>
-        </div>
       </div>
-      <div class="body">
-        <p>The currently listed URL <code>http://www.floridahealth.gov/diseases-and-conditions/COVID-19/</code> now redirects to a domain (<code>floridahealthcovid19.gov</code>) which no longer lists the same data that was previously available on the daily report still published there.</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/12" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p>The currently listed URL <code>http://www.floridahealth.gov/diseases-and-conditions/COVID-19/</code> now redirects to a domain (<code>floridahealthcovid19.gov</code>) which no longer lists the same data that was previously available on the daily report still published there.</p>
 <p>I recommend the <a href="https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429">new dashboard</a> the report now links to: <code>https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429</code>.</p>
 <p><img src="../assets/images/github/65950/76922117-3453fa00-68a6-11ea-8467-8e7898604b2b.png" alt="image"></p>
 <p>Although it visually obfuscates a ton of data it does include the previously listed data:</p>
@@ -149,47 +160,123 @@ table th {
 <p>It uses the familiar <a href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6">ARCGIS map from JHU</a>.</p>
 <p>I’m trying to get familiar with the Ruby crawler to submit a Pull Request right now but perhaps <strong>@huuep</strong> can update the crawler faster than I can.</p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-600409928">
           <div class="frontmatter">
-            <div><strong>olivierlacan</strong> commented on March 17, 2020 at 10:45 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/12#issuecomment-600409928" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>olivierlacan</strong> commented on March 17, 2020 at 8:45 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/12#issuecomment-600409928" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>FYI I emailed and <a href="https://twitter.com/olivierlacan/status/1240118090492452864">tweeted at</a> the Florida Department of Health (<a href="mailto:ESF14<strong>@em.myflorida.com</strong>">ESF14<strong>@em.myflorida.com</strong></a>) to ask them to follow the <a href="https://docs.google.com/document/d/1OyN6_1UeDePwPwKi6UKZB8GwNC7-kSf1-BO2af8kqVA/edit">Best Practices document</a>. I’m hoping they improve their releases over the next few days.</p>
+            <p>FYI I emailed and <a href="https://twitter.com/olivierlacan/status/1240118090492452864">tweeted at</a> the Florida Department of Health (<a href="mailto:ESF14<strong>@em.myflorida.com</strong>">ESF14<strong>@em.myflorida.com</strong></a>) to ask them to follow the <a href="https://docs.google.com/document/d/1OyN6_1UeDePwPwKi6UKZB8GwNC7-kSf1-BO2af8kqVA/edit">Best Practices document</a>. I’m hoping they improve their releases over the next few days.</p>
 
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-600459617">
           <div class="frontmatter">
-            <div><strong>olivierlacan</strong> commented on March 18, 2020 at 2:08 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/12#issuecomment-600459617" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>olivierlacan</strong> commented on March 18, 2020 at 12:08 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/12#issuecomment-600459617" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>With some browsing around, I managed to find and reach out to the maintainer of the new Florida COVID-19 dashboard thanks to its About page: <a href="https://fdoh.maps.arcgis.com/home/item.html?id=8d0de33f260d444c852a615dc7837c86">https://fdoh.maps.arcgis.com/home/item.html?id=8d0de33f260d444c852a615dc7837c86</a></p>
+            <p>With some browsing around, I managed to find and reach out to the maintainer of the new Florida COVID-19 dashboard thanks to its About page: <a href="https://fdoh.maps.arcgis.com/home/item.html?id=8d0de33f260d444c852a615dc7837c86">https://fdoh.maps.arcgis.com/home/item.html?id=8d0de33f260d444c852a615dc7837c86</a></p>
 <p>The page itself is helpful to interpret some of the data. I think it’s more likely she’ll respond to me than the FDOH Twitter account or email so here’s hoping we’ll get some improvements in data released tomorrow.</p>
 
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-600570672">
           <div class="frontmatter">
-            <div><strong>hammer</strong> commented on March 18, 2020 at 6:30 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/12#issuecomment-600570672" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>hammer</strong> commented on March 18, 2020 at 4:30 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/12#issuecomment-600570672" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Thanks <strong>@olivierlacan</strong>! We were also excited to see this dashboard show up: <a href="https://twitter.com/COVID19Tracking/status/1239780238013292545">https://twitter.com/COVID19Tracking/status/1239780238013292545</a>. We use this site for data collection internally, but the external link is intended to take users to the COVID-19 landing page for each state, so I think we’ll keep it as is.</p>
+            <p>Thanks <strong>@olivierlacan</strong>! We were also excited to see this dashboard show up: <a href="https://twitter.com/COVID19Tracking/status/1239780238013292545">https://twitter.com/COVID19Tracking/status/1239780238013292545</a>. We use this site for data collection internally, but the external link is intended to take users to the COVID-19 landing page for each state, so I think we’ll keep it as is.</p>
 
           </div>
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>hammer</strong> closed the issue on March 18, 2020 at 4:30 am
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

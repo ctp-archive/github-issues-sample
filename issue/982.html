@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,31 +134,37 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 982</p>
-        <p><strong>hmhoffman</strong> opened this issue on November 27, 2020 at 3:47 pm</p>
+        <p>
+          <strong>Issue number</strong>
+          982</p>
+        <p>
+          <strong>hmhoffman</strong> opened this issue on November 27, 2020 at 1:47 pm</p>
         
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/982" target="_blank">Open in Github</a>
-        </div>
       </div>
-      <div class="body">
-        <p><strong>State:</strong> OR</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/982" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p><strong>State:</strong> OR</p>
 <p><strong>Dates affected:</strong> 11/26</p>
 <p><strong>Describe the issue:</strong> On November 26, 2020, Oregon’s Negative PCR tests (specimens) were input as 960,657 based on a number from a press release due to the dashboard not being updated because of the Thanksgiving holiday. On November 27, 2020, the dashboard showed 960,604 negative tests. The decision was made to revert November 26, 2020’s Negative PCR tests (specimens) value to 960469, the value shown on our historical screenshots of the dashboard to ensure that our time series was consistent.</p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
       
         <div class="comment" id="issuecomment-734998174">
           <div class="frontmatter">
-            <div><strong>hmhoffman</strong> commented on November 27, 2020 at 3:57 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/982#issuecomment-734998174" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>hmhoffman</strong> commented on November 27, 2020 at 1:57 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/982#issuecomment-734998174" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>BEFORE:
+            <p>BEFORE:
 <img width="180" alt="Screen Shot 2020-11-27 at 4 57 03 PM" src="../assets/images/github/68712382/100486366-94f03380-30d1-11eb-8a01-6e92b7ab385a.png"></p>
 <p>AFTER:
 <img width="179" alt="Screen Shot 2020-11-27 at 4 57 28 PM" src="../assets/images/github/68712382/100486390-a33e4f80-30d1-11eb-9951-222c21fd9bb2.png"></p>
@@ -159,7 +173,20 @@ table th {
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>hmhoffman</strong> closed the issue on November 27, 2020 at 1:57 pm
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

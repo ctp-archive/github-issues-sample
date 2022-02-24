@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,20 +134,28 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 493</p>
-        <p><strong>muamichali</strong> opened this issue on June 14, 2020 at 11:52 am</p>
+        <p>
+          <strong>Issue number</strong>
+          493</p>
+        <p>
+          <strong>muamichali</strong> opened this issue on June 14, 2020 at 9:52 am</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/1921151980.html">Data quality</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/493" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p>Two errors in your NV data.</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/493" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p>Two errors in your NV data.</p>
 <p>First, there’s a random 50 that appears where there should be a 1 in the cumulative positive cases… taking your daily.csv file and pulling out the NV data, see these rows:</p>
 <p>…
 20200305	NV	1
@@ -155,18 +171,43 @@ table th {
 420	2020-06-01T00:00:00Z</p>
 <p><img src="https://frontapp.com/assets/img/favicons/favicon-32x32.png" height="16" width="16" alt="Front logo" /> <a href="https://app.frontapp.com/open/top_24pzl">Front conversations</a></p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+            <strong>muamichali</strong> added the label <span class="label">Data quality</span> on June 14, 2020 at 9:52 am
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-646043458">
           <div class="frontmatter">
-            <div><strong>camille-le</strong> commented on June 18, 2020 at 9:08 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/493#issuecomment-646043458" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>camille-le</strong> commented on June 18, 2020 at 7:08 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/493#issuecomment-646043458" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Hey Michal,
+            <p>Hey Michal,
 Thank you for writing. We’ve updated the data for cumulative positive cases for March 6, 2020.</p>
 <p><strong>BEFORE:</strong>
 <img width="259" alt="2020-03-06_NV_BEFORE" src="../assets/images/github/31285549/85025569-68042180-b12c-11ea-8221-61ce00171471.png"></p>
@@ -183,7 +224,30 @@ Thank you for writing. We’ve updated the data for cumulative positive cases fo
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>camille-le</strong> closed the issue on June 18, 2020 at 7:08 am
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

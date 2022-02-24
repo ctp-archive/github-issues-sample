@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,24 +134,36 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 854</p>
-        <p><strong>the-daniel-lin</strong> opened this issue on September 21, 2020 at 4:52 pm</p>
+        <p>
+          <strong>Issue number</strong>
+          854</p>
+        <p>
+          <strong>the-daniel-lin</strong> opened this issue on September 21, 2020 at 2:52 pm</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
-          
-            <span class="label"><a href="../label/1937937334.html">Historical Data</a></span>
-          
-            <span class="label"><a href="../label/2162087998.html">Backfill</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/1921151980.html">Data quality</a>
+              </span>
+            
+              <span class="label">
+                <a href="../label/1937937334.html">Historical Data</a>
+              </span>
+            
+              <span class="label">
+                <a href="../label/2162087998.html">Backfill</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/854" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p><strong>State or US</strong>: Oregon
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/854" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p><strong>State or US</strong>: Oregon
 <strong>Describe the problem</strong>
 Oregon began to release total (“Total Cases”) and confirmed (“Positive Tests”) case values on 5/4. On 7/28, CTP began using a total - confirmed calculation to record probable values. We need to backfill these probable values back through 5/4, when OR first released confirmed/total values.</p>
 <p>Beginning 6/6, Oregon does not update the confirmed values on their dashboard on weekends, so for those days, we carry over confirmed/probable values. Prior to 6/6, however, Oregon did provide consistent updates on their dashboard through the weekend, so we will not carry over those weekend values. On 7/3 and 9/7, OR did not update their dashboard, so we are carrying over values for those weekdays.</p>
@@ -153,18 +173,77 @@ Using Total-Confirmed calculation and spot checking with screenshots.</p>
 <p>6/10:
 <a href="https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/OR/OR-20200610-184345.png">https://covid-tracking-project-data.s3.us-east-1.amazonaws.com/state_screenshots/OR/OR-20200610-184345.png</a></p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+            <strong>the-daniel-lin</strong> added the label <span class="label">Data quality</span> on September 21, 2020 at 2:52 pm
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+            <strong>the-daniel-lin</strong> added the label <span class="label">Historical Data</span> on September 21, 2020 at 2:52 pm
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+            <strong>the-daniel-lin</strong> added the label <span class="label">Backfill</span> on September 21, 2020 at 2:52 pm
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-696775901">
           <div class="frontmatter">
-            <div><strong>the-daniel-lin</strong> commented on September 22, 2020 at 9:55 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/854#issuecomment-696775901" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>the-daniel-lin</strong> commented on September 22, 2020 at 7:55 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/854#issuecomment-696775901" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Probables BEFORE:
+            <p>Probables BEFORE:
 <img src="../assets/images/github/67408226/93899129-dbc44600-fca8-11ea-9a66-d2d0498e19d5.png" alt="image">
 <img src="../assets/images/github/67408226/93899188-e979cb80-fca8-11ea-89ac-76750a1e1452.png" alt="image">
 <img src="../assets/images/github/67408226/93899237-f5fe2400-fca8-11ea-9fb4-c96e04793b1b.png" alt="image">
@@ -173,13 +252,18 @@ Using Total-Confirmed calculation and spot checking with screenshots.</p>
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-696779999">
           <div class="frontmatter">
-            <div><strong>the-daniel-lin</strong> commented on September 22, 2020 at 10:02 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/854#issuecomment-696779999" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>the-daniel-lin</strong> commented on September 22, 2020 at 8:02 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/854#issuecomment-696779999" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Probables AFTER:
+            <p>Probables AFTER:
 <img src="../assets/images/github/67408226/93899955-b3891700-fca9-11ea-8e50-02ea57c210ea.png" alt="image">
 <img src="../assets/images/github/67408226/93899995-c3086000-fca9-11ea-9b9c-95c803fbb7b5.png" alt="image">
 <img src="../assets/images/github/67408226/93900052-d0254f00-fca9-11ea-8bf2-d1ff57786845.png" alt="image">
@@ -274,32 +358,55 @@ Using Total-Confirmed calculation and spot checking with screenshots.</p>
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-696781278">
           <div class="frontmatter">
-            <div><strong>the-daniel-lin</strong> commented on September 22, 2020 at 10:04 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/854#issuecomment-696781278" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>the-daniel-lin</strong> commented on September 22, 2020 at 8:04 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/854#issuecomment-696781278" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>6/7, 6/10, 6/21 Confirmed Cases BEFORE:
+            <p>6/7, 6/10, 6/21 Confirmed Cases BEFORE:
 <img src="../assets/images/github/67408226/93900512-5477d200-fcaa-11ea-953a-049a89def436.png" alt="image"></p>
 
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-696782639">
           <div class="frontmatter">
-            <div><strong>the-daniel-lin</strong> commented on September 22, 2020 at 10:06 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/854#issuecomment-696782639" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>the-daniel-lin</strong> commented on September 22, 2020 at 8:06 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/854#issuecomment-696782639" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>6/7, 6/10, 6/21 Confirmed Cases AFTER:
+            <p>6/7, 6/10, 6/21 Confirmed Cases AFTER:
 <img src="../assets/images/github/67408226/93900693-8d17ab80-fcaa-11ea-80d9-918e745d94c6.png" alt="image"></p>
 
           </div>
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>the-daniel-lin</strong> closed the issue on September 22, 2020 at 8:06 am
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

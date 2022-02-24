@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,35 +134,58 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 949</p>
-        <p><strong>space-buzzer</strong> opened this issue on November 13, 2020 at 2:55 pm</p>
+        <p>
+          <strong>Issue number</strong>
+          949</p>
+        <p>
+          <strong>space-buzzer</strong> opened this issue on November 13, 2020 at 12:55 pm</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/1921151980.html">Data quality</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/949" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p>Earlier in the pandemic, GA was publishing a single testing metric that lumped together both PCR and antibody testing.
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/949" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p>Earlier in the pandemic, GA was publishing a single testing metric that lumped together both PCR and antibody testing.
 Recently, GA started providing a data download file (<a href="https://ga-covid19.ondemand.sas.com/docs/ga_covid_data.zip">https://ga-covid19.ondemand.sas.com/docs/ga_covid_data.zip</a>) with a full time series for PCR tests and results.
 We can use this file to correctly fill the PCR tests series to include only PCR tests.</p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+            <strong>space-buzzer</strong> added the label <span class="label">Data quality</span> on November 13, 2020 at 12:55 pm
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-727057678">
           <div class="frontmatter">
-            <div><strong>space-buzzer</strong> commented on November 13, 2020 at 4:01 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/949#issuecomment-727057678" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>space-buzzer</strong> commented on November 13, 2020 at 2:01 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/949#issuecomment-727057678" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>This was updated on Nov 13th, 2020.
+            <p>This was updated on Nov 13th, 2020.
 From a data file downloaded from GA on Oct-22nd 2020.
 Edit batch 541
 <a href="../assets/files/github/5539496/GA.-.PCR.tests.and.pos.update.20201113.csv.txt">GA - PCR tests and pos update 20201113.csv.txt</a></p>
@@ -163,7 +194,20 @@ Edit batch 541
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>space-buzzer</strong> closed the issue on November 13, 2020 at 2:01 pm
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

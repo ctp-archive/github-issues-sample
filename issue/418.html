@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,16 +134,19 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 418</p>
-        <p><strong>firefly2442</strong> opened this issue on May 13, 2020 at 4:41 pm</p>
+        <p>
+          <strong>Issue number</strong>
+          418</p>
+        <p>
+          <strong>firefly2442</strong> opened this issue on May 13, 2020 at 2:41 pm</p>
         
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/418" target="_blank">Open in Github</a>
-        </div>
       </div>
-      <div class="body">
-        <p>There’s an entry for 4/11/20, however, it appears as if no testing took place.</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/418" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p>There’s an entry for 4/11/20, however, it appears as if no testing took place.</p>
 <pre><code>&gt; covid %&gt;% filter(state == &quot;NM&quot;, date &gt;= &quot;2020-04-10&quot;, date &lt;= &quot;2020-04-11&quot;)
         date state positive negative pending hospitalizedCurrently hospitalizedCumulative inIcuCurrently inIcuCumulative onVentilatorCurrently
 1 2020-04-11    NM     1091    26007      NA                    75                     NA             NA              NA                    18
@@ -148,25 +159,91 @@ table th {
 2                    0             3065              226                     3291    2096829
 </code></pre>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-628671613">
           <div class="frontmatter">
-            <div><strong>goldfarb</strong> commented on May 14, 2020 at 9:26 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/418#issuecomment-628671613" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>goldfarb</strong> commented on May 14, 2020 at 7:26 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/418#issuecomment-628671613" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Thank you <strong>@firefly2442</strong></p>
+            <p>Thank you <strong>@firefly2442</strong></p>
 <p>Looking at the snapshots from New Mexico’s updates from 4/10, 4/11, and 4/12, (in the <a href="https://covidtracking.com/data/state/new-mexico">History</a> section) it appears that there was only one update over the weekend, so either Saturday (the 11th) or Sunday (the 12th) would not show any updates.</p>
 
           </div>
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>goldfarb</strong> closed the issue on May 14, 2020 at 7:26 am
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

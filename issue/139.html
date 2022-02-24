@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,16 +134,19 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 139</p>
-        <p><strong>OregonCarrot</strong> opened this issue on April 4, 2020 at 12:50 pm</p>
+        <p>
+          <strong>Issue number</strong>
+          139</p>
+        <p>
+          <strong>OregonCarrot</strong> opened this issue on April 4, 2020 at 10:50 am</p>
         
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/139" target="_blank">Open in Github</a>
-        </div>
       </div>
-      <div class="body">
-        <p>The number of cases in the covidtracking data does not match the cases listed in the <a href="https://www.doh.wa.gov/Emergencies/Coronavirus">DOH of Washington</a>.
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/139" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p>The number of cases in the covidtracking data does not match the cases listed in the <a href="https://www.doh.wa.gov/Emergencies/Coronavirus">DOH of Washington</a>.
 examples:
 3/14-
 568 cases in the covidtracking data, but 778 in the DOH of Washington data</p>
@@ -144,18 +155,21 @@ examples:
 <p>These examples show that it is not just an issue of what time of day the case number is recorded, as Covidtracking’s cases on the 15th are less than the DOH of Washington’s case number on the 14th.</p>
 <p>It appears almost every day has different data between the two sources. Should the Covidtracking data match the DOH of Washington data, as it is very likely to be the most accurate?</p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
       
         <div class="comment" id="issuecomment-612100496">
           <div class="frontmatter">
-            <div><strong>careeningspace</strong> commented on April 10, 2020 at 11:11 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/139#issuecomment-612100496" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>careeningspace</strong> commented on April 10, 2020 at 9:11 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/139#issuecomment-612100496" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Hello,</p>
+            <p>Hello,</p>
 <p>Thank you for getting this back to the top of my priority list. I have updated the CTP Washington data to match the data provided by the state. I did find a discrepancy in what is reported - WA’s daily Pos/Neg data does not match the Positive data they publish, so I have not resolved the CTP/WA negative data at this time.</p>
 <p>Washington is constantly updating its most recent data, so we will need to modify this data from time to time</p>
 <p><strong>Before</strong>
@@ -166,13 +180,30 @@ examples:
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>careeningspace</strong> closed the issue on April 10, 2020 at 9:11 am
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-612485731">
           <div class="frontmatter">
-            <div><strong>OregonCarrot</strong> commented on April 11, 2020 at 1:35 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/139#issuecomment-612485731" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>OregonCarrot</strong> commented on April 11, 2020 at 11:35 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/139#issuecomment-612485731" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Thank you!
+            <p>Thank you!
 It looks like a lot of people are working hard to make everything as accurate as possible, which is awesome and definitely appreciated by those of us without the technical know-how.</p>
 
           </div>
@@ -180,6 +211,7 @@ It looks like a lot of people are working hard to make everything as accurate as
       
     
   
+
 </main>
   </body>
 </html>

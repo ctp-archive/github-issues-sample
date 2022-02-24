@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,37 +134,70 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 471</p>
-        <p><strong>johndhancock</strong> opened this issue on June 1, 2020 at 12:49 am</p>
+        <p>
+          <strong>Issue number</strong>
+          471</p>
+        <p>
+          <strong>johndhancock</strong> opened this issue on May 31, 2020 at 10:49 pm</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/1921151980.html">Data quality</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/471" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p><strong>State or US</strong>: Texas</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/471" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p><strong>State or US</strong>: Texas</p>
 <p><strong>Describe the problem</strong>
 Looks like Texas DSHS missed CTP’s update window on 5/30, causing 5/30’s numbers to fold into 5/31. Think 5/30 should have 62,338 positives, 35,242 new tests, 866,179 negatives. Screenshot from DSHS from 5/30 included.</p>
 <p><strong>Link to data source</strong>
 <a href="https://covidtracking.com/screenshots/TX/TX-20200530-184446.png">https://covidtracking.com/screenshots/TX/TX-20200530-184446.png</a></p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+            <strong>johndhancock</strong> added the label <span class="label">Data quality</span> on May 31, 2020 at 10:49 pm
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-636911736">
           <div class="frontmatter">
-            <div><strong>muamichali</strong> commented on June 1, 2020 at 10:06 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/471#issuecomment-636911736" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>muamichali</strong> commented on June 1, 2020 at 8:06 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/471#issuecomment-636911736" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Hi John,</p>
+            <p>Hi John,</p>
 <p>I made the updates to the numbers. Thank you for providing the screenshots.</p>
 <ul>
 <li>Note: I could not update the positive antibody for that day, because it is not provided anywhere else than in the XLS. I asked <strong>@kevinp2</strong> on another ticket if he still saves the CSVs</li>
@@ -169,13 +210,38 @@ Looks like Texas DSHS missed CTP’s update window on 5/30, causing 5/30’s num
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-638200844">
           <div class="frontmatter">
-            <div><strong>muamichali</strong> commented on June 3, 2020 at 8:35 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/471#issuecomment-638200844" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>muamichali</strong> commented on June 3, 2020 at 6:35 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/471#issuecomment-638200844" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p><strong>@kevinp2</strong> graciously provided the XLS in <a href="https://github.com/COVID19Tracking/issues/issues/442#issuecomment-637772812">https://github.com/COVID19Tracking/issues/issues/442#issuecomment-637772812</a></p>
+            <p><strong>@kevinp2</strong> graciously provided the XLS in <a href="https://github.com/COVID19Tracking/issues/issues/442#issuecomment-637772812">https://github.com/COVID19Tracking/issues/issues/442#issuecomment-637772812</a></p>
 <p>Here is a screenshot of the state XLS
 <img src="../assets/images/github/1749380/83642703-2e081c80-a57d-11ea-9a76-4c197deb80df.png" alt="image"></p>
 <p>I am just updating that data point of positive antibody tests on 5/30
@@ -188,7 +254,40 @@ Looks like Texas DSHS missed CTP’s update window on 5/30, causing 5/30’s num
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>muamichali</strong> closed the issue on June 3, 2020 at 6:35 am
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

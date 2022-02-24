@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,38 +134,61 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 637</p>
-        <p><strong>MattHilliard</strong> opened this issue on July 15, 2020 at 6:18 pm</p>
+        <p>
+          <strong>Issue number</strong>
+          637</p>
+        <p>
+          <strong>MattHilliard</strong> opened this issue on July 15, 2020 at 4:18 pm</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/1921151980.html">Data quality</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/637" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p><strong>State or US</strong>: OK</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/637" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p><strong>State or US</strong>: OK</p>
 <p><strong>Describe the problem</strong>
 For OK, we use the same dashboard number to populate both <code>Positives</code> and <code>Positive Cases (PCR)</code>. Accordingly, the numbers are the same for each day…except for 6/13 and 6/14. 6/13 repeats the value for 6/12 and 6/14 has the value that should be in 6/13. Not sure how this happened but OK screenshots agree with our Positives column.</p>
 <p><strong>Link to data source</strong>
 <a href="https://covidtracking.com/screenshots/OK/OK-20200613-184553.png">https://covidtracking.com/screenshots/OK/OK-20200613-184553.png</a>
 <a href="https://covidtracking.com/screenshots/OK/OK-20200614-184350.png">https://covidtracking.com/screenshots/OK/OK-20200614-184350.png</a></p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+            <strong>MattHilliard</strong> added the label <span class="label">Data quality</span> on July 15, 2020 at 4:18 pm
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-659064281">
           <div class="frontmatter">
-            <div><strong>MattHilliard</strong> commented on July 15, 2020 at 6:20 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/637#issuecomment-659064281" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>MattHilliard</strong> commented on July 15, 2020 at 4:20 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/637#issuecomment-659064281" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Before:
+            <p>Before:
 <img src="../assets/images/github/404503/87609298-238a8800-c6d0-11ea-8d2a-e36b7cf80eed.png" alt="image"></p>
 <p>After:
 <img src="../assets/images/github/404503/87609328-38ffb200-c6d0-11ea-97c0-b14bc1d55853.png" alt="image"></p>
@@ -166,7 +197,20 @@ For OK, we use the same dashboard number to populate both <code>Positives</code>
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>MattHilliard</strong> closed the issue on July 15, 2020 at 4:20 pm
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

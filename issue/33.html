@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,49 +134,67 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 33</p>
-        <p><strong>mikejrob</strong> opened this issue on March 20, 2020 at 10:05 pm</p>
+        <p>
+          <strong>Issue number</strong>
+          33</p>
+        <p>
+          <strong>mikejrob</strong> opened this issue on March 20, 2020 at 8:05 pm</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
-          
-            <span class="label"><a href="../label/2036763229.html">stale</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/1921151980.html">Data quality</a>
+              </span>
+            
+              <span class="label">
+                <a href="../label/2036763229.html">stale</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/33" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p>It looks like your counts include all positives, but only negatives and pending from the state labs. There have been a lot of tests from independent labs, apparently over 1000, but reporting is a bit thin.  Civil Beat has the best reporting I’ve seen.</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/33" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p>It looks like your counts include all positives, but only negatives and pending from the state labs. There have been a lot of tests from independent labs, apparently over 1000, but reporting is a bit thin.  Civil Beat has the best reporting I’ve seen.</p>
 <p>See:</p>
 <p><a href="https://www.civilbeat.org/2020/03/doh-testing-in-hawaii-for-covid-19-remains-deliberately-narrow/">https://www.civilbeat.org/2020/03/doh-testing-in-hawaii-for-covid-19-remains-deliberately-narrow/</a>
 <a href="https://www.civilbeat.org/2020/03/10-new-coronavirus-cases-reported-in-hawaii/">https://www.civilbeat.org/2020/03/10-new-coronavirus-cases-reported-in-hawaii/</a></p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
       
         <div class="comment" id="issuecomment-602039217">
           <div class="frontmatter">
-            <div><strong>careeningspace</strong> commented on March 21, 2020 at 7:45 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/33#issuecomment-602039217" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>careeningspace</strong> commented on March 21, 2020 at 5:45 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/33#issuecomment-602039217" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Thank you for this information - I have shared it with the team and we are looking at incorporating it into our numbers.</p>
+            <p>Thank you for this information - I have shared it with the team and we are looking at incorporating it into our numbers.</p>
 
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-604801304">
           <div class="frontmatter">
-            <div><strong>mikejrob</strong> commented on March 26, 2020 at 10:52 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/33#issuecomment-604801304" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>mikejrob</strong> commented on March 26, 2020 at 8:52 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/33#issuecomment-604801304" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>It looks like they occasionally update with actual test counts, but not always.  Some of the historical data is probably off as a result. I’m not sure how the history could be corrected.   Most recent data is off, too.</p>
+            <p>It looks like they occasionally update with actual test counts, but not always.  Some of the historical data is probably off as a result. I’m not sure how the history could be corrected.   Most recent data is off, too.</p>
 <p>Another issue: the one death was a mistake. After more testing they found that the death was not due to COVID-19.</p>
 <p><a href="https://www.staradvertiser.com/2020/03/24/breaking-news/watch-live-department-of-health-gives-update-on-coronavirus/">https://www.staradvertiser.com/2020/03/24/breaking-news/watch-live-department-of-health-gives-update-on-coronavirus/</a></p>
 <p>Note that they no longer report the death in daily updates, but this site still has the death recorded in the historical data.</p>
@@ -176,25 +202,47 @@ table th {
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+            <strong>careeningspace</strong> added the label <span class="label">Data quality</span> on March 26, 2020 at 9:21 pm
+          
+          
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-604807556">
           <div class="frontmatter">
-            <div><strong>careeningspace</strong> commented on March 26, 2020 at 11:23 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/33#issuecomment-604807556" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>careeningspace</strong> commented on March 26, 2020 at 9:23 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/33#issuecomment-604807556" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Hello,</p>
+            <p>Hello,</p>
 <p>Yes, we have stopped counting the falsely attributed death from our reporting stream and will need to address if we remove it retroactively. We will see if we can include the data you have provided, but we have found the process of including thin data difficult due to the rigorousness our data is subjected to.</p>
 
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-604839511">
           <div class="frontmatter">
-            <div><strong>mikejrob</strong> commented on March 27, 2020 at 1:36 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/33#issuecomment-604839511" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>mikejrob</strong> commented on March 26, 2020 at 11:36 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/33#issuecomment-604839511" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>I did some digging to see if I could find the correct test counts for 3/25 and 3/26, but it looks like they stopped reporting them; only positives were reported on these days.  It also looks like the data for 3/21 through 3/24 is not correct.  Three of these days are shifted forward one day, and the other appears to be missing private lab totals.  Correct totals are as follows, with links to the sources. I think positives are correct but possibly shifted by a day.</p>
+            <p>I did some digging to see if I could find the correct test counts for 3/25 and 3/26, but it looks like they stopped reporting them; only positives were reported on these days.  It also looks like the data for 3/21 through 3/24 is not correct.  Three of these days are shifted forward one day, and the other appears to be missing private lab totals.  Correct totals are as follows, with links to the sources. I think positives are correct but possibly shifted by a day.</p>
 <p><a href="https://health.hawaii.gov/news/corona-virus/covid-19-daily-update-march-24-2020/">https://health.hawaii.gov/news/corona-virus/covid-19-daily-update-march-24-2020/</a>
 322 state PUI
 263 sentinel
@@ -219,13 +267,18 @@ Total = 2511</p>
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-604845975">
           <div class="frontmatter">
-            <div><strong>realfuture</strong> commented on March 27, 2020 at 1:59 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/33#issuecomment-604845975" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>realfuture</strong> commented on March 26, 2020 at 11:59 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/33#issuecomment-604845975" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Just jumping in to say that I looked at our historical data and from the
+            <p>Just jumping in to say that I looked at our historical data and from the
 22nd onward, we have the same numbers.</p>
 <p>The shifts forward are because we record a daily number at the same time
 for all the states (4pm ET): so for us, it didn’t show up in our daily
@@ -278,41 +331,101 @@ Visiting Scholar | Information School, UC Berkeley</p>
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-605365126">
           <div class="frontmatter">
-            <div><strong>mikejrob</strong> commented on March 27, 2020 at 7:17 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/33#issuecomment-605365126" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>mikejrob</strong> commented on March 27, 2020 at 5:17 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/33#issuecomment-605365126" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Thanks for clarifying–Sorry, I overlooked the 4pm ET time stamp; makes sense. The above count for 3/21 can still correct 3/22.  Hopefully, they will report negatives and test counts again soon.</p>
-
-          </div>
-        </div>
-      
-        <div class="comment" id="issuecomment-623800977">
-          <div class="frontmatter">
-            <div><strong>stale[bot]</strong> commented on May 4, 2020 at 9:20 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/33#issuecomment-623800977" target="_blank">Open in Github</a></div>
-          </div>
-          <div class="body">
-          <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
-
-          </div>
-        </div>
-      
-        <div class="comment" id="issuecomment-628989959">
-          <div class="frontmatter">
-            <div><strong>stale[bot]</strong> commented on May 14, 2020 at 9:30 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/33#issuecomment-628989959" target="_blank">Open in Github</a></div>
-          </div>
-          <div class="body">
-          <p>This issue has been closed because it was stale for 15 days, and there was no further activity on it for 10 days. You can feel free to re-open it if the issue is important, and label it as “not stale.”</p>
+            <p>Thanks for clarifying–Sorry, I overlooked the 4pm ET time stamp; makes sense. The above count for 3/21 can still correct 3/22.  Hopefully, they will report negatives and test counts again soon.</p>
 
           </div>
         </div>
       
     
+      
+        <div class="comment" id="issuecomment-623800977">
+          <div class="frontmatter">
+            <div>
+              <strong>stale[bot]</strong> commented on May 4, 2020 at 7:20 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/33#issuecomment-623800977" target="_blank">Open in Github</a>
+            </div>
+          </div>
+          <div class="body">
+            <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
+
+          </div>
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+            <strong>stale[bot]</strong> added the label <span class="label">stale</span> on May 4, 2020 at 7:20 pm
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="comment" id="issuecomment-628989959">
+          <div class="frontmatter">
+            <div>
+              <strong>stale[bot]</strong> commented on May 14, 2020 at 7:30 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/33#issuecomment-628989959" target="_blank">Open in Github</a>
+            </div>
+          </div>
+          <div class="body">
+            <p>This issue has been closed because it was stale for 15 days, and there was no further activity on it for 10 days. You can feel free to re-open it if the issue is important, and label it as “not stale.”</p>
+
+          </div>
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>stale[bot]</strong> closed the issue on May 14, 2020 at 7:31 pm
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

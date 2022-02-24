@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,47 +134,95 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 731</p>
-        <p><strong>muamichali</strong> opened this issue on August 4, 2020 at 11:19 am</p>
+        <p>
+          <strong>Issue number</strong>
+          731</p>
+        <p>
+          <strong>muamichali</strong> opened this issue on August 4, 2020 at 9:19 am</p>
         
-          <p><strong>Labels </strong>
-            <span class="label"><a href="../label/1921151980.html">Data quality</a></span>
+          <p>
+            <strong>Labels </strong>
+            
+              <span class="label">
+                <a href="../label/1921151980.html">Data quality</a>
+              </span>
+            
           </p>
-          
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/731" target="_blank">Open in Github</a>
-        </div>
+        
       </div>
-      <div class="body">
-        <p><strong>State or US</strong>:  Unknown States</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/731" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p><strong>State or US</strong>:  Unknown States</p>
 <p><strong>Describe the problem</strong>
 Some cells in the Deaths (confirmed) column were relying on a formula from the Checks tab. When the Checks tab was purged, it caused some of the values in Deaths Confirmed column to be impacted.</p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+            <strong>muamichali</strong> added the label <span class="label">Data quality</span> on August 4, 2020 at 9:19 am
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-669520546">
           <div class="frontmatter">
-            <div><strong>space-buzzer</strong> commented on August 5, 2020 at 4:26 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/731#issuecomment-669520546" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>space-buzzer</strong> commented on August 5, 2020 at 2:26 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/731#issuecomment-669520546" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>I’ll take over this issue to handle all bad refs and formula investigations in States Daily.
+            <p>I’ll take over this issue to handle all bad refs and formula investigations in States Daily.
 #734 is another instance</p>
 
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-669593246">
           <div class="frontmatter">
-            <div><strong>space-buzzer</strong> commented on August 5, 2020 at 6:18 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/731#issuecomment-669593246" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>space-buzzer</strong> commented on August 5, 2020 at 4:18 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/731#issuecomment-669593246" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>In the most recent version of States Daily.
+            <p>In the most recent version of States Daily.
 We have <code>REF</code>s only in KY <code>Total Tests (PCR) </code></p>
 <p>All the <code>REF</code>s are part of formulas (or bad formulas).</p>
 <p>We have formulas in other places too, some are numeric (e.g., <code>=3684+101</code>) which should be fine and stable, others might not be as stable <code>=sum(C3258:D3258)</code></p>
@@ -174,13 +230,18 @@ We have <code>REF</code>s only in KY <code>Total Tests (PCR) </code></p>
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-670206378">
           <div class="frontmatter">
-            <div><strong>space-buzzer</strong> commented on August 6, 2020 at 4:42 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/731#issuecomment-670206378" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>space-buzzer</strong> commented on August 6, 2020 at 2:42 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/731#issuecomment-670206378" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>This is a file of all formulas currently in the public table. They’re fine, but can cause problems during fixes and backfills.
+            <p>This is a file of all formulas currently in the public table. They’re fine, but can cause problems during fixes and backfills.
 <a href="../assets/files/github/5038158/formulas.csv.txt">formulas.csv.txt</a></p>
 <p>Attached zip file for before/after formula fix – all the values are the same, but there are no cell refs
 <a href="../assets/files/github/5038600/states_daily.zip">states_daily.zip</a></p>
@@ -188,39 +249,54 @@ We have <code>REF</code>s only in KY <code>Total Tests (PCR) </code></p>
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-670252376">
           <div class="frontmatter">
-            <div><strong>space-buzzer</strong> commented on August 6, 2020 at 7:14 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/731#issuecomment-670252376" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>space-buzzer</strong> commented on August 6, 2020 at 5:14 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/731#issuecomment-670252376" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>This issue was originally opened for <strong>KS</strong> <code>Deaths (confirmed)</code> was a formula leading nowhere.
+            <p>This issue was originally opened for <strong>KS</strong> <code>Deaths (confirmed)</code> was a formula leading nowhere.
 Now we have a few values in this column, instead of the formula. Did we ever have a confirmation that death count was confirmed deaths and then it got revised?
 It happened with cases on May 7th – Case count started including both confirmed and probable cases</p>
 
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-670355701">
           <div class="frontmatter">
-            <div><strong>space-buzzer</strong> commented on August 7, 2020 at 1:42 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/731#issuecomment-670355701" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>space-buzzer</strong> commented on August 6, 2020 at 11:42 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/731#issuecomment-670355701" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>The 9 values for <strong>KS</strong> <code>Deaths (confirmed)</code> column (dates 3-11/May) are there by mistake. They were not deleted when confirmed vs probable death metrics were cleaned up prior to publishing these metrics in the API because it was a formula, and the cells looked empty. Earlier this week, the cells were re-filled with a value, but it should actually remain empty.
+            <p>The 9 values for <strong>KS</strong> <code>Deaths (confirmed)</code> column (dates 3-11/May) are there by mistake. They were not deleted when confirmed vs probable death metrics were cleaned up prior to publishing these metrics in the API because it was a formula, and the cells looked empty. Earlier this week, the cells were re-filled with a value, but it should actually remain empty.
 <img src="../assets/images/github/62236447/89617082-6ad2e700-d83e-11ea-954f-78f0fbf96d7e.png" alt="Screenshot from 2020-08-06 23-39-13">
 <img src="../assets/images/github/62236447/89617085-6b6b7d80-d83e-11ea-83fa-86774a24e02a.png" alt="Screenshot from 2020-08-06 23-41-30"></p>
 
           </div>
         </div>
       
+    
+      
         <div class="comment" id="issuecomment-670403057">
           <div class="frontmatter">
-            <div><strong>space-buzzer</strong> commented on August 7, 2020 at 3:37 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/731#issuecomment-670403057" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>space-buzzer</strong> commented on August 7, 2020 at 1:37 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/731#issuecomment-670403057" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>We have many states with this empty-formula turned to numbers between May 3rd to 11th.
+            <p>We have many states with this empty-formula turned to numbers between May 3rd to 11th.
 All of them now got values in these cells, values that I think weren’t supposed to be there, because they looked empty, so were skipped during the cleanup</p>
 <p>Numbers should be there</p>
 <ul>
@@ -263,7 +339,20 @@ KY is most likely correct, no way to 100% verify</li>
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>space-buzzer</strong> closed the issue on August 11, 2020 at 5:59 pm
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

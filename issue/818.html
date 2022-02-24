@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,32 +134,72 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 818</p>
-        <p><strong>hmhoffman</strong> opened this issue on September 8, 2020 at 3:33 pm</p>
+        <p>
+          <strong>Issue number</strong>
+          818</p>
+        <p>
+          <strong>hmhoffman</strong> opened this issue on September 8, 2020 at 1:33 pm</p>
         
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/818" target="_blank">Open in Github</a>
-        </div>
       </div>
-      <div class="body">
-        <p><strong>State:</strong> MP
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/818" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p><strong>State:</strong> MP
 <strong>Dates impacted:</strong> 9/7
 <strong>Issue described:</strong> The week of 9/1 the MP dashboard was broken for a few days. As a result we got data (including a timestamp) from queries. The 9/1 0:00 source note from the queries turned out to be more of a site updated time vs a data “as of” timestamp. However we decided to carry over the 9/1 timestamp until the dashboard is updated, on 9/7 the timestamp was accidentally changed and should be patched to 9/1 0:00
 <strong>Sources:</strong> <a href="https://covid-tracking.slack.com/archives/CUQ4MMTPD/p1599594076151900">https://covid-tracking.slack.com/archives/CUQ4MMTPD/p1599594076151900</a></p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+            <strong>hmhoffman</strong> added the label <span class="label">Data quality</span> on September 8, 2020 at 1:33 pm
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+            <strong>brianskli</strong> removed the label <span class="label">Data quality</span> on September 8, 2020 at 2:58 pm
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-689187647">
           <div class="frontmatter">
-            <div><strong>jaclyde</strong> commented on September 8, 2020 at 6:25 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/818#issuecomment-689187647" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>jaclyde</strong> commented on September 8, 2020 at 4:25 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/818#issuecomment-689187647" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Before:
+            <p>Before:
 <img width="366" alt="Screen Shot 2020-09-08 at 4 22 53 PM" src="../assets/images/github/66583275/92536880-9fe0a980-f1ef-11ea-8d7c-ad225737f74f.png"></p>
 <p>After:
 <img width="363" alt="Screen Shot 2020-09-08 at 4 23 06 PM" src="../assets/images/github/66583275/92536936-b71f9700-f1ef-11ea-8625-e58a11b24829.png"></p>
@@ -160,7 +208,20 @@ table th {
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>jaclyde</strong> closed the issue on September 8, 2020 at 4:28 pm
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

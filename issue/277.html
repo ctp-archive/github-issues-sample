@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,51 +134,115 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 277</p>
-        <p><strong>hrushka</strong> opened this issue on April 23, 2020 at 5:21 pm</p>
+        <p>
+          <strong>Issue number</strong>
+          277</p>
+        <p>
+          <strong>hrushka</strong> opened this issue on April 23, 2020 at 3:21 pm</p>
         
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/277" target="_blank">Open in Github</a>
-        </div>
       </div>
-      <div class="body">
-        <p>Source: <a href="https://covidtracking.com/api/v1/states/daily.csv">https://covidtracking.com/api/v1/states/daily.csv</a></p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/277" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p>Source: <a href="https://covidtracking.com/api/v1/states/daily.csv">https://covidtracking.com/api/v1/states/daily.csv</a></p>
 <p>Fileds: totalTestResults,positive,negative,deaths
 Date: 2020-04-23</p>
 <p>Reference: <a href="https://c19.dev/d/4S5AN4CZz/covid-19-us-state-data?orgId=1&amp;from=now-45d&amp;to=now&amp;var-state=WA&amp;var-population=7614893&amp;var-density=147.46721965695642&amp;var-total_cases=12539&amp;var-total_deaths=696">https://c19.dev/d/4S5AN4CZz/covid-19-us-state-data?orgId=1&amp;from=now-45d&amp;to=now&amp;var-state=WA&amp;var-population=7614893&amp;var-density=147.46721965695642&amp;var-total_cases=12539&amp;var-total_deaths=696</a></p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
       
         <div class="comment" id="issuecomment-618989173">
           <div class="frontmatter">
-            <div><strong>muamichali</strong> commented on April 24, 2020 at 7:50 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/277#issuecomment-618989173" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>muamichali</strong> commented on April 24, 2020 at 5:50 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/277#issuecomment-618989173" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Hi <strong>@hrushka</strong></p>
+            <p>Hi <strong>@hrushka</strong></p>
 <p>Your website is great! I am seeing very different numbers on <a href="https://c19.dev/d/4S5AN4CZz/covid-19-us-state-data?panelId=2&amp;fullscreen&amp;orgId=1&amp;from=now-45d&amp;to=now&amp;var-state=WA&amp;var-population=7614893&amp;var-density=147.46721965695642&amp;var-total_cases=12539&amp;var-total_deaths=696">https://c19.dev/d/4S5AN4CZz/covid-19-us-state-data?panelId=2&amp;fullscreen&amp;orgId=1&amp;from=now-45d&amp;to=now&amp;var-state=WA&amp;var-population=7614893&amp;var-density=147.46721965695642&amp;var-total_cases=12539&amp;var-total_deaths=696</a> than on our WA numbers. Positives and Testing numbers are off. Can you double check that you are using our numbers please?</p>
 <p><img src="../assets/images/github/1749380/80214344-ab4c8300-8608-11ea-89b2-b310f0f1e367.png" alt="Screenshot_2020-04-24 Coronavirus numbers by state (CovidTracking, DEV COPY)"></p>
 
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>muamichali</strong> closed the issue on April 24, 2020 at 5:50 am
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-619280615">
           <div class="frontmatter">
-            <div><strong>hrushka</strong> commented on April 24, 2020 at 6:34 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/277#issuecomment-619280615" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>hrushka</strong> commented on April 24, 2020 at 4:34 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/277#issuecomment-619280615" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p><strong>@muamichali</strong> hey thanks for checking on this, I found the error in my import. I was relying on the Hash column to be a primary key for the state and day, so I was duplicating days in certain instances!</p>
+            <p><strong>@muamichali</strong> hey thanks for checking on this, I found the error in my import. I was relying on the Hash column to be a primary key for the state and day, so I was duplicating days in certain instances!</p>
 
           </div>
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

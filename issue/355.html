@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,40 +134,95 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 355</p>
-        <p><strong>dcorbin</strong> opened this issue on May 4, 2020 at 9:05 am</p>
+        <p>
+          <strong>Issue number</strong>
+          355</p>
+        <p>
+          <strong>dcorbin</strong> opened this issue on May 4, 2020 at 7:05 am</p>
         
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/355" target="_blank">Open in Github</a>
-        </div>
       </div>
-      <div class="body">
-        <p>The historical data for Georia on May 3 shows 296 new tests.  But the screen shot (all 4) show 174,800, the same number as the last screenshot on May 2.</p>
-
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/355" target="_blank">Open in Github</a>
       </div>
     </div>
+    <div class="body">
+      <p>The historical data for Georia on May 3 shows 296 new tests.  But the screen shot (all 4) show 174,800, the same number as the last screenshot on May 2.</p>
+
+    </div>
+  </div>
+  
     
-      <h2>Comments</h2>
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
       
         <div class="comment" id="issuecomment-630855289">
           <div class="frontmatter">
-            <div><strong>stale[bot]</strong> commented on May 19, 2020 at 9:26 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/355#issuecomment-630855289" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>stale[bot]</strong> commented on May 19, 2020 at 7:26 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/355#issuecomment-630855289" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
+            <p>This issue has been automatically marked as stale because it has not had recent activity. It will be closed if no further activity occurs. Thank you for your contributions!</p>
 
           </div>
         </div>
       
+    
+      
+        <div class="event">
+          
+          
+            <strong>stale[bot]</strong> added the label <span class="label">stale</span> on May 19, 2020 at 7:26 am
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+            <strong>muamichali</strong> removed the label <span class="label">stale</span> on May 22, 2020 at 7:53 am
+          
+          
+          
+        </div>
+      
+    
+      
         <div class="comment" id="issuecomment-639528677">
           <div class="frontmatter">
-            <div><strong>karaschechtman</strong> commented on June 5, 2020 at 9:24 am</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/355#issuecomment-639528677" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>karaschechtman</strong> commented on June 5, 2020 at 7:24 am</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/355#issuecomment-639528677" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Hi <strong>@dcorbin</strong>,
+            <p>Hi <strong>@dcorbin</strong>,
 Thank you for bringing this to our attention. This problem is being caused by a thorny issue with negative tests. States tend to have different reporting standards for negative tests, with some reporting negatives, and some not. For states that do not report negatives, the best estimate we can get of that data point is subtracting the number of positives from the total. GA is one of those states.</p>
 <p>However, in GA, positive test figures tend to lag total test figures. This lag means that sometimes, when we infer the count of negatives, it appears as if the number of negative tests has decreased. Since one of our principles is to never decrease negatives over the historical time series, in these cases we carry over our calculated negative figure from the previous day. That is what happened here: we carried over a higher negative figure because the totals did not update, so when we add positives+negatives (the figure we use to calculate “new tests”), it appears to grow even if it stayed constant on the website.</p>
 <p>We are considering a number of measures to address this problem, including deprecating negatives or changing total tests to draw from “Totals” rather than positives+negatives (although this may be confusing since then pos+neg will sometimes be greater than total).</p>
@@ -169,7 +232,50 @@ Thank you for bringing this to our attention. This problem is being caused by a 
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>karaschechtman</strong> closed the issue on June 5, 2020 at 7:25 am
+          
+        </div>
+      
+    
+      
+        <div class="event">
+          
+          
+          
+          
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>

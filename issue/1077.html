@@ -52,6 +52,9 @@ table th {
 .label {
   display: inline-block;
   margin: 0.5rem;
+  padding: 0 0.2rem;
+  border-radius: 3px;
+  background: #c4b4e1;
 }
 .label:first-child {
   margin-left: 0;
@@ -59,6 +62,7 @@ table th {
 .label a,
 .label a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .comment,
@@ -115,6 +119,10 @@ table th {
   font-weight: bold;
 }
 
+.event {
+  margin: 2.5rem;
+}
+
     </style>
   </head>
   <body>
@@ -126,31 +134,37 @@ table th {
   <div class="issue">
     <div class="frontmatter">
       <div>
-        <p><strong>Issue number</strong> 1077</p>
-        <p><strong>hmhoffman</strong> opened this issue on January 22, 2021 at 4:45 pm</p>
+        <p>
+          <strong>Issue number</strong>
+          1077</p>
+        <p>
+          <strong>hmhoffman</strong> opened this issue on January 22, 2021 at 2:45 pm</p>
         
-        </div>
-        <div>
-          <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1077" target="_blank">Open in Github</a>
-        </div>
       </div>
-      <div class="body">
-        <p><strong>State:</strong> OR</p>
+      <div>
+        <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1077" target="_blank">Open in Github</a>
+      </div>
+    </div>
+    <div class="body">
+      <p><strong>State:</strong> OR</p>
 <p><strong>Dates affected:</strong> 01/21/21</p>
 <p><strong>Describe the issue:</strong> On January 21, 2021, we accidentally caught the next days data for Oregon’s data. Orgeon’s data is on a one-day lag in our timeseries due to consistently updating after 7:30 pm est, when we publish our daily update. On January 21, 2021, they published data abnormally early and we mistakenly caught the data meant for January 22, 2021 in our data for January 21, 2021.</p>
 
-      </div>
     </div>
+  </div>
+  
     
-      <h2>Comments</h2>
       
         <div class="comment" id="issuecomment-765728697">
           <div class="frontmatter">
-            <div><strong>hmhoffman</strong> commented on January 22, 2021 at 4:46 pm</div>
-            <div><a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1077#issuecomment-765728697" target="_blank">Open in Github</a></div>
+            <div>
+              <strong>hmhoffman</strong> commented on January 22, 2021 at 2:46 pm</div>
+            <div>
+              <a class="github-link" href="https://github.com/COVID19Tracking/issues/issues/1077#issuecomment-765728697" target="_blank">Open in Github</a>
+            </div>
           </div>
           <div class="body">
-          <p>Rows edited: 1
+            <p>Rows edited: 1
 OR 2021-01-21
 positive: 135142 (was 135973)
 negative: 2868071 (was 2887359)
@@ -165,7 +179,20 @@ negativeTestsViral: 2823829 (was 2842996)</p>
         </div>
       
     
+      
+        <div class="event">
+          
+          
+          
+          
+          
+            <strong>hmhoffman</strong> closed the issue on January 22, 2021 at 2:46 pm
+          
+        </div>
+      
+    
   
+
 </main>
   </body>
 </html>
